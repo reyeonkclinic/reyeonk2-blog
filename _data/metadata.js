@@ -1,11 +1,11 @@
 export default {
-	title: "블로그 이름",
+	title: "리연케이클리닉",
 	url: "https://reyeonk2.com/",
 	language: "ko",
-	description: "블로그 소개 한 줄",
+	description: "개원 16년 무사고, 상담부터 시술까지 원장님이 직접 봅니다.",
 	author: {
-		name: "이름 또는 닉네임",
-		email: "이메일주소",
+		name: "리연케이클리닉",
+		email: "",
 		url: "https://reyeonk2.com/about/"
 	}
 }
