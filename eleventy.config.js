@@ -65,22 +65,19 @@ export default async function(eleventyConfig) {
 		outputPath: "/feed/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
 		templateData: {
-			eleventyNavigation: {
-				key: "Feed",
-				order: 4
-			}
+					}
 		},
 		collection: {
 			name: "posts",
 			limit: 10,
 		},
 		metadata: {
-			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+language: "ko",
+			title: "리연케이클리닉",
+			subtitle: "개원 16년, 상담부터 시술까지 원장님이 직접 봅니다.",
+			base: "https://reyeonk2.com/",
 			author: {
-				name: "Your Name"
+				name: "리연케이클리닉"
 			}
 		}
 	});
