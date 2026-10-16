@@ -1,0 +1,272 @@
+---
+title: "포텐자 레이저 가이드: 모공축소, 몇 샷·몇 번 받아야 할까?"
+description: "넓어진 모공이 고민이라면. 포텐자 레이저의 원리, 권장 샷 수와 시술 주기, 통증 관리, 가격과 10월 이벤트까지 정리했습니다."
+date: 2026-10-16
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif KR", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+</style>
+
+<div class="pz">
+	<p class="pz-hook">공들여 화장해도 파운데이션이 끼고, 모공이 도드라져 보여서 속상하신가요?</p>
+	<p class="pz-lead">피부가 바쁜 편도 아닌데 넓어진 모공 때문에 지저분한 인상을 준다면, 모공축소 레이저가 답이 될 수 있습니다.</p>
+	<figure class="pz-fig pz-wide"><img src="./img/closeup.jpg" alt="코 주변에 넓어진 모공이 보이는 피부 클로즈업" width="800" height="800" loading="eager"></figure>
+
+	<div class="pz-section">
+		<h2>모공이 넓어지는 진짜 이유</h2>
+		<div class="pz-text">
+			<p>모공은 자외선이나 과도한 피지 분비 때문에 커질 수 있지만, 누구나 나이가 들면서 발생하는 피부 노화로 탄력이 떨어지고 늘어집니다.</p>
+			<p>그래서 포텐자 등 모공축소 레이저를 이용해 진피층 내 콜라겐 밀도를 높여, 모공 축소와 피부 리쥬비네이션(Rejuvenation) 효과를 동시에 얻는 시술이 필요합니다.</p>
+		</div>
+		<figure class="pz-fig"><img src="./img/why.jpg" alt="모공이 넓어지는 이유: 과도한 피지 각질 증가, 노화로 인한 탄력 저하, 자외선 노출, 잘못된 압출이나 관리" width="800" height="800"></figure>
+	</div>
+
+	<div class="pz-section">
+		<h2>비침습적 프락셀 포텐자 레이저란?</h2>
+		<div class="pz-text">
+			<p>포텐자 레이저는 RF 고주파 마이크로 니들을 피부 속에 삽입해, 지정된 깊이에 고주파 에너지를 정밀하게 전달하는 프락셔널 시술입니다.</p>
+			<p>피부 속 콜라겐과 엘라스틴 조직의 재생성을 촉진하여 다음과 같은 효과를 기대할 수 있습니다.</p>
+		</div>
+		<ul class="pz-effects">
+			<li>모공축소</li>
+			<li>피부탄력 개선</li>
+			<li>피부결 정돈</li>
+		</ul>
+		<figure class="pz-fig"><img src="./img/potenza.jpg" alt="포텐자 레이저 장비와 효과 안내: 모공 축소, 여드름 흉터, 주름 개선. 리연케이는 1인 1팁으로 시술합니다" width="800" height="800"></figure>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 레이저, 몇 샷 받아야 하나요?</h2>
+		<div class="pz-shots"><span class="pz-num">600</span><span class="pz-unit">샷 이상 권장</span></div>
+		<div class="pz-text">
+			<p>병원마다 시술 방식에 차이가 있지만, 최소 600샷 이상 시술받으시는 것을 권장합니다.</p>
+			<p>그동안의 경험에 비추어 보면 포텐자 600샷 정도 받으셔야 환자 만족도가 좋았습니다. 비용을 맞추기 위해 적은 샷 수로 진행하거나 너무 빠르게 건성으로 시술하면 원하는 효과를 보기 어렵습니다.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 시술 주기</h2>
+		<div class="pz-cycle" role="img" aria-label="1회, 4주 간격, 2회, 4주 간격, 3회">
+			<div class="pz-node">1회</div>
+			<div class="pz-gap"><span>4주</span></div>
+			<div class="pz-node">2회</div>
+			<div class="pz-gap"><span>4주</span></div>
+			<div class="pz-node">3회</div>
+		</div>
+		<div class="pz-text">
+			<p>포텐자 권장 주기는 4주 정도 간격으로 3회 시술입니다.</p>
+			<p>피부 탄력은 점차 떨어지므로 1년 단위로 꾸준히 관리하시면 매끄러운 피부결을 오랜 기간 유지할 수 있습니다.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 레이저 통증</h2>
+		<div class="pz-text">
+			<p>시술 전 연고마취로 어느 정도 통증을 억제할 수 있습니다.</p>
+			<p>하지만 찌르는 통증을 잘 느끼시거나 통증에 대한 두려움이 있으시면, 초음파 국소마취나 에어녹스 등 통증 억제 프로그램을 함께 받으시는 것을 추천합니다.</p>
+		</div>
+		<figure class="pz-fig"><img src="./img/pain.jpg" alt="시술 시 통증 걱정 이제 그만: 초음파를 이용한 국소마취, 수면마취, 스마일가스 에어녹스" width="800" height="740"></figure>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 레이저와 함께 받으면 좋은 시술</h2>
+		<figure class="pz-fig" style="margin: 0 0 24px"><img src="./img/boosters.jpg" alt="리연케이 스킨부스터 종류: 리투오(Re2O), 셀르디엠(CellREDM), 쥬베룩, 리쥬란힐러" width="800" height="918"></figure>
+		<ul class="pz-list">
+			<li>
+				<h3>스킨부스터</h3>
+				<p>리투오(Re2O), 셀르디엠, 쥬베룩, 리쥬란힐러 등은 영양 성분을 진피층에 직접 공급합니다. 피부층을 강화하고 탄력 개선 효과를 높여, 포텐자와 함께 시술하면 만족도가 높습니다.</p>
+			</li>
+			<li>
+				<h3>스킨보톡스</h3>
+				<p>잔주름 개선 및 모공 타이트닝 등 시너지 효과를 더해, 더욱 매끄럽고 물광 나는 피부로 개선할 수 있습니다.</p>
+			</li>
+			<li>
+				<h3>고우리 스킨부스터</h3>
+				<p>완전 액상화된 PCL 성분을 콜라겐 부스터로 사용해 피부 스스로 콜라겐을 생성하도록 유도합니다. 잔주름과 탄력 개선에 도움을 얻을 수 있습니다.</p>
+				<span class="pz-tag">10월 한 달간 7cc 35만원 (부가세 별도)</span>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 레이저 가격</h2>
+		<div class="pz-table">
+			<table>
+				<thead>
+					<tr><th scope="col">샷 수</th><th scope="col">가격</th></tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">포텐자 600샷</th><td class="pz-price">40만원대</td></tr>
+					<tr><th scope="row">포텐자 1000샷</th><td class="pz-price">60만원대</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<figure class="pz-fig"><img src="./img/event.jpg" alt="천텐자 이벤트: 포텐자 1000샷 + 스킨보톡스(펌핑) 정상가 69만원, 이벤트가 39만원 VAT 별도" width="800" height="800"></figure>
+		<div class="pz-event">
+			<div class="pz-label">10월 한 달간 이벤트</div>
+			<h3>“천텐자” 포텐자 1000샷 + 스킨보톡스(펌핑)</h3>
+			<div class="pz-big"><strong>39만원</strong><span>부가세 10% 별도 · 정상가 <s>69만원</s></span></div>
+			<p class="pz-note">10월 한 달간 진행하는 특별 가격 이벤트입니다. 이 기회를 놓치지 마세요.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>왜 리연케이의원 모공축소 레이저일까?</h2>
+		<p class="pz-text">같은 포텐자 레이저라도 누가 시술하느냐에 따라 결과가 완전히 달라집니다.</p>
+		<figure class="pz-fig" style="margin-bottom: 24px"><img src="./img/doctors.jpg" alt="학회와 강연 현장 사진 모음: 같은 시술이라도 누가 시술하느냐에 따라 결과는 달라집니다" width="800" height="800"></figure>
+		<ul class="pz-list">
+			<li>16년 이상 풍부한 임상 케이스 보유</li>
+			<li>풍부한 경력의 의료진이 직접 1:1 맞춤 상담 및 정확한 피부 진단</li>
+			<li>개인별 피부 타입, 모공 깊이에 맞춘 샷 수 및 깊이 조절</li>
+		</ul>
+		<p class="pz-text" style="margin-top: 20px">나만의 모공축소 시술을 경험할 수 있습니다.</p>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">한번 넓어진 모공은 자연적으로 되돌아가지 않습니다.</p>
+		<p class="pz-invite">리연케이의원에서 나에게 딱 맞는 모공축소 레이저 맞춤 플랜과 합리적인 이벤트로 고민을 해결해 보세요.</p>
+		<figure class="pz-fig"><img src="./img/october.gif" alt="리연케이 10월 이벤트 안내: 개원 16년 무사고, 100% 정품팁 고수, 개인맞춤 디자인. 2026년 10월 31일까지" width="640" height="800"></figure>
+		<div class="pz-contact">
+			<dl>
+				<dt>리연케이의원</dt>
+				<dd>서울특별시 강남구 언주로172길 64<br>지하 1층, 3층, 4층</dd>
+				<dt>전화</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">02-558-5581</a><button class="pz-copy" id="pz-copy" type="button">번호 복사</button></dd>
+				<dt>웹사이트</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a></dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "번호 복사"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
