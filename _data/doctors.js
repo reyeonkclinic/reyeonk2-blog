@@ -22,6 +22,8 @@ export default [
 	},
 	{
 		slug: "hyunsukim",
+		photo: "/img/doctors/hyunsukim.jpg",
+		photoSize: [800, 1200],
 		name: "김현수",
 		title: "대표원장",
 		en: "Dr. Kim Hyunsu",
@@ -39,6 +41,8 @@ export default [
 	},
 	{
 		slug: "hyunhochoi",
+		photo: "/img/doctors/hyunhochoi.jpg",
+		photoSize: [800, 1200],
 		name: "최현호",
 		title: "원장",
 		en: "Dr. Choi Hyunho",
