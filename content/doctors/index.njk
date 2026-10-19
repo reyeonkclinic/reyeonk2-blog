@@ -1,0 +1,40 @@
+---js
+const eleventyNavigation = {
+	key: "의료진",
+	order: 4
+};
+const permalink = "/doctors/";
+const title = "의료진 소개 | 리연케이의원 이두찬·김현수·최현호 원장";
+const description = "리연케이의원 의료진 소개. 이두찬 대표원장, 김현수 대표원장, 최현호 원장이 상담부터 시술까지 1:1로 직접 진료합니다.";
+---
+{% include "doctor-style.njk" %}
+<div class="dr">
+	<h1>의료진 소개</h1>
+	<p class="dr-lead">리연케이의원은 16년 경력의 의료진이 상담부터 디자인, 시술까지 모두 1:1로 직접 진료합니다.</p>
+	<ul class="dr-grid">
+	{%- for d in doctors %}
+		<li class="dr-card">
+			<a href="/doctors/{{ d.slug }}/">
+				<span class="dr-role">{{ d.title }}</span>
+				<h2 class="dr-name">{{ d.name }}</h2>
+				<q class="dr-quote">{{ d.quote }}</q>
+				<span class="dr-focus">{{ d.focus }}</span>
+				<span class="dr-more">자세히 보기 →</span>
+			</a>
+		</li>
+	{%- endfor %}
+	</ul>
+</div>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "MedicalClinic",
+	"@id": "https://reyeonk2.com/#clinic",
+	"name": "리연케이의원",
+	"employee": [
+	{%- for d in doctors %}
+		{ "@type": "Physician", "name": "{{ d.name }}", "jobTitle": "{{ d.title }}", "url": "https://reyeonk2.com/doctors/{{ d.slug }}/" }{% if not loop.last %},{% endif %}
+	{%- endfor %}
+	]
+}
+</script>

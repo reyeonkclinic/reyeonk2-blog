@@ -1,0 +1,48 @@
+---js
+const pagination = { data: "doctors", size: 1, alias: "d" };
+const permalink = (data) => `/doctors/${data.d.slug}/`;
+const eleventyComputed = {
+	title: (data) => `${data.d.name} ${data.d.title} | 리연케이의원 (${data.d.focus})`,
+	description: (data) => `리연케이의원 ${data.d.name} ${data.d.title}. ${data.d.intro}`
+};
+---
+{% include "doctor-style.njk" %}
+<div class="dr">
+	<div class="dr-head">
+		<p class="dr-role">리연케이의원 {{ d.title }} · {{ d.en }}</p>
+		<h1>{{ d.name }} {{ d.title }}</h1>
+		<blockquote>{{ d.quote }}</blockquote>
+		<p class="dr-lead" style="margin-top: 16px">{{ d.intro }}</p>
+		<p class="dr-focus" style="margin-top: 12px">{{ d.focus }}</p>
+	</div>
+	{%- if d.career.length %}
+	<section class="dr-block"><h2>약력</h2><ul>{% for c in d.career %}<li>{{ c }}</li>{% endfor %}</ul></section>
+	{%- endif %}
+	{%- if d.training.length %}
+	<section class="dr-block"><h2>교육 · 인증</h2><ul>{% for c in d.training %}<li>{{ c }}</li>{% endfor %}</ul></section>
+	{%- endif %}
+	{%- if d.societies.length %}
+	<section class="dr-block"><h2>학회 활동</h2><ul>{% for c in d.societies %}<li>{{ c }}</li>{% endfor %}</ul></section>
+	{%- endif %}
+	<section class="dr-block">
+		<h2>진료 예약 · 상담</h2>
+		<p>전화 <a href="tel:025585581">02-558-5581</a> · <a href="/location/">찾아오시는 길</a> · <a href="{{ d.official }}" target="_blank" rel="noopener">공식 홈페이지 소개</a></p>
+	</section>
+	<nav class="dr-nav" aria-label="다른 의료진">
+		<a href="/doctors/">의료진 전체 보기</a>
+		{%- for o in doctors %}{% if o.slug != d.slug %}<a href="/doctors/{{ o.slug }}/">{{ o.name }} {{ o.title }}</a>{% endif %}{% endfor %}
+	</nav>
+</div>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Physician",
+	"name": "{{ d.name }}",
+	"jobTitle": "{{ d.title }}",
+	"url": "https://reyeonk2.com/doctors/{{ d.slug }}/",
+	"sameAs": ["{{ d.official }}"],
+	"worksFor": { "@id": "https://reyeonk2.com/#clinic", "@type": "MedicalClinic", "name": "리연케이의원" },
+	"telephone": "+82-2-558-5581",
+	"address": { "@type": "PostalAddress", "streetAddress": "언주로172길 64 리연케이빌딩", "addressLocality": "강남구", "addressRegion": "서울특별시", "addressCountry": "KR" }
+}
+</script>
