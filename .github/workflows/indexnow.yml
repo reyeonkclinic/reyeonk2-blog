@@ -1,0 +1,27 @@
+name: IndexNow (네이버·Bing 자동 색인 알림)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 배포 완료 대기
+        run: sleep 180
+      - name: 사이트맵의 모든 주소를 네이버·IndexNow에 제출
+        env:
+          KEY: "96f328ea0b2e4bc7834f1ffc56eea2db"
+          HOST: "reyeonk2.com"
+        run: |
+          set -e
+          curl -fsSL "https://$HOST/$KEY.txt" | grep -q "$KEY"
+          URLS=$(curl -fsSL "https://$HOST/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed -e 's/<loc>//' -e 's/<\/loc>//' | grep -v '/feed/' )
+          echo "$URLS"
+          BODY=$(python3 -c 'import json,os,sys; print(json.dumps({"host":os.environ["HOST"],"key":os.environ["KEY"],"keyLocation":"https://"+os.environ["HOST"]+"/"+os.environ["KEY"]+".txt","urlList":sys.stdin.read().split()}))' <<< "$URLS")
+          for EP in https://searchadvisor.naver.com/indexnow https://api.indexnow.org/indexnow; do
+            CODE=$(curl -s -o /tmp/r.txt -w '%{http_code}' -X POST "$EP" -H 'Content-Type: application/json; charset=utf-8' -d "$BODY")
+            echo "$EP -> $CODE"; cat /tmp/r.txt; echo
+          done
