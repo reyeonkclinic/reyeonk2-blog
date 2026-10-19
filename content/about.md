@@ -20,6 +20,55 @@ const description = "2009년 개원, 16년 무사고. 상담부터 시술까지 
 - **안전 관리**: 개원 이후 16년간 무사고 진료를 이어오고 있습니다.
 - **통증 관리**: 연고마취 외에 초음파 국소마취, 수면마취, 에어녹스(스마일가스) 등 통증 관리 프로그램을 함께 운영합니다.
 
+## 의료진
+
+모든 시술은 원장님이 직접 1:1로 상담하고 시술합니다.
+
+### 이두찬 대표원장
+
+> 언제나 온 마음을 다해서
+
+필러, 레이저, 리프팅을 직접 상담하고 시술합니다.
+
+- 前 메이퓨어의원 원장
+- 前 제이린의원 원장
+- 前 미미썸의원 원장
+- 에스테필(AestheFill) APAC Expert (2026)
+- 쉬엔비(SHENB) 버츄RF Key-doctor
+- 레스틸렌(Restylane) Kysse™ MASTER
+- SOMA(Thermage) Certification of Training Advanced Course 이수
+- Atiere Key-doctor
+- 대한레이저피부모발학회, 대한미용성형레이저의학회, 대한비만미용학회, 대한필러학회 정회원
+
+[이두찬 대표원장 소개 자세히 보기](https://reyeonk.co.kr/doochanlee)
+
+### 김현수 대표원장
+
+> 과잉 진료 없이, 당신만을 위한 설계
+
+바디 컨투어링, 써마지 FLX, 울쎄라피, 고주파 리프팅을 직접 상담하고 시술합니다.
+
+- 대한미용외과학회(KACS) 학술이사
+- 순삭주사 개발 및 특허
+- Cynergy MPX Key Doctor
+- Harvest Jet 2 (Body Jet EVO) Training Doctor
+- Smartlipo TPX · Cellulaze Asia Training Doctor
+
+[김현수 대표원장 소개 자세히 보기](https://reyeonk.co.kr/hyunsukim)
+
+### 최현호 원장
+
+> 친절, 꼼꼼, 정성
+
+레이저와 미용 시술을 직접 상담하고 시술합니다.
+
+- 前 메이퓨어의원 원장
+- 前 톤즈의원 원장
+- 대한레이저피부모발학회, 대한미용성형레이저의학회, 대한비만미용학회 정회원
+- 대한필러학회 준회원
+
+[최현호 원장 소개 자세히 보기](https://reyeonk.co.kr/hyunhochoi)
+
 ## 진료 분야
 
 - **리프팅**: 울쎄라피 프라임, 써마지 FLX, 덴서티·덴서티 느와르, 온다, 슈링크, 인모드, 버츄 RF, 실리프팅
