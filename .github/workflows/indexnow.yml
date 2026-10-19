@@ -23,5 +23,5 @@ jobs:
           BODY=$(python3 -c 'import json,os,sys; print(json.dumps({"host":os.environ["HOST"],"key":os.environ["KEY"],"keyLocation":"https://"+os.environ["HOST"]+"/"+os.environ["KEY"]+".txt","urlList":sys.stdin.read().split()}))' <<< "$URLS")
           for EP in https://searchadvisor.naver.com/indexnow https://api.indexnow.org/indexnow; do
             CODE=$(curl -s -o /tmp/r.txt -w '%{http_code}' -X POST "$EP" -H 'Content-Type: application/json; charset=utf-8' -d "$BODY")
-            echo "$EP -> $CODE"; cat /tmp/r.txt; echo
+            echo "::notice title=IndexNow::$EP -> HTTP $CODE ($(echo "$URLS" | wc -l) URLs) $(head -c 200 /tmp/r.txt | tr -d '\n')"
           done
