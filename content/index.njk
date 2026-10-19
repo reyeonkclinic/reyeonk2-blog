@@ -3,22 +3,212 @@ const eleventyNavigation = {
 	key: "홈",
 	order: 1
 };
-
-const numberOfLatestPostsToShow = 3;
+const title = "리연케이의원 | 압구정·신사 리프팅, 스킨케어 클리닉";
+const description = "개원 16년 무사고, 상담부터 시술까지 원장님이 직접 봅니다. 울쎄라피 프라임, 써마지 FLX, 덴서티, 포텐자, 스킨부스터. 압구정로데오역 5번 출구 도보 5분, 02-558-5581.";
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>최근 글</h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700&display=swap">
+<style>
+.rk {
+	--rk-ink: #14211F;
+	--rk-muted: #5A6B68;
+	--rk-line: #D3DDDA;
+	--rk-accent: #1D6B66;
+	--rk-soft: #DDECE9;
+	--rk-surface: #FFFFFF;
+	--rk-display: "Noto Serif KR", "Apple SD Gothic Neo", serif;
+	--rk-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+	color: var(--rk-ink);
+	font-family: var(--rk-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+}
+@media (prefers-color-scheme: dark) {
+	.rk {
+		--rk-ink: #E4EEEC;
+		--rk-muted: #9AAEAA;
+		--rk-line: #273936;
+		--rk-accent: #6CC3BB;
+		--rk-soft: #1B3431;
+		--rk-surface: #152322;
+	}
+}
+.rk *, .rk *::before, .rk *::after { box-sizing: border-box; }
+.rk h1, .rk h2, .rk h3 { font-family: var(--rk-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.rk p { margin: 0; }
+.rk a { color: var(--rk-accent); }
 
-{% if postsCount > 0 %}
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
-{% else %}
-<p>아직 올라온 글이 없어요.</p>
-{% endif %}
+.rk-hero { padding: 8px 0 8px; }
+.rk-eyebrow { color: var(--rk-accent); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em; }
+.rk-hero h1 { font-size: clamp(1.7rem, 6vw, 2.5rem); margin-top: 10px; }
+.rk-hero .rk-lead { margin-top: 16px; color: var(--rk-muted); max-width: 36rem; }
+.rk-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.rk-btn { display: inline-block; padding: 10px 20px; font-weight: 600; text-decoration: none; border: 1px solid var(--rk-accent); }
+.rk-btn-main { background: var(--rk-accent); color: var(--rk-surface) !important; }
+.rk-btn-sub { color: var(--rk-accent); }
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>이전 글 {{ morePosts }}개는 <a href="blog.njk">글 목록</a>에서 볼 수 있어요.</p>
-{% endif %}
+.rk-points { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rk-points li { background: var(--rk-soft); padding: 18px; }
+.rk-points strong { display: block; font-family: var(--rk-display); font-size: 1.35rem; color: var(--rk-accent); }
+.rk-points span { font-size: 0.95rem; }
+
+.rk-section { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--rk-line); }
+.rk h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.rk-intro { color: var(--rk-muted); max-width: 36rem; margin-bottom: 20px; }
+
+.rk-cats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rk-cat { border: 1px solid var(--rk-line); padding: 18px; background: var(--rk-surface); }
+.rk-cat h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.rk-cat ul { margin: 0; padding: 0; list-style: none; color: var(--rk-muted); font-size: 0.95rem; }
+.rk-cat li + li { margin-top: 2px; }
+
+.rk-guides { list-style: none; margin: 0; padding: 0; display: grid; }
+.rk-guides li { border-top: 1px solid var(--rk-line); }
+.rk-guides li:last-child { border-bottom: 1px solid var(--rk-line); }
+.rk-guides a { display: grid; gap: 4px; padding: 16px 0; text-decoration: none; color: inherit; }
+.rk-guides strong { font-weight: 600; color: var(--rk-ink); }
+.rk-guides span { color: var(--rk-muted); font-size: 0.92rem; }
+.rk-guides a:hover strong { color: var(--rk-accent); }
+
+.rk-info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.rk-info dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 18px; }
+.rk-info dt { color: var(--rk-muted); font-size: 0.92rem; }
+.rk-info dd { margin: 0; }
+.rk-info h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.rk-note { margin-top: 10px; color: var(--rk-muted); font-size: 0.9rem; }
+
+@media (max-width: 640px) {
+	.rk { font-size: 16px; }
+	.rk-points, .rk-cats, .rk-info { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="rk">
+	<section class="rk-hero">
+		<p class="rk-eyebrow">압구정·신사 리프팅 · 스킨케어 클리닉</p>
+		<h1>얼굴마다 다른 설계도를,<br>원장이 직접 그립니다</h1>
+		<p class="rk-lead">리연케이의원은 2009년 개원 이후 16년 동안 무사고로 진료해 왔습니다. 1:1 상담부터 디자인, 시술까지 원장님이 직접 진행하며, 피부 상태와 얼굴 구조에 맞춘 개인 맞춤 시술을 제안합니다.</p>
+		<div class="rk-cta">
+			<a class="rk-btn rk-btn-main" href="tel:025585581">전화 상담 02-558-5581</a>
+			<a class="rk-btn rk-btn-sub" href="https://reyeonk.co.kr" target="_blank" rel="noopener">공식 홈페이지</a>
+		</div>
+		<ul class="rk-points">
+			<li><strong>16년</strong><span>2009년 개원, 무사고 진료</span></li>
+			<li><strong>1:1</strong><span>상담부터 시술까지 원장 직접 진료</span></li>
+			<li><strong>100%</strong><span>정품 팁 사용 원칙</span></li>
+		</ul>
+	</section>
+
+	<section class="rk-section">
+		<h2>진료 분야</h2>
+		<div class="rk-cats">
+			<div class="rk-cat">
+				<h3>리프팅</h3>
+				<ul>
+					<li>울쎄라피 프라임</li>
+					<li>써마지 FLX</li>
+					<li>덴서티 · 덴서티 느와르</li>
+					<li>온다 · 슈링크 · 인모드</li>
+					<li>버츄 RF · 실리프팅</li>
+				</ul>
+			</div>
+			<div class="rk-cat">
+				<h3>스킨케어</h3>
+				<ul>
+					<li>포텐자 (모공·흉터)</li>
+					<li>스킨부스터 · 리쥬란힐러</li>
+					<li>기미·색소 · 레이저토닝</li>
+					<li>여드름 · 홍조 관리</li>
+					<li>제모 · 문신 제거</li>
+				</ul>
+			</div>
+			<div class="rk-cat">
+				<h3>쁘띠 · 윤곽</h3>
+				<ul>
+					<li>프리미엄 필러</li>
+					<li>보톡스 · 스킨보톡스</li>
+					<li>볼륨 디자인</li>
+					<li>얼굴 윤곽 · 순삭주사</li>
+					<li>지방흡입</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="rk-section">
+		<h2>시술 가이드</h2>
+		<p class="rk-intro">시술 원리와 효과, 통증, 가격까지 상담 전에 미리 확인해 보세요.</p>
+		<ul class="rk-guides">
+		{%- for post in collections.posts.slice().reverse() %}
+			<li><a href="{{ post.url }}"><strong>{{ post.data.title }}</strong>{% if post.data.description %}<span>{{ post.data.description }}</span>{% endif %}</a></li>
+		{%- endfor %}
+		</ul>
+	</section>
+
+	<section class="rk-section" id="info">
+		<h2>진료 시간 · 오시는 길</h2>
+		<div class="rk-info">
+			<div>
+				<h3>진료 시간</h3>
+				<dl>
+					<dt>월 · 화 · 목</dt><dd>10:00 – 20:00</dd>
+					<dt>금</dt><dd>10:00 – 19:00</dd>
+					<dt>토</dt><dd>10:00 – 15:00</dd>
+					<dt>점심시간</dt><dd>13:00 – 14:00 (평일)</dd>
+					<dt>휴진</dt><dd>수요일 · 일요일 · 공휴일</dd>
+				</dl>
+			</div>
+			<div>
+				<h3>오시는 길</h3>
+				<dl>
+					<dt>주소</dt><dd>서울특별시 강남구 언주로172길 64 리연케이빌딩<br>(신사동 663-20) 지하 1층, 3층, 4층</dd>
+					<dt>지하철</dt><dd>수인분당선 압구정로데오역 5번 출구 도보 약 5분</dd>
+					<dt>버스</dt><dd>갤러리아백화점 정류장 하차 (143, 301, 362, 472 등)</dd>
+					<dt>주차</dt><dd>병원 대각선 맞은편 DS 주차장 이용</dd>
+					<dt>전화</dt><dd><a href="tel:025585581">02-558-5581</a></dd>
+				</dl>
+				<p class="rk-note">주차 이용 방법은 내원 시 안내해 드립니다.</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "MedicalClinic",
+	"@id": "https://reyeonk2.com/#clinic",
+	"name": "리연케이의원",
+	"alternateName": ["ReYeonK Clinic", "리연케이클리닉"],
+	"url": "https://reyeonk2.com/",
+	"sameAs": ["https://reyeonk.co.kr"],
+	"image": "https://reyeonk2.com/img/og/default.jpg",
+	"description": "개원 16년 무사고, 상담부터 시술까지 원장이 직접 진료하는 압구정·신사 리프팅, 스킨케어 클리닉.",
+	"telephone": "+82-2-558-5581",
+	"foundingDate": "2009",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "언주로172길 64 리연케이빌딩",
+		"addressLocality": "강남구",
+		"addressRegion": "서울특별시",
+		"addressCountry": "KR"
+	},
+	"openingHoursSpecification": [
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "10:00", "closes": "20:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "19:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "15:00" }
+	],
+	"availableService": [
+		{ "@type": "MedicalProcedure", "name": "울쎄라피 프라임" },
+		{ "@type": "MedicalProcedure", "name": "써마지 FLX" },
+		{ "@type": "MedicalProcedure", "name": "덴서티" },
+		{ "@type": "MedicalProcedure", "name": "포텐자" },
+		{ "@type": "MedicalProcedure", "name": "스킨부스터" },
+		{ "@type": "MedicalProcedure", "name": "필러" },
+		{ "@type": "MedicalProcedure", "name": "보톡스" }
+	]
+}
+</script>
