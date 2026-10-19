@@ -1,0 +1,64 @@
+---js
+const eleventyNavigation = {
+	key: "오시는 길",
+	order: 4
+};
+const permalink = "/location/";
+const title = "찾아오시는 길 | 리연케이의원 (압구정로데오역 6번 출구)";
+const description = "리연케이의원 찾아오시는 길. 지하철은 수인분당선 압구정로데오역 6번 출구에서 골목길로 도보 이동, 자가용은 리연케이빌딩 주차장(신사동 662-12) 발렛 파킹. 접수는 3층.";
+const image = "/img/og/location.jpg";
+---
+<style>
+.lc { word-break: keep-all; line-height: 1.75; }
+.lc-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 28px; }
+.lc-tabs a { padding: 8px 16px; border: 1px solid currentColor; text-decoration: none; font-weight: 600; }
+.lc-sec { margin-top: 40px; padding-top: 32px; border-top: 1px solid #D3DDDA; }
+.lc-sec:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+.lc ol, .lc ul { padding-left: 1.3em; }
+.lc figure { margin: 24px 0 0; }
+.lc figure img { display: block; width: 100%; max-width: 460px; height: auto; margin: 0 auto; }
+.lc-note { padding: 14px 16px; background: #DDECE9; color: #14211F; font-weight: 600; margin-top: 16px; }
+@media (prefers-color-scheme: dark) { .lc-note { background: #1B3431; color: #E4EEEC; } .lc-sec { border-color: #273936; } }
+</style>
+
+<div class="lc">
+<h1>리연케이의원 찾아오시는 길</h1>
+<p>서울특별시 강남구 언주로172길 64 리연케이빌딩 (신사동 663-20)<br>전화 <a href="tel:025585581">02-558-5581</a></p>
+<p class="lc-note">접수는 3층에서 해 주세요.</p>
+<nav class="lc-tabs" aria-label="교통수단 선택">
+	<a href="#subway">대중교통(지하철)</a>
+	<a href="#car">자가용 · 주차</a>
+</nav>
+
+<section class="lc-sec" id="subway">
+	<h2>대중교통(지하철)으로 오시는 길</h2>
+	<p>가까운 역은 <strong>수인분당선 압구정로데오역</strong>이며, <strong>6번 출구</strong>가 가장 빠릅니다.</p>
+	<ol>
+		<li>압구정로데오역 하차 후 6번 출구로 나가기</li>
+		<li>골목길 입구까지 약 10m 직진</li>
+		<li>세븐일레븐 옆 골목길로 좌회전</li>
+		<li>세 블록 직진 (약 50m)</li>
+		<li>GS25 사이 골목길로 우회전 후 8m 직진</li>
+		<li>리연케이 도착, 3층에서 접수</li>
+	</ol>
+	<p>버스는 갤러리아백화점 정류장(143, 301, 362, 472 등)에서 내리시면 됩니다.</p>
+	<figure><img src="./img/subway.jpg" alt="리연케이 찾아오시는 길 대중교통 편: 압구정로데오역 6번 출구로 나와 10m 직진, 세븐일레븐 옆 골목길 좌회전, 세 블록 직진, GS25 사이 골목길 우회전 후 8m 직진하면 리연케이 도착. 접수는 3층" width="423" height="2576"></figure>
+</section>
+
+<section class="lc-sec" id="car">
+	<h2>자가용으로 오시는 길 · 주차 안내</h2>
+	<ul>
+		<li><strong>주차장</strong>: 리연케이빌딩 주차장</li>
+		<li><strong>주소</strong>: 서울특별시 강남구 신사동 662-12</li>
+		<li><strong>주차장 연락처</strong>: <a href="tel:025451933">02-545-1933</a></li>
+		<li><strong>요금</strong>: 기본 2시간 5,000원 (주차 도장 적용 시)</li>
+	</ul>
+	<ol>
+		<li>내비게이션 앱에 '리연케이빌딩 주차장' 또는 '서울 강남구 신사동 662-12' 검색 후 출발</li>
+		<li>주차장 도착 후 발렛 파킹</li>
+		<li>발렛 파킹 후 대각선 방향 리연케이빌딩으로 이동</li>
+		<li>리연케이 도착, 3층에서 접수</li>
+	</ol>
+	<figure><img src="./img/car.jpg" alt="리연케이 찾아오시는 길 자가용 편: 내비게이션에 리연케이빌딩 주차장 또는 신사동 662-12 검색, 주차장 도착 후 발렛 파킹, 대각선 방향 리연케이빌딩으로 이동. 기본 2시간 5,000원, 접수는 3층" width="460" height="2576"></figure>
+</section>
+</div>
