@@ -6,6 +6,17 @@
 		<meta name="naver-site-verification" content="7cff2151065b2f9f7592e981546783c145cb7802">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
+		{%- set pageUrl = page.url | htmlBaseUrl(metadata.url) %}
+		{%- set ogImage = (image or "/img/og/default.jpg") | htmlBaseUrl(metadata.url) %}
+		<link rel="canonical" href="{{ pageUrl }}">
+		<meta property="og:type" content="{% if tags and ("posts" in tags) %}article{% else %}website{% endif %}">
+		<meta property="og:site_name" content="{{ metadata.title }}">
+		<meta property="og:locale" content="ko_KR">
+		<meta property="og:title" content="{{ title or metadata.title }}">
+		<meta property="og:description" content="{{ description or metadata.description }}">
+		<meta property="og:url" content="{{ pageUrl }}">
+		<meta property="og:image" content="{{ ogImage }}">
+		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
