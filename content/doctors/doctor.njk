@@ -8,12 +8,15 @@ const eleventyComputed = {
 ---
 {% include "doctor-style.njk" %}
 <div class="dr">
+	<div class="dr-top">
+	{% if d.photo %}<img class="dr-portrait" src="{{ d.photo }}" alt="리연케이의원 {{ d.name }} {{ d.title }}" width="{{ d.photoSize[0] }}" height="{{ d.photoSize[1] }}" loading="eager" eleventy:ignore>{% endif %}
 	<div class="dr-head">
 		<p class="dr-role">리연케이의원 {{ d.title }} · {{ d.en }}</p>
 		<h1>{{ d.name }} {{ d.title }}</h1>
 		<blockquote>{{ d.quote }}</blockquote>
 		<p class="dr-lead" style="margin-top: 16px">{{ d.intro }}</p>
 		<p class="dr-focus" style="margin-top: 12px">{{ d.focus }}</p>
+	</div>
 	</div>
 	{%- if d.career.length %}
 	<section class="dr-block"><h2>약력</h2><ul>{% for c in d.career %}<li>{{ c }}</li>{% endfor %}</ul></section>
@@ -39,6 +42,7 @@ const eleventyComputed = {
 	"@type": "Physician",
 	"name": "{{ d.name }}",
 	"jobTitle": "{{ d.title }}",
+	{% if d.photo %}"image": "https://reyeonk2.com{{ d.photo }}",{% endif %}
 	"url": "https://reyeonk2.com/doctors/{{ d.slug }}/",
 	"sameAs": ["{{ d.official }}"],
 	"worksFor": { "@id": "https://reyeonk2.com/#clinic", "@type": "MedicalClinic", "name": "리연케이의원" },

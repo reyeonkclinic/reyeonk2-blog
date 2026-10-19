@@ -15,6 +15,7 @@ const description = "리연케이의원 의료진 소개. 이두찬 대표원장
 	{%- for d in doctors %}
 		<li class="dr-card">
 			<a href="/doctors/{{ d.slug }}/">
+				{% if d.photo %}<img class="dr-photo" src="{{ d.photo }}" alt="리연케이의원 {{ d.name }} {{ d.title }}" width="{{ d.photoSize[0] }}" height="{{ d.photoSize[1] }}" eleventy:ignore>{% endif %}
 				<span class="dr-role">{{ d.title }}</span>
 				<h2 class="dr-name">{{ d.name }}</h2>
 				<q class="dr-quote">{{ d.quote }}</q>

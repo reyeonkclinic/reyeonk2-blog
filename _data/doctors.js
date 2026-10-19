@@ -1,6 +1,8 @@
 export default [
 	{
 		slug: "doochanlee",
+		photo: "/img/doctors/doochanlee.jpg",
+		photoSize: [800, 1200],
 		name: "이두찬",
 		title: "대표원장",
 		en: "Dr. Lee Doochan",
