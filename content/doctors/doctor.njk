@@ -36,7 +36,7 @@ const eleventyComputed = {
 		{%- for o in doctors %}{% if o.slug != d.slug %}<a href="/doctors/{{ o.slug }}/">{{ o.name }} {{ o.title }}</a>{% endif %}{% endfor %}
 	</nav>
 </div>
-<script type="application/ld+json">
+<script type="application/ld+json" eleventy:ignore>
 {
 	"@context": "https://schema.org",
 	"@type": "Physician",
