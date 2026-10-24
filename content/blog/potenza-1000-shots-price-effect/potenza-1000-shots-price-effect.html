@@ -1,0 +1,432 @@
+---
+title: "포텐자 가격, 효과와 샷 수가 중요한 이유 (feat.1000텐자)"
+description: "포텐자 1000샷(천텐자) 이벤트가 42.9만원(부가세 포함, 정상가 82.5만원, 11월 30일까지). 포텐자란 무엇인지, 샷 수가 왜 중요한지, 효과·시술 시간·주의사항을 정리했습니다."
+image: /img/og/potenza-1000-shots-price-effect.jpg
+date: 2026-10-24
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif KR", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">포텐자는 가격만큼 샷 수도 함께 비교해야 합니다.</p>
+	<p class="pz-lead">리연케이의원의 천텐자(1000텐자) 이벤트는 포텐자 1000샷과 스킨보톡스를 함께 받는 구성입니다.</p>
+	<figure class="pz-fig"><img src="./img/event-poster.jpg" alt="리연케이의원 천텐자 이벤트 포텐자 1000샷과 스킨보톡스 42.9만원 안내" width="1000" height="1000"></figure>
+	<div class="pz-summary">
+		<strong>한눈에 보기</strong>
+		<ul>
+			<li><b>천텐자(1000텐자)란?</b> 리연케이의원의 이벤트 시술로, 포텐자 1000샷(스킨보톡스 펌핑)과 스킨보톡스를 함께 받는 구성입니다.</li>
+			<li><b>가격은?</b> 이벤트가 42.9만원(부가세 포함), 정상가 82.5만원이며 기한은 2026년 11월 30일까지입니다.</li>
+			<li><b>효과는?</b> 넓은 모공, 피부결, 탄력 저하, 흉터, 잔주름 고민에 많이 고려합니다. 병원 안내 기준 효과 지속은 6~12개월이며 개인차가 있습니다.</li>
+			<li><b>샷 수가 중요한 이유는?</b> 바늘과 고주파가 들어가는 횟수가 시술 범위와 촘촘함을 좌우하기 때문입니다.</li>
+			<li><b>몇 회, 어느 간격으로 받나요?</b> 병원 안내 기준 4~6주 간격으로 3~5회를 권장합니다.</li>
+		</ul>
+	</div>
+	<p class="pz-note">이 글은 리연케이의원의 포텐자 시술 안내(최종 검토일 2026년 10월 6일)와 이두찬 원장 칼럼을 바탕으로 작성했습니다.</p>
+
+	<div class="pz-section">
+		<h2>영상으로 먼저 보기</h2>
+		<div class="pz-short">
+			<div class="pz-short-box"><iframe src="https://www.youtube.com/embed/wCN33JWiMPk" title="리연케이의원 포텐자 1000샷 천텐자 영상" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+		</div>
+		<p class="pz-note"><a href="https://youtube.com/shorts/wCN33JWiMPk" target="_blank" rel="noopener">유튜브에서 영상 보기</a></p>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자란 무엇인가요?</h2>
+		<figure class="pz-fig"><img src="./img/potenza-device.jpg" alt="포텐자 마이크로니들 RF 장비" width="1000" height="1000" loading="lazy"></figure>
+		<div class="pz-text" style="margin-top: 16px">
+			<p>포텐자(Potenza)는 <b>마이크로니들과 고주파(RF) 에너지를 결합한 시술</b>입니다. 아주 가는 바늘로 피부에 미세한 통로를 만들고, 바늘을 통해 고주파 열 에너지를 진피층에 전달합니다. 이 열 에너지가 섬유아세포를 자극해 콜라겐과 엘라스틴 생성을 유도합니다.</p>
+		</div>
+		<ul class="pz-list" style="margin-top: 20px">
+			<li><h3>4가지 모드</h3><p>단극성·양극성, 절연·비절연 니들의 조합으로 고민에 맞춰 설계합니다.</p></li>
+			<li><h3>절연 니들</h3><p>표피를 보호하며 진피층에 에너지를 전달합니다.</p></li>
+			<li><h3>비절연 니들</h3><p>피지선을 타겟으로 하며 모공 관리에 쓰입니다.</p></li>
+			<li><h3>니들 깊이</h3><p>0.3~3.5mm이며 고민과 피부 상태에 맞춰 조절합니다.</p></li>
+		</ul>
+		<div class="pz-text" style="margin-top: 16px">
+			<p>같은 고주파 계열 시술과는 이렇게 다릅니다. 덴서티는 바늘 없이 면으로 고주파를 전달하는 방식이고, 버츄 RF는 같은 바늘 고주파지만 더 깊고 강한 시술입니다.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>천텐자(1000텐자) 이벤트는 무엇인가요?</h2>
+		<div class="pz-text">
+			<p>천텐자는 리연케이의원에서 진행하는 이벤트 시술의 이름입니다. 포텐자 <b>1000샷</b>이라는 뜻에서 천(1000)+텐자라고 부릅니다.</p>
+		</div>
+		<ul class="pz-bullets">
+			<li><b>포텐자 1000샷 (스킨보톡스 펌핑)</b></li>
+			<li><b>스킨보톡스 (얼굴 전체)</b></li>
+		</ul>
+		<figure class="pz-fig"><img src="./img/why-1000shots.jpg" alt="왜 1000샷 포텐자일까요 안내" width="1000" height="1000" loading="lazy"></figure>
+		<figure class="pz-fig"><img src="./img/skinbotox-pumping.jpg" alt="스킨보톡스 펌핑 안내: 스킨보톡스를 마이크로니들을 통해 피부 속에 전달" width="1000" height="1000" loading="lazy"></figure>
+		<div class="pz-text" style="margin-top: 16px">
+			<p>펌핑은 포텐자 마이크로니들을 이용해 스킨보톡스를 피부 속에 전달하는 방식입니다. 스킨보톡스는 얼굴 전체에 적용합니다.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 가격은 얼마인가요?</h2>
+		<p class="pz-text">천텐자(1000텐자) 이벤트가는 <b>42.9만원(부가세 포함)</b>입니다.</p>
+		<div class="pz-table" style="margin-top: 16px">
+			<table>
+				<thead><tr><th>구분</th><th>구성</th><th>정상가</th><th>이벤트가</th><th>기한</th></tr></thead>
+				<tbody>
+					<tr><td>천텐자(1000텐자)</td><td>포텐자 1000샷(스킨보톡스 펌핑) + 스킨보톡스(얼굴 전체)</td><td>82.5만원</td><td class="pz-price">42.9만원 (부가세 포함)</td><td>2026년 11월 30일까지</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<ul class="pz-bullets">
+			<li>포텐자 비용은 적용 범위, 니들 깊이, 부위에 따라 달라질 수 있어 상담 후 확정됩니다.</li>
+			<li>가격 비교 시 샷 수, 니들 깊이, 포함된 약물, 부가세 여부를 함께 확인하세요.</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 샷 수, 왜 따져야 하나요?</h2>
+		<div class="pz-text">
+			<p>울쎄라나 써마지를 받을 때는 샷 수를 먼저 묻지만, 포텐자는 상대적으로 샷 수를 잘 따지지 않는 경향이 있습니다. 그러나 이두찬 원장의 칼럼은 <b>포텐자도 샷 수가 결과를 가른다</b>고 설명합니다. 바늘과 고주파가 들어가는 횟수가 시술 범위와 촘촘함을 정하기 때문입니다.</p>
+			<p>다만 샷 수만 많다고 좋은 것은 아닙니다. 같은 장비라도 팁과 모드, 니들 깊이를 어떻게 설계하느냐에 따라 결과가 달라질 수 있습니다. 1000샷이 어느 정도 범위에 해당하는지는 얼굴의 시술 부위와 니들 깊이에 따라 달라지므로 상담에서 확인하시는 것이 정확합니다.</p>
+		</div>
+		<h3 class="pz-subhead">샷 수를 비교할 때 확인할 점</h3>
+		<ul class="pz-bullets">
+			<li>샷 수가 1회 시술 기준인지, 여러 회차의 합인지</li>
+			<li>사용하는 팁과 모드, 니들 깊이</li>
+			<li>포함된 약물과 부위</li>
+			<li>부가세 포함 여부</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>포텐자 효과는 무엇이고 얼마나 유지되나요?</h2>
+		<div class="pz-text"><p>포텐자는 넓은 모공, 피부결, 탄력 저하, 여드름 흉터, 잔주름 고민에 많이 고려합니다.</p></div>
+		<figure class="pz-fig"><img src="./img/recommend.jpg" alt="포텐자를 고려하는 분 안내" width="1000" height="1000" loading="lazy"></figure>
+		<div class="pz-text" style="margin-top: 16px">
+			<p><b>효과 시기:</b> 병원 안내 기준으로 첫 시술 후 4주부터 콜라겐 생성이 활성화되고, 3~5회 시술 후 모공·흉터·탄력 개선을 기대할 수 있습니다. 모공과 결은 2~3회 이후, 흉터는 5회 이상 꾸준히 관리하는 편이 효과적입니다.</p>
+			<p><b>지속 기간:</b> 효과는 6~12개월 정도 유지되는 것으로 안내하고, 이후 6개월 주기로 유지 관리를 권장합니다. 효과와 유지 기간은 피부 상태, 나이, 시술 부위에 따라 <b>개인차가 있습니다.</b></p>
+		</div>
+		<figure class="pz-fig"><img src="./img/skin-expectation.jpg" alt="시술 후 기대할 수 있는 변화와 리연케이 시술 원칙" width="1000" height="1000" loading="lazy"></figure>
+	</div>
+
+	<div class="pz-section">
+		<h2>시술 시간, 통증, 회복은 어떤가요?</h2>
+		<ul class="pz-list">
+			<li><h3>시술 시간</h3><p>60~90분입니다.</p></li>
+			<li><h3>통증</h3><p>시술 전 마취 크림을 바르며, 따끔거림이나 열감이 있을 수 있습니다. 느낄 정도는 개인차가 있습니다.</p></li>
+			<li><h3>다운타임</h3><p>절연 니들은 1~3일, 비절연 니들은 3~5일 정도 붉은기와 거칠어짐이 남을 수 있습니다.</p></li>
+			<li><h3>일상 복귀</h3><p>대부분 다음 날 메이크업과 일상 복귀가 가능하며 1주일 이내 거의 회복됩니다.</p></li>
+			<li><h3>시술 간격</h3><p>4~6주입니다. RF로 인한 콜라겐 재생 사이클이 약 4~6주이기 때문입니다.</p></li>
+			<li><h3>권장 회수</h3><p>3~5회이며, 정해진 총 횟수는 없고 보통 3~4회에서 방향이 잡힙니다.</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>어떤 분께 맞고, 주의할 점은 무엇인가요?</h2>
+		<figure class="pz-fig"><img src="./img/consultation.jpg" alt="이두찬 원장이 환자와 상담하는 모습" width="1000" height="709" loading="lazy"></figure>
+		<div class="pz-text" style="margin-top: 16px">
+			<p><b>상담에서 고려하는 고민:</b> 넓은 모공, 여드름 흉터, 탄력 저하, 잔주름, 피부결</p>
+		</div>
+		<h3 class="pz-subhead">우선순위를 정해야 하는 경우</h3>
+		<ul class="pz-bullets">
+			<li>색소만 남은 경우는 색소 치료가 먼저입니다.</li>
+			<li>활동성 여드름이 있는 경우는 진정 후 시술을 권장합니다.</li>
+		</ul>
+		<div class="pz-text" style="margin-top: 16px"><p><b>시술이 제한될 수 있는 경우:</b> 임신·수유 중, 켈로이드 체질, 시술 부위 인근에 금속 임플란트가 있는 경우</p></div>
+		<h3 class="pz-subhead">시술 전 준비</h3>
+		<ul class="pz-bullets">
+			<li>시술 2주 전부터 레티놀 및 산 계열 제품 사용을 중단합니다.</li>
+			<li>당일에는 진한 메이크업 없이 내원합니다.</li>
+			<li>헤르페스 이력이 있으면 미리 알려주세요.</li>
+		</ul>
+		<div class="pz-text" style="margin-top: 16px">
+			<p><b>부작용 가능성:</b> 붉어짐, 따끔거림, 열감 등이 있을 수 있으며 개인차가 있습니다. 이상 반응이 있으면 바로 병원에 알려주세요.</p>
+			<p>스킨부스터, 줄기세포 치료, 레이저와 함께 할 수 있고, 여드름 시술과 병행하면 재발 방지에 도움이 될 수 있습니다.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>자주 묻는 질문</h2>
+		<ul class="pz-list">
+			<li><h3>포텐자 1000샷(천텐자)은 무엇인가요?</h3><p>리연케이의원의 이벤트 시술로, 포텐자 1000샷(스킨보톡스 펌핑)과 스킨보톡스를 함께 받는 구성입니다.</p></li>
+			<li><h3>포텐자 가격은 얼마인가요?</h3><p>천텐자 이벤트가는 42.9만원(부가세 포함)이며 정상가는 82.5만원입니다. 이벤트 기한은 2026년 11월 30일까지이고, 실제 비용은 적용 범위와 니들 깊이에 따라 상담 후 확정됩니다.</p></li>
+			<li><h3>1000샷이면 충분한가요?</h3><p>시술 부위와 니들 깊이, 피부 상태에 따라 달라집니다. 샷 수는 결과에 영향을 주는 요소 중 하나이므로 상담에서 확인하시길 권합니다.</p></li>
+			<li><h3>몇 회, 어느 간격으로 받아야 하나요?</h3><p>병원 안내 기준 4~6주 간격으로 3~5회를 권장합니다. 정해진 총 횟수는 없고, 보통 3~4회에서 방향이 잡힙니다.</p></li>
+			<li><h3>효과는 언제부터 나타나고 얼마나 유지되나요?</h3><p>첫 시술 후 4주부터 콜라겐 생성이 활성화되는 것으로 안내하고, 효과는 6~12개월 정도 유지됩니다. 개인차가 있습니다.</p></li>
+			<li><h3>포텐자는 많이 아플까요?</h3><p>시술 전 마취 크림을 바르며, 따끔거림이나 열감이 있을 수 있습니다. 개인차가 있습니다.</p></li>
+			<li><h3>시술 후 바로 화장할 수 있나요?</h3><p>대부분 다음 날 메이크업과 일상 복귀가 가능합니다. 다만 니들 종류에 따라 붉은기와 거칠어짐이 며칠 남을 수 있습니다.</p></li>
+			<li><h3>덴서티·버츄 RF와 뭐가 다른가요?</h3><p>포텐자는 마이크로니들을 이용한 바늘 고주파입니다. 덴서티는 바늘 없이 면으로 고주파를 전달하는 방식이고, 버츄 RF는 같은 바늘 고주파지만 더 깊고 강한 시술입니다.</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">천텐자 상담, 리연케이의원에서 받아보세요</p>
+		<p class="pz-invite">포텐자 1000샷(천텐자) 이벤트는 2026년 11월 30일까지입니다. 직접 상담하시고 내 피부에 맞는 샷 수와 니들 깊이, 비용을 확인해 보세요.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>리연케이의원</dt>
+				<dd>서울특별시 강남구 언주로172길 64 리연케이빌딩<br>지하 1층·3층·4층</dd>
+				<dt>전화</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">02-558-5581</a><button class="pz-copy" id="pz-copy" type="button">번호 복사</button></dd>
+				<dt>카카오톡</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1:1 빠른 상담 바로가기</a></dd>
+				<dt>웹사이트</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a></dd>
+				<dt>진료시간</dt>
+				<dd>월·화·목 10시–20시<br>금 10시–19시<br>토 10시–15시<br>수·일·공휴일 휴진</dd>
+				<dt>오시는 길</dt>
+				<dd><a href="/location/">찾아오시는 길 보기</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 이 글은 일반적인 정보 제공을 목적으로 하며, 시술 효과와 유지 기간은 개인에 따라 다를 수 있습니다. 시술 안내 페이지(최종 검토 2026.10.06, 김현수·이두찬·최현호 원장 검토)와 이두찬 원장 칼럼을 바탕으로 합니다.</p>
+	</div>
+</div>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "포텐자 가격, 효과와 샷 수가 중요한 이유 (feat.1000텐자)",
+   "description": "포텐자 1000샷(천텐자) 이벤트가 42.9만원(부가세 포함, 정상가 82.5만원, 11월 30일까지). 포텐자란 무엇인지, 샷 수가 왜 중요한지, 효과·시술 시간·주의사항을 정리했습니다.",
+   "datePublished": "2026-10-24",
+   "dateModified": "2026-10-24",
+   "inLanguage": "ko",
+   "image": "https://reyeonk2.com/img/og/potenza-1000-shots-price-effect.jpg",
+   "mainEntityOfPage": "https://reyeonk2.com/blog/potenza-1000-shots-price-effect/",
+   "about": [
+    "포텐자",
+    "포텐자 가격",
+    "포텐자 샷 수",
+    "천텐자",
+    "1000텐자"
+   ],
+   "author": {
+    "@type": "Organization",
+    "name": "리연케이의원"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "리연케이의원",
+    "url": "https://reyeonk.co.kr"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "포텐자 1000샷(천텐자)은 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "리연케이의원의 이벤트 시술로, 포텐자 1000샷(스킨보톡스 펌핑)과 스킨보톡스를 함께 받는 구성입니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "포텐자 가격은 얼마인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "천텐자 이벤트가는 42.9만원(부가세 포함)이며 정상가는 82.5만원입니다. 이벤트 기한은 2026년 11월 30일까지이고, 실제 비용은 적용 범위와 니들 깊이에 따라 상담 후 확정됩니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "1000샷이면 충분한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "시술 부위와 니들 깊이, 피부 상태에 따라 달라집니다. 샷 수는 결과에 영향을 주는 요소 중 하나이므로 상담에서 확인하시길 권합니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "몇 회, 어느 간격으로 받아야 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "병원 안내 기준 4~6주 간격으로 3~5회를 권장합니다. 정해진 총 횟수는 없고, 보통 3~4회에서 방향이 잡힙니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "효과는 언제부터 나타나고 얼마나 유지되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "첫 시술 후 4주부터 콜라겐 생성이 활성화되는 것으로 안내하고, 효과는 6~12개월 정도 유지됩니다. 개인차가 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "포텐자는 많이 아플까요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "시술 전 마취 크림을 바르며, 따끔거림이나 열감이 있을 수 있습니다. 개인차가 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "시술 후 바로 화장할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "대부분 다음 날 메이크업과 일상 복귀가 가능합니다. 다만 니들 종류에 따라 붉은기와 거칠어짐이 며칠 남을 수 있습니다."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "덴서티·버츄 RF와 뭐가 다른가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "포텐자는 마이크로니들을 이용한 바늘 고주파입니다. 덴서티는 바늘 없이 면으로 고주파를 전달하는 방식이고, 버츄 RF는 같은 바늘 고주파지만 더 깊고 강한 시술입니다."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "번호 복사"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
