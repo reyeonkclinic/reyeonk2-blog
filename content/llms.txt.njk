@@ -1,0 +1,30 @@
+---
+permalink: /llms.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# 리연케이의원 (압구정 피부과·미용 클리닉)
+
+> 리연케이의원은 서울 강남구 압구정로데오역 인근(언주로172길 64 리연케이빌딩)의 미용 클리닉입니다. 2009년 개원했고, 리프팅(울쎄라피 프라임, 써마지 FLX, 울써마지, 덴서티·덴서티 느와르, 온다, 버츄RF), 스킨부스터(고우리, 리투오 등), 포텐자, 필러, 순삭주사(지방분해주사)를 진료합니다. 상담부터 시술까지 원장이 직접 진료합니다.
+
+이 사이트(reyeonk2.com)는 리연케이의원 의료진이 정리한 시술 정보 칼럼입니다. 글의 가격·이벤트 정보는 게시일 기준이며, 시술 효과와 회복 기간은 개인에 따라 다를 수 있습니다. 진료 전에는 의료진 상담이 필요합니다.
+
+## 병원 정보
+
+- 병원명: 리연케이의원
+- 주소: 서울특별시 강남구 언주로172길 64 리연케이빌딩
+- 전화: 02-558-5581
+- 진료시간: 월·화·목 10:00–20:00, 금 10:00–19:00, 토 10:00–15:00 (수·일·공휴일 휴진)
+- 공식 홈페이지: https://reyeonk.co.kr
+- 카카오톡 상담: https://pf.kakao.com/_MTfIxd
+
+## 주요 페이지
+
+- [병원 소개]({{ "/about/" | htmlBaseUrl(metadata.url) }}): 진료 원칙, 진료 분야, 진료 시간
+- [의료진]({{ "/doctors/" | htmlBaseUrl(metadata.url) }}): 대표원장·원장 경력과 진료 분야
+- [오시는 길]({{ "/location/" | htmlBaseUrl(metadata.url) }}): 위치와 주차 안내
+
+## 시술 칼럼
+{% for post in collections.posts | reverse %}
+- [{{ post.data.title }}]({{ post.url | htmlBaseUrl(metadata.url) }}): {{ post.data.description }}
+{%- endfor %}
