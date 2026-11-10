@@ -1,0 +1,25 @@
+---
+permalink: /rss.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ metadata.title | escape }}</title>
+		<link>{{ metadata.url }}</link>
+		<description>{{ metadata.description | escape }}</description>
+		<language>ko</language>
+		<atom:link href="{{ '/rss.xml' | htmlBaseUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
+{%- for post in collections.posts | reverse %}
+		{%- set postUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
+		<item>
+			<title>{{ post.data.title | escape }}</title>
+			<link>{{ postUrl }}</link>
+			<guid isPermaLink="true">{{ postUrl }}</guid>
+			<pubDate>{{ post.date.toUTCString() }}</pubDate>
+			<description>{{ post.data.description | escape }}</description>
+		</item>
+{%- endfor %}
+	</channel>
+</rss>
