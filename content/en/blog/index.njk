@@ -1,0 +1,18 @@
+---js
+const permalink = "/en/blog/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "Columns | Reyeonk Clinic (Apgujeong, Seoul)";
+const description = "English translations of treatment columns from Reyeonk Clinic in Apgujeong, Seoul: how each treatment works, what to expect, and pricing.";
+const alternates = [
+	{ lang: "ko", url: "/blog/" },
+	{ lang: "en", url: "/en/blog/" },
+	{ lang: "ja", url: "/ja/blog/" },
+	{ lang: "x-default", url: "/blog/" }
+];
+---
+<h1>Columns</h1>
+<p>Treatment columns from Reyeonk Clinic, translated from Korean. More guides are available in Korean.</p>
+{% set postslist = collections.posts_en %}
+{% include "postslist.njk" %}
+<p><a href="/blog/" hreflang="ko" lang="ko">Korean columns</a></p>

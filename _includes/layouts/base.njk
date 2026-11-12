@@ -105,10 +105,12 @@
 				{%- if lang == "en" %}
 					<li class="nav-item"><a href="/en/"{% if page.url == "/en/" %} aria-current="page"{% endif %}>Home</a></li>
 					<li class="nav-item"><a href="/en/doctors/"{% if page.url == "/en/doctors/" %} aria-current="page"{% endif %}>Doctors</a></li>
+					<li class="nav-item"><a href="/en/blog/"{% if page.url == "/en/blog/" %} aria-current="page"{% endif %}>Columns</a></li>
 					<li class="nav-item"><a href="/en/location/"{% if page.url == "/en/location/" %} aria-current="page"{% endif %}>Location</a></li>
 				{%- elif lang == "ja" %}
 					<li class="nav-item"><a href="/ja/"{% if page.url == "/ja/" %} aria-current="page"{% endif %}>ホーム</a></li>
 					<li class="nav-item"><a href="/ja/doctors/"{% if page.url == "/ja/doctors/" %} aria-current="page"{% endif %}>医療陣</a></li>
+					<li class="nav-item"><a href="/ja/blog/"{% if page.url == "/ja/blog/" %} aria-current="page"{% endif %}>コラム</a></li>
 					<li class="nav-item"><a href="/ja/location/"{% if page.url == "/ja/location/" %} aria-current="page"{% endif %}>アクセス</a></li>
 				{%- else %}
 				{%- for entry in collections.all | eleventyNavigation %}

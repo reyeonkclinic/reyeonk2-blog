@@ -1,0 +1,18 @@
+---js
+const permalink = "/ja/blog/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "コラム | Reyeonk Clinic（ソウル・狎鴎亭）";
+const description = "ソウル・狎鴎亭のReyeonk Clinicによる施術コラムの日本語版。施術の仕組み、経過、料金の目安をご案内します。";
+const alternates = [
+	{ lang: "ko", url: "/blog/" },
+	{ lang: "en", url: "/en/blog/" },
+	{ lang: "ja", url: "/ja/blog/" },
+	{ lang: "x-default", url: "/blog/" }
+];
+---
+<h1>コラム</h1>
+<p>Reyeonk Clinicの施術コラムを韓国語から翻訳してお届けします。そのほかのコラムは韓国語でご覧いただけます。</p>
+{% set postslist = collections.posts_ja %}
+{% include "postslist.njk" %}
+<p><a href="/blog/" hreflang="ko" lang="ko">韓国語コラム</a></p>

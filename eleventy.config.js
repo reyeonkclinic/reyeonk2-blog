@@ -104,6 +104,12 @@ language: "ko",
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
+	// Translated column lists for the English / Japanese "Columns" index pages.
+	for (const l of ["en", "ja"]) {
+		eleventyConfig.addCollection(`posts_${l}`, (api) =>
+			api.getFilteredByGlob(`content/${l}/blog/*/*.html`).sort((a, b) => a.date - b.date));
+	}
+
 	eleventyConfig.addPlugin(IdAttributePlugin, {
 		// by default we use Eleventy’s built-in `slugify` filter:
 		// slugify: eleventyConfig.getFilter("slugify"),
