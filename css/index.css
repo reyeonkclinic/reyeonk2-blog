@@ -303,8 +303,8 @@ header {
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
-	gap: .45em;
-	padding: .25em .8em;
+	gap: .5em;
+	padding: .3em .9em;
 	border: 1px solid currentColor;
 	border-radius: 999px;
 	font-size: .9em;
@@ -314,32 +314,44 @@ header {
 .lang-menu summary::-webkit-details-marker { display: none; }
 .lang-menu summary::after { content: "\25BE"; font-size: .75em; }
 .lang-menu[open] summary::after { content: "\25B4"; }
-.lang-label { font-size: .7em; font-weight: 700; letter-spacing: .08em; }
+.lang-current { font-weight: 700; }
+.lang-label { font-size: .7em; font-weight: 700; letter-spacing: .1em; }
 .lang-list {
 	position: absolute;
 	right: 0;
-	top: calc(100% + 8px);
+	top: calc(100% + 10px);
 	z-index: 20;
 	margin: 0;
-	padding: .4em;
+	padding: .6em;
 	list-style: none;
-	min-width: 11em;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: .1em .4em;
+	width: max-content;
+	min-width: 17em;
+	max-width: calc(100vw - 2em);
 	background: Canvas;
 	color: CanvasText;
 	border: 1px solid #D3DDDA;
-	border-radius: 10px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, .14);
+	border-radius: 14px;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, .16);
 }
 .lang-list a {
 	display: flex;
-	gap: .9em;
+	gap: .8em;
 	align-items: baseline;
-	padding: .45em .7em;
-	border-radius: 6px;
+	padding: .5em .7em;
+	border-radius: 8px;
 	text-decoration: none;
 	color: inherit;
 }
+.lang-list a span { color: #5A6B68; font-size: .95em; }
 .lang-list a:hover, .lang-list a:focus-visible { background: #DDECE9; color: #14211F; }
-.lang-list a[aria-current] { font-weight: 700; }
-.lang-list b { width: 2em; font-size: .75em; letter-spacing: .05em; }
-@media (prefers-color-scheme: dark) { .lang-list { border-color: #273936; } }
+.lang-list a:hover span, .lang-list a:focus-visible span, .lang-list a[aria-current] span { color: inherit; }
+.lang-list a[aria-current] { font-weight: 700; background: #DDECE9; color: #14211F; }
+.lang-list b { min-width: 1.8em; font-size: .75em; letter-spacing: .06em; }
+@media (prefers-color-scheme: dark) {
+	.lang-list { border-color: #273936; }
+	.lang-list a span { color: #9AAEAA; }
+	.lang-list a:hover, .lang-list a:focus-visible, .lang-list a[aria-current] { background: #1B3431; color: #E4EEEC; }
+}
