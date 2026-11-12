@@ -15,7 +15,7 @@
 		{%- endfor %}
 		<meta property="og:type" content="{% if tags and ("posts" in tags) %}article{% else %}website{% endif %}">
 		<meta property="og:site_name" content="{{ metadata.title }}">
-		<meta property="og:locale" content="{% if lang == "en" %}en_US{% else %}ko_KR{% endif %}">
+		<meta property="og:locale" content="{% if lang == "en" %}en_US{% elif lang == "ja" %}ja_JP{% else %}ko_KR{% endif %}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ description or metadata.description }}">
 		<meta property="og:url" content="{{ pageUrl }}">
@@ -95,7 +95,8 @@
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="{% if lang == "en" %}/en/{% else %}/{% endif %}" class="home-link">{% if lang == "en" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
+			{%- set curLang = lang or metadata.language %}
+			<a href="{% if lang == "en" %}/en/{% elif lang == "ja" %}/ja/{% else %}/{% endif %}" class="home-link">{% if lang == "en" or lang == "ja" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
@@ -105,14 +106,30 @@
 					<li class="nav-item"><a href="/en/"{% if page.url == "/en/" %} aria-current="page"{% endif %}>Home</a></li>
 					<li class="nav-item"><a href="/en/doctors/"{% if page.url == "/en/doctors/" %} aria-current="page"{% endif %}>Doctors</a></li>
 					<li class="nav-item"><a href="/en/location/"{% if page.url == "/en/location/" %} aria-current="page"{% endif %}>Location</a></li>
-					<li class="nav-item"><a href="/" hreflang="ko" lang="ko">한국어</a></li>
+				{%- elif lang == "ja" %}
+					<li class="nav-item"><a href="/ja/"{% if page.url == "/ja/" %} aria-current="page"{% endif %}>ホーム</a></li>
+					<li class="nav-item"><a href="/ja/doctors/"{% if page.url == "/ja/doctors/" %} aria-current="page"{% endif %}>医療陣</a></li>
+					<li class="nav-item"><a href="/ja/location/"{% if page.url == "/ja/location/" %} aria-current="page"{% endif %}>アクセス</a></li>
 				{%- else %}
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
-				{#- Language link: pages with `alternates` list the English URL second; others go to the English home #}
-				<li class="nav-item"><a href="{% if alternates %}{{ alternates[1].url }}{% else %}/en/{% endif %}" hreflang="en" lang="en">English</a></li>
 				{%- endif %}
+					{#- Language menu: each language links to the page's translated counterpart, else that language's home #}
+					<li class="nav-item lang-item">
+						<details class="lang-menu">
+							<summary aria-label="Language">
+								<svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path></svg>
+								<span class="lang-current" lang="{{ curLang }}">{{ languages.byCode[curLang].name }}</span>
+								<span class="lang-label">LANGUAGE</span>
+							</summary>
+							<ul class="lang-list">
+							{%- for l in languages.list %}
+								<li><a href="{% if l.code == curLang %}{{ page.url }}{% else %}{{ alternates | langUrl(l.code, l.home) }}{% endif %}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == curLang %} aria-current="true"{% endif %}><b>{{ l.short }}</b><span>{{ l.name }}</span></a></li>
+							{%- endfor %}
+							</ul>
+						</details>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -129,14 +146,23 @@
 				<strong>Reyeonk Clinic</strong> · 64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building) · <a href="tel:+82-2-558-5581">+82-2-558-5581</a><br>
 				Mon, Tue, Thu 10:00–20:00 · Fri 10:00–19:00 · Sat 10:00–15:00 · Closed Wed, Sun and public holidays · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
 			</p>
+			{%- elif lang == "ja" %}
+			<p>
+				<strong>Reyeonk Clinic</strong> · ソウル特別市江南区彦州路172ギル64 Reyeonkビル · <a href="tel:+82-2-558-5581">+82-2-558-5581</a><br>
+				月・火・木 10:00–20:00 · 金 10:00–19:00 · 土 10:00–15:00 · 休診：水曜・日曜・祝日 · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
+			</p>
 			{%- else %}
 			<p>
 				<strong>리연케이의원</strong> · 서울특별시 강남구 언주로172길 64 리연케이빌딩 · <a href="tel:025585581">02-558-5581</a><br>
 				월·화·목 10–20시 · 금 10–19시 · 토 10–15시 · 수·일·공휴일 휴진 · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
 			</p>
-					{%- endif %}
+			{%- endif %}
 		</footer>
 
+		<script>
+			document.addEventListener("click", (e) => { document.querySelectorAll(".lang-menu[open]").forEach((d) => { if (!d.contains(e.target)) d.open = false; }); });
+			document.addEventListener("keydown", (e) => { if (e.key === "Escape") document.querySelectorAll(".lang-menu[open]").forEach((d) => { d.open = false; }); });
+		</script>
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 	</body>

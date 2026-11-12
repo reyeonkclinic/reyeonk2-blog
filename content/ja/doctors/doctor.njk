@@ -1,0 +1,60 @@
+---js
+const pagination = { data: "doctorsJa", size: 1, alias: "d" };
+const permalink = (data) => `/ja/doctors/${data.d.slug}/`;
+const lang = "ja";
+const eleventyComputed = {
+	title: (data) => `${data.d.name}${data.d.title} | Reyeonk Clinic（${data.d.focus}）`,
+	description: (data) => `ソウル・狎鴎亭 Reyeonk Clinicの${data.d.name}${data.d.title}。${data.d.intro}`,
+	alternates: (data) => [
+		{ lang: "ko", url: `/doctors/${data.d.slug}/` },
+		{ lang: "en", url: `/en/doctors/${data.d.slug}/` },
+		{ lang: "ja", url: `/ja/doctors/${data.d.slug}/` },
+		{ lang: "x-default", url: `/doctors/${data.d.slug}/` }
+	]
+};
+---
+{% include "doctor-style.njk" %}
+<div class="dr" style="word-break: normal">
+	<div class="dr-top">
+	{% if d.photo %}<img class="dr-portrait" src="{{ d.photo }}" alt="Reyeonk Clinic {{ d.name }}{{ d.title }}" width="{{ d.photoSize[0] }}" height="{{ d.photoSize[1] }}" loading="eager" eleventy:ignore>{% endif %}
+	<div class="dr-head">
+		<p class="dr-role">Reyeonk Clinic {{ d.title }} · {{ d.enName }}</p>
+		<h1>{{ d.name }}{{ d.title }}</h1>
+		<blockquote>{{ d.quote }}</blockquote>
+		<p class="dr-lead" style="margin-top: 16px">{{ d.intro }}</p>
+		<p class="dr-focus" style="margin-top: 12px">{{ d.focus }}</p>
+	</div>
+	</div>
+	{%- if d.career.length %}
+	<section class="dr-block"><h2>経歴</h2><ul>{% for c in d.career %}<li>{{ c }}</li>{% endfor %}</ul></section>
+	{%- endif %}
+	{%- if d.training.length %}
+	<section class="dr-block"><h2>研修・認定</h2><ul>{% for c in d.training %}<li>{{ c }}</li>{% endfor %}</ul></section>
+	{%- endif %}
+	{%- if d.societies.length %}
+	<section class="dr-block"><h2>所属学会</h2><ul>{% for c in d.societies %}<li>{{ c }}</li>{% endfor %}</ul></section>
+	{%- endif %}
+	<section class="dr-block">
+		<h2>ご予約・ご相談</h2>
+		<p>電話 <a href="tel:+82-2-558-5581">+82-2-558-5581</a> · <a href="/ja/location/">アクセス</a> · <a href="{{ d.official }}" target="_blank" rel="noopener">公式サイトのプロフィール（韓国語）</a></p>
+		<p>施術プランは対面のカウンセリングで決定します。効果や適応には個人差があります。</p>
+	</section>
+	<nav class="dr-nav" aria-label="他の医師">
+		<a href="/ja/doctors/">医療陣一覧</a>
+		{%- for o in doctorsJa %}{% if o.slug != d.slug %}<a href="/ja/doctors/{{ o.slug }}/">{{ o.name }}{{ o.title }}</a>{% endif %}{% endfor %}
+	</nav>
+</div>
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@type": "Physician",
+	"name": "{{ d.name }}",
+	"jobTitle": "{{ d.title }}",
+	{% if d.photo %}"image": "https://reyeonk2.com{{ d.photo }}",{% endif %}
+	"url": "https://reyeonk2.com/ja/doctors/{{ d.slug }}/",
+	"sameAs": ["{{ d.official }}"],
+	"worksFor": { "@id": "https://reyeonk2.com/#clinic", "@type": "MedicalClinic", "name": "Reyeonk Clinic" },
+	"telephone": "+82-2-558-5581",
+	"address": { "@type": "PostalAddress", "streetAddress": "64 Eonju-ro 172-gil, Reyeonk Building", "addressLocality": "Gangnam-gu", "addressRegion": "Seoul", "addressCountry": "KR" }
+}
+</script>

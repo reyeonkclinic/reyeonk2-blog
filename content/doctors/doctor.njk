@@ -7,6 +7,7 @@ const eleventyComputed = {
 	alternates: (data) => [
 		{ lang: "ko", url: `/doctors/${data.d.slug}/` },
 		{ lang: "en", url: `/en/doctors/${data.d.slug}/` },
+		{ lang: "ja", url: `/ja/doctors/${data.d.slug}/` },
 		{ lang: "x-default", url: `/doctors/${data.d.slug}/` }
 	]
 };

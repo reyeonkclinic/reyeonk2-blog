@@ -1,0 +1,213 @@
+---js
+const permalink = "/ja/";
+const lang = "ja";
+const title = "Reyeonk Clinic | ソウル・狎鴎亭のリフティング・スキンケアクリニック";
+const description = "開院16年、相談から施術まで院長が直接担当します。ウルセラ プライム、サーマクール FLX、デンシティ、ポテンツァ、スキンブースター。狎鴎亭ロデオ駅6番出口から徒歩約5分。+82-2-558-5581";
+const alternates = [
+	{ lang: "ko", url: "/" },
+	{ lang: "en", url: "/en/" },
+	{ lang: "ja", url: "/ja/" },
+	{ lang: "x-default", url: "/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;700&display=swap">
+<style>
+.rk {
+	--rk-ink: #14211F;
+	--rk-muted: #5A6B68;
+	--rk-line: #D3DDDA;
+	--rk-accent: #1D6B66;
+	--rk-soft: #DDECE9;
+	--rk-surface: #FFFFFF;
+	--rk-display: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+	--rk-body: "IBM Plex Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+	color: var(--rk-ink);
+	font-family: var(--rk-body);
+	font-size: 17px;
+	line-height: 1.8;
+	line-break: strict;
+	overflow-wrap: break-word;
+}
+@media (prefers-color-scheme: dark) {
+	.rk {
+		--rk-ink: #E4EEEC;
+		--rk-muted: #9AAEAA;
+		--rk-line: #273936;
+		--rk-accent: #6CC3BB;
+		--rk-soft: #1B3431;
+		--rk-surface: #152322;
+	}
+}
+.rk *, .rk *::before, .rk *::after { box-sizing: border-box; }
+.rk h1, .rk h2, .rk h3 { font-family: var(--rk-display); font-weight: 700; line-height: 1.4; text-wrap: balance; margin: 0; }
+.rk p { margin: 0; }
+.rk a { color: var(--rk-accent); }
+
+.rk-hero { padding: 8px 0 8px; }
+.rk-eyebrow { color: var(--rk-accent); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em; }
+.rk-hero h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); margin-top: 10px; }
+.rk-hero .rk-lead { margin-top: 16px; color: var(--rk-muted); max-width: 38rem; }
+.rk-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.rk-btn { display: inline-block; padding: 10px 20px; font-weight: 600; text-decoration: none; border: 1px solid var(--rk-accent); }
+.rk-btn-main { background: var(--rk-accent); color: var(--rk-surface) !important; }
+.rk-btn-sub { color: var(--rk-accent); }
+
+.rk-points { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rk-points li { background: var(--rk-soft); padding: 18px; }
+.rk-points strong { display: block; font-family: var(--rk-display); font-size: 1.35rem; color: var(--rk-accent); }
+.rk-points span { font-size: 0.95rem; }
+
+.rk-section { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--rk-line); }
+.rk h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.rk-intro { color: var(--rk-muted); max-width: 38rem; margin-bottom: 20px; }
+
+.rk-cats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rk-cat { border: 1px solid var(--rk-line); padding: 18px; background: var(--rk-surface); }
+.rk-cat h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.rk-cat ul { margin: 0; padding: 0; list-style: none; color: var(--rk-muted); font-size: 0.95rem; }
+.rk-cat li + li { margin-top: 2px; }
+
+.rk-info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.rk-info dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 18px; }
+.rk-info dt { color: var(--rk-muted); font-size: 0.92rem; }
+.rk-info dd { margin: 0; }
+.rk-info h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.rk-note { margin-top: 10px; color: var(--rk-muted); font-size: 0.9rem; }
+
+@media (max-width: 640px) {
+	.rk { font-size: 16px; }
+	.rk-points, .rk-cats, .rk-info { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="rk">
+	<section class="rk-hero">
+		<p class="rk-eyebrow">リフティング・スキンケアクリニック · ソウル狎鴎亭</p>
+		<h1>お顔ごとに異なる設計図を、<br>院長が直接描きます</h1>
+		<p class="rk-lead">Reyeonk Clinicは2009年の開院以来、16年間、無事故で診療を続けてきました。1対1のカウンセリングから施術のデザイン、施術まで院長が直接行い、肌の状態と顔の骨格に合わせた、お一人おひとりに合う施術をご提案します。</p>
+		<div class="rk-cta">
+			<a class="rk-btn rk-btn-main" href="tel:+82-2-558-5581">電話で相談 +82-2-558-5581</a>
+			<a class="rk-btn rk-btn-sub" href="/ja/doctors/">医療陣紹介</a>
+			<a class="rk-btn rk-btn-sub" href="https://reyeonk.co.kr" target="_blank" rel="noopener">公式ホームページ</a>
+		</div>
+		<ul class="rk-points">
+			<li><strong>16年</strong><span>2009年開院、無事故で診療</span></li>
+			<li><strong>1:1</strong><span>相談から施術まで院長が直接担当</span></li>
+			<li><strong>100%</strong><span>正規品のチップのみ使用が原則</span></li>
+		</ul>
+	</section>
+
+	<section class="rk-section">
+		<h2>診療分野</h2>
+		<div class="rk-cats">
+			<div class="rk-cat">
+				<h3>リフティング</h3>
+				<ul>
+					<li>ウルセラ プライム</li>
+					<li>サーマクール FLX</li>
+					<li>デンシティ・デンシティ ノワール</li>
+					<li>オンダ・シュリンク・インモード</li>
+					<li>バーチューRF・糸リフト</li>
+				</ul>
+			</div>
+			<div class="rk-cat">
+				<h3>スキンケア</h3>
+				<ul>
+					<li>ポテンツァ（毛穴・傷跡）</li>
+					<li>スキンブースター・リジュランヒーラー</li>
+					<li>シミ・色素沈着・レーザートーニング</li>
+					<li>ニキビ・赤ら顔ケア</li>
+					<li>脱毛・タトゥー除去</li>
+				</ul>
+			</div>
+			<div class="rk-cat">
+				<h3>プチ・輪郭</h3>
+				<ul>
+					<li>プレミアムフィラー</li>
+					<li>ボトックス・スキンボトックス</li>
+					<li>ボリュームデザイン</li>
+					<li>顔の輪郭・スンサク注射</li>
+					<li>脂肪吸引</li>
+				</ul>
+			</div>
+		</div>
+		<p class="rk-note">施術プランは対面のカウンセリングで決定します。効果や適応には個人差があります。</p>
+	</section>
+
+	<section class="rk-section">
+		<h2>施術コラム</h2>
+		<p class="rk-intro">各施術の仕組み、経過、料金などを詳しく解説したコラムは、現在、韓国語のみでご覧いただけます。</p>
+		<p><a href="/blog/" hreflang="ko" lang="ko">コラム一覧（韓国語）</a></p>
+	</section>
+
+	<section class="rk-section" id="info">
+		<h2>診療時間・アクセス</h2>
+		<div class="rk-info">
+			<div>
+				<h3>診療時間</h3>
+				<dl>
+					<dt>月・火・木</dt><dd>10:00 – 20:00</dd>
+					<dt>金</dt><dd>10:00 – 19:00</dd>
+					<dt>土</dt><dd>10:00 – 15:00</dd>
+					<dt>昼休み</dt><dd>13:00 – 14:00（平日）</dd>
+					<dt>休診日</dt><dd>水曜・日曜・祝日</dd>
+				</dl>
+			</div>
+			<div>
+				<h3>アクセス</h3>
+				<dl>
+					<dt>住所</dt><dd>ソウル特別市江南区彦州路172ギル64 Reyeonkビル（리연케이빌딩）<br>（新沙洞663-20）B1・3F・4F</dd>
+					<dt>地下鉄</dt><dd>水仁・盆唐線 狎鴎亭ロデオ駅6番出口から徒歩約5分</dd>
+					<dt>バス</dt><dd>ギャラリアデパート停留所で下車（143、301、362、472など）</dd>
+					<dt>駐車場</dt><dd>Reyeonkビル駐車場（新沙洞662-12）でバレーパーキング、基本2時間5,000ウォン</dd>
+					<dt>電話</dt><dd><a href="tel:+82-2-558-5581">+82-2-558-5581</a></dd>
+				</dl>
+				<p class="rk-note">受付は3階です。<a href="/ja/location/">写真付きの道案内</a></p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@type": "MedicalClinic",
+	"@id": "https://reyeonk2.com/#clinic",
+	"name": "Reyeonk Clinic",
+	"alternateName": ["ReYeonK Clinic", "리연케이의원"],
+	"url": "https://reyeonk2.com/ja/",
+	"sameAs": ["https://reyeonk.co.kr"],
+	"image": "https://reyeonk2.com/img/og/default.jpg",
+	"description": "ソウル・狎鴎亭のリフティング・スキンケアクリニック。開院16年、相談から施術まで院長が直接担当します。",
+	"telephone": "+82-2-558-5581",
+	"foundingDate": "2009",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "64 Eonju-ro 172-gil, Reyeonk Building",
+		"addressLocality": "Gangnam-gu",
+		"addressRegion": "Seoul",
+		"addressCountry": "KR"
+	},
+	"openingHoursSpecification": [
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "10:00", "closes": "20:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "19:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "15:00" }
+	],
+	"employee": [
+		{ "@type": "Physician", "name": "イ・ドゥチャン", "jobTitle": "代表院長", "url": "https://reyeonk2.com/ja/doctors/doochanlee/" },
+		{ "@type": "Physician", "name": "キム・ヒョンス", "jobTitle": "代表院長", "url": "https://reyeonk2.com/ja/doctors/hyunsukim/" },
+		{ "@type": "Physician", "name": "チェ・ヒョンホ", "jobTitle": "院長", "url": "https://reyeonk2.com/ja/doctors/hyunhochoi/" }
+	],
+	"availableService": [
+		{ "@type": "MedicalProcedure", "name": "ウルセラ プライム" },
+		{ "@type": "MedicalProcedure", "name": "サーマクール FLX" },
+		{ "@type": "MedicalProcedure", "name": "デンシティ" },
+		{ "@type": "MedicalProcedure", "name": "ポテンツァ" },
+		{ "@type": "MedicalProcedure", "name": "スキンブースター" },
+		{ "@type": "MedicalProcedure", "name": "フィラー" },
+		{ "@type": "MedicalProcedure", "name": "ボトックス" }
+	]
+}
+</script>

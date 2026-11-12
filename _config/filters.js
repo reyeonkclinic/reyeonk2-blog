@@ -40,4 +40,10 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("sortAlphabetically", strings =>
 		(strings || []).sort((b, a) => b.localeCompare(a))
 	);
+	// URL of the translated counterpart of a page for a language code.
+	// `alternates` is the page's list of { lang, url }; falls back to `fallback`.
+	eleventyConfig.addFilter("langUrl", (alternates, code, fallback) => {
+		const hit = Array.isArray(alternates) ? alternates.find((a) => a.lang === code) : null;
+		return hit ? hit.url : fallback;
+	});
 };
