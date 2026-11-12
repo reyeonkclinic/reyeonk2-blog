@@ -1,0 +1,335 @@
+---js
+const permalink = "/ja/blog/potenza-1000-shots-tip-selection/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "ポテンツァ1000ショットの料金と効果、チップの選び方で結果が変わる理由";
+const description = "ポテンツァ1000ショットの範囲、ニードル型・非侵襲型チップの違い、効果が現れる時期、スキンブースターとの相乗効果、料金の目安を、ソウル・狎鴎亭のReyeonk Clinicがご案内します。";
+const date = "2026-11-12";
+const alternates = [
+	{ lang: "en", url: "/en/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "ja", url: "/ja/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "x-default", url: "/en/blog/potenza-1000-shots-tip-selection/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif JP", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	line-break: strict; overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">ポテンツァ1000ショットの料金と効果、チップの選び方で結果が変わる理由</h1>
+	<p class="pz-byline">コラム · Reyeonk Clinic 院長（韓国語の原文を翻訳）</p>
+	<p class="pz-hook">ポテンツァは1000ショットで十分でしょうか。それとも、どのチップを使うかのほうが大切でしょうか。</p>
+	<p class="pz-lead">ポテンツァは、真皮層に高周波（RF）エネルギーを届け、たるんだ毛穴、弾力低下、小じわを同時にケアする代表的な複合レーザー施術です。ただし、同じ「1000ショット」でも、使用するチップ（ポンピングチップ、ニードルチップ、非侵襲ダイヤモンドチップ）や部位ごとのエネルギー配分によって、期待できる変化やダウンタイムは大きく変わります。ポテンツァ1000ショットの作用、チップごとの違い、施術間隔、料金の目安を、質問形式でまとめました。</p>
+	<div class="pz-summary">
+		<strong>3行まとめ</strong>
+		<ul><li>ポテンツァ1000ショットは、顔全体（フルフェイス）で毛穴の引き締めとキメ・弾力の改善をバランスよく設計できる、推奨ショット数です。</li><li>ショット数そのものより大切なのは、お悩みに合ったチップ選び（薬剤注入用のポンピングチップか、弾力ケア用の非侵襲チップか）と、部位ごとの深さ調整です。</li><li>スキンブースターやスキンボトックスをポンピングチップと組み合わせると、有効成分が真皮層まで直接届き、毛穴と弾力への相乗効果が高まります。</li></ul>
+	</div>
+	<p class="pz-note">このコラムは、Reyeonk Clinic院長が韓国語で執筆した記事の翻訳です。「韓国語」と記したリンクは、韓国語のページに移動します。</p>
+	<nav class="pz-section" aria-label="目次"><h2>目次</h2><ol><li><a href="#s1">ポテンツァ1000ショットは、どのくらいの範囲ですか</a></li><li><a href="#s2">同じ1000ショットでも、チップの種類で効果は変わりますか</a></li><li><a href="#s3">ポテンツァの効果は、いつからどのように現れますか</a></li><li><a href="#s4">スキンブースターと一緒に受けると、どんな相乗効果がありますか</a></li><li><a href="#s5">施術中の痛みや、赤み・かさぶたの心配はありませんか</a></li><li><a href="#s6">Reyeonk Clinicでは、ポテンツァ1000ショットをどのように行いますか</a></li><li><a href="#s7">ポテンツァ1000ショットの料金はいくらですか</a></li><li><a href="#faq">よくあるご質問（FAQ）</a></li></ol></nav>
+
+	<div class="pz-section" id="s1">
+		<h2>ポテンツァ1000ショットは、どのくらいの範囲ですか</h2>
+		<div class="pz-text"><p>ポテンツァは、チップの微細な電極から真皮層へ高周波の熱エネルギーを届け、肌自身がコラーゲンとエラスチンを再生するよう促す施術です。</p><p>小鼻の脇や頬など、毛穴の気になる部分に絞る場合は300〜500ショット前後を使用することが多く、顔全体（フルフェイス）のキメを整えながらリフトアップも一緒に計画する場合は、1000ショットを基準に設計します。1000ショットあれば、毛穴の広い頬や小鼻まわりは密に重ねて照射し、肌の薄い目もとや額、フェイスラインまで、エネルギーを漏れなく配分できます。</p></div>
+	</div>
+
+	<div class="pz-section" id="s2">
+		<h2>同じ1000ショットでも、チップの種類で効果は変わりますか</h2>
+		<div class="pz-text"><p>ポテンツァには14種類以上の専用チップがあり、大きく分けて、微細な針を使う侵襲型チップ（ポンピングチップを含む）と、針を使わず表皮に密着させて高周波を届ける非侵襲型チップ（ダイヤモンド、DDRなど）があります。</p></div>		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th></th><th>侵襲型 ニードル・ポンピングチップ（CP/Nチップなど）</th><th>非侵襲型 高周波チップ（ダイヤモンド・DDRなど）</th></tr></thead><tbody><tr><td>作用の仕組み</td><td>微細な針が真皮層に入って高周波を届け、陰圧で薬剤の浸透も促す</td><td>針を使わず肌の表面に密着し、真皮の上層・下層へ高周波の熱を届ける</td></tr><tr><td>主な目的</td><td>毛穴の開き、ニキビ跡、皮脂コントロール、スキンブースター薬剤の吸収を最大化</td><td>弾力低下、小じわ、フェイスラインの引き締め、赤みや敏感肌のキメ改善</td></tr><tr><td>ダウンタイム</td><td>2〜3日ほど、軽い赤みや、粟粒のような角質・かさぶたが出ることがあります</td><td>針の跡がなく、施術直後の洗顔・メイク・日常生活への復帰がしやすい</td></tr></tbody></table></div>		<div class="pz-text"><p>毛穴の引き締めとキメの改善が一番の目的なら侵襲型・ポンピングチップの割合を高め、痛みや回復期間の負担なく弾力ケアをしたい場合は、非侵襲型チップや、ほかの毛穴レーザーとの組み合わせを選びます。機器ごとの仕組みや痛みの違いは、<a href="/blog/pore-reduction-potenza-virtue-picosure/" hreflang="ko" lang="ko">毛穴縮小施術の比較：ポテンツァ・バーチューRF・ピコシュア フラクセル（韓国語）</a>でもご確認いただけます。</p></div>
+	</div>
+
+	<div class="pz-section" id="s3">
+		<h2>ポテンツァの効果は、いつからどのように現れますか</h2>
+		<div class="pz-text"><p>高周波の熱刺激を受けた真皮層で、新しいコラーゲンが作られるには、肌のターンオーバーの周期（約3〜4週間）が必要です。</p></div>		<ul class="pz-list" style="margin-top: 16px"><li><h3>施術後1〜2週間</h3><p>過剰な皮脂の分泌が落ち着き、肌表面の水分と油分のバランスが整って、化粧のよれが減ります。</p></li><li><h3>施術後3〜4週間</h3><p>真皮のコラーゲン密度が少しずつ高まり、広がった毛穴が引き締まって、肌の内側のハリを実感できます。</p></li><li><h3>3回以上続けた場合</h3><p>毛穴の縮小と小じわの改善が、より安定して続きます。推奨回数は、肌の厚みや毛穴のタイプによって異なります。</p></li></ul>
+	</div>
+
+	<div class="pz-section" id="s4">
+		<h2>スキンブースターと一緒に受けると、どんな相乗効果がありますか</h2>
+		<div class="pz-text"><p>ポテンツァのポンピングチップ（CPチップ）は、針が抜ける瞬間の陰圧を利用して、肌表面に塗布した薬剤を真皮層の奥へ押し込む、特許構造を備えています。</p><p>高周波だけを照射する場合に比べ、スキンブースターやスキンボトックスをポンピングチップで組み合わせると、熱エネルギーで再生しやすくなった肌環境に有効成分が直接吸収され、毛穴の引き締めとインナードライの改善に対する相乗効果を高められます。</p><p>肌が薄くコラーゲン自体が不足して、毛穴が縦に長く垂れて見える場合は、液状タイプのPCLコラーゲンブースターを併せて計画するのも良い方法です。関連する仕組みは、<a href="/blog/gouri-skinbooster-dermashine/" hreflang="ko" lang="ko">ゴウリ スキンブースターの効果と料金、ダーマシャインで痛み・内出血・むくみを減らす方法（韓国語）</a>に詳しくまとめています。</p></div>
+	</div>
+
+	<div class="pz-section" id="s5">
+		<h2>施術中の痛みや、赤み・かさぶたの心配はありませんか</h2>
+		<div class="pz-text"><p>侵襲型のニードルチップを使う場合は、チクチクとした熱感を伴うことがあるため、施術前に十分な時間、麻酔クリームを塗布してから行います。</p><p>施術後は、熱エネルギーの反応で2〜3日ほど顔が赤くなったりほてったりすることがあり、微細な針が通った跡にごく薄い角質が上がることがあります。この時期は、角質を手ではがさず、保湿クリームと日焼け止めをしっかり塗ると、色素沈着なくなめらかに回復します。</p></div>
+	</div>
+
+	<div class="pz-section" id="s6">
+		<h2>Reyeonk Clinicでは、ポテンツァ1000ショットをどのように行いますか</h2>
+		<div class="pz-text"><p>同じ顔でも、額や目もとのような肌の薄い部位と、小鼻の脇や頬の前面のような、皮脂腺が発達して毛穴が深い部位では、適切なニードルの深さとエネルギーの強さが異なります。</p><p>狎鴎亭のReyeonk Clinicでは、1000ショットをすべての部位に機械的に同じように照射することはせず、1対1の診断をもとに、毛穴を集中的にケアする部位と、弾力が低下した部位とで、ニードルの深さ・出力・ショット数の配分をお一人おひとりに合わせて設計します。また、毛穴の原因が皮脂の過剰なのか、加齢による弾力低下なのかに応じて、単独施術と複合施術のうち最も効率的な方向をご案内します。</p></div>
+	</div>
+
+	<div class="pz-section" id="s7">
+		<h2>ポテンツァ1000ショットの料金はいくらですか</h2>
+		<div class="pz-text"><p>ポテンツァの料金は、使用するチップの種類（正規品の使い捨てチップかどうか）、スキンブースター・スキンボトックスの組み合わせ、時期ごとのイベントによって異なります。</p></div>		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th>施術構成</th><th>料金の目安</th><th>備考</th></tr></thead><tbody><tr><td>ポテンツァ1000ショット（基本／ポンピング・スキンボトックス組み合わせパッケージなど）</td><td>10万ウォン台〜（構成やイベントにより異なります）</td><td>正規品の使い捨てチップの開封を確認、付加価値税10%別</td></tr></tbody></table></div>		<p class="pz-note">※ 時期ごとのイベント価格や組み合わせパッケージの構成は変更されることがあります。最新の内容は、Reyeonk Clinicの代表電話（+82-2-558-5581）、またはカカオトークの相談チャンネルまでお問い合わせください。</p>
+	</div>
+
+	<div class="pz-section" id="faq">
+		<h2>よくあるご質問（FAQ）</h2>
+		<ul class="pz-list"><li><h3>Q1. ポテンツァ1000ショットは、顔全体に十分なショット数ですか？</h3><p>はい。一般的な成人の顔全体（フルフェイス）を基準に、毛穴の広い頬の中心部は重ねて照射し、フェイスラインや額まで均一にカバーできる、適切なショット数です。</p></li><li><h3>Q2. ポテンツァは1回だけでも、毛穴の縮小効果はありますか？</h3><p>1回の施術後、3〜4週間が経つにつれて、キメの整い、皮脂の減少、初期の弾力の変化を感じられます。ただし、深く開いた毛穴やニキビ跡の改善が目標なら、3〜4週間おきに3回以上、継続して受けることをおすすめします。</p></li><li><h3>Q3. 正規品のチップは使い回さず、お一人につき1つで行いますか？</h3><p>Reyeonk Clinicでは、衛生と正確なエネルギー伝達のため、すべての施術で正規品の使い捨てチップを使用することを原則とし、施術前に新しいチップの開封をご確認いただけます。</p></li><li><h3>Q4. ポテンツァの施術後、洗顔やメイクはいつからできますか？</h3><p>施術当日は、ぬるま湯で軽くすすぐ程度にとどめ、翌日から低刺激のクレンジングによる洗顔と、軽いメイクが可能です。</p></li><li><h3>Q5. 施術後、粟粒のようなニキビができました。副作用でしょうか？</h3><p>高周波の熱刺激や、毛穴の皮脂が排出される過程で、一時的に毛包炎や小さなブツブツができることがあります。多くは保湿と鎮静ケアで数日以内に落ち着きますが、症状が続く場合は、ご来院のうえ鎮静ケアを受けてください。</p></li><li><h3>Q6. ウルセラやサーマクールのようなリフティング施術と一緒に受けても大丈夫ですか？</h3><p>可能です。深い筋膜層や真皮下層を引き上げるリフティング機器と、肌表面の毛穴・キメを整えるポテンツァを併用すると、立体的なエイジングケア効果が期待できます。リフティング機器どうしの違いは、<a href="/blog/ulthermage-difference-effect/" hreflang="ko" lang="ko">ウルセラとサーマクールの違い、併用の効果（韓国語）</a>でご確認ください。</p></li><li><h3>Q7. 肌が敏感で赤みがありますが、ポテンツァを受けられますか？</h3><p>肌のバリアが薄い場合や赤みが強い場合は、侵襲型のニードルの代わりに針を使わない非侵襲型チップを選ぶか、エネルギーの強さを下げて安全に行えますので、事前のカウンセリングが必要です。</p></li><li><h3>Q8. 施術後に避けるべき行動はありますか？</h3><p>施術後およそ1週間は、サウナ、チムジルバン、激しい運動、飲酒、喫煙のように、肌の温度を上げたり炎症を起こしたりする可能性のある行動を避け、保湿剤を十分に塗ってください。</p></li></ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">ご自身の肌に合うポテンツァのチップと1000ショットの配分を、1対1の診断で確認しましょう。</p>
+		<p class="pz-invite">毛穴の深さや肌の厚みに合わせた、きめ細かなエネルギー設計に関心がある方は、狎鴎亭ロデオ駅近くのReyeonk Clinicでご相談ください。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172ギル64 Reyeonkビル<br>B1・3F・4F</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1の相談はこちら</a></dd>
+				<dt>ウェブサイト</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韓国語）</dd>
+				<dt>診療時間</dt>
+				<dd>月・火・木 10:00–20:00<br>金 10:00–19:00<br>土 10:00–15:00<br>水・日・祝日は休診</dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">道案内を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ このコラムは一般的な情報提供を目的としており、施術の効果や回復期間には個人差があります。具体的な施術プランは、医療陣との十分なカウンセリングのうえで決定してください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "ポテンツァ1000ショットの料金と効果、チップの選び方で結果が変わる理由",
+   "description": "ポテンツァ1000ショットの範囲、ニードル型・非侵襲型チップの違い、効果が現れる時期、スキンブースターとの相乗効果、料金の目安を、ソウル・狎鴎亭のReyeonk Clinicがご案内します。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-12",
+   "dateModified": "2026-11-12",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/potenza-1000-shots-tip-selection/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "ja",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Q1. ポテンツァ1000ショットは、顔全体に十分なショット数ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。一般的な成人の顔全体（フルフェイス）を基準に、毛穴の広い頬の中心部は重ねて照射し、フェイスラインや額まで均一にカバーできる、適切なショット数です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q2. ポテンツァは1回だけでも、毛穴の縮小効果はありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "1回の施術後、3〜4週間が経つにつれて、キメの整い、皮脂の減少、初期の弾力の変化を感じられます。ただし、深く開いた毛穴やニキビ跡の改善が目標なら、3〜4週間おきに3回以上、継続して受けることをおすすめします。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q3. 正規品のチップは使い回さず、お一人につき1つで行いますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Reyeonk Clinicでは、衛生と正確なエネルギー伝達のため、すべての施術で正規品の使い捨てチップを使用することを原則とし、施術前に新しいチップの開封をご確認いただけます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q4. ポテンツァの施術後、洗顔やメイクはいつからできますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "施術当日は、ぬるま湯で軽くすすぐ程度にとどめ、翌日から低刺激のクレンジングによる洗顔と、軽いメイクが可能です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q5. 施術後、粟粒のようなニキビができました。副作用でしょうか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "高周波の熱刺激や、毛穴の皮脂が排出される過程で、一時的に毛包炎や小さなブツブツができることがあります。多くは保湿と鎮静ケアで数日以内に落ち着きますが、症状が続く場合は、ご来院のうえ鎮静ケアを受けてください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q6. ウルセラやサーマクールのようなリフティング施術と一緒に受けても大丈夫ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可能です。深い筋膜層や真皮下層を引き上げるリフティング機器と、肌表面の毛穴・キメを整えるポテンツァを併用すると、立体的なエイジングケア効果が期待できます。リフティング機器どうしの違いは、ウルセラとサーマクールの違い、併用の効果（韓国語）でご確認ください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q7. 肌が敏感で赤みがありますが、ポテンツァを受けられますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "肌のバリアが薄い場合や赤みが強い場合は、侵襲型のニードルの代わりに針を使わない非侵襲型チップを選ぶか、エネルギーの強さを下げて安全に行えますので、事前のカウンセリングが必要です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q8. 施術後に避けるべき行動はありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "施術後およそ1週間は、サウナ、チムジルバン、激しい運動、飲酒、喫煙のように、肌の温度を上げたり炎症を起こしたりする可能性のある行動を避け、保湿剤を十分に塗ってください。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

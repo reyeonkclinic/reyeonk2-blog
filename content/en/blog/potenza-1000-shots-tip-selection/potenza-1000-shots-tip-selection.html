@@ -1,0 +1,335 @@
+---js
+const permalink = "/en/blog/potenza-1000-shots-tip-selection/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "Potenza 1,000 Shots: Price, Effects, and Why the Tip You Choose Changes the Result";
+const description = "What a 1,000-shot Potenza session covers, how needle and non-invasive tips differ, when results appear, how it pairs with skin boosters, and how pricing works at Reyeonk Clinic in Apgujeong, Seoul.";
+const date = "2026-11-12";
+const alternates = [
+	{ lang: "en", url: "/en/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "ja", url: "/ja/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "x-default", url: "/en/blog/potenza-1000-shots-tip-selection/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">Potenza 1,000 Shots: Price, Effects, and Why the Tip You Choose Changes the Result</h1>
+	<p class="pz-byline">Column · Director, Reyeonk Clinic (originally published in Korean)</p>
+	<p class="pz-hook">Is 1,000 shots enough for Potenza, or does the tip you use matter more?</p>
+	<p class="pz-lead">Potenza delivers radiofrequency (RF) energy into the dermis to address enlarged pores, loss of firmness and fine lines at the same time. But even with the same “1,000 shots”, the tip type (pumping tip, needle tip, non-invasive diamond tip) and how energy is distributed across the face change the results you can expect and the downtime. Below we go through how it works, the differences between tips, treatment intervals and pricing, question by question.</p>
+	<div class="pz-summary">
+		<strong>3-line summary</strong>
+		<ul><li>A 1,000-shot session is the recommended amount for a full-face (whole-face) plan that evens out pores, skin texture and firmness.</li><li>More important than the shot count is choosing the tip that fits your concern (a pumping tip for drug delivery vs. a non-invasive tip for firmness) and adjusting depth by area.</li><li>Combining a skin booster or skin botox with a pumping tip delivers the active ingredients directly into the dermis, which improves the synergy for pores and firmness.</li></ul>
+	</div>
+	<p class="pz-note">This column is a translation of an article originally written in Korean by the director of Reyeonk Clinic. Links marked “Korean” lead to Korean-language pages.</p>
+	<nav class="pz-section" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#s1">How much of the face does 1,000 shots cover?</a></li><li><a href="#s2">Does the tip type change the effect, even with the same 1,000 shots?</a></li><li><a href="#s3">When do Potenza results appear, and how?</a></li><li><a href="#s4">What is the synergy with a skin booster?</a></li><li><a href="#s5">Should I worry about pain, redness or scabs?</a></li><li><a href="#s6">How does Reyeonk Clinic perform a 1,000-shot Potenza treatment?</a></li><li><a href="#s7">How much does 1,000-shot Potenza cost?</a></li><li><a href="#faq">Frequently asked questions (FAQ)</a></li></ol></nav>
+
+	<div class="pz-section" id="s1">
+		<h2>How much of the face does 1,000 shots cover?</h2>
+		<div class="pz-text"><p>Potenza delivers RF heat energy to the dermis through the micro-electrodes of its tip, encouraging the skin to regenerate its own collagen and elastin.</p><p>When only a local area such as the “butterfly zone” (both cheeks and beside the nose) is the focus, roughly 300–500 shots are typically used. When you plan to refine skin texture and lift across the entire face, the plan is built around 1,000 shots. With 1,000 shots, areas with enlarged pores such as the cheeks and around the nose can be treated with dense overlapping passes, while energy can still be distributed to thinner areas such as around the eyes, the forehead and the jawline.</p></div>
+	</div>
+
+	<div class="pz-section" id="s2">
+		<h2>Does the tip type change the effect, even with the same 1,000 shots?</h2>
+		<div class="pz-text"><p>Potenza has more than 14 dedicated tips. They fall broadly into invasive tips that use fine needles (including the pumping tip) and non-invasive tips (diamond, DDR and others) that sit against the skin surface and deliver RF without needles.</p></div>		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th></th><th>Invasive needle / pumping tips (CP / N tips, etc.)</th><th>Non-invasive RF tips (diamond, DDR, etc.)</th></tr></thead><tbody><tr><td>How it works</td><td>Fine needles enter the dermis to deliver RF, and negative pressure helps drive in topical drugs</td><td>Sits on the skin surface without needles and delivers RF heat to the upper and lower dermis</td></tr><tr><td>Main goals</td><td>Enlarged pores, acne scars, oil control, maximising skin booster absorption</td><td>Loss of firmness, fine lines, jawline tightening, texture in redness-prone or sensitive skin</td></tr><tr><td>Downtime</td><td>2–3 days of mild redness; tiny flakes or scabs may appear</td><td>No needle marks, so washing your face, makeup and daily life are easier right after</td></tr></tbody></table></div>		<div class="pz-text"><p>If reducing pores and refining texture is the main goal, we increase the share of invasive and pumping tips. If you want a firming lift without pain or recovery time, we choose non-invasive tips or combine with another pore laser. For differences in mechanism and pain between devices, see also our guide <a href="/blog/pore-reduction-potenza-virtue-picosure/" hreflang="ko" lang="ko">Pore-reduction comparison: Potenza, Virtue RF and PicoSure Fraxel (Korean)</a>.</p></div>
+	</div>
+
+	<div class="pz-section" id="s3">
+		<h2>When do Potenza results appear, and how?</h2>
+		<div class="pz-text"><p>New collagen takes about one skin turnover cycle (roughly 3–4 weeks) to form in the dermis after RF heat stimulation.</p></div>		<ul class="pz-list" style="margin-top: 16px"><li><h3>1–2 weeks after</h3><p>Excess oil settles and the skin’s moisture–oil balance improves, so makeup clings better.</p></li><li><h3>3–4 weeks after</h3><p>As collagen density gradually builds, enlarged pores tighten and the skin feels firmer.</p></li><li><h3>After 3 or more sessions</h3><p>Pore-size reduction and fine-line improvement hold more steadily. The recommended number of sessions depends on your skin thickness and pore type.</p></li></ul>
+	</div>
+
+	<div class="pz-section" id="s4">
+		<h2>What is the synergy with a skin booster?</h2>
+		<div class="pz-text"><p>The Potenza pumping tip (CP tip) has a patented structure that uses negative pressure at the moment the needle withdraws to push topically applied drugs into the dermis.</p><p>Compared with RF alone, combining a skin booster or skin botox through the pumping tip lets active ingredients be absorbed directly into skin that has been primed for regeneration by heat, which can improve the benefit for pore tightening and inner dryness.</p><p>If your skin is thin and low in collagen, so that pores look long and sagging vertically, planning a liquid PCL collagen booster alongside is also a good option. The principle is explained in detail in <a href="/blog/gouri-skinbooster-dermashine/" hreflang="ko" lang="ko">Gouri skin booster: effects, price, and easing pain, bruising and swelling with Dermashine (Korean)</a>.</p></div>
+	</div>
+
+	<div class="pz-section" id="s5">
+		<h2>Should I worry about pain, redness or scabs?</h2>
+		<div class="pz-text"><p>With invasive needle tips you may feel a stinging heat, so numbing cream is applied for enough time before treatment.</p><p>After treatment your face may be red or feel hot for 2–3 days, and very thin flakes may appear where the fine needles passed. Do not pick at them; apply moisturiser and sunscreen carefully so the skin recovers smoothly without pigmentation.</p></div>
+	</div>
+
+	<div class="pz-section" id="s6">
+		<h2>How does Reyeonk Clinic perform a 1,000-shot Potenza treatment?</h2>
+		<div class="pz-text"><p>Even on the same face, thin areas such as the forehead and around the eyes and oily, deep-pored areas such as beside the nose and the front of the cheeks need different needle depths and energy levels.</p><p>At Reyeonk Clinic in Apgujeong, the 1,000 shots are not applied mechanically and identically everywhere. After a one-to-one assessment we design the needle depth, power and shot distribution for pore-focused areas and areas that have lost firmness. We also advise the most efficient direction, single treatment or combination, depending on whether your pores come from excess oil or from age-related loss of firmness.</p></div>
+	</div>
+
+	<div class="pz-section" id="s7">
+		<h2>How much does 1,000-shot Potenza cost?</h2>
+		<div class="pz-text"><p>The price of Potenza depends on the type of tip (whether genuine single-use tips are used), whether a skin booster or skin botox is combined, and seasonal promotions.</p></div>		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th>Treatment</th><th>Guide price</th><th>Notes</th></tr></thead><tbody><tr><td>Potenza 1,000 shots (basic / with pumping and skin botox package, etc.)</td><td>From the KRW 100,000 range (varies with the package and promotions)</td><td>Genuine single-use tip opened in front of you; 10% VAT is extra</td></tr></tbody></table></div>		<p class="pz-note">* Seasonal promotions and package options change from time to time. Please call the clinic at +82-2-558-5581 or contact us through the KakaoTalk consultation channel for the current details.</p>
+	</div>
+
+	<div class="pz-section" id="faq">
+		<h2>Frequently asked questions (FAQ)</h2>
+		<ul class="pz-list"><li><h3>Q1. Is 1,000 shots enough for the whole face?</h3><p>Yes. For an average adult full face, it is an appropriate number of shots to overlap on the butterfly zone where pores are large and still cover the jawline and forehead evenly.</p></li><li><h3>Q2. Is one Potenza session enough to reduce pores?</h3><p>After about 3–4 weeks you may notice more even texture, less oiliness and an early change in firmness. If your goal is deeply enlarged pores or acne scars, we recommend at least 3 sessions at 3–4 week intervals.</p></li><li><h3>Q3. Are genuine tips used once per person?</h3><p>For hygiene and accurate energy delivery, Reyeonk Clinic uses genuine single-use tips as a rule, and you can confirm that a new tip is opened before treatment.</p></li><li><h3>Q4. When can I wash my face and wear makeup after Potenza?</h3><p>On the day of treatment, rinse gently with lukewarm water only. From the next day you can cleanse with a mild cleanser and wear light makeup.</p></li><li><h3>Q5. Small bumps like millet acne appeared after treatment. Is that a side effect?</h3><p>During RF heat stimulation and the purging of oil from the pores, temporary folliculitis or small breakouts can appear. Most settle within days with moisturising and soothing care; if they persist, please visit the clinic for soothing care.</p></li><li><h3>Q6. Can I combine it with lifting treatments such as Ulthera or Thermage?</h3><p>Yes. Pairing a lifting device that tightens the deep fascial layer and lower dermis with Potenza, which refines pores and texture at the surface, can give a three-dimensional anti-ageing effect. For the differences between lifting devices, see <a href="/blog/ulthermage-difference-effect/" hreflang="ko" lang="ko">Ulthera vs. Thermage and the effect of combining them (Korean)</a>.</p></li><li><h3>Q7. My skin is sensitive and red. Can I still have Potenza?</h3><p>If your skin barrier is thin or redness is marked, we can choose non-invasive tips instead of needles, or lower the energy level, so a consultation beforehand is needed.</p></li><li><h3>Q8. What should I avoid after treatment?</h3><p>For about a week, avoid saunas, jjimjilbang, strenuous exercise, alcohol and smoking, which can raise skin temperature or trigger inflammation, and moisturise generously.</p></li></ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">Find the right Potenza tip and 1,000-shot distribution for your skin with a one-to-one assessment.</p>
+		<p class="pz-invite">If you would like an energy plan tailored to your pore depth and skin thickness, book a consultation at Reyeonk Clinic, near Apgujeong Rodeo Station.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building)<br>B1, 3F and 4F</dd>
+				<dt>Phone</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">Copy number</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">One-to-one chat</a></dd>
+				<dt>Website</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> (Korean)</dd>
+				<dt>Hours</dt>
+				<dd>Mon, Tue, Thu 10:00–20:00<br>Fri 10:00–19:00<br>Sat 10:00–15:00<br>Closed Wed, Sun and public holidays</dd>
+				<dt>Directions</dt>
+				<dd><a href="/en/location/">See how to get here</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">* This article is for general information only. Results and recovery time vary from person to person. Your treatment plan should be decided after a full consultation with our medical team.</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Potenza 1,000 Shots: Price, Effects, and Why the Tip You Choose Changes the Result",
+   "description": "What a 1,000-shot Potenza session covers, how needle and non-invasive tips differ, when results appear, how it pairs with skin boosters, and how pricing works at Reyeonk Clinic in Apgujeong, Seoul.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-12",
+   "dateModified": "2026-11-12",
+   "mainEntityOfPage": "https://reyeonk2.com/en/blog/potenza-1000-shots-tip-selection/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Q1. Is 1,000 shots enough for the whole face?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. For an average adult full face, it is an appropriate number of shots to overlap on the butterfly zone where pores are large and still cover the jawline and forehead evenly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q2. Is one Potenza session enough to reduce pores?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "After about 3–4 weeks you may notice more even texture, less oiliness and an early change in firmness. If your goal is deeply enlarged pores or acne scars, we recommend at least 3 sessions at 3–4 week intervals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q3. Are genuine tips used once per person?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For hygiene and accurate energy delivery, Reyeonk Clinic uses genuine single-use tips as a rule, and you can confirm that a new tip is opened before treatment."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q4. When can I wash my face and wear makeup after Potenza?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On the day of treatment, rinse gently with lukewarm water only. From the next day you can cleanse with a mild cleanser and wear light makeup."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q5. Small bumps like millet acne appeared after treatment. Is that a side effect?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "During RF heat stimulation and the purging of oil from the pores, temporary folliculitis or small breakouts can appear. Most settle within days with moisturising and soothing care; if they persist, please visit the clinic for soothing care."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q6. Can I combine it with lifting treatments such as Ulthera or Thermage?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Pairing a lifting device that tightens the deep fascial layer and lower dermis with Potenza, which refines pores and texture at the surface, can give a three-dimensional anti-ageing effect. For the differences between lifting devices, see Ulthera vs. Thermage and the effect of combining them (Korean)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q7. My skin is sensitive and red. Can I still have Potenza?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If your skin barrier is thin or redness is marked, we can choose non-invasive tips instead of needles, or lower the energy level, so a consultation beforehand is needed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q8. What should I avoid after treatment?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For about a week, avoid saunas, jjimjilbang, strenuous exercise, alcohol and smoking, which can raise skin temperature or trigger inflammation, and moisturise generously."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
