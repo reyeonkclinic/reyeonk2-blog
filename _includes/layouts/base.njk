@@ -95,13 +95,14 @@
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="{% if lang == "en" %}/en/doctors/{% else %}/{% endif %}" class="home-link">{% if lang == "en" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
+			<a href="{% if lang == "en" %}/en/{% else %}/{% endif %}" class="home-link">{% if lang == "en" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 				{%- if lang == "en" %}
+					<li class="nav-item"><a href="/en/"{% if page.url == "/en/" %} aria-current="page"{% endif %}>Home</a></li>
 					<li class="nav-item"><a href="/en/doctors/"{% if page.url == "/en/doctors/" %} aria-current="page"{% endif %}>Doctors</a></li>
 					<li class="nav-item"><a href="/" hreflang="ko" lang="ko">한국어</a></li>
 				{%- else %}
