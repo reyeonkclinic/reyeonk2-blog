@@ -355,3 +355,11 @@ header {
 	.lang-list a span { color: #9AAEAA; }
 	.lang-list a:hover, .lang-list a:focus-visible, .lang-list a[aria-current] { background: #1B3431; color: #E4EEEC; }
 }
+
+/* Footer chat QR codes */
+.qr-block { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid currentColor; border-top-color: color-mix(in srgb, currentColor 20%, transparent); }
+.qr-title { margin: 0 0 0.75rem; font-weight: 600; }
+.qr-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; max-width: 36rem; }
+.qr-list li { text-align: center; font-size: 0.85rem; line-height: 1.4; }
+.qr-list img { display: block; width: 100%; max-width: 120px; height: auto; aspect-ratio: 1; object-fit: contain; margin: 0 auto 0.4rem; background: #fff; padding: 4px; border-radius: 4px; }
+@media (max-width: 480px) { .qr-list { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 18rem; } }

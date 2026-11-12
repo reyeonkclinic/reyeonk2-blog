@@ -159,6 +159,15 @@
 				월·화·목 10–20시 · 금 10–19시 · 토 10–15시 · 수·일·공휴일 휴진 · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
 			</p>
 			{%- endif %}
+			<div class="qr-block">
+				<p class="qr-title">{% if lang == "en" %}Chat with us{% elif lang == "ja" %}チャットで相談{% else %}채팅 상담{% endif %}</p>
+				<ul class="qr-list">
+					<li><img src="/img/qr/kakao.png" alt="{% if lang == "en" %}KakaoTalk QR code for Reyeonk Clinic{% elif lang == "ja" %}カカオトーク QRコード（Reyeonk Clinic）{% else %}카카오톡 리연케이의원 QR 코드{% endif %}" width="120" height="120" loading="lazy" eleventy:ignore><span>{% if lang == "ko" %}카카오톡<br>리연케이의원{% else %}KakaoTalk<br>Reyeonk Clinic{% endif %}</span></li>
+					<li><img src="/img/qr/whatsapp.png" alt="WhatsApp QR code" width="120" height="120" loading="lazy" eleventy:ignore><span>WhatsApp<br>+82 2-558-5581</span></li>
+					<li><img src="/img/qr/wechat.png" alt="WeChat QR code" width="120" height="120" loading="lazy" eleventy:ignore><span>WeChat<br>china reyeonk</span></li>
+					<li><img src="/img/qr/line.png" alt="LINE QR code" width="120" height="120" loading="lazy" eleventy:ignore><span>LINE<br>@849afosn</span></li>
+				</ul>
+			</div>
 		</footer>
 
 		<script>
