@@ -104,6 +104,7 @@
 				{%- if lang == "en" %}
 					<li class="nav-item"><a href="/en/"{% if page.url == "/en/" %} aria-current="page"{% endif %}>Home</a></li>
 					<li class="nav-item"><a href="/en/doctors/"{% if page.url == "/en/doctors/" %} aria-current="page"{% endif %}>Doctors</a></li>
+					<li class="nav-item"><a href="/en/location/"{% if page.url == "/en/location/" %} aria-current="page"{% endif %}>Location</a></li>
 					<li class="nav-item"><a href="/" hreflang="ko" lang="ko">한국어</a></li>
 				{%- else %}
 				{%- for entry in collections.all | eleventyNavigation %}
