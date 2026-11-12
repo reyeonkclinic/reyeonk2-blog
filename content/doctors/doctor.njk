@@ -3,7 +3,12 @@ const pagination = { data: "doctors", size: 1, alias: "d" };
 const permalink = (data) => `/doctors/${data.d.slug}/`;
 const eleventyComputed = {
 	title: (data) => `${data.d.name} ${data.d.title} | 리연케이의원 (${data.d.focus})`,
-	description: (data) => `리연케이의원 ${data.d.name} ${data.d.title}. ${data.d.intro}`
+	description: (data) => `리연케이의원 ${data.d.name} ${data.d.title}. ${data.d.intro}`,
+	alternates: (data) => [
+		{ lang: "ko", url: `/doctors/${data.d.slug}/` },
+		{ lang: "en", url: `/en/doctors/${data.d.slug}/` },
+		{ lang: "x-default", url: `/doctors/${data.d.slug}/` }
+	]
 };
 ---
 {% include "doctor-style.njk" %}

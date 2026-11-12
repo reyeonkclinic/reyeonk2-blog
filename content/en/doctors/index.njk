@@ -1,0 +1,45 @@
+---js
+const permalink = "/en/doctors/";
+const lang = "en";
+const title = "Our Doctors | Reyeonk Clinic, Apgujeong Seoul";
+const description = "Meet the doctors of Reyeonk Clinic in Apgujeong, Seoul: Dr. Lee Doochan, Dr. Kim Hyunsu and Dr. Choi Hyunho personally handle every consultation and treatment, one on one.";
+const alternates = [
+	{ lang: "ko", url: "/doctors/" },
+	{ lang: "en", url: "/en/doctors/" },
+	{ lang: "x-default", url: "/doctors/" }
+];
+---
+{% include "doctor-style.njk" %}
+<div class="dr" style="word-break: normal">
+	<p class="dr-lang"><a href="/doctors/" hreflang="ko" lang="ko">한국어</a> · <strong>English</strong></p>
+	<h1>Our Doctors</h1>
+	<p class="dr-lead">At Reyeonk Clinic, doctors with 16 years of experience personally handle everything one on one, from consultation and treatment design to the procedure itself.</p>
+	<ul class="dr-grid">
+	{%- for d in doctorsEn %}
+		<li class="dr-card">
+			<a href="/en/doctors/{{ d.slug }}/">
+				{% if d.photo %}<img class="dr-photo" src="{{ d.photo }}" alt="Reyeonk Clinic {{ d.name }}, {{ d.title }}" width="{{ d.photoSize[0] }}" height="{{ d.photoSize[1] }}" eleventy:ignore>{% endif %}
+				<span class="dr-role">{{ d.title }}</span>
+				<h2 class="dr-name">{{ d.name }}</h2>
+				<q class="dr-quote">{{ d.quote }}</q>
+				<span class="dr-focus">{{ d.focus }}</span>
+				<span class="dr-more">View profile →</span>
+			</a>
+		</li>
+	{%- endfor %}
+	</ul>
+	<p class="dr-lead" style="margin-top: 28px">Treatment plans are decided at an in-person consultation. Results and suitability differ from person to person.</p>
+</div>
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@type": "MedicalClinic",
+	"@id": "https://reyeonk2.com/#clinic",
+	"name": "Reyeonk Clinic",
+	"employee": [
+	{%- for d in doctorsEn %}
+		{ "@type": "Physician", "name": "{{ d.name }}", "jobTitle": "{{ d.title }}", "url": "https://reyeonk2.com/en/doctors/{{ d.slug }}/" }{% if not loop.last %},{% endif %}
+	{%- endfor %}
+	]
+}
+</script>

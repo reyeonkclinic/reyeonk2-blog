@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ lang or metadata.language }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,12 @@
 		{%- set pageUrl = page.url | htmlBaseUrl(metadata.url) %}
 		{%- set ogImage = (image or "/img/og/default.jpg") | htmlBaseUrl(metadata.url) %}
 		<link rel="canonical" href="{{ pageUrl }}">
+		{%- for a in alternates %}
+		<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | htmlBaseUrl(metadata.url) }}">
+		{%- endfor %}
 		<meta property="og:type" content="{% if tags and ("posts" in tags) %}article{% else %}website{% endif %}">
 		<meta property="og:site_name" content="{{ metadata.title }}">
-		<meta property="og:locale" content="ko_KR">
+		<meta property="og:locale" content="{% if lang == "en" %}en_US{% else %}ko_KR{% endif %}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ description or metadata.description }}">
 		<meta property="og:url" content="{{ pageUrl }}">
@@ -92,15 +95,20 @@
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<a href="{% if lang == "en" %}/en/doctors/{% else %}/{% endif %}" class="home-link">{% if lang == "en" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
+				{%- if lang == "en" %}
+					<li class="nav-item"><a href="/en/doctors/"{% if page.url == "/en/doctors/" %} aria-current="page"{% endif %}>Doctors</a></li>
+					<li class="nav-item"><a href="/" hreflang="ko" lang="ko">한국어</a></li>
+				{%- else %}
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
+				{%- endif %}
 				</ul>
 			</nav>
 		</header>
@@ -112,10 +120,17 @@
 		</main>
 
 		<footer>
+			{%- if lang == "en" %}
+			<p>
+				<strong>Reyeonk Clinic</strong> · 64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building) · <a href="tel:+82-2-558-5581">+82-2-558-5581</a><br>
+				Mon, Tue, Thu 10:00–20:00 · Fri 10:00–19:00 · Sat 10:00–15:00 · Closed Wed, Sun and public holidays · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
+			</p>
+			{%- else %}
 			<p>
 				<strong>리연케이의원</strong> · 서울특별시 강남구 언주로172길 64 리연케이빌딩 · <a href="tel:025585581">02-558-5581</a><br>
 				월·화·목 10–20시 · 금 10–19시 · 토 10–15시 · 수·일·공휴일 휴진 · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
 			</p>
+					{%- endif %}
 		</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
