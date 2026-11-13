@@ -37,7 +37,7 @@ export default [
 		slug: "hyunsukim",
 		photo: "/img/doctors/hyunsukim.jpg",
 		photoSize: [800, 1200],
-		name: "Kim Hyunsu（김현수）",
+		name: "金鉉秀（김현수）",
 		enName: "Dr. Kim Hyunsu",
 		title: "代表院长",
 		quote: "拒绝过度诊疗，只为您量身设计",
