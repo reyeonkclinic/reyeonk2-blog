@@ -1,0 +1,354 @@
+---js
+const permalink = "/ja/blog/ulthera-prime-300-600-price-effect/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "ウルセラ300ショットと600ショットの料金・効果の違い、頬のこけと痛みまで（ウルセラピー プライム）";
+const description = "ウルセラピー プライム300ショットと600ショットの効果・料金の違い、クリニックごとに料金が異なる理由、頬のこけの心配、痛みと麻酔の方法まで、ソウル・狎鴎亭のReyeonk Clinicが質問別にご案内します。";
+const date = "2026-11-13";
+const alternates = [
+	{ lang: "ko", url: "/blog/ulthera-prime-300-600-price-effect/" },
+	{ lang: "en", url: "/en/blog/ulthera-prime-300-600-price-effect/" },
+	{ lang: "ja", url: "/ja/blog/ulthera-prime-300-600-price-effect/" },
+	{ lang: "x-default", url: "/blog/ulthera-prime-300-600-price-effect/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif JP", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	line-break: strict; overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">ウルセラ300ショットと600ショットの料金・効果の違い、頬のこけと痛みまで（ウルセラピー プライム）</h1>
+	<p class="pz-byline">コラム · Reyeonk Clinic（韓国語の原文を翻訳）</p>
+	<p class="pz-hook">ウルセラは300ショットで足りる？それとも600ショットが必要？</p>
+	<p class="pz-lead">ぼやけてきたフェイスライン、二重あご、深くなるほうれい線、たるんだ頬が気になるとき、メスを使わないリフティングとしてウルセラピー プライム（Ultherapy PRIME）を調べる方は多いでしょう。そこで最初に悩むのがショット数です。300ショットだけでも効果はあるのか、600ショットは料金が2倍でも効果は2倍なのか、頬の脂肪が少なくても頬がこけないか。ソウル・狎鴎亭のReyeonk Clinicが、ウルセラ300ショットと600ショットの効果の違い、クリニックごとに料金が異なる理由、頬のこけ、痛みまでを質問別にまとめました。</p>
+	<div class="pz-summary">
+		<strong>3行まとめ</strong>
+		<ul><li>300ショットは、フェイスラインや二重あごなど気になる部位に集中したい場合、600ショットは複数の部位や広い範囲をまとめて計画する場合に主に検討します。ショット数が2倍でも効果が2倍になるわけではありません。</li><li>クリニックごとに料金が異なるのは、正規品の機器とチップの使用、医師によるカウンセリングと施術デザイン、部位ごとのショット配分、麻酔の方法、イベント条件や消費税込みかどうかが異なるためです。</li><li>頬の脂肪が少ない方は、肌の厚みと皮下脂肪層を確認したうえで、部位ごとにショット数と深さを調整する必要があります。600ショットの痛みは、麻酔の方法を事前に相談することで管理できます。</li></ul>
+	</div>
+	<p class="pz-note">このコラムは、Reyeonk Clinicが韓国語で執筆した記事の翻訳です。「韓国語」と記したリンクは、韓国語のページに移動します。</p>
+	<nav class="pz-section" aria-label="目次"><h2>目次</h2><ol><li><a href="#s1">ウルセラ300ショットと600ショットは、効果がどう違いますか？</a></li><li><a href="#s2">ウルセラ300ショット・600ショットの料金・効果の比較表</a></li><li><a href="#s3">従来のウルセラとウルセラピー プライムは何が変わりましたか？</a></li><li><a href="#s4">ウルセラ300ショット・600ショットの料金は、なぜクリニックごとに違うのですか？</a></li><li><a href="#s5">ウルセラ600ショットで頬がこけることはありますか？</a></li><li><a href="#s6">ウルセラの痛みはどのくらいで、600ショットでも受けられますか？</a></li><li><a href="#s7">ウルセラだけでは足りない場合、ウルサーマジの複合リフティングはどうですか？</a></li><li><a href="#s8">Reyeonk Clinicではウルセラをどのように進めますか？</a></li><li><a href="#faq">よくあるご質問（FAQ）</a></li><li><a href="#doctors">Reyeonk Clinicの医療陣</a></li></ol></nav>
+
+	<div class="pz-section" id="s1">
+		<h2>ウルセラ300ショットと600ショットは、効果がどう違いますか？</h2>
+		<div class="pz-text"><p>ウルセラピー プライムは、高密度焦点式超音波（HIFU）を用いて、皮膚の特定の深さに熱凝固点をつくり、コラーゲンの再生反応を促す、切らないリフティング施術です。</p><p>大切なのは、ショット数が多いほど良いということではなく、必要な部位にどれだけ正確にエネルギーを届けられるかです。</p></div>
+		<ul class="pz-list" style="margin-top: 16px"><li><h3>ウルセラ300ショット</h3><p>300ショットは、気になる部位を中心にリフティングを計画する場合に検討します。顔全体ではなく、必要な部位に集中してショットを配分する方法です。</p><ul class="pz-bullets"><li>フェイスラインがぼやけ始めた場合</li><li>二重あごやあご下のたるみが気になる場合</li><li>特定の部位のハリの低下が目立つ場合</li><li>比較的限られた範囲のリフティングを希望する場合</li></ul></li><li><h3>ウルセラ600ショット</h3><p>600ショットは、複数の部位のたるみをまとめてケアする場合や、より広い範囲でリフティングを計画する場合に検討します。300ショットよりも多くの部位や層にエネルギーを配分できる点が利点です。</p><ul class="pz-bullets"><li>頬とフェイスラインの両方にハリの低下がある場合</li><li>二重あごと輪郭の両方が気になる場合</li><li>複数の部位に異なる深さの施術が必要な場合</li><li>顔全体のハリ改善を希望する場合</li></ul></li></ul>
+		<div class="pz-text"><p>ただし、顔の大きさや肌の状態によっては300ショットでも広い範囲を施術できることがあり、実際の範囲は医師の診断とデザインによって異なります。</p><p>また、600ショットが300ショットより必ず2倍効果的というわけではありません。同じ600ショットでも、脂肪量、肌の厚み、たるみの方向を考慮しなければ、期待した結果を得にくい場合があります。</p></div>
+	</div>
+
+	<div class="pz-section" id="s2">
+		<h2>ウルセラ300ショット・600ショットの料金・効果の比較表</h2>
+		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th scope="col">比較項目</th><th scope="col">ウルセラ300ショット</th><th scope="col">ウルセラ600ショット</th></tr></thead><tbody><tr><th scope="row">施術の方向</th><td>特定の気になる部位に集中</td><td>複数の部位または広い範囲</td></tr><tr><th scope="row">主な目的</th><td>フェイスライン・二重あごなどの部分的なリフティング</td><td>顔全体のハリ・輪郭の改善</td></tr><tr><th scope="row">ショット配分</th><td>選んだ部位が中心</td><td>さまざまな部位と深さに配分可能</td></tr><tr><th scope="row">施術時間</th><td>比較的短い</td><td>比較的長くなることがある</td></tr><tr><th scope="row">料金</th><td>比較的負担が少ない</td><td>ショット数が増えるため費用が上がる</td></tr><tr><th scope="row">向いている方</th><td>部分的なたるみが気になる方</td><td>複数の部位のたるみが気になる方</td></tr></tbody></table></div>
+		<div class="pz-text"><p>大切なのは、300ショットと600ショットのどちらが良いかではなく、ご自身の顔に必要なショット数がいくつかということです。肌が薄い方や頬の脂肪が少ない方は、不要な部位にまで多くのショットを当てるよりも、適切な範囲と深さを設定することが重要です。</p></div>
+	</div>
+
+	<div class="pz-section" id="s3">
+		<h2>従来のウルセラとウルセラピー プライムは何が変わりましたか？</h2>
+		<div class="pz-text"><p>ウルセラピー プライムは、従来のウルセラの超音波リフティングの原理を保ちながら、施術者による皮膚層の観察と機器の使いやすさを改善したシステムです。最大の違いは、リアルタイム超音波画像技術の進歩です。</p></div>
+		<ul class="pz-list" style="margin-top: 16px"><li><h3>① より鮮明な皮膚層の確認</h3><p>従来の機器より約35%大きくなった画面と、2倍に広がった超音波画像の領域により、皮膚の中の構造をより観察しやすくなりました。最大8mmの深さまで画像を確認でき、肌の状態を踏まえた施術計画に役立ちます。</p></li><li><h3>② 精密なオーダーメイドのリフティングデザイン</h3><p>超音波画像で皮膚層や組織の状態を確認しながら、適切な深さにエネルギーを届けられるよう計画できます。</p></li><li><h3>③ より改善された施術環境</h3><p>従来の機器と比べてデータ処理性能が最大10倍に向上し、メーカーの資料によると施術プラットフォームの速度も改善されています。</p></li></ul>
+		<div class="pz-text"><p>ただし、処理速度が10倍になったことは、施術時間が10分の1に短縮されたり、痛みが10分の1に減ったりすることを意味しません。ウルセラピー プライムの大切な利点は、単に速いことではなく、皮膚の中を確認しながら一人ひとりに合わせたリフティングを計画できる点です。</p></div>
+	</div>
+
+	<div class="pz-section" id="s4">
+		<h2>ウルセラ300ショット・600ショットの料金は、なぜクリニックごとに違うのですか？</h2>
+		<div class="pz-text"><p>ウルセラピー プライムの料金を調べると、クリニックによってかなりの差があることがわかります。一部のクリニックの公開料金には以下のような例がありますが、料金はクリニックやイベントによって異なります。</p></div>
+		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th scope="col">施術</th><th scope="col">一部のクリニックの公開料金の例（参考）</th></tr></thead><tbody><tr><th scope="row">ウルセラピー プライム300ショット</th><td>約99万〜129万ウォン</td></tr><tr><th scope="row">ウルセラピー プライム600ショット</th><td>約189万〜239万ウォン</td></tr></tbody></table></div>
+		<div class="pz-text"><p>同じウルセラの施術でも料金に差が出る理由は、次のとおりです。</p></div>
+		<ol class="pz-bullets" style="margin-top: 16px"><li>正規品の機器と正規品のチップを使用しているか</li><li>医師による直接のカウンセリングと施術デザイン</li><li>部位ごとのショット配分と施術の深さの違い</li><li>麻酔の方法と、追加ケアが含まれているか</li><li>イベント条件と、消費税込みかどうか</li></ol>
+		<div class="pz-text"><p>ウルセラは、決まった数のショットを照射するだけの施術ではありません。同じ600ショットでも、どの部位に、どの深さで、どの程度のエネルギーを配分するかによって、施術計画と結果が変わることがあります。</p><p>そのため、料金を比較するときは、ショット数と金額だけでなく、医師の施術経験、正規品のチップ、カウンセリングの過程もあわせて確認することをおすすめします。</p></div>
+	</div>
+
+	<div class="pz-section" id="s5">
+		<h2>ウルセラ600ショットで頬がこけることはありますか？</h2>
+		<div class="pz-text"><p>ウルセラを検討する方が最も心配される点のひとつが、頬のこけです。特に、頬の脂肪が少ない方や、頬骨の下がくぼんで見える顔立ちの場合は、より慎重に進める必要があります。</p><p>ウルセラは皮膚の内部の組織に熱エネルギーを届ける施術のため、部位ごとの脂肪量や肌の厚みを考慮しない施術では、意図しない頬のこけや輪郭の変化が懸念されることがあります。そのため、単に多くのショットを当てるのではなく、次の点を考慮する必要があります。</p></div>
+		<ul class="pz-bullets" style="margin-top: 16px"><li>頬の脂肪が少ない部位と、たるみが強い部位を見分ける</li><li>肌の厚みと皮下脂肪層を確認する</li><li>部位ごとに適切な深さのチップを選ぶ</li><li>不要な部位への過度なエネルギー照射を避ける</li><li>顔全体の立体的な輪郭を考慮したデザイン</li></ul>
+		<div class="pz-text"><p>ウルセラピー プライムのリアルタイム画像機能は、皮膚層を確認しながら施術するのに役立ちます。ただし、画像機能があるからといって、頬のこけなどの副作用を完全に防げるわけではありません。</p></div>
+	</div>
+
+	<div class="pz-section" id="s6">
+		<h2>ウルセラの痛みはどのくらいで、600ショットでも受けられますか？</h2>
+		<div class="pz-text"><p>ウルセラは、エネルギーが皮膚の深い層に届く過程で、ピリッとした痛みや、奥に響くような鈍い痛みを感じることがあります。痛みの程度は、個人の敏感さ、施術部位、エネルギー設定などによって異なります。</p><p>特に広い範囲を施術する600ショットは施術時間が長くなることがあるため、痛みのケア方法を事前に相談しておくことをおすすめします。Reyeonk Clinicでは、患者様の状態と施術計画に合わせて、痛みを和らげるさまざまな方法を検討します。</p></div>
+		<ul class="pz-list" style="margin-top: 16px"><li><h3>超音波を用いた局所麻酔</h3><p>超音波機器を使った局所麻酔の補助方法を活用し、施術中の不快感を減らすことを目指します。麻酔薬の浸透の度合いと実際の鎮痛効果には個人差があります。</p></li><li><h3>睡眠麻酔・吸入鎮静</h3><p>痛みに敏感な場合は、医師の評価のうえで、睡眠麻酔や吸入鎮静など適用可能な方法をご相談いただけます。すべての麻酔方法にはそれぞれリスクと注意事項があるため、患者様の健康状態と施術範囲を考慮して決定する必要があります。</p></li></ul>
+	</div>
+
+	<div class="pz-section" id="s7">
+		<h2>ウルセラだけでは足りない場合、ウルサーマジの複合リフティングはどうですか？</h2>
+		<div class="pz-text"><p>ウルセラピー プライムは、皮膚の深い層のたるみと輪郭の改善を目指す施術です。ただし、小じわ、肌のキメ、真皮層のハリの低下も気になる場合は、ほかのエネルギー系施術を併用する方法も検討できます。Reyeonk Clinicでご案内している代表的な複合リフティングが、ウルサーマジ（ウルセラピー プライム + サーマクールFLX）です。</p></div>
+		<ul class="pz-list" style="margin-top: 16px"><li><h3>ウルセラピー プライム</h3><p>高密度焦点式超音波を用いて、皮膚の深い層のリフティングを目指します。</p></li><li><h3>サーマクールFLX</h3><p>高周波エネルギーを用いて、肌のハリと小じわの改善を助ける施術です。</p></li></ul>
+		<div class="pz-text"><p>2つの施術を組み合わせることで、異なる皮膚層とお悩みを考慮した複合リフティングの計画を立てられます。ただし、両方を受けることがすべての方にとってより効果的というわけではありません。肌の状態によっては、単独の施術が適していることもあります。</p></div>
+	</div>
+
+	<div class="pz-section" id="s8">
+		<h2>Reyeonk Clinicではウルセラをどのように進めますか？</h2>
+		<div class="pz-text"><p>ウルセラは、料金やショット数も大切ですが、何よりご自身の肌の状態に合った施術計画を立てることが重要です。Reyeonk Clinicは、次の原則を大切にしています。</p></div>
+		<ul class="pz-list" style="margin-top: 16px"><li><h3>医師による直接のカウンセリング</h3><p>肌の状態、たるみの程度、顔立ちを確認し、施術の必要性をご説明します。</p></li><li><h3>一人ひとりに合わせたリフティングデザイン</h3><p>同じ600ショットでも、肌の厚み、顔の脂肪量、部位ごとの特性を考慮して施術を計画します。</p></li><li><h3>正規品・正量の原則</h3><p>正規品の機器とチップの使用、計画した施術量を大切にしています。</p></li><li><h3>不要な施術をすすめないカウンセリング</h3><p>ショット数を無条件に増やすのではなく、一人ひとりに合った治療の方向性を一緒に考えます。</p></li></ul>
+	</div>
+
+	<div class="pz-section" id="faq">
+		<h2>よくあるご質問（FAQ）</h2>
+		<ul class="pz-list"><li><h3>Q1. 自分の顔には、ウルセラは何ショットくらいが適切ですか？</h3><p>顔の大きさよりも、肌の厚み、たるみの程度、脂肪量、施術範囲が重要です。フェイスラインや二重あごなど特定の部位だけが気になる場合は、300ショット前後の集中施術を、頬とフェイスラインなど複数の部位にたるみがある場合や広い範囲を計画する場合は、600ショットを検討できます。ただし、300ショットと600ショットは絶対的な基準ではなく、人によってはそれより少ない、または多いショット数が必要なこともあります。Reyeonk Clinicでは、医師が直接カウンセリングを行い、肌の状態と顔の輪郭を確認したうえで、適切なショット数と施術範囲を決定します。</p></li><li><h3>Q2. ウルセラ300ショット・600ショットの料金は、なぜクリニックによってこんなに違うのですか？</h3><p>ショット数以外にも、医師の施術方法、麻酔、追加ケア、イベントの構成などが異なるためです。同じウルセラピー プライム600ショットでも、正規品のチップの使用、部位ごとのオーダーメイドのデザイン、医師が直接施術するかどうか、追加サービスなどによって金額に差が出ることがあります。安いという理由だけで選ぶのではなく、正確なショット数と含まれる内容を確認することをおすすめします。特にイベント価格の場合は、消費税、麻酔費、追加ケアの費用が含まれているかも確認してください。</p></li><li><h3>Q3. 頬の脂肪が少ないのですが、ウルセラを受けると頬がこけることはありますか？</h3><p>頬のこけの可能性を完全には否定できないため、慎重な施術デザインが必要です。頬の脂肪が少なく、頬骨の下がくぼんでいる顔立ちの場合、顔全体に同じ強さとショット数を当てることは適していないことがあります。必要に応じて、頬の中央部への照射を減らす、または避け、フェイスラインやたるみが確認できる部位を中心に施術計画を調整できます。頬の脂肪が少ないというだけで必ずウルセラを避けなければならないわけではありませんが、施術前に脂肪量と皮膚層を十分に確認する過程が重要です。</p></li><li><h3>Q4. ウルセラ600ショットの効果はいつ頃から現れますか？</h3><p>一般的には、数週間から2〜3か月かけて徐々に変化が現れると期待できます。超音波エネルギーによる組織の反応のあとにコラーゲンの再形成が進み、ハリやリフトアップの変化を感じられます。ただし、効果の現れる時期や持続期間は、個人の肌の状態や加齢の程度によって異なります。</p></li><li><h3>Q5. ウルセラ600ショットは、300ショットより必ず効果が高いのですか？</h3><p>そうではありません。600ショットはより広い範囲にエネルギーを配分できる利点がありますが、ショット数が2倍だからといって効果も2倍になるわけではありません。肌が薄い方やたるみが強くない方には300ショットのほうが適している場合があり、反対に複数の部位にたるみがある場合は、600ショットのほうが施術範囲を計画しやすいことがあります。</p></li></ul>
+	</div>
+
+	<div class="pz-section" id="doctors">
+		<h2>Reyeonk Clinicの医療陣</h2>
+		<ul class="pz-list" style="margin-top: 16px"><li><h3>イ・ドゥチャン 代表院長</h3><p>フィラー・レーザー・リフティング</p></li><li><h3>キム・ヒョンス 代表院長</h3><p>ボディコンターリング・サーマクール FLX・ウルセラ・高周波リフティング</p></li><li><h3>チェ・ヒョンホ 院長</h3><p>レーザー・美容施術</p></li></ul>
+		<p class="pz-note" style="margin-top: 16px">詳しい経歴は<a href="/ja/doctors/">医療陣のご紹介ページ</a>をご覧ください。</p>
+	</div>
+
+	<div class="pz-section pz-related">
+		<h2>関連コラム（韓国語）</h2>
+		<ul class="pz-bullets"><li><a href="/blog/ulthera-prime-300-600-shots/" hreflang="ko" lang="ko">울쎄라피프라임 300샷 vs 600샷, 나는 몇 샷 받아야 할까?</a></li><li><a href="/blog/ulthera-prime-600/" hreflang="ko" lang="ko">울쎄라 피프라임 600샷, 효과와 통증 그리고 수면마취가 필요할까?</a></li><li><a href="/blog/ulthera-sleep-anesthesia/" hreflang="ko" lang="ko">울쎄라 수면마취 꼭 받아야 할까요? 수면마취 없이도 받을 수 있는 방법</a></li><li><a href="/blog/ulthermage-difference-effect/" hreflang="ko" lang="ko">울쎄라 써마지 차이와 울써마지 효과, 왜 함께 받기를 추천할까요?</a></li></ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">良いウルセラのリフティングは、ショット数の多さではなく、必要なショットを適切な位置に届けることから始まります。</p>
+		<p class="pz-invite">300ショットと600ショットのどちらが良いか迷っている方は、料金から決める前に、まずご自身の肌の状態を確認してみてください。ウルセラピー プライム300ショット・600ショットの料金と施術方法は、狎鴎亭ロデオ駅近くのReyeonk Clinicでのカウンセリングでご案内しています。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172ギル64 Reyeonkビル<br>B1・3F・4F</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1の相談はこちら</a></dd>
+				<dt>ウェブサイト</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韓国語）</dd>
+				<dt>診療時間</dt>
+				<dd>月・火・木 10:00–20:00<br>金 10:00–19:00<br>土 10:00–15:00<br>水・日・祝日は休診</dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">道案内を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本コラムは医療情報の提供を目的としています。施術後に一時的な赤み、腫れ、あざ、痛み、感覚の変化などが生じることがあり、まれにやけどや神経に関する症状が現れることがあります。効果や回復期間には個人差があるため、施術前に医療陣と十分にカウンセリングを行ってください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "ウルセラ300ショットと600ショットの料金・効果の違い、頬のこけと痛みまで（ウルセラピー プライム）",
+   "description": "ウルセラピー プライム300ショットと600ショットの効果・料金の違い、クリニックごとに料金が異なる理由、頬のこけの心配、痛みと麻酔の方法まで、ソウル・狎鴎亭のReyeonk Clinicが質問別にご案内します。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-13",
+   "dateModified": "2026-11-13",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/ulthera-prime-300-600-price-effect/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "about": [
+    "ウルセラピー プライム",
+    "ウルセラ300ショット",
+    "ウルセラ600ショット",
+    "ウルセラ 料金",
+    "頬のこけ",
+    "ウルセラ 痛み",
+    "狎鴎亭 皮膚科",
+    "Reyeonk Clinic"
+   ],
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "自分の顔には、ウルセラは何ショットくらいが適切ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "顔の大きさよりも、肌の厚み、たるみの程度、脂肪量、施術範囲が重要です。フェイスラインや二重あごなど特定の部位だけが気になる場合は、300ショット前後の集中施術を、頬とフェイスラインなど複数の部位にたるみがある場合や広い範囲を計画する場合は、600ショットを検討できます。ただし、300ショットと600ショットは絶対的な基準ではなく、人によってはそれより少ない、または多いショット数が必要なこともあります。Reyeonk Clinicでは、医師が直接カウンセリングを行い、肌の状態と顔の輪郭を確認したうえで、適切なショット数と施術範囲を決定します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ウルセラ300ショット・600ショットの料金は、なぜクリニックによってこんなに違うのですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ショット数以外にも、医師の施術方法、麻酔、追加ケア、イベントの構成などが異なるためです。同じウルセラピー プライム600ショットでも、正規品のチップの使用、部位ごとのオーダーメイドのデザイン、医師が直接施術するかどうか、追加サービスなどによって金額に差が出ることがあります。安いという理由だけで選ぶのではなく、正確なショット数と含まれる内容を確認することをおすすめします。特にイベント価格の場合は、消費税、麻酔費、追加ケアの費用が含まれているかも確認してください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "頬の脂肪が少ないのですが、ウルセラを受けると頬がこけることはありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "頬のこけの可能性を完全には否定できないため、慎重な施術デザインが必要です。頬の脂肪が少なく、頬骨の下がくぼんでいる顔立ちの場合、顔全体に同じ強さとショット数を当てることは適していないことがあります。必要に応じて、頬の中央部への照射を減らす、または避け、フェイスラインやたるみが確認できる部位を中心に施術計画を調整できます。頬の脂肪が少ないというだけで必ずウルセラを避けなければならないわけではありませんが、施術前に脂肪量と皮膚層を十分に確認する過程が重要です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ウルセラ600ショットの効果はいつ頃から現れますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "一般的には、数週間から2〜3か月かけて徐々に変化が現れると期待できます。超音波エネルギーによる組織の反応のあとにコラーゲンの再形成が進み、ハリやリフトアップの変化を感じられます。ただし、効果の現れる時期や持続期間は、個人の肌の状態や加齢の程度によって異なります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ウルセラ600ショットは、300ショットより必ず効果が高いのですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "そうではありません。600ショットはより広い範囲にエネルギーを配分できる利点がありますが、ショット数が2倍だからといって効果も2倍になるわけではありません。肌が薄い方やたるみが強くない方には300ショットのほうが適している場合があり、反対に複数の部位にたるみがある場合は、600ショットのほうが施術範囲を計画しやすいことがあります。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択しました";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
