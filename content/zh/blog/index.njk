@@ -1,0 +1,19 @@
+---js
+const permalink = "/zh/blog/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "专栏 | Reyeonk Clinic（首尔狎鸥亭）";
+const description = "首尔狎鸥亭 Reyeonk Clinic 施术专栏的中文版。介绍各项施术的原理、恢复过程与费用参考。";
+const alternates = [
+	{ lang: "ko", url: "/blog/" },
+	{ lang: "en", url: "/en/blog/" },
+	{ lang: "ja", url: "/ja/blog/" },
+	{ lang: "zh-Hans", url: "/zh/blog/" },
+	{ lang: "x-default", url: "/blog/" }
+];
+---
+<h1>专栏</h1>
+<p>Reyeonk Clinic的施术专栏，由韩语翻译而来。其他专栏请阅读韩语版。</p>
+{% set postslist = collections.posts_zh %}
+{% include "postslist.njk" %}
+<p><a href="/blog/" hreflang="ko" lang="ko">韩语专栏</a></p>

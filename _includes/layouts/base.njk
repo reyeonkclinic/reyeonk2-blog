@@ -15,7 +15,7 @@
 		{%- endfor %}
 		<meta property="og:type" content="{% if tags and ("posts" in tags) %}article{% else %}website{% endif %}">
 		<meta property="og:site_name" content="{{ metadata.title }}">
-		<meta property="og:locale" content="{% if lang == "en" %}en_US{% elif lang == "ja" %}ja_JP{% else %}ko_KR{% endif %}">
+		<meta property="og:locale" content="{% if lang == "en" %}en_US{% elif lang == "ja" %}ja_JP{% elif lang == "zh-Hans" %}zh_CN{% else %}ko_KR{% endif %}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ description or metadata.description }}">
 		<meta property="og:url" content="{{ pageUrl }}">
@@ -96,7 +96,7 @@
 
 		<header>
 			{%- set curLang = lang or metadata.language %}
-			<a href="{% if lang == "en" %}/en/{% elif lang == "ja" %}/ja/{% else %}/{% endif %}" class="home-link">{% if lang == "en" or lang == "ja" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
+			<a href="{% if lang == "en" %}/en/{% elif lang == "ja" %}/ja/{% elif lang == "zh-Hans" %}/zh/{% else %}/{% endif %}" class="home-link">{% if lang == "en" or lang == "ja" or lang == "zh-Hans" %}Reyeonk Clinic{% else %}{{ metadata.title }}{% endif %}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
@@ -112,6 +112,11 @@
 					<li class="nav-item"><a href="/ja/doctors/"{% if page.url == "/ja/doctors/" %} aria-current="page"{% endif %}>医療陣</a></li>
 					<li class="nav-item"><a href="/ja/blog/"{% if page.url == "/ja/blog/" %} aria-current="page"{% endif %}>コラム</a></li>
 					<li class="nav-item"><a href="/ja/location/"{% if page.url == "/ja/location/" %} aria-current="page"{% endif %}>アクセス</a></li>
+				{%- elif lang == "zh-Hans" %}
+					<li class="nav-item"><a href="/zh/"{% if page.url == "/zh/" %} aria-current="page"{% endif %}>首页</a></li>
+					<li class="nav-item"><a href="/zh/doctors/"{% if page.url == "/zh/doctors/" %} aria-current="page"{% endif %}>医疗团队</a></li>
+					<li class="nav-item"><a href="/zh/blog/"{% if page.url == "/zh/blog/" %} aria-current="page"{% endif %}>专栏</a></li>
+					<li class="nav-item"><a href="/zh/location/"{% if page.url == "/zh/location/" %} aria-current="page"{% endif %}>交通指南</a></li>
 				{%- else %}
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
@@ -153,6 +158,11 @@
 				<strong>Reyeonk Clinic</strong> · ソウル特別市江南区彦州路172ギル64 Reyeonkビル · <a href="tel:+82-2-558-5581">+82-2-558-5581</a><br>
 				月・火・木 10:00–20:00 · 金 10:00–19:00 · 土 10:00–15:00 · 休診：水曜・日曜・祝日 · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
 			</p>
+			{%- elif lang == "zh-Hans" %}
+			<p>
+				<strong>Reyeonk Clinic</strong> · 首尔特别市江南区彦州路172街64号 Reyeonk大楼 · <a href="tel:+82-2-558-5581">+82-2-558-5581</a><br>
+				周一、周二、周四 10:00–20:00 · 周五 10:00–19:00 · 周六 10:00–15:00 · 周三、周日及公共假日休诊 · <a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a>
+			</p>
 			{%- else %}
 			<p>
 				<strong>리연케이의원</strong> · 서울특별시 강남구 언주로172길 64 리연케이빌딩 · <a href="tel:025585581">02-558-5581</a><br>
@@ -160,9 +170,9 @@
 			</p>
 			{%- endif %}
 			<div class="qr-block">
-				<p class="qr-title">{% if lang == "en" %}Chat with us{% elif lang == "ja" %}チャットで相談{% else %}채팅 상담{% endif %}</p>
+				<p class="qr-title">{% if lang == "en" %}Chat with us{% elif lang == "ja" %}チャットで相談{% elif lang == "zh-Hans" %}在线咨询{% else %}채팅 상담{% endif %}</p>
 				<ul class="qr-list">
-					<li><img src="/img/qr/kakao.png" alt="{% if lang == "en" %}KakaoTalk QR code for Reyeonk Clinic{% elif lang == "ja" %}カカオトーク QRコード（Reyeonk Clinic）{% else %}카카오톡 리연케이의원 QR 코드{% endif %}" width="120" height="120" loading="lazy" eleventy:ignore><span>{% if lang == "ko" %}카카오톡<br>리연케이의원{% else %}KakaoTalk<br>Reyeonk Clinic{% endif %}</span></li>
+					<li><img src="/img/qr/kakao.png" alt="{% if lang == "en" %}KakaoTalk QR code for Reyeonk Clinic{% elif lang == "ja" %}カカオトーク QRコード（Reyeonk Clinic）{% elif lang == "zh-Hans" %}KakaoTalk 二维码（Reyeonk Clinic）{% else %}카카오톡 리연케이의원 QR 코드{% endif %}" width="120" height="120" loading="lazy" eleventy:ignore><span>{% if lang == "ko" %}카카오톡<br>리연케이의원{% else %}KakaoTalk<br>Reyeonk Clinic{% endif %}</span></li>
 					<li><img src="/img/qr/whatsapp.png" alt="WhatsApp QR code" width="120" height="120" loading="lazy" eleventy:ignore><span>WhatsApp<br>+82 2-558-5581</span></li>
 					<li><img src="/img/qr/wechat.png" alt="WeChat QR code" width="120" height="120" loading="lazy" eleventy:ignore><span>WeChat<br>china reyeonk</span></li>
 					<li><img src="/img/qr/line.png" alt="LINE QR code" width="120" height="120" loading="lazy" eleventy:ignore><span>LINE<br>@849afosn</span></li>

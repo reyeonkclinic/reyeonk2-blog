@@ -1,0 +1,218 @@
+---js
+const permalink = "/zh/";
+const lang = "zh-Hans";
+const title = "Reyeonk Clinic | 首尔狎鸥亭的紧致提升与皮肤护理诊所";
+const description = "开业16年，从咨询到施术均由院长亲自负责。Ulthera PRIME（超声刀）、Thermage FLX（热玛吉）、Density、Potenza（黄金微针）、水光针。步行约5分钟可达狎鸥亭罗迪奥站6号出口。+82-2-558-5581";
+const alternates = [
+	{ lang: "ko", url: "/" },
+	{ lang: "en", url: "/en/" },
+	{ lang: "ja", url: "/ja/" },
+	{ lang: "zh-Hans", url: "/zh/" },
+	{ lang: "x-default", url: "/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+.rk {
+	--rk-ink: #14211F;
+	--rk-muted: #5A6B68;
+	--rk-line: #D3DDDA;
+	--rk-accent: #1D6B66;
+	--rk-soft: #DDECE9;
+	--rk-surface: #FFFFFF;
+	--rk-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+	--rk-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+	color: var(--rk-ink);
+	font-family: var(--rk-body);
+	font-size: 17px;
+	line-height: 1.8;
+	line-break: strict;
+	overflow-wrap: break-word;
+}
+@media (prefers-color-scheme: dark) {
+	.rk {
+		--rk-ink: #E4EEEC;
+		--rk-muted: #9AAEAA;
+		--rk-line: #273936;
+		--rk-accent: #6CC3BB;
+		--rk-soft: #1B3431;
+		--rk-surface: #152322;
+	}
+}
+.rk *, .rk *::before, .rk *::after { box-sizing: border-box; }
+.rk h1, .rk h2, .rk h3 { font-family: var(--rk-display); font-weight: 700; line-height: 1.4; text-wrap: balance; margin: 0; }
+.rk p { margin: 0; }
+.rk a { color: var(--rk-accent); }
+
+.rk-hero { padding: 8px 0 8px; }
+.rk-eyebrow { color: var(--rk-accent); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em; }
+.rk-hero h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); margin-top: 10px; }
+.rk-hero .rk-lead { margin-top: 16px; color: var(--rk-muted); max-width: 38rem; }
+.rk-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.rk-btn { display: inline-block; padding: 10px 20px; font-weight: 600; text-decoration: none; border: 1px solid var(--rk-accent); }
+.rk-btn-main { background: var(--rk-accent); color: var(--rk-surface) !important; }
+.rk-btn-sub { color: var(--rk-accent); }
+
+.rk-points { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rk-points li { background: var(--rk-soft); padding: 18px; }
+.rk-points strong { display: block; font-family: var(--rk-display); font-size: 1.35rem; color: var(--rk-accent); }
+.rk-points span { font-size: 0.95rem; }
+
+.rk-section { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--rk-line); }
+.rk h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.rk-intro { color: var(--rk-muted); max-width: 38rem; margin-bottom: 20px; }
+
+.rk-cats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.rk-cat { border: 1px solid var(--rk-line); padding: 18px; background: var(--rk-surface); }
+.rk-cat h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.rk-cat ul { margin: 0; padding: 0; list-style: none; color: var(--rk-muted); font-size: 0.95rem; }
+.rk-cat li + li { margin-top: 2px; }
+
+.rk-info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.rk-info dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 18px; }
+.rk-info dt { color: var(--rk-muted); font-size: 0.92rem; }
+.rk-info dd { margin: 0; }
+.rk-info h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.rk-note { margin-top: 10px; color: var(--rk-muted); font-size: 0.9rem; }
+
+@media (max-width: 640px) {
+	.rk { font-size: 16px; }
+	.rk-points, .rk-cats, .rk-info { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="rk">
+	<section class="rk-hero">
+		<p class="rk-eyebrow">紧致提升·皮肤护理诊所 · 首尔狎鸥亭</p>
+		<h1>每张脸都有不同的设计图，<br>由院长亲自绘制</h1>
+		<p class="rk-lead">丽妍K医院（Reyeonk Clinic）自2009年开业以来，16年零事故坚持诊疗。从一对一咨询、施术设计到施术，均由院长亲自完成，根据皮肤状态与面部骨骼，为每一位客人提供合适的方案。</p>
+		<div class="rk-cta">
+			<a class="rk-btn rk-btn-main" href="tel:+82-2-558-5581">电话咨询 +82-2-558-5581</a>
+			<a class="rk-btn rk-btn-sub" href="/zh/doctors/">医疗团队介绍</a>
+			<a class="rk-btn rk-btn-sub" href="https://reyeonk.co.kr" target="_blank" rel="noopener">官方网站</a>
+		</div>
+		<ul class="rk-points">
+			<li><strong>16年</strong><span>2009年开业，零事故诊疗</span></li>
+			<li><strong>1:1</strong><span>从咨询到施术由院长亲自负责</span></li>
+			<li><strong>100%</strong><span>原则上仅使用正品探头（Tip）</span></li>
+		</ul>
+	</section>
+
+	<section class="rk-section">
+		<h2>诊疗项目</h2>
+		<div class="rk-cats">
+			<div class="rk-cat">
+				<h3>紧致提升</h3>
+				<ul>
+					<li>Ulthera PRIME（超声刀）</li>
+					<li>Thermage FLX（热玛吉）</li>
+					<li>Density · Density Noir</li>
+					<li>Onda · Shurink · InMode</li>
+					<li>Virtue RF · 线雕提升</li>
+				</ul>
+			</div>
+			<div class="rk-cat">
+				<h3>皮肤护理</h3>
+				<ul>
+					<li>Potenza（黄金微针·毛孔·痘疤）</li>
+					<li>水光针（Skin Booster）· Rejuran Healer（丽珠兰）</li>
+					<li>色斑·色素沉着·激光嫩肤</li>
+					<li>痘痘·泛红护理</li>
+					<li>脱毛·祛纹身</li>
+				</ul>
+			</div>
+			<div class="rk-cat">
+				<h3>微整形·轮廓</h3>
+				<ul>
+					<li>高端填充剂</li>
+					<li>肉毒素·肉毒水光（Skin Botox）</li>
+					<li>容量设计</li>
+					<li>脸型轮廓·Sunsak（순삭）注射</li>
+					<li>吸脂</li>
+				</ul>
+			</div>
+		</div>
+		<p class="rk-note">施术方案将在面诊咨询后确定。效果与适应情况因人而异。</p>
+	</section>
+
+	<section class="rk-section">
+		<h2>施术专栏</h2>
+		<p class="rk-intro">各项施术的原理、恢复过程与费用等详细解说专栏，主要以韩语提供（正陆续翻译中）。</p>
+		<ul>
+			<li><a href="/zh/blog/ulthera-prime-300-600-price-effect/">超声刀（Ulthera）300发与600发的费用和效果差异，从脸颊凹陷到疼痛一次说清（Ultherapy PRIME）</a></li>
+			<li><a href="/zh/blog/potenza-1000-shots-tip-selection/">Potenza（黄金微针）1000发价格与效果：为何探头选择决定了最终结果？</a></li>
+		</ul>
+		<p><a href="/zh/blog/">中文专栏列表</a> · <a href="/blog/" hreflang="ko" lang="ko">韩语专栏</a></p>
+	</section>
+
+	<section class="rk-section" id="info">
+		<h2>诊疗时间·交通</h2>
+		<div class="rk-info">
+			<div>
+				<h3>诊疗时间</h3>
+				<dl>
+					<dt>周一·周二·周四</dt><dd>10:00 – 20:00</dd>
+					<dt>周五</dt><dd>10:00 – 19:00</dd>
+					<dt>周六</dt><dd>10:00 – 15:00</dd>
+					<dt>午休</dt><dd>13:00 – 14:00（工作日）</dd>
+					<dt>休诊日</dt><dd>周三·周日·公共假日</dd>
+				</dl>
+			</div>
+			<div>
+				<h3>交通</h3>
+				<dl>
+					<dt>地址</dt><dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼（리연케이빌딩）<br>（新沙洞663-20）B1·3F·4F</dd>
+					<dt>地铁</dt><dd>水仁盆唐线 狎鸥亭罗迪奥站6号出口，步行约5分钟</dd>
+					<dt>公交</dt><dd>在Galleria百货站下车（143、301、362、472等）</dd>
+					<dt>停车</dt><dd>Reyeonk大楼停车场（新沙洞662-12）提供代客泊车，基本2小时5,000韩元</dd>
+					<dt>电话</dt><dd><a href="tel:+82-2-558-5581">+82-2-558-5581</a></dd>
+				</dl>
+				<p class="rk-note">前台位于3楼。<a href="/zh/location/">查看图文交通指南</a></p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@type": "MedicalClinic",
+	"@id": "https://reyeonk2.com/#clinic",
+	"name": "Reyeonk Clinic",
+	"alternateName": ["ReYeonK Clinic", "리연케이의원"],
+	"url": "https://reyeonk2.com/zh/",
+	"sameAs": ["https://reyeonk.co.kr"],
+	"image": "https://reyeonk2.com/img/og/default.jpg",
+	"description": "首尔狎鸥亭的紧致提升与皮肤护理诊所。开业16年，从咨询到施术均由院长亲自负责。",
+	"telephone": "+82-2-558-5581",
+	"foundingDate": "2009",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "64 Eonju-ro 172-gil, Reyeonk Building",
+		"addressLocality": "Gangnam-gu",
+		"addressRegion": "Seoul",
+		"addressCountry": "KR"
+	},
+	"openingHoursSpecification": [
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "10:00", "closes": "20:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "19:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "15:00" }
+	],
+	"employee": [
+		{ "@type": "Physician", "name": "Lee Doochan（이두찬）", "jobTitle": "代表院长", "url": "https://reyeonk2.com/zh/doctors/doochanlee/" },
+		{ "@type": "Physician", "name": "Kim Hyunsu（김현수）", "jobTitle": "代表院长", "url": "https://reyeonk2.com/zh/doctors/hyunsukim/" },
+		{ "@type": "Physician", "name": "Choi Hyunho（최현호）", "jobTitle": "院长", "url": "https://reyeonk2.com/zh/doctors/hyunhochoi/" }
+	],
+	"availableService": [
+		{ "@type": "MedicalProcedure", "name": "Ulthera PRIME（超声刀）" },
+		{ "@type": "MedicalProcedure", "name": "Thermage FLX（热玛吉）" },
+		{ "@type": "MedicalProcedure", "name": "Density" },
+		{ "@type": "MedicalProcedure", "name": "Potenza" },
+		{ "@type": "MedicalProcedure", "name": "水光针（Skin Booster）" },
+		{ "@type": "MedicalProcedure", "name": "填充剂" },
+		{ "@type": "MedicalProcedure", "name": "肉毒素" }
+	]
+}
+</script>

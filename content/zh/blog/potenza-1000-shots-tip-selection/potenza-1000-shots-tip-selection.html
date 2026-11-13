@@ -1,0 +1,337 @@
+---js
+const permalink = "/zh/blog/potenza-1000-shots-tip-selection/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "Potenza（黄金微针）1000发价格与效果：为何探头选择决定了最终结果？";
+const description = "Potenza（黄金微针）1000发的作用范围、针式与非侵入式探头的区别、效果出现的时间、与水光针的协同效应及价格参考，由首尔狎鸥亭丽妍K医院（ReYeonK Clinic）为您整理。";
+const date = "2026-11-12";
+const alternates = [
+	{ lang: "ko", url: "/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "en", url: "/en/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "ja", url: "/ja/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "zh-Hans", url: "/zh/blog/potenza-1000-shots-tip-selection/" },
+	{ lang: "x-default", url: "/blog/potenza-1000-shots-tip-selection/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+	--pz-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">Potenza（黄金微针）1000发价格与效果：为何探头选择决定了最终结果？</h1>
+	<p class="pz-byline">专栏 · 丽妍K医院（ReYeonK Clinic）（韩语原文翻译）</p>
+	<p class="pz-hook">Potenza黄金微针打1000发足够吗？还是说选择哪种探头更为重要？</p>
+	<p class="pz-lead">Potenza是一种具有代表性的复合型皮肤激光仪器，通过将射频（RF）能量传递至皮肤真皮层，同时改善毛孔粗大、皮肤松弛以及细纹问题。然而，同样是“Potenza 1000发”，根据所选探头（泵送探头、微针探头、非侵入式钻石探头）以及各部位的能量分配，所能期待的改善效果和恢复期（Downtime）会有很大差异。下文按常见问题为您整理了Potenza 1000发的作用原理、探头区别、施术周期及价格标准。</p>
+	<div class="pz-summary">
+		<strong>三行摘要</strong>
+		<ul><li>Potenza 1000发是以全脸（Full Face）为基准，能够均衡设计毛孔收缩与肤质、弹力改善的推荐发数。</li><li>比单纯发数更重要的是根据自身皮肤困扰选择合适的探头（用于导入药物的泵送探头 vs 用于提升弹力的非侵入式探头）以及分部位调节深度。</li><li>通过泵送探头结合水光针（Skin Booster）或肉毒水光（Skin Botox），可将有效成分直接输送至真皮层，大幅提升缩毛孔与紧致弹力的协同效应。</li></ul>
+	</div>
+	<p class="pz-note">本专栏翻译自丽妍K医院院长以韩语撰写的文章。标注“韩语”的链接将跳转到韩语页面。</p>
+	<nav class="pz-section" aria-label="目录"><h2>目录</h2><ol><li><a href="#s1">Potenza 1000发大概覆盖多大范围？</a></li><li><a href="#s2">同样是1000发，不同种类的探头在效果上有什么区别？</a></li><li><a href="#s3">Potenza的效果从什么时候开始、以什么形式显现？</a></li><li><a href="#s4">搭配水光针一起做会有什么协同效应？</a></li><li><a href="#s5">施术时会很痛吗？需要担心泛红或结痂吗？</a></li><li><a href="#s6">丽妍K（ReYeonK）是如何进行Potenza 1000发施术的？</a></li><li><a href="#s7">Potenza 1000发的价格是多少？</a></li><li><a href="#faq">常见问题 (FAQ)</a></li></ol></nav>
+
+	<div class="pz-section" id="s1">
+		<h2>Potenza 1000发大概覆盖多大范围？</h2>
+		<div class="pz-text"><p>Potenza通过探头上的微细电极将射频热能传递至真皮层，诱导皮肤自主再生胶原蛋白和弹性蛋白。</p><p>通常如果只针对蝴蝶区（双颊、鼻翼两侧）等局部毛孔问题，大约使用300~500发左右；但如果计划同时改善全脸（Full Face）肤质与弹力紧致，则会以1000发为标准进行设计。利用1000发，可以在毛孔粗大的面颊和鼻周进行密集重叠（Overlap）扫描，同时将能量无遗漏地分配到皮肤较薄的眼周、额头及下颌线。</p></div>
+	</div>
+
+	<div class="pz-section" id="s2">
+		<h2>同样是1000发，不同种类的探头在效果上有什么区别？</h2>
+		<div class="pz-text"><p>Potenza拥有14种以上的专用探头，大致可分为使用微细针头的侵入型探头（含泵送探头），以及无需针头、紧贴表皮传递射频的非侵入型探头（钻石探头、DDR等）。</p></div>		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th>分类</th><th>侵入型微针·泵送探头（CP/N探头等）</th><th>非侵入型射频探头（钻石探头·DDR等）</th></tr></thead><tbody><tr><td>作用方式</td><td>微针直接刺入真皮层传递射频 + 利用负压促进药物渗透</td><td>无需针头，紧贴皮肤表面向真皮上、下部传递射频热能</td></tr><tr><td>主要改善目标</td><td>毛孔粗大、痘坑疤痕、调节油脂、最大化水光药物吸收</td><td>皮肤弹力下降、细纹、下颌线紧致、泛红·敏感肌肤质改善</td></tr><tr><td>恢复期</td><td>约2~3天内可能出现轻微泛红及细小角质·结痂</td><td>无针眼痕迹，术后即可洗脸、化妆，轻松恢复日常生活</td></tr></tbody></table></div>		<div class="pz-text"><p>如果您的核心目标是缩小毛孔和改善肤质，建议提高侵入型·泵送探头的比重；如果希望在无痛感、无恢复期负担的情况下实现弹力紧致，则可以选择非侵入型探头，或与其他缩毛孔激光进行交叉施术。关于不同设备的详细原理与痛感差异，也可在 <a href="/blog/pore-reduction-potenza-virtue-picosure/" hreflang="ko" lang="ko">《Potenza、Virtue、PicoSure（蜂巢皮秒）缩毛孔项目对比指南》（韩语）</a>中一目了然地查看。</p></div>
+	</div>
+
+	<div class="pz-section" id="s3">
+		<h2>Potenza的效果从什么时候开始、以什么形式显现？</h2>
+		<div class="pz-text"><p>受到射频热刺激的真皮层要生成新的胶原蛋白，需要经历一个皮肤更新周期（约3~4周）。</p></div>		<ul class="pz-list" style="margin-top: 16px"><li><h3>术后1~2周</h3><p>过度的油脂分泌得到调节，皮肤表面的水油平衡趋于稳定，上妆卡粉、浮粉现象减少。</p></li><li><h3>术后3~4周</h3><p>真皮内的胶原蛋白密度逐渐充盈，能够切实感受到松弛的毛孔收紧、肌底弹力变得紧实的变化。</p></li><li><h3>累计施术3次以上时</h3><p>毛孔缩小和细纹淡化的效果将更加稳定持久。（具体推荐次数因个人皮肤厚度及毛孔类型而异。）</p></li></ul>
+	</div>
+
+	<div class="pz-section" id="s4">
+		<h2>搭配水光针一起做会有什么协同效应？</h2>
+		<div class="pz-text"><p>Potenza的泵送探头（CP探头）拥有专利结构，在微针拔出的瞬间利用负压，将涂抹在皮肤表面的药物直接推入真皮层内部。</p><p>相比单独进行射频照射，使用泵送探头结合水光针或肉毒水光，能够让有效成分在热能激活的皮肤再生环境中直接被吸收，从而大幅提升收缩毛孔与改善肌底干燥的协同效果。</p><p>特别是对于皮肤较薄、胶原蛋白本身匮乏导致毛孔呈纵向拉长下垂的情况，搭配液态PCL胶原蛋白水光针（如Gouri）一起规划也是非常好的选择。相关原理已在 <a href="/blog/gouri-skinbooster-dermashine/" hreflang="ko" lang="ko">《Gouri胶原蛋白水光针效果与价格：如何通过德玛莎（Derma Shine）减少痛感、淤青与肿胀》（韩语）</a>中进行了详细整理。</p></div>
+	</div>
+
+	<div class="pz-section" id="s5">
+		<h2>施术时会很痛吗？需要担心泛红或结痂吗？</h2>
+		<div class="pz-text"><p>使用侵入型微针探头时可能会伴随轻微的刺痛与温热感，因此术前会敷足时间的麻药膏后再进行施术。</p><p>术后由于热能反应，面部可能会泛红或发热约2~3天，微针经过的部位也可能会出现极薄的角质脱皮。在此期间请勿用手强行撕扯角质，务必仔细涂抹保湿霜和防晒霜，即可不留色素沉着地平滑恢复。</p></div>
+	</div>
+
+	<div class="pz-section" id="s6">
+		<h2>丽妍K（ReYeonK）是如何进行Potenza 1000发施术的？</h2>
+		<div class="pz-text"><p>即使是同一张脸，额头、眼周等皮肤较薄的部位，与鼻翼、面颊前侧等皮脂腺发达、毛孔较深的部位，其适宜的进针深度和能量强度也各不相同。</p><p>狎鸥亭丽妍K医院不会对全脸机械式地采用相同参数打完1000发，而是通过1对1面诊，针对毛孔集中部位与弹力下降部位量身定制进针深度、输出功率及发数分配。此外，还会根据毛孔粗大的成因是皮脂过多还是衰老导致的弹力流失，为您推荐单独施术或复合施术中最具效率的方案。</p></div>
+	</div>
+
+	<div class="pz-section" id="s7">
+		<h2>Potenza 1000发的价格是多少？</h2>
+		<div class="pz-text"><p>Potenza的价格根据所使用的探头种类（是否为正品一次性探头）、水光针/肉毒水光搭配方案以及各时期活动而有所不同。</p></div>		<div class="pz-table" style="margin-top: 16px"><table><thead><tr><th>施术项目</th><th>价格参考标准</th><th>备注</th></tr></thead><tbody><tr><td>Potenza 1000发（基础版 / 泵送·肉毒水光联合套餐等）</td><td>10万韩元起~（视具体配置及活动而定）</td><td>当面拆封正品一次性探头，10%增值税另计</td></tr></tbody></table></div>		<p class="pz-note">* 不同时期的活动和套餐会有所调整。最新详情请致电诊所 +82-2-558-5581，或通过KakaoTalk咨询渠道联系我们。</p>
+	</div>
+
+	<div class="pz-section" id="faq">
+		<h2>常见问题 (FAQ)</h2>
+		<ul class="pz-list"><li><h3>Q1. Potenza 1000发对于全脸来说足够吗？</h3><p>是的，以一般成年人全脸（Full Face）为基准，1000发是能够对毛孔粗大的蝴蝶区进行重叠照射，并均匀覆盖至下颌线与额头的合适发数。</p></li><li><h3>Q2. 只做1次Potenza也有缩小毛孔的效果吗？</h3><p>做完1次后经过3~4周，就能感受到肤质改善、出油减少以及初期的弹力变化。但若以改善深层粗大毛孔或痘坑疤痕为目标，建议间隔3~4周坚持施术3次以上。</p></li><li><h3>Q3. 医院不会重复使用探头，而是坚持“一人一探头”吗？</h3><p>为了卫生与精准的能量传递，丽妍K医院在所有施术中均原则上使用正品一次性探头，术前您可亲自确认全新探头的拆封过程。</p></li><li><h3>Q4. Potenza术后什么时候可以洗脸和化妆？</h3><p>施术当天建议仅用温水轻柔冲洗，次日起即可使用低刺激洁面乳洗脸并化淡妆。</p></li><li><h3>Q5. 术后脸上冒出像闭口粉刺一样的小颗粒，是副作用吗？</h3><p>在射频热刺激及毛孔内皮脂排出的过程中，可能会暂时出现毛囊炎或闭口小疹子。大多数情况下通过保湿与镇静护理在几天内即可消退，若症状持续，建议回院接受镇静管理。</p></li><li><h3>Q6. 可以和超声刀（Ultherapy）或热玛吉（Thermage）等提升项目一起做吗？</h3><p>可以的。将提拉深层筋膜层与真皮下部的提升仪器，与精细打磨皮肤表层毛孔及肤质的Potenza并行施术，能够期待更立体的抗衰效果。不同提升仪器的区别可参考 <a href="/blog/ulthermage-difference-effect/" hreflang="ko" lang="ko">《超声刀与热玛吉的区别及“热超联合”效果》（韩语）</a>一文。</p></li><li><h3>Q7. 我皮肤比较敏感且容易泛红，也可以做Potenza吗？</h3><p>如果皮肤屏障较薄或泛红严重，可以选择无需针头的非侵入型探头替代侵入型微针，或调低能量强度安全施术，因此需要提前进行专业面诊咨询。</p></li><li><h3>Q8. 术后有哪些需要避免的行为？</h3><p>术后约1周内，请避免桑拿、汗蒸、剧烈运动、饮酒及吸烟等容易升高皮肤温度或引发炎症的活动，并请充分涂抹保湿产品。</p></li></ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">适合我肤质的Potenza探头与1000发能量分配，欢迎通过1对1诊断确认。</p>
+		<p class="pz-invite">如果您想了解根据毛孔深度与皮肤厚度量身定制的精细能量设计，欢迎前往位于狎鸥亭罗德奥站附近的丽妍K医院（ReYeonk Clinic）接受专业咨询。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院（Reyeonk Clinic）</dt>
+				<dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼<br>B1·3F·4F</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>官方网站</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韩语）</dd>
+				<dt>诊疗时间</dt>
+				<dd>周一、周二、周四 10:00–20:00<br>周五 10:00–19:00<br>周六 10:00–15:00<br>周三、周日及公共假日休诊</dd>
+				<dt>交通</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文仅供一般信息参考，效果与恢复期因人而异。具体施术方案请在与医疗团队充分咨询后决定。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Potenza（黄金微针）1000发价格与效果：为何探头选择决定了最终结果？",
+   "description": "Potenza（黄金微针）1000发的作用范围、针式与非侵入式探头的区别、效果出现的时间、与水光针的协同效应及价格参考，由首尔狎鸥亭丽妍K医院（ReYeonK Clinic）为您整理。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-12",
+   "dateModified": "2026-11-12",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/potenza-1000-shots-tip-selection/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Q1. Potenza 1000发对于全脸来说足够吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "是的，以一般成年人全脸（Full Face）为基准，1000发是能够对毛孔粗大的蝴蝶区进行重叠照射，并均匀覆盖至下颌线与额头的合适发数。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q2. 只做1次Potenza也有缩小毛孔的效果吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "做完1次后经过3~4周，就能感受到肤质改善、出油减少以及初期的弹力变化。但若以改善深层粗大毛孔或痘坑疤痕为目标，建议间隔3~4周坚持施术3次以上。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q3. 医院不会重复使用探头，而是坚持“一人一探头”吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "为了卫生与精准的能量传递，丽妍K医院在所有施术中均原则上使用正品一次性探头，术前您可亲自确认全新探头的拆封过程。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q4. Potenza术后什么时候可以洗脸和化妆？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "施术当天建议仅用温水轻柔冲洗，次日起即可使用低刺激洁面乳洗脸并化淡妆。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q5. 术后脸上冒出像闭口粉刺一样的小颗粒，是副作用吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "在射频热刺激及毛孔内皮脂排出的过程中，可能会暂时出现毛囊炎或闭口小疹子。大多数情况下通过保湿与镇静护理在几天内即可消退，若症状持续，建议回院接受镇静管理。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q6. 可以和超声刀（Ultherapy）或热玛吉（Thermage）等提升项目一起做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以的。将提拉深层筋膜层与真皮下部的提升仪器，与精细打磨皮肤表层毛孔及肤质的Potenza并行施术，能够期待更立体的抗衰效果。不同提升仪器的区别可参考《超声刀与热玛吉的区别及“热超联合”效果》一文。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q7. 我皮肤比较敏感且容易泛红，也可以做Potenza吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "如果皮肤屏障较薄或泛红严重，可以选择无需针头的非侵入型探头替代侵入型微针，或调低能量强度安全施术，因此需要提前进行专业面诊咨询。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Q8. 术后有哪些需要避免的行为？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "术后约1周内，请避免桑拿、汗蒸、剧烈运动、饮酒及吸烟等容易升高皮肤温度或引发炎症的活动，并请充分涂抹保湿产品。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选中";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

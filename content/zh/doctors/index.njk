@@ -1,0 +1,46 @@
+---js
+const permalink = "/zh/doctors/";
+const lang = "zh-Hans";
+const title = "医疗团队介绍 | Reyeonk Clinic（首尔狎鸥亭）";
+const description = "首尔狎鸥亭 Reyeonk Clinic 医疗团队介绍。Lee Doochan（이두찬）代表院长、Kim Hyunsu（김현수）代表院长、Choi Hyunho（최현호）院长，从咨询到施术均一对一亲自负责。";
+const alternates = [
+	{ lang: "ko", url: "/doctors/" },
+	{ lang: "en", url: "/en/doctors/" },
+	{ lang: "ja", url: "/ja/doctors/" },
+	{ lang: "zh-Hans", url: "/zh/doctors/" },
+	{ lang: "x-default", url: "/doctors/" }
+];
+---
+{% include "doctor-style.njk" %}
+<div class="dr" style="word-break: normal">
+	<h1>医疗团队介绍</h1>
+	<p class="dr-lead">在丽妍K医院（Reyeonk Clinic），拥有16年经验的医疗团队从咨询、施术设计到施术，全程一对一亲自负责。</p>
+	<ul class="dr-grid">
+	{%- for d in doctorsZh %}
+		<li class="dr-card">
+			<a href="/zh/doctors/{{ d.slug }}/">
+				{% if d.photo %}<img class="dr-photo" src="{{ d.photo }}" alt="Reyeonk Clinic {{ d.name }}{{ d.title }}" width="{{ d.photoSize[0] }}" height="{{ d.photoSize[1] }}" eleventy:ignore>{% endif %}
+				<span class="dr-role">{{ d.title }}</span>
+				<h2 class="dr-name">{{ d.name }}</h2>
+				<q class="dr-quote">{{ d.quote }}</q>
+				<span class="dr-focus">{{ d.focus }}</span>
+				<span class="dr-more">查看简介 →</span>
+			</a>
+		</li>
+	{%- endfor %}
+	</ul>
+	<p class="dr-lead" style="margin-top: 28px">施术方案将在面诊咨询后确定。效果与适应情况因人而异。</p>
+</div>
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@type": "MedicalClinic",
+	"@id": "https://reyeonk2.com/#clinic",
+	"name": "Reyeonk Clinic",
+	"employee": [
+	{%- for d in doctorsZh %}
+		{ "@type": "Physician", "name": "{{ d.name }}", "jobTitle": "{{ d.title }}", "url": "https://reyeonk2.com/zh/doctors/{{ d.slug }}/" }{% if not loop.last %},{% endif %}
+	{%- endfor %}
+	]
+}
+</script>
