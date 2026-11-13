@@ -7,7 +7,7 @@ export default [
 		slug: "doochanlee",
 		photo: "/img/doctors/doochanlee.jpg",
 		photoSize: [800, 1200],
-		name: "Lee Doochan（이두찬）",
+		name: "李枓瓒（이두찬）",
 		enName: "Dr. Lee Doochan",
 		title: "代表院长",
 		quote: "始终全心全意",
