@@ -3,6 +3,66 @@ const permalink = "/zh/";
 const lang = "zh-Hans";
 const title = "Reyeonk Clinic | 首尔狎鸥亭的紧致提升与皮肤护理诊所";
 const description = "开业16年，从咨询到施术均由院长亲自负责。Ulthera PRIME（超声刀）、Thermage FLX（热玛吉）、Density、Potenza（黄金微针）、水光针。步行约5分钟可达狎鸥亭罗迪奥站6号出口。+82-2-558-5581";
+const headExtra = `<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "@id": "https://reyeonk2.com/#clinic",
+ "name": "리연케이의원",
+ "alternateName": "Reyeon K Clinic",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "언주로172길 64 리연케이빌딩",
+  "addressLocality": "강남구",
+  "addressRegion": "서울특별시",
+  "addressCountry": "KR"
+ },
+ "telephone": "+82-2-558-5581",
+ "medicalSpecialty": [
+  "Dermatology",
+  "AestheticPlasticSurgery"
+ ],
+ "employee": [
+  {
+   "@type": "Physician",
+   "name": "金鉉秀（김현수）",
+   "jobTitle": "代表院长",
+   "medicalSpecialty": "Lifting & Body Contouring"
+  },
+  {
+   "@type": "Physician",
+   "name": "李枓瓒（이두찬）",
+   "jobTitle": "代表院长",
+   "medicalSpecialty": "Multi-layer Anti-aging & Ultherapy"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "inLanguage": "zh-Hans",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "狎鸥亭丽妍K医院的代表性紧致提升项目有哪些？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "丽妍K医院根据每位客人的皮肤厚度，提供以实时超声观察皮肤内部并精准定位的“Ultherapy PRIME（超声刀）”、利用射频促进胶原蛋白再生的“Thermage FLX（热玛吉）”、双射频“Density Noir”、超微波身体塑形“Onda Max”等定制联合施术。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "外籍客人（中文、日语、英语）如何预约和咨询？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "丽妍K医院通过官方网站（reyeonk2.com）以及KakaoTalk、LINE、微信（WeChat）渠道，常年提供多语种专业咨询和预约服务。"
+   }
+  }
+ ]
+}
+</script>`;
 const alternates = [
 	{ lang: "ko", url: "/" },
 	{ lang: "en", url: "/en/" },

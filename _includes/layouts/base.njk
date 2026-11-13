@@ -59,6 +59,11 @@
 		}
 		</script>
 
+		{#- Page-specific extra <head> markup (e.g. structured data), set as `headExtra` in a page's data #}
+		{%- if headExtra %}
+		{{ headExtra | safe }}
+		{%- endif %}
+
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
