@@ -1,0 +1,323 @@
+---js
+const permalink = "/ja/blog/apgujeong-dermatology-clinic-choice/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "狎鴎亭の皮膚科の選び方、看板より確認したい5つのポイント";
+const description = "狎鴎亭には皮膚科が多く、どこで施術を受けるか迷う方へ。運営年数、誰が診療するか、相談の進め方、正規品の確認、施術後のフォローまで、クリニック選びの基準をまとめました。";
+const date = "2026-11-14";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "en", url: "/en/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "x-default", url: "/blog/apgujeong-dermatology-clinic-choice/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif JP", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	line-break: strict; overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">狎鴎亭の皮膚科の選び方、看板より確認したい5つのポイント</h1>
+	<p class="pz-byline">コラム · Reyeonk Clinic（韓国語の原文を翻訳）</p>
+	<p class="pz-hook">狎鴎亭には皮膚科がとても多いですが、どこで施術を受けるべきでしょうか？</p>
+	<p class="pz-lead">狎鴎亭の皮膚科を検索すると、似たような広告が数多く出てきます。広告だけでは分からないことを、施術前にご自身で確認できるよう、クリニックを選ぶときに見るべき基準をまとめました。</p>
+	<figure class="pz-fig" style="max-width: 22rem">
+		<img src="./img/choi-hyunho-director.jpg" alt="Reyeonk Clinic 院長 チェ・ヒョノ（최현호）" width="800" height="833">
+		<figcaption class="pz-note">Reyeonk Clinic チェ・ヒョノ院長</figcaption>
+	</figure>
+	<div class="pz-summary">
+		<strong>3行まとめ</strong>
+		<ul><li>狎鴎亭の皮膚科を選ぶときは、看板や広告より先に<b>運営年数、実際に誰が診療するか、相談の進め方</b>を確認しましょう。</li><li>施術前に、正規の機器・製品かどうか、副作用の説明、施術後のフォロー方法を尋ねておくと安心です。</li><li>価格だけで比べず、<b>誰がどのように責任を持って診療するか</b>も合わせて確認してください。</li></ul>
+	</div>
+	<p class="pz-note">本コラムは、Reyeonk Clinicが韓国語で執筆した記事の翻訳です。</p>
+
+	<div class="pz-section">
+		<h2>なぜ狎鴎亭ではクリニック選びが難しいのでしょうか？</h2>
+		<div class="pz-text"><p>狎鴎亭は皮膚科や美容外科が密集しているエリアです。選択肢が多いことは利点ですが、そのぶん比較が難しいという面もあります。</p><p>同じ施術名でも、使用する機器や製品、施術方法、診療の流れはクリニックごとに異なります。施術名と価格だけで選ぶと、満足できない結果になることがあります。効果には個人差がありますので、ご自身に合った説明をしてくれるかどうかを確認することが大切です。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>狎鴎亭の皮膚科を選ぶ基準5つ</h2>
+		<ul class="pz-list">
+			<li><h3>1. 同じ場所で何年運営しているか</h3><p>クリニック名や場所が頻繁に変わると、これまでの施術記録や経過を追いにくくなります。同じ場所で長く診療してきたクリニックかどうかをご確認ください。</p></li>
+			<li><h3>2. 相談から施術まで誰が診療するか</h3><p>相談はカウンセラーが、施術は別の人が行う仕組みになっていないか確認してみましょう。医師が肌の状態を直接見て、相談と施術を行うかどうかが大切です。</p></li>
+			<li><h3>3. 相談で長所だけでなく限界も説明してくれるか</h3><p>効果ばかりを強調せず、施術後に起こりうる反応、注意事項、合わない場合まで説明してくれるかを確認してください。施術回数やパッケージを急かすクリニックは、もう一度比較してみることをおすすめします。</p></li>
+			<li><h3>4. 機器や製品を確認できるか</h3><p>使用する機器の種類や製品が正規品かどうかを尋ねたときに、はっきり答えてくれるかを見てみましょう。質問への対応姿勢も判断材料になります。</p></li>
+			<li><h3>5. 施術後のフォローと問い合わせ窓口があるか</h3><p>施術は受けた日で終わりではありません。施術後の経過を確認してもらえるか、気になることがあったときに問い合わせられる窓口があるかを、事前に確認しておきましょう。</p></li>
+		</ul>
+		<p class="pz-note">上記は、クリニックを比較する際の一般的な確認項目です。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>価格だけで選ぶと見落とすこと</h2>
+		<div class="pz-text"><p>価格はもちろん大切な要素です。ただし、同じ名前の施術でも、ショット数、製品の容量、施術方法、施術後のフォローはクリニックごとに異なります。</p><p>総費用を比べるときは、何が含まれているのか、追加費用が発生するのはどんな場合かも合わせて確認してください。この違いを知っておくと、価格の低いクリニックと高いクリニックを比べるときに判断しやすくなります。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Reyeonk Clinicの診療について</h2>
+		<div class="pz-text"><p>Reyeonk Clinicは、2009年の開院以来、17年以上診療を続けています。</p><p>相談から施術、仕上げまで、院長が直接担当します。</p><p>施術を決める前に、肌の状態とお悩みをまず確認し、必要な施術と、合わない可能性のある場合を合わせてご説明します。どの施術が合うかは人によって異なりますので、直接ご相談いただくことをおすすめします。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Reyeonk Clinic 医療スタッフの経歴</h2>
+		<div class="pz-text"><p>Reyeonk Clinicでは、イ・ドゥチャン代表院長、キム・ヒョンス代表院長、チェ・ヒョノ院長が、直接の相談を行ったうえで施術を進めます。経歴は次のとおりです。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>イ・ドゥチャン 代表院長</h3><p>元 メイピュア医院（메이퓨어의원）院長 · 元 ジェイリン医院（제이린의원）院長 · 元 ミミサム医院（미미썸의원）院長</p><p>AestheFill APAC Expert (2026) · SHENB Virtue RF Key-doctor · Restylane Kysse™ MASTER · SOMA (Thermage) Certification of Training Advanced Course 修了 · Atiere Key-doctor</p><p>大韓レーザー皮膚毛髪学会（대한레이저피부모발학회）正会員 · 大韓美容形成レーザー医学会（대한미용성형레이저의학회）正会員 · 大韓肥満美容学会（대한비만미용학회）正会員 · 大韓フィラー学会（대한필러학회）正会員</p></li>
+			<li><h3>キム・ヒョンス 代表院長</h3><p>大韓美容外科学会（KACS）（대한미용외과학회）学術理事 · スンサク注射（순삭주사）の開発および特許</p><p>Cynergy MPX Key Doctor · Harvest Jet 2 (Body Jet EVO) Training Doctor · Smartlipo TPX · Cellulaze Asia Training Doctor</p></li>
+			<li><h3>チェ・ヒョンホ 院長</h3><p>元 メイピュア医院（메이퓨어의원）院長 · 元 トーンズ医院（톤즈의원）院長</p><p>大韓レーザー皮膚毛髪学会（대한레이저피부모발학회）正会員 · 大韓美容形成レーザー医学会（대한미용성형레이저의학회）正会員 · 大韓肥満美容学会（대한비만미용학회）正会員 · 大韓フィラー学会（대한필러학회）準会員</p></li>
+		</ul>
+		<p class="pz-note">詳しいご紹介は<a href="/ja/doctors/">医療スタッフのページ</a>でご覧いただけます。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>ご相談の前にメモしておきたいこと</h2>
+		<ul class="pz-list">
+			<li><h3>最も気になるお悩み1～2つ</h3><p>たるみ、シワ、肌質、毛穴など優先順位を決めておくと、相談がより具体的になります。</p></li>
+			<li><h3>これまでに受けた施術とその時期</h3><p>施術歴は、施術の選択や間隔を決める際に役立ちます。</p></li>
+			<li><h3>痛みや回復期間についての心配</h3><p>日程や痛みへの敏感さを事前にお伝えいただくと、それに合わせてご案内できます。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>よくあるご質問（FAQ）</h2>
+		<ul class="pz-list">
+			<li><h3>狎鴎亭の皮膚科はどのような基準で選べばよいですか？</h3><p>運営年数、相談から施術まで誰が診療するか、相談での説明の仕方、機器や製品の確認、施術後のフォロー体制をご確認ください。</p></li>
+			<li><h3>相談だけでも受けられますか？</h3><p>はい、相談のみでも問題ありません。複数のクリニックで相談を受けて比較することをおすすめします。</p></li>
+			<li><h3>施術の効果は誰でも同じですか？</h3><p>いいえ。肌の状態や施術の種類によって、効果や満足度には個人差があります。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">良いクリニックは、広告ではなく相談でわかります。</p>
+		<p class="pz-invite">狎鴎亭の皮膚科選びでお悩みでしたら、Reyeonk Clinicで院長と直接ご相談ください。相談から施術、仕上げまで、院長が直接担当します。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172ギル64 Reyeonkビル<br>B1・3F・4F</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1の相談はこちら</a></dd>
+				<dt>ウェブサイト</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韓国語）</dd>
+				<dt>診療時間</dt>
+				<dd>月・火・木 10:00–20:00<br>金 10:00–19:00<br>土 10:00–15:00<br>水・日・祝日は休診</dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">道案内を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本コラムは一般的な情報提供を目的としたものです。施術の効果や結果には個人差があります。診断と施術の可否は、医療スタッフとの相談を通じてご判断ください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "狎鴎亭の皮膚科の選び方、看板より確認したい5つのポイント",
+   "description": "狎鴎亭には皮膚科が多く、どこで施術を受けるか迷う方へ。運営年数、誰が診療するか、相談の進め方、正規品の確認、施術後のフォローまで、クリニック選びの基準をまとめました。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/apgujeong-dermatology-clinic-choice/",
+   "image": "https://reyeonk2.com/img/og/apgujeong-dermatology-clinic-choice.jpg",
+   "about": [
+    "狎鴎亭 皮膚科",
+    "皮膚科の選び方",
+    "施術を受けるクリニック選び",
+    "Reyeonk Clinic"
+   ],
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "狎鴎亭の皮膚科はどのような基準で選べばよいですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "運営年数、相談から施術まで誰が診療するか、相談での説明の仕方、機器や製品の確認、施術後のフォロー体制をご確認ください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "相談だけでも受けられますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい、相談のみでも問題ありません。複数のクリニックで相談を受けて比較することをおすすめします。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "施術の効果は誰でも同じですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "いいえ。肌の状態や施術の種類によって、効果や満足度には個人差があります。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択しました";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

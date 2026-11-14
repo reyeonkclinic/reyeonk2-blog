@@ -1,0 +1,323 @@
+---js
+const permalink = "/en/blog/apgujeong-dermatology-clinic-choice/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "How to Choose a Dermatology Clinic in Apgujeong: 5 Things to Check Beyond the Sign";
+const description = "Overwhelmed by the number of Apgujeong dermatology clinics? Five things to check before treatment: years in operation, who treats you, how consultations are run, genuine products, and aftercare.";
+const date = "2026-11-14";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "en", url: "/en/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "x-default", url: "/blog/apgujeong-dermatology-clinic-choice/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">How to Choose a Dermatology Clinic in Apgujeong: 5 Things to Check Beyond the Sign</h1>
+	<p class="pz-byline">Column · Reyeonk Clinic (originally published in Korean)</p>
+	<p class="pz-hook">There are so many dermatology clinics in Apgujeong. Where should you go for treatment?</p>
+	<p class="pz-lead">Search for an Apgujeong dermatology clinic and you will find endless, near-identical advertising. Here are the things worth checking yourself before treatment, because advertising alone will not tell you.</p>
+	<figure class="pz-fig" style="max-width: 22rem">
+		<img src="./img/choi-hyunho-director.jpg" alt="Dr. Choi Hyunho, Reyeonk Clinic" width="800" height="833">
+		<figcaption class="pz-note">Dr. Choi Hyunho, Reyeonk Clinic</figcaption>
+	</figure>
+	<div class="pz-summary">
+		<strong>3-line summary</strong>
+		<ul><li>When choosing a dermatology clinic in Apgujeong, look first at <b>how long it has operated, who actually treats you, and how consultations are run</b> rather than at signs or ads.</li><li>Before treatment, it helps to ask about genuine equipment and products, how side effects are explained, and how aftercare is handled.</li><li>Do not compare on price alone. Look at <b>who takes responsibility for your care and how</b>.</li></ul>
+	</div>
+	<p class="pz-note">This column is a translation of an article originally written in Korean by Reyeonk Clinic.</p>
+
+	<div class="pz-section">
+		<h2>Why is it hard to choose a clinic in Apgujeong?</h2>
+		<div class="pz-text"><p>Apgujeong has a dense concentration of dermatology and plastic surgery clinics. Plenty of choice is an advantage, but it also makes comparison hard.</p><p>Even under the same treatment name, the equipment, products, technique and consultation process differ from clinic to clinic. Choosing by treatment name and price alone can lead to a disappointing experience. Results vary from person to person, so it is worth checking whether the clinic gives you an explanation that fits you.</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Five things to check when choosing an Apgujeong dermatology clinic</h2>
+		<ul class="pz-list">
+			<li><h3>1. How long the clinic has operated in the same place</h3><p>If a clinic&#x27;s name or location changes often, it is hard to follow up on your treatment history and progress. Check whether it has been practising in the same place for a long time.</p></li>
+			<li><h3>2. Who handles everything from consultation to treatment</h3><p>Find out whether the consultation is handled by a coordinator and the treatment by someone else. What matters is whether a doctor examines your skin, consults with you and treats you personally.</p></li>
+			<li><h3>3. Whether the consultation explains limits as well as benefits</h3><p>Check that the clinic does not only stress results, but also explains the reactions that can follow treatment, precautions, and cases where a treatment may not suit you. If a clinic pushes you to commit quickly to a number of sessions or a package, it is worth comparing once more.</p></li>
+			<li><h3>4. Whether you can find out what equipment and products are used</h3><p>See whether the clinic answers clearly when you ask about the type of equipment and whether products are genuine. How it responds to your questions is also a useful sign.</p></li>
+			<li><h3>5. Whether there is aftercare and a way to contact the clinic</h3><p>Treatment does not end on the day. Check in advance whether the clinic follows up on your progress and whether there is a channel to ask questions if something bothers you.</p></li>
+		</ul>
+		<p class="pz-note">These are general points you can use as a reference when comparing clinics.</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>What you miss when you choose on price alone</h2>
+		<div class="pz-text"><p>Price is certainly important. But even for treatments with the same name, the number of shots, product volume, technique and aftercare differ between clinics.</p><p>When comparing the total cost, also ask what is included and when extra charges apply. Knowing this makes it easier to compare a cheaper clinic with a more expensive one.</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>How Reyeonk Clinic practises</h2>
+		<div class="pz-text"><p>Reyeonk Clinic has been practising for more than 17 years, since opening in 2009.</p><p>From consultation through treatment to wrap-up, the doctor sees you personally.</p><p>Before deciding on a treatment, we first look at your skin condition and concerns, and explain which treatments may be needed and the cases where they may not suit you. Which treatment is right depends on the individual, so we recommend coming in for a personal consultation.</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Reyeonk Clinic medical team: backgrounds</h2>
+		<div class="pz-text"><p>At Reyeonk Clinic, Dr. Lee Doochan and Dr. Kim Hyunsu (Representative Directors) and Dr. Choi Hyunho proceed only after a personal consultation. Their backgrounds are as follows.</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>Dr. Lee Doochan, Representative Director</h3><p>Former Director, Mayfure Clinic (메이퓨어의원) · Former Director, Jaylin Clinic (제이린의원) · Former Director, Mimisum Clinic (미미썸의원)</p><p>AestheFill APAC Expert (2026) · SHENB Virtue RF Key-doctor · Restylane Kysse™ MASTER · SOMA (Thermage) Certification of Training, Advanced Course completed · Atiere Key-doctor</p><p>Regular member, Korean Society for Laser, Dermatology and Trichology (대한레이저피부모발학회) · Regular member, Korean Society for Aesthetic Plastic and Laser Medicine (대한미용성형레이저의학회) · Regular member, Korean Society for Obesity and Aesthetics (대한비만미용학회) · Regular member, Korean Filler Society (대한필러학회)</p></li>
+			<li><h3>Dr. Kim Hyunsu, Representative Director</h3><p>Academic Director, Korean Academy of Cosmetic Surgery (KACS) (대한미용외과학회) · Developer and patent holder of the Sunsak injection (순삭주사)</p><p>Cynergy MPX Key Doctor · Harvest Jet 2 (Body Jet EVO) Training Doctor · Smartlipo TPX · Cellulaze Asia Training Doctor</p></li>
+			<li><h3>Dr. Choi Hyunho, Director</h3><p>Former Director, Mayfure Clinic (메이퓨어의원) · Former Director, Tones Clinic (톤즈의원)</p><p>Regular member, Korean Society for Laser, Dermatology and Trichology (대한레이저피부모발학회) · Regular member, Korean Society for Aesthetic Plastic and Laser Medicine (대한미용성형레이저의학회) · Regular member, Korean Society for Obesity and Aesthetics (대한비만미용학회) · Associate member, Korean Filler Society (대한필러학회)</p></li>
+		</ul>
+		<p class="pz-note">Full backgrounds are on the <a href="/en/doctors/">doctors page</a>.</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>What to note down before your consultation</h2>
+		<ul class="pz-list">
+			<li><h3>The one or two concerns that bother you most</h3><p>Ranking your priorities, such as sagging, wrinkles, skin texture or pores, makes the consultation much more specific.</p></li>
+			<li><h3>Treatments you have had before, and when</h3><p>Your treatment history helps in choosing a treatment and the interval between sessions.</p></li>
+			<li><h3>Worries about pain or recovery time</h3><p>Mentioning your schedule and pain sensitivity in advance lets the clinic advise accordingly.</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>Frequently asked questions (FAQ)</h2>
+		<ul class="pz-list">
+			<li><h3>What criteria should I use to choose an Apgujeong dermatology clinic?</h3><p>Check how long it has operated, who handles everything from consultation to treatment, how the consultation explains things, whether equipment and products can be confirmed, and how aftercare works.</p></li>
+			<li><h3>Can I just have a consultation?</h3><p>Yes, a consultation alone is fine. We recommend getting consultations at several clinics and comparing them.</p></li>
+			<li><h3>Are treatment results the same for everyone?</h3><p>No. Effects and satisfaction vary from person to person, depending on skin condition and the treatment.</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">A good clinic shows itself in the consultation, not in the advertising.</p>
+		<p class="pz-invite">If you are unsure which Apgujeong dermatology clinic to choose, come and talk with the doctor in person at Reyeonk Clinic. From consultation through treatment to wrap-up, the doctor sees you personally.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building)<br>B1, 3F and 4F</dd>
+				<dt>Phone</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">Copy number</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">One-to-one chat</a></dd>
+				<dt>Website</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> (Korean)</dd>
+				<dt>Hours</dt>
+				<dd>Mon, Tue, Thu 10:00–20:00<br>Fri 10:00–19:00<br>Sat 10:00–15:00<br>Closed Wed, Sun and public holidays</dd>
+				<dt>Directions</dt>
+				<dd><a href="/en/location/">See how to get here</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">* This article is provided for general information. Treatment results vary from person to person. Please decide on diagnosis and treatment through a consultation with a medical professional.</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "How to Choose a Dermatology Clinic in Apgujeong: 5 Things to Check Beyond the Sign",
+   "description": "Overwhelmed by the number of Apgujeong dermatology clinics? Five things to check before treatment: years in operation, who treats you, how consultations are run, genuine products, and aftercare.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
+   "mainEntityOfPage": "https://reyeonk2.com/en/blog/apgujeong-dermatology-clinic-choice/",
+   "image": "https://reyeonk2.com/img/og/apgujeong-dermatology-clinic-choice.jpg",
+   "about": [
+    "Apgujeong dermatology",
+    "how to choose a dermatology clinic",
+    "choosing a clinic for treatment",
+    "Reyeonk Clinic"
+   ],
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What criteria should I use to choose an Apgujeong dermatology clinic?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Check how long it has operated, who handles everything from consultation to treatment, how the consultation explains things, whether equipment and products can be confirmed, and how aftercare works."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I just have a consultation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, a consultation alone is fine. We recommend getting consultations at several clinics and comparing them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are treatment results the same for everyone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Effects and satisfaction vary from person to person, depending on skin condition and the treatment."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "Selected";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "Copied"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

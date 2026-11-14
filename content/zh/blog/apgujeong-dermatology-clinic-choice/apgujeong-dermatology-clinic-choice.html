@@ -1,0 +1,323 @@
+---js
+const permalink = "/zh/blog/apgujeong-dermatology-clinic-choice/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "压鸥亭皮肤科怎么选？比招牌更该确认的5件事";
+const description = "压鸥亭皮肤科太多，不知道在哪里做施术？从经营年限、由谁亲自诊疗、咨询方式、正品确认到术后管理，整理了选择医院时的参考标准。";
+const date = "2026-11-14";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "en", url: "/en/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-dermatology-clinic-choice/" },
+	{ lang: "x-default", url: "/blog/apgujeong-dermatology-clinic-choice/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+	--pz-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">压鸥亭皮肤科怎么选？比招牌更该确认的5件事</h1>
+	<p class="pz-byline">专栏 · 丽妍K医院（译自韩语原文）</p>
+	<p class="pz-hook">压鸥亭的皮肤科这么多，该去哪里做施术呢？</p>
+	<p class="pz-lead">搜索压鸥亭皮肤科，会看到无穷无尽、内容相似的广告。仅凭广告无法了解的部分，希望您能在施术前亲自确认，因此整理了选择医院时可参考的标准。</p>
+	<figure class="pz-fig" style="max-width: 22rem">
+		<img src="./img/choi-hyunho-director.jpg" alt="丽妍K医院 崔贤镐（최현호）院长" width="800" height="833">
+		<figcaption class="pz-note">丽妍K医院 崔贤镐院长</figcaption>
+	</figure>
+	<div class="pz-summary">
+		<strong>3行摘要</strong>
+		<ul><li>选择压鸥亭皮肤科时，比起招牌和广告，请先确认<b>经营年限、实际由谁诊疗、咨询方式</b>。</li><li>施术前，建议询问设备和产品是否为正品、如何说明副作用、术后如何管理。</li><li>不要只比较价格，也请一并确认<b>由谁、以怎样的方式负责诊疗</b>。</li></ul>
+	</div>
+	<p class="pz-note">本文译自丽妍K医院的韩语原文。</p>
+
+	<div class="pz-section">
+		<h2>为什么在压鸥亭选医院这么难？</h2>
+		<div class="pz-text"><p>压鸥亭是皮肤科和整形外科密集的区域。选择多是优点，但也让比较变得困难。</p><p>即使是同样名称的施术，各医院使用的设备、产品、施术方式和诊疗流程也各不相同。只凭施术名称和价格来选择，可能会带来不够满意的体验。效果因人而异，因此需要确认医院是否会给出适合您自身情况的说明。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>选择压鸥亭皮肤科的5个标准</h2>
+		<ul class="pz-list">
+			<li><h3>1. 在同一地点经营了多少年</h3><p>如果医院的名称或位置经常变动，就很难追踪此前的施术记录和恢复情况。请确认是否是长期在同一地点诊疗的医院。</p></li>
+			<li><h3>2. 从咨询到施术由谁诊疗</h3><p>请确认是否是咨询由咨询师负责、施术由其他人完成的结构。重要的是医生是否亲自查看皮肤状态，并亲自咨询和施术。</p></li>
+			<li><h3>3. 咨询时是否既说明优点也说明局限</h3><p>请确认医院是否不只强调效果，还会说明施术后可能出现的反应、注意事项以及可能不适合的情况。如果医院催促您尽快决定施术次数或套餐，建议再多比较一下。</p></li>
+			<li><h3>4. 是否能确认设备和产品</h3><p>询问所用设备的种类和产品是否为正品时，请看医院是否回答明确。对提问的回应态度也是判断依据。</p></li>
+			<li><h3>5. 是否有术后管理和咨询渠道</h3><p>施术并不会在当天结束。请提前确认医院是否会跟进术后恢复情况，以及有不适时是否有可以咨询的渠道。</p></li>
+		</ul>
+		<p class="pz-note">以上是比较医院时可供参考的一般确认事项。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>只看价格选择会错过什么</h2>
+		<div class="pz-text"><p>价格当然是重要的因素。但即使是同名施术，发数、产品用量、施术方式和术后管理也因医院而异。</p><p>比较总费用时，请一并询问包含哪些项目、什么情况下会产生额外费用。了解这些差异，在比较价格较低和较高的医院时会更容易判断。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>丽妍K医院是这样诊疗的</h2>
+		<div class="pz-text"><p>丽妍K医院自2009年开业以来，已诊疗17年以上。</p><p>从咨询、施术到收尾，均由院长亲自负责。</p><p>在决定施术之前，我们会先了解您的皮肤状态和困扰，并说明可能需要的施术以及可能不适合的情况。适合哪种施术因人而异，建议您亲自前来咨询。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>丽妍K医院医疗团队履历</h2>
+		<div class="pz-text"><p>丽妍K医院的李枓瓒、金鉉秀代表院长和崔贤镐院长，均在亲自咨询后再进行施术。履历如下。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>李枓瓒（이두찬） 代表院长</h3><p>原 Mayfure 医院（메이퓨어의원）院长 · 原 Jaylin 医院（제이린의원）院长 · 原 Mimisum 医院（미미썸의원）院长</p><p>AestheFill APAC Expert (2026) · SHENB Virtue RF Key-doctor · Restylane Kysse™ MASTER · SOMA (Thermage) Certification of Training 高级课程结业 · Atiere Key-doctor</p><p>大韩激光皮肤毛发学会（대한레이저피부모발학회）正式会员 · 大韩美容整形激光医学会（대한미용성형레이저의학회）正式会员 · 大韩肥胖美容学会（대한비만미용학회）正式会员 · 大韩填充剂学会（대한필러학회）正式会员</p></li>
+			<li><h3>金鉉秀（김현수） 代表院长</h3><p>大韩美容外科学会（KACS）（대한미용외과학회）学术理事 · Sunsak 注射（순삭주사）的开发者及专利持有人</p><p>Cynergy MPX Key Doctor · Harvest Jet 2 (Body Jet EVO) Training Doctor · Smartlipo TPX · Cellulaze Asia Training Doctor</p></li>
+			<li><h3>Choi Hyunho（최현호） 院长</h3><p>原 Mayfure 医院（메이퓨어의원）院长 · 原 Tones 医院（톤즈의원）院长</p><p>大韩激光皮肤毛发学会（대한레이저피부모발학회）正式会员 · 大韩美容整形激光医学会（대한미용성형레이저의학회）正式会员 · 大韩肥胖美容学会（대한비만미용학회）正式会员 · 大韩填充剂学会（대한필러학회）准会员</p></li>
+		</ul>
+		<p class="pz-note">详细介绍请见<a href="/zh/doctors/">医疗团队页面</a>。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>咨询前请先记下这些</h2>
+		<ul class="pz-list">
+			<li><h3>最在意的1～2个困扰</h3><p>先排好松弛、皱纹、肤质、毛孔等的优先顺序，咨询会更具体。</p></li>
+			<li><h3>以前做过的施术及时间</h3><p>施术经历有助于选择施术项目和确定间隔。</p></li>
+			<li><h3>对疼痛、恢复期的担忧</h3><p>提前告知您的日程和疼痛敏感度，就能据此为您说明。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>常见问题（FAQ）</h2>
+		<ul class="pz-list">
+			<li><h3>应该用什么标准选择压鸥亭皮肤科？</h3><p>请确认经营年限、从咨询到施术由谁诊疗、咨询时的说明方式、能否确认设备和产品，以及术后管理体系。</p></li>
+			<li><h3>可以只做咨询吗？</h3><p>可以，只做咨询也没有问题。建议在多家医院咨询后进行比较。</p></li>
+			<li><h3>施术效果对每个人都一样吗？</h3><p>不一样。效果和满意度会因皮肤状态和施术类型而因人而异。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">好医院，不是看广告，而是在咨询中看出来的。</p>
+		<p class="pz-invite">如果您在为压鸥亭皮肤科的选择而犹豫，欢迎来丽妍K医院与院长当面咨询。从咨询、施术到收尾，均由院长亲自负责。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院（Reyeonk Clinic）</dt>
+				<dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼<br>B1·3F·4F</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>官方网站</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韩语）</dd>
+				<dt>诊疗时间</dt>
+				<dd>周一、周二、周四 10:00–20:00<br>周五 10:00–19:00<br>周六 10:00–15:00<br>周三、周日及公共假日休诊</dd>
+				<dt>交通</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文以提供一般信息为目的。施术效果和结果因人而异。是否诊断和施术，请通过与医疗团队的咨询来决定。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "压鸥亭皮肤科怎么选？比招牌更该确认的5件事",
+   "description": "压鸥亭皮肤科太多，不知道在哪里做施术？从经营年限、由谁亲自诊疗、咨询方式、正品确认到术后管理，整理了选择医院时的参考标准。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/apgujeong-dermatology-clinic-choice/",
+   "image": "https://reyeonk2.com/img/og/apgujeong-dermatology-clinic-choice.jpg",
+   "about": [
+    "压鸥亭皮肤科",
+    "如何选择皮肤科",
+    "施术医院的选择",
+    "丽妍K医院"
+   ],
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "应该用什么标准选择压鸥亭皮肤科？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "请确认经营年限、从咨询到施术由谁诊疗、咨询时的说明方式、能否确认设备和产品，以及术后管理体系。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以只做咨询吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，只做咨询也没有问题。建议在多家医院咨询后进行比较。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "施术效果对每个人都一样吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不一样。效果和满意度会因皮肤状态和施术类型而因人而异。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选中";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
