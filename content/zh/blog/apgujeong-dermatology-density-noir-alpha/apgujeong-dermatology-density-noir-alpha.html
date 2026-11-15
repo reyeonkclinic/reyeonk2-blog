@@ -1,0 +1,303 @@
+---js
+const permalink = "/zh/blog/apgujeong-dermatology-density-noir-alpha/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "压鸥亭皮肤科 第二代Density Noir Alpha，了解有何不同后再做选择";
+const description = "第二代Density Noir Alpha是同时使用单极和双极两种射频能量的设备。整理了Noir与Alpha的区别、Gentle模式与Infinite模式，以及咨询时可以确认的几点。";
+const date = "2026-11-15";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "en", url: "/en/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "x-default", url: "/blog/apgujeong-dermatology-density-noir-alpha/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+	--pz-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">压鸥亭皮肤科 第二代Density Noir Alpha，了解有何不同后再做选择</h1>
+	<p class="pz-byline">专栏 · 丽妍K医院（译自韩语原文）</p>
+	<p class="pz-hook">了解Density施术时，您会同时看到“Noir”和“Alpha”这两个名称。</p>
+	<p class="pz-lead">仅看名称很难知道有什么不同。本文整理了第二代Density Noir Alpha是什么样的设备，以及选择前可以确认的几点。</p>
+	<div class="pz-summary">
+		<strong>3行摘要</strong>
+		<ul><li>第二代Density Noir是在原有Density基础上<b>升级的设备</b>。</li><li>Alpha同时使用单极（Monopolar）和双极（Bipolar）<b>两种射频能量</b>，同时处理皮肤的表层和深层。</li><li>Noir有Gentle模式和Infinite模式，哪种适合您，建议在咨询时确认。</li></ul>
+	</div>
+	<p class="pz-note">本文译自丽妍K医院的韩语原文。</p>
+
+	<div class="pz-section">
+		<h2>从Density到Noir，有什么变化？</h2>
+		<div class="pz-text"><p>Density是利用射频能量的提拉设备。第二代Density Noir是在原有Density基础上升级的设备。由于是同一系列设备改良后推出的，如果您听说过原有的Density，可以理解为它的下一代。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Alpha是什么？</h2>
+		<div class="pz-text"><p>Noir Alpha是同时使用单极（Monopolar）和双极（Bipolar）两种射频能量的方式。单极具有作用于相对较深层的特性，双极具有作用于相对较浅层的特性，因此两种方式并用，就能进行同时处理皮肤表层和深层的提拉。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Noir的两种模式：Gentle模式与Infinite模式</h2>
+		<ul class="pz-list">
+			<li><h3>Gentle模式</h3><p>可以调节皮肤被按压的深度，按部位调整接触条件。</p></li>
+			<li><h3>Infinite模式</h3><p>在设定范围内连续输出，将能量均匀传递到较大的部位。</p></li>
+		</ul>
+		<p class="pz-note">哪种模式适合，因施术部位和皮肤状态而异，建议在咨询时确认。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>了解并用两种能量的方式时，需要确认的几点</h2>
+		<ul class="pz-list">
+			<li><p>根据皮肤厚度和松弛程度，给哪一层多少能量会有所不同。</p></li>
+			<li><p>即使是同一台设备，施术部位和强度设定也会因人而异。</p></li>
+			<li><p>因此，比起设备名称，是否会说明“如何应用在我的皮肤上”更为重要。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>这些情况，咨询时可以问问</h2>
+		<ul class="pz-list">
+			<li><p>觉得脸部轮廓不如从前的人</p></li>
+			<li><p>觉得单一方式的提拉不够满意的人</p></li>
+			<li><p>想知道与超声刀、热玛吉等其他提拉有何不同的人</p></li>
+		</ul>
+		<p class="pz-note">是否施术及方法因皮肤状态而异，具体内容将在咨询时为您说明。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>丽妍K医院这样进行</h2>
+		<div class="pz-text"><p>丽妍K医院自2009年开业以来，已诊疗17年以上。</p><p>从咨询、施术到收尾，均由院长亲自负责。</p><p>李枓瓒、金鉉秀代表院长和崔贤镐院长，均在亲自咨询后再进行施术。</p></div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">第二代Density Noir Alpha是同时使用两种射频能量的设备。</p>
+		<p class="pz-invite">了解设备的特点后，请在咨询时确认它如何应用于您的皮肤。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院（Reyeonk Clinic）</dt>
+				<dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼<br>B1·3F·4F</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>官方网站</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韩语）</dd>
+				<dt>诊疗时间</dt>
+				<dd>周一、周二、周四 10:00–20:00<br>周五 10:00–19:00<br>周六 10:00–15:00<br>周三、周日及公共假日休诊</dd>
+				<dt>交通</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文以提供一般信息为目的。施术效果和结果因人而异。是否诊断和施术，请通过与医疗团队的咨询来决定。 施术效果和过程因人而异，术后可能出现肿胀、发红、发热等情况。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "压鸥亭皮肤科 第二代Density Noir Alpha，了解有何不同后再做选择",
+   "description": "第二代Density Noir Alpha是同时使用单极和双极两种射频能量的设备。整理了Noir与Alpha的区别、Gentle模式与Infinite模式，以及咨询时可以确认的几点。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/apgujeong-dermatology-density-noir-alpha/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "about": [
+    "压鸥亭皮肤科",
+    "Density Noir",
+    "Density Noir Alpha",
+    "射频提拉",
+    "丽妍K医院"
+   ],
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Density和Density Noir有什么区别？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Density是利用射频能量的提拉设备，第二代Density Noir是在原有Density基础上升级的设备。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Noir Alpha是什么？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Noir Alpha是同时使用单极和双极两种射频能量的方式。单极作用于相对较深层，双极作用于相对较浅层，因此可以同时处理皮肤的表层和深层。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Gentle模式和Infinite模式是什么？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Gentle模式可以调节皮肤被按压的深度，按部位调整接触条件。Infinite模式在设定范围内连续输出，将能量均匀传递到较大的部位。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选中";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

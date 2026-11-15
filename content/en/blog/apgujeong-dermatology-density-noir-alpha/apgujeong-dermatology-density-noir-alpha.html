@@ -1,0 +1,303 @@
+---js
+const permalink = "/en/blog/apgujeong-dermatology-density-noir-alpha/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "Apgujeong Dermatology: What Sets the 2nd-Generation Density Noir Alpha Apart, and What to Know Before You Choose";
+const description = "The 2nd-generation Density Noir Alpha uses two types of radiofrequency energy, monopolar and bipolar. Here is how Noir and Alpha differ, what Gentle Mode and Infinite Mode are, and what to check at a consultation.";
+const date = "2026-11-15";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "en", url: "/en/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "x-default", url: "/blog/apgujeong-dermatology-density-noir-alpha/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">Apgujeong Dermatology: What Sets the 2nd-Generation Density Noir Alpha Apart, and What to Know Before You Choose</h1>
+	<p class="pz-byline">Column · Reyeonk Clinic (originally published in Korean)</p>
+	<p class="pz-hook">Look into Density treatments and you will see the names “Noir” and “Alpha” side by side.</p>
+	<p class="pz-lead">The names alone do not tell you what is different. This article explains what the 2nd-generation Density Noir Alpha is, and what to check before you choose.</p>
+	<div class="pz-summary">
+		<strong>3-line summary</strong>
+		<ul><li>The 2nd-generation Density Noir is an <b>upgraded version</b> of the original Density device.</li><li>Alpha uses <b>two types of radiofrequency energy</b>, monopolar and bipolar, to work on the surface and the deeper layers of the skin at the same time.</li><li>Noir offers Gentle Mode and Infinite Mode. Which suits you is best confirmed at a consultation.</li></ul>
+	</div>
+	<p class="pz-note">This column is a translation of an article originally written in Korean by Reyeonk Clinic.</p>
+
+	<div class="pz-section">
+		<h2>From Density to Noir: what changed?</h2>
+		<div class="pz-text"><p>Density is a lifting device that uses radiofrequency energy. The 2nd-generation Density Noir is an upgraded version of the original Density. Because it is an improvement within the same line of devices, if you have heard of the original Density you can think of Noir as its next generation.</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>What is Alpha?</h2>
+		<div class="pz-text"><p>Noir Alpha uses two types of radiofrequency energy together: monopolar and bipolar. Monopolar tends to act on relatively deeper layers and bipolar on relatively shallower ones, so using both allows lifting that works on the surface and the deeper layers of the skin at the same time.</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Noir’s two modes: Gentle Mode and Infinite Mode</h2>
+		<ul class="pz-list">
+			<li><h3>Gentle Mode</h3><p>Lets you adjust how deeply the skin is pressed, so contact conditions can be matched to each area.</p></li>
+			<li><h3>Infinite Mode</h3><p>Delivers output continuously within the set parameters, spreading energy evenly over wide areas.</p></li>
+		</ul>
+		<p class="pz-note">Which mode suits you depends on the treatment area and your skin condition, so we recommend confirming it at a consultation.</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>What to check about a device that combines two types of energy</h2>
+		<ul class="pz-list">
+			<li><p>How much energy goes to which layer depends on your skin thickness and the degree of sagging.</p></li>
+			<li><p>Even with the same device, the treatment area and intensity settings are designed differently for each person.</p></li>
+			<li><p>That is why it matters more whether the clinic explains “how it applies to my skin” than which device it uses.</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>If any of these sound like you, ask at your consultation</h2>
+		<ul class="pz-list">
+			<li><p>You feel your jawline is not what it used to be</p></li>
+			<li><p>One type of lifting has left you wanting more</p></li>
+			<li><p>You wonder how it differs from other lifting treatments such as Ulthera or Thermage</p></li>
+		</ul>
+		<p class="pz-note">Whether to have the treatment, and how, depends on your skin condition, so we explain the details at your consultation.</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>How Reyeonk Clinic practises</h2>
+		<div class="pz-text"><p>Reyeonk Clinic has been practising for more than 17 years, since opening in 2009.</p><p>From consultation through treatment to wrap-up, the doctor sees you personally.</p><p>Dr. Lee Doochan and Dr. Kim Hyunsu (Representative Directors) and Dr. Choi Hyunho proceed only after a personal consultation.</p></div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">The 2nd-generation Density Noir Alpha is a device that combines two types of radiofrequency energy.</p>
+		<p class="pz-invite">Once you understand what the device does, ask at your consultation how it would apply to your own skin.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building)<br>B1, 3F and 4F</dd>
+				<dt>Phone</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">Copy number</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">One-to-one chat</a></dd>
+				<dt>Website</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> (Korean)</dd>
+				<dt>Hours</dt>
+				<dd>Mon, Tue, Thu 10:00–20:00<br>Fri 10:00–19:00<br>Sat 10:00–15:00<br>Closed Wed, Sun and public holidays</dd>
+				<dt>Directions</dt>
+				<dd><a href="/en/location/">See how to get here</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">* This article is provided for general information. Treatment results vary from person to person. Please decide on diagnosis and treatment through a consultation with a medical professional. Results and recovery vary from person to person, and swelling, redness or a feeling of warmth may occur after treatment.</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Apgujeong Dermatology: What Sets the 2nd-Generation Density Noir Alpha Apart, and What to Know Before You Choose",
+   "description": "The 2nd-generation Density Noir Alpha uses two types of radiofrequency energy, monopolar and bipolar. Here is how Noir and Alpha differ, what Gentle Mode and Infinite Mode are, and what to check at a consultation.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
+   "mainEntityOfPage": "https://reyeonk2.com/en/blog/apgujeong-dermatology-density-noir-alpha/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "about": [
+    "Apgujeong dermatology",
+    "Density Noir",
+    "Density Noir Alpha",
+    "radiofrequency lifting",
+    "Reyeonk Clinic"
+   ],
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the difference between Density and Density Noir?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Density is a lifting device that uses radiofrequency energy, and the 2nd-generation Density Noir is an upgraded version of the original Density."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is Noir Alpha?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Noir Alpha uses two types of radiofrequency energy, monopolar and bipolar, together. Monopolar tends to act on relatively deeper layers and bipolar on relatively shallower ones, so it can lift the surface and the deeper layers of the skin at the same time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are Gentle Mode and Infinite Mode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Gentle Mode lets you adjust how deeply the skin is pressed so contact conditions can be matched to each area. Infinite Mode delivers output continuously within the set parameters to spread energy evenly over wide areas."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "Selected";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "Copied"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

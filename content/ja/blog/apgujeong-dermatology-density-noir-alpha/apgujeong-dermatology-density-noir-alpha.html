@@ -1,0 +1,303 @@
+---js
+const permalink = "/ja/blog/apgujeong-dermatology-density-noir-alpha/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "狎鴎亭の皮膚科 第2世代デンシティ ノワール アルファ、何が違うのかを知ってから選びましょう";
+const description = "第2世代デンシティ ノワール アルファは、モノポーラとバイポーラの2種類の高周波エネルギーを併用する機器です。ノワールとアルファの違い、ジェントルモードとインフィニットモード、相談時に確認したい点をまとめました。";
+const date = "2026-11-15";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "en", url: "/en/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-dermatology-density-noir-alpha/" },
+	{ lang: "x-default", url: "/blog/apgujeong-dermatology-density-noir-alpha/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif JP", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	line-break: strict; overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+
+<div class="pz">
+	<h1 class="pz-title">狎鴎亭の皮膚科 第2世代デンシティ ノワール アルファ、何が違うのかを知ってから選びましょう</h1>
+	<p class="pz-byline">コラム · Reyeonk Clinic（韓国語の原文を翻訳）</p>
+	<p class="pz-hook">デンシティの施術を調べていると、「ノワール」と「アルファ」という名前を一緒に目にします。</p>
+	<p class="pz-lead">名前だけでは何が違うのか分かりにくいものです。このコラムでは、第2世代デンシティ ノワール アルファがどのような機器か、何を確認して選ぶとよいかをまとめました。</p>
+	<div class="pz-summary">
+		<strong>3行まとめ</strong>
+		<ul><li>第2世代デンシティ ノワールは、従来のデンシティを<b>アップグレードした機器</b>です。</li><li>アルファは、モノポーラとバイポーラという<b>2種類の高周波エネルギー</b>を併用し、肌の表面と深部を同時に扱う方式です。</li><li>ノワールにはジェントルモードとインフィニットモードがあり、どちらが合うかは相談で確認することをおすすめします。</li></ul>
+	</div>
+	<p class="pz-note">本コラムは、Reyeonk Clinicが韓国語で執筆した記事の翻訳です。</p>
+
+	<div class="pz-section">
+		<h2>デンシティからノワールへ、何が変わったのですか？</h2>
+		<div class="pz-text"><p>デンシティは、高周波エネルギーを利用したリフティング機器です。第2世代デンシティ ノワールは、従来のデンシティをアップグレードした機器です。同じ系統の機器が改良されて登場したものなので、従来のデンシティをご存じの方は、その次の世代と理解していただければ結構です。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>アルファとは？</h2>
+		<div class="pz-text"><p>ノワール アルファは、モノポーラとバイポーラという2種類の高周波エネルギーを併用する方式です。モノポーラは比較的深い層に、バイポーラは比較的浅い層に作用する特性があるため、2つの方式を併用すると、肌の表面と深部を同時に扱うリフティングが可能になります。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>ノワールの2つのモード：ジェントルモードとインフィニットモード</h2>
+		<ul class="pz-list">
+			<li><h3>ジェントルモード</h3><p>肌が押される深さを調整でき、部位ごとに接触条件を合わせることができます。</p></li>
+			<li><h3>インフィニットモード</h3><p>設定の範囲内で連続して出力し、広い範囲に均一に伝えます。</p></li>
+		</ul>
+		<p class="pz-note">どちらのモードが合うかは、施術部位や肌の状態によって異なるため、相談で確認することをおすすめします。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>2種類のエネルギーを併用する方式を見るときに確認したい点</h2>
+		<ul class="pz-list">
+			<li><p>肌の厚みやたるみの程度によって、どの層にどれくらいエネルギーを与えるかが変わります。</p></li>
+			<li><p>同じ機器でも、施術部位や強度の設定は人によって異なる設計になります。</p></li>
+			<li><p>そのため、機器の名前よりも「自分の肌にどう適用するのか」を説明してくれるかどうかが大切です。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>こんな方は、相談時にお尋ねください</h2>
+		<ul class="pz-list">
+			<li><p>フェイスラインが以前と違うと感じる方</p></li>
+			<li><p>1つの方式のリフティングでは物足りなさを感じた方</p></li>
+			<li><p>ウルセラやサーマクールなど他のリフティングとどう違うのか知りたい方</p></li>
+		</ul>
+		<p class="pz-note">施術の可否や方法は肌の状態によって異なるため、詳しい内容は相談でご案内します。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>Reyeonk Clinicの診療について</h2>
+		<div class="pz-text"><p>Reyeonk Clinicは、2009年の開院以来、17年以上診療を続けています。</p><p>相談から施術、仕上げまで、院長が直接担当します。</p><p>イ・ドゥチャン代表院長、キム・ヒョンス代表院長、チェ・ヒョノ院長が、直接の相談を行ったうえで施術を進めます。</p></div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">第2世代デンシティ ノワール アルファは、2種類の高周波エネルギーを併用する機器です。</p>
+		<p class="pz-invite">機器の特徴を理解したうえで、ご自身の肌にどう適用できるのか、相談で確認してみてください。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172ギル64 Reyeonkビル<br>B1・3F・4F</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1の相談はこちら</a></dd>
+				<dt>ウェブサイト</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韓国語）</dd>
+				<dt>診療時間</dt>
+				<dd>月・火・木 10:00–20:00<br>金 10:00–19:00<br>土 10:00–15:00<br>水・日・祝日は休診</dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">道案内を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本コラムは一般的な情報提供を目的としたものです。施術の効果や結果には個人差があります。診断と施術の可否は、医療スタッフとの相談を通じてご判断ください。 施術の効果や経過には個人差があり、施術後に腫れ、赤み、熱感などが現れることがあります。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "狎鴎亭の皮膚科 第2世代デンシティ ノワール アルファ、何が違うのかを知ってから選びましょう",
+   "description": "第2世代デンシティ ノワール アルファは、モノポーラとバイポーラの2種類の高周波エネルギーを併用する機器です。ノワールとアルファの違い、ジェントルモードとインフィニットモード、相談時に確認したい点をまとめました。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/apgujeong-dermatology-density-noir-alpha/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "about": [
+    "狎鴎亭 皮膚科",
+    "デンシティ ノワール",
+    "デンシティ ノワール アルファ",
+    "高周波リフティング",
+    "Reyeonk Clinic"
+   ],
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "デンシティとデンシティ ノワールは何が違いますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "デンシティは高周波エネルギーを利用したリフティング機器で、第2世代デンシティ ノワールは、従来のデンシティをアップグレードした機器です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ノワール アルファとは何ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ノワール アルファは、モノポーラとバイポーラという2種類の高周波エネルギーを併用する方式です。モノポーラは比較的深い層に、バイポーラは比較的浅い層に作用する特性があり、肌の表面と深部を同時に扱うリフティングが可能になります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ジェントルモードとインフィニットモードとは何ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ジェントルモードは、肌が押される深さを調整して部位ごとに接触条件を合わせることができます。インフィニットモードは、設定の範囲内で連続して出力し、広い範囲に均一に伝えます。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択しました";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
