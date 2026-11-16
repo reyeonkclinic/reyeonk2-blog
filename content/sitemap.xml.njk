@@ -11,6 +11,9 @@ eleventyExcludeFromCollections: true
 		<url>
 			<loc>{{ absoluteUrl }}</loc>
 			<lastmod>{{ page.date | htmlDateString }}</lastmod>
+			{%- for a in page.data.alternates %}
+			<xhtml:link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url | htmlBaseUrl(metadata.url) }}"/>
+			{%- endfor %}
 		</url>
 	{% endif %}
 {%- endfor %}
