@@ -1,0 +1,423 @@
+---js
+const permalink = "/zh/blog/thermage-flx-600-shots/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "热玛吉FLX 600发的效果、为什么要做、Oligio与Density的区别、疼痛、睡眠麻醉";
+const description = "为什么推荐热玛吉FLX 600发，其效果、与Oligio和Density的区别、疼痛、睡眠麻醉和笑气、再次施术的间隔以及脸颊凹陷的担忧，由压鸥亭丽妍K医院为您整理。";
+const date = "2026-11-16";
+const alternates = [
+	{ lang: "ko", url: "/blog/thermage-flx-600-shots/" },
+	{ lang: "en", url: "/en/blog/thermage-flx-600-shots/" },
+	{ lang: "ja", url: "/ja/blog/thermage-flx-600-shots/" },
+	{ lang: "zh-Hans", url: "/zh/blog/thermage-flx-600-shots/" },
+	{ lang: "x-default", url: "/blog/thermage-flx-600-shots/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+	--pz-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">您是否觉得皮肤的紧致度不如从前了？</p>
+	<p class="pz-lead">每次照镜子都会注意到的细纹，逐渐松垮的面部轮廓，失去弹性而下垂的皮肤。皮肤老化并不是某一天突然开始的。本文整理了许多人选择热玛吉FLX 600发的原因和效果、与Oligio和Density的区别、疼痛以及睡眠麻醉。</p>
+
+	<div class="pz-section">
+		<h2>皮肤紧致度下降的原因</h2>
+		<div class="pz-text"><p>一般来说，从20代中期以后，皮肤中胶原蛋白生成与分解的平衡会开始改变。尤其是支撑皮肤的真皮层中胶原蛋白和弹力纤维的变化，会影响细纹和皮肤松弛。</p><p>为了管理这些变化，许多人关注的施术就是射频（RF）紧致提升的热玛吉FLX。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>什么是热玛吉FLX？</h2>
+		<div class="pz-text"><p>热玛吉FLX是将射频（RF）能量传递到皮肤组织的非侵入式施术。它是获得美国FDA批准的第四代设备，20多年来一直用于改善眼周和面部皱纹，是具有代表性的射频提升设备。</p><p>传递到皮肤组织的射频能量会产生热作用，之后通过胶原蛋白再生过程，可期待皮肤紧致度和紧致效果的改善。它的特点还在于无需切开皮肤。</p></div>
+		<ul class="pz-effects">
+			<li>改善皮肤紧致度</li>
+			<li>缓解眼周及面部细纹</li>
+			<li>皮肤紧致</li>
+			<li>有助于改善皮肤纹理</li>
+		</ul>
+		<p class="pz-note" style="margin-top: 16px">缩小毛孔或改善较深皱纹等效果，会因皮肤状态而受到限制，并不是每个人都会出现相同的结果。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>为什么推荐热玛吉FLX 600发？</h2>
+		<div class="pz-text"><p>在了解热玛吉的人中，最常被问到的就是600发。因为600发是管理面部整体紧致度时常被选择的组合。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>可以一次设计整个面部</h3><p>这个发数可以一次规划整个面部：脸颊和颧骨周围紧致度下降、法令纹周围细纹、嘴角和下巴周围松弛。</p></li>
+			<li><h3>可以按部位分配能量进行设计</h3><p>皮肤较薄和较厚的部位、脂肪较多和较少的部位，各自特点不同。比发数本身更重要的，是考虑皮肤厚度、紧致度和面部脂肪量的能量调节和施术设计。</p></li>
+			<li><h3>也符合正品探头的规格</h3><p>正品探头按300、600、900发的单位构成，实行一人一个探头。如果以100发、150发等拆分方式介绍，或超过2小时时间锁仍在施术，就可以怀疑是翻新探头。</p></li>
+		</ul>
+		<p class="pz-text" style="margin-top: 20px">在丽妍K医院，医生会亲自咨询，确认皮肤状态后规划施术范围和能量强度。即使同样是600发，也不会对所有人采用相同的设计。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>Oligio、Density与热玛吉有什么不同？</h2>
+		<div class="pz-text"><p>这三种设备都是利用射频能量管理皮肤紧致度的设备。由于能量传递方式、探头和费用因设备而异，与其断定哪一种更好，不如根据皮肤状态和目的来选择。</p></div>
+		<div class="pz-table" style="margin-top: 24px">
+			<table>
+				<thead><tr><th scope="col"></th><th scope="col">热玛吉FLX</th><th scope="col">Oligio（올리지오）</th><th scope="col">Density（덴서티）</th></tr></thead>
+				<tbody><tr><th scope="row">射频方式</th><td>单极（Monopolar）</td><td>单极（Monopolar）</td><td>Classic探头为单极，Alpha探头为单极＋双极（Bipolar）</td></tr><tr><th scope="row">设备特点</th><td>获FDA批准，使用20多年的元祖射频提升</td><td>韩国开发的射频提升设备</td><td>被称为“韩国版热玛吉”的韩国开发设备</td></tr><tr><th scope="row">适合人群</th><td>计划一次完成到真皮较深层紧致的人</td><td>希望以较低负担管理真皮紧致度的人</td><td>初次接触射频提升，或在意费用和疼痛的人</td></tr></tbody>
+			</table>
+		</div>
+		<div class="pz-text" style="margin-top: 24px"><p>选择热玛吉的人，看重的是它基于长期施术数据，能够精准调节能量；选择Density的人，看重的是约为热玛吉一半的价格和相对较轻的疼痛。哪种设备适合您，建议根据皮肤厚度、紧致度和想要的变化，通过与医生的咨询来决定。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>热玛吉疼痛程度如何？</h2>
+		<div class="pz-text"><p>热玛吉是施加射频热量的方式，可能会感到灼热、刺痛或烧灼感。疼痛程度因皮肤状态、能量设置和个人敏感度而异，也有不少人觉得比超声刀轻。</p><p>不过600发的发数并不少，对疼痛敏感的人在施术中可能会感到不适。如果担心疼痛，请在施术前充分咨询麻醉方式。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>热玛吉睡眠麻醉 vs 笑气</h2>
+		<ul class="pz-list">
+			<li><h3>超声辅助局部麻醉</h3><p>利用超声设备帮助局部麻醉药渗透到皮肤的方法，可根据患者状态和施术条件，作为减轻疼痛负担的方式来考虑。</p></li>
+			<li><h3>笑气（Airnox）</h3><p>吸入一氧化二氮与氧气混合气体的镇静、镇痛系统，在保持清醒的状态下有助于缓解不适。无需禁食、禁酒、禁烟，可当天施术，休息10~20分钟后即可回家。患有肺部疾病或呼吸不适的人可能难以施术。</p></li>
+			<li><h3>睡眠麻醉</h3><p>使用睡眠麻醉药，在睡眠状态下接受施术的方法，对疼痛敏感或难以承受长时间施术的人，可在医生评估后考虑。丽妍K医院仅在配备氧气呼吸器、血氧饱和度测量等安全及监测设备的手术室内进行。</p><span class="pz-tag">睡眠麻醉须事先咨询 · 不可当天预约</span></li>
+		</ul>
+		<div class="pz-text" style="margin-top: 20px"><p>接受睡眠麻醉当天，需要禁食4小时以上，并至少一天内不能饮酒和吸烟。由于还需要确认正在服用的药物、所患疾病、过敏和既往麻醉经历，预约时请务必告知是否需要睡眠麻醉。术后可能出现头晕、头痛、恶心，因此需要在单人病房充分休息后再回家。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>热玛吉效果什么时候出现，能维持多久？</h2>
+		<div class="pz-text"><p>有些人在术后较早就会感觉皮肤变紧，但胶原蛋白的再生需要时间。一般可期待在数个月内逐渐出现紧致度的变化，变化的程度和时间因人而异。</p><p>维持时间因皮肤状态、老化程度和生活习惯而异，通常期待维持6个月到1年左右的紧致改善。1~2年的效果并不是对所有人都有保证，而且术后皮肤老化仍在继续，因此坚持防晒和护理也很重要。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>再次施术间隔为1年~1年6个月</h3><p>建议每隔1年到1年6个月进行一次热玛吉。</p></li>
+			<li><h3>如果紧致度下降较快，6个月时做Density Classic</h3><p>如果皮肤紧致度下降较快，在热玛吉后6个月左右接着做Density Classic，可能有助于延长效果的维持时间。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>做热玛吉会脸颊凹陷吗？</h2>
+		<div class="pz-text"><p>热玛吉不会影响脂肪，因此脸颊凹陷的风险非常低。即使担心脸颊脂肪减少，也是比较适合考虑的紧致提升方式。</p><p>不过面部骨骼结构和脂肪量因人而异，详细情况请在与医生的咨询中确认。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>为什么推荐热玛吉与水光针一起做？</h2>
+		<div class="pz-text"><p>单独做热玛吉也很好，但如果与Gouri、Re2O等水光针（Skin Booster）一起施术，皮肤会得到营养供给，皮肤层得到强化，有助于改善紧致度和皮肤纹理。</p><p>水光针因种类不同，成分和特点也不同，建议与医生咨询后，选择适合自己皮肤状态的产品。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>热玛吉FLX 600发价格</h2>
+		<div class="pz-text"><p>热玛吉的价格会因设备代数、发数、医生经验和麻醉方式而有差异。比起只比较施术费用，请一并确认以下事项。</p></div>
+		<ul class="pz-list" style="margin-top: 20px">
+			<li>是否使用正品热玛吉FLX设备</li>
+			<li>是否使用正品探头并一人一个探头</li>
+			<li>是否由医生亲自咨询并施术</li>
+			<li>费用是否包含麻醉费</li>
+			<li>是否包含增值税及水光针等组合项目</li>
+		</ul>
+		<div class="pz-event" style="margin-top: 28px">
+			<div class="pz-label">11月热玛吉活动</div>
+			<h3>热玛吉FLX 600发＋睡眠麻醉</h3>
+			<div class="pz-big"><strong>195万韩元</strong></div>
+			<p class="pz-note">不含10%增值税 · 截至2026年11月30日</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>如何确认热玛吉正品探头</h2>
+		<ul class="pz-list">
+			<li>确认是否为正品热玛吉FLX设备</li>
+			<li>开封探头时确认包装和认证信息</li>
+			<li>确认是否一人一个探头</li>
+			<li>确认正品认证书</li>
+			<li>确认设有2小时时间锁，并在2小时内使用</li>
+		</ul>
+		<p class="pz-text" style="margin-top: 20px">丽妍K医院原则上使用正品设备和正品探头，如不是正品，实行赔偿1亿韩元的制度。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>副作用及术前注意事项</h2>
+		<div class="pz-text"><p>热玛吉是非侵入式施术，但并非完全没有副作用的可能。术后可能出现暂时性的发红、肿胀、疼痛和发热感，极少数情况下可能出现水疱、烫伤、感觉变化或皮肤表面不平整。</p><p>为了安全施术，需要充分考虑探头的接触状态、能量设置和施术部位的特点，因此由经验丰富的医生进行咨询和施术非常重要。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>为什么选择丽妍K医院的紧致提升？</h2>
+		<ul class="pz-list">
+			<li>从咨询、施术到收尾，均由主治医生亲自负责的一对一专属医生制度</li>
+			<li>基于16年以上紧致提升经验积累的大量临床案例</li>
+			<li>根据皮肤厚度、紧致度和脂肪量设计能量和发数</li>
+			<li>原则上使用正品设备和正品探头，睡眠麻醉仅在配备安全设备的手术室内进行</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>常见问题（FAQ）</h2>
+		<ul class="pz-list">
+			<li><h3>为什么热玛吉FLX很多人选择600发？</h3><p>因为这是适合管理面部整体紧致度的组合，也符合正品探头的规格（300、600、900发）。实际施术会根据皮肤厚度、紧致度和脂肪量进行个性化设计。</p></li>
+			<li><h3>热玛吉、Oligio和Density有什么区别？</h3><p>都是射频提升，但能量传递方式、探头和费用不同。热玛吉和Oligio为单极方式，Density的Classic探头为单极，Alpha探头同时使用单极和双极。</p></li>
+			<li><h3>热玛吉很疼吗？</h3><p>可能会有灼热或刺痛感，个体差异很大。如果担心疼痛，可以咨询超声辅助局部麻醉、笑气或睡眠麻醉，选择适合自己的方式。</p></li>
+			<li><h3>睡眠麻醉可以当天做吗？</h3><p>睡眠麻醉需要事先咨询，因此很难当天预约。预约时请提前告知。</p></li>
+			<li><h3>热玛吉什么时候再做比较好？</h3><p>建议间隔1年到1年6个月。如果皮肤紧致度下降较快，在6个月左右接着做Density Classic，可能有助于延长维持时间。</p></li>
+			<li><h3>做热玛吉会脸颊凹陷吗？</h3><p>热玛吉不会影响脂肪，因此脸颊凹陷的风险非常低。</p></li>
+			<li><h3>热玛吉可以和水光针一起做吗？</h3><p>与Gouri、Re2O等水光针一起施术，可以为皮肤提供营养并强化皮肤层，有助于改善紧致度和皮肤纹理。适合哪种产品，将在咨询中确定。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>丽妍K医院医疗团队履历</h2>
+		<div class="pz-text"><p>丽妍K医院的李枓瓒、金鉉秀代表院长和崔贤镐院长，均在亲自咨询后再进行施术。履历如下。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>李枓瓒（이두찬） 代表院长</h3><p>原 Mayfure 医院（메이퓨어의원）院长 · 原 Jaylin 医院（제이린의원）院长 · 原 Mimisum 医院（미미썸의원）院长</p><p>AestheFill APAC Expert (2026) · SHENB Virtue RF Key-doctor · Restylane Kysse™ MASTER · SOMA (Thermage) Certification of Training 高级课程结业 · Atiere Key-doctor</p><p>大韩激光皮肤毛发学会（대한레이저피부모발학회）正式会员 · 大韩美容整形激光医学会（대한미용성형레이저의학회）正式会员 · 大韩肥胖美容学会（대한비만미용학회）正式会员 · 大韩填充剂学会（대한필러학회）正式会员</p></li>
+			<li><h3>金鉉秀（김현수） 代表院长</h3><p>大韩美容外科学会（KACS）（대한미용외과학회）学术理事 · Sunsak 注射（순삭주사）的开发者及专利持有人</p><p>Cynergy MPX Key Doctor · Harvest Jet 2 (Body Jet EVO) Training Doctor · Smartlipo TPX · Cellulaze Asia Training Doctor</p></li>
+			<li><h3>Choi Hyunho（최현호） 院长</h3><p>原 Mayfure 医院（메이퓨어의원）院长 · 原 Tones 医院（톤즈의원）院长</p><p>大韩激光皮肤毛发学会（대한레이저피부모발학회）正式会员 · 大韩美容整形激光医学会（대한미용성형레이저의학회）正式会员 · 大韩肥胖美容学会（대한비만미용학회）正式会员 · 大韩填充剂学会（대한필러학회）准会员</p></li>
+		</ul>
+		<p class="pz-note">详细介绍请见<a href="/zh/doctors/">医疗团队页面</a>。</p>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">一旦下降的皮肤紧致度，很难恢复到原来的状态。</p>
+		<p class="pz-invite">如果您想知道热玛吉FLX 600发是否适合自己，或哪种麻醉方式更舒适，请与医生充分咨询。我们会为您介绍适合皮肤状态的紧致提升方法。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院（Reyeonk Clinic）</dt>
+				<dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼<br>B1·3F·4F</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>官方网站</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韩语）</dd>
+				<dt>诊疗时间</dt>
+				<dd>周一、周二、周四 10:00–20:00<br>周五 10:00–19:00<br>周六 10:00–15:00<br>周三、周日及公共假日休诊</dd>
+				<dt>交通</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文以提供一般信息为目的。施术效果和结果因人而异。是否诊断和施术，请通过与医疗团队的咨询来决定。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "热玛吉FLX 600发的效果、为什么要做、Oligio与Density的区别、疼痛、睡眠麻醉",
+   "description": "为什么推荐热玛吉FLX 600发，其效果、与Oligio和Density的区别、疼痛、睡眠麻醉和笑气、再次施术的间隔以及脸颊凹陷的担忧，由压鸥亭丽妍K医院为您整理。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-16",
+   "dateModified": "2026-11-16",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/thermage-flx-600-shots/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@id": "https://reyeonk2.com/#clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "为什么热玛吉FLX很多人选择600发？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "因为这是适合管理面部整体紧致度的组合，也符合正品探头的规格（300、600、900发）。实际施术会根据皮肤厚度、紧致度和脂肪量进行个性化设计。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉、Oligio和Density有什么区别？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "都是射频提升，但能量传递方式、探头和费用不同。热玛吉和Oligio为单极方式，Density的Classic探头为单极，Alpha探头同时使用单极和双极。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉很疼吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可能会有灼热或刺痛感，个体差异很大。如果担心疼痛，可以咨询超声辅助局部麻醉、笑气或睡眠麻醉，选择适合自己的方式。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "睡眠麻醉可以当天做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "睡眠麻醉需要事先咨询，因此很难当天预约。预约时请提前告知。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉什么时候再做比较好？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "建议间隔1年到1年6个月。如果皮肤紧致度下降较快，在6个月左右接着做Density Classic，可能有助于延长维持时间。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "做热玛吉会脸颊凹陷吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "热玛吉不会影响脂肪，因此脸颊凹陷的风险非常低。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉可以和水光针一起做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "与Gouri、Re2O等水光针一起施术，可以为皮肤提供营养并强化皮肤层，有助于改善紧致度和皮肤纹理。适合哪种产品，将在咨询中确定。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选中";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

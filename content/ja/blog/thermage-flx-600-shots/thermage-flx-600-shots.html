@@ -1,0 +1,423 @@
+---js
+const permalink = "/ja/blog/thermage-flx-600-shots/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "サーマジFLX 600ショットの効果・受けるべき理由、オリジオとデンシティの違い、痛み、睡眠麻酔について";
+const description = "サーマジFLX 600ショットをおすすめする理由と効果、オリジオ・デンシティとの違い、痛み、睡眠麻酔・エアノックス、再施術の目安、頬こけの心配まで、狎鷗亭のReyeonk Clinicがまとめました。";
+const date = "2026-11-16";
+const alternates = [
+	{ lang: "ko", url: "/blog/thermage-flx-600-shots/" },
+	{ lang: "en", url: "/en/blog/thermage-flx-600-shots/" },
+	{ lang: "ja", url: "/ja/blog/thermage-flx-600-shots/" },
+	{ lang: "zh-Hans", url: "/zh/blog/thermage-flx-600-shots/" },
+	{ lang: "x-default", url: "/blog/thermage-flx-600-shots/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif JP", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	line-break: strict; overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">お肌のハリが以前のようでないと感じていませんか？</p>
+	<p class="pz-lead">鏡を見るたびに気になる小じわ、少しずつ崩れていくフェイスライン、ハリを失ってたるんでいくお肌。肌の老化はある日突然始まるわけではありません。今回は、サーマジFLX 600ショットが選ばれる理由と効果、オリジオ・デンシティとの違い、痛み、睡眠麻酔についてまとめました。</p>
+
+	<div class="pz-section">
+		<h2>お肌のハリが低下する理由</h2>
+		<div class="pz-text"><p>一般的に、20代半ば以降、肌の中のコラーゲンの生成と分解のバランスが変わり始めます。特に肌を支える真皮層のコラーゲンや弾力線維の変化は、小じわやたるみにつながることがあります。</p><p>こうした変化をケアするために、多くの方が関心を寄せる施術が、高周波（RF）リフティングのサーマジFLXです。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジFLXとは？</h2>
+		<div class="pz-text"><p>サーマジFLXは、高周波（RF）エネルギーを肌組織に届ける非侵襲的な施術です。米国FDAの承認を受けた第4世代の機器で、20年以上にわたり目元や顔のしわの改善に用いられてきた、代表的な高周波リフティング機器です。</p><p>肌組織に届いた高周波エネルギーは熱作用を起こし、その後のコラーゲン再形成の過程を通じて、ハリの改善やタイトニングが期待できます。肌を切開しない点も特徴です。</p></div>
+		<ul class="pz-effects">
+			<li>お肌のハリの改善</li>
+			<li>目元・顔の小じわの緩和</li>
+			<li>肌のタイトニング</li>
+			<li>肌のキメの改善に役立つ</li>
+		</ul>
+		<p class="pz-note" style="margin-top: 16px">毛穴の縮小や深いしわの改善などは、肌の状態によって効果が限定的な場合があり、すべての方に同じ結果が現れるわけではありません。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジFLX 600ショットをおすすめする理由</h2>
+		<div class="pz-text"><p>サーマジの効果を調べている方が最も多く尋ねるのが600ショットです。600ショットは、顔全体のハリをケアする際によく選ばれる構成だからです。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>顔全体を一度にデザインできます</h3><p>頬や頬骨まわりのハリの低下、ほうれい線まわりの小じわ、口元やあごまわりのたるみまで、顔全体を一度に計画できるショット数です。</p></li>
+			<li><h3>部位ごとにエネルギーを分けて設計できます</h3><p>肌が薄い部位と厚い部位、脂肪が多い部位と少ない部位では、それぞれ特性が異なります。ショット数そのものよりも、肌の厚み、ハリ、顔の脂肪量を考慮したエネルギー調整と施術デザインが重要です。</p></li>
+			<li><h3>正規チップの構成とも合っています</h3><p>正規チップは300・600・900ショット単位で構成されており、1人1チップで使用します。100ショットや150ショットのように分けて案内したり、2時間のタイムロックを過ぎても施術したりする場合は、再生チップを疑うことができます。</p></li>
+		</ul>
+		<p class="pz-text" style="margin-top: 20px">Reyeonk Clinicでは、医師が直接相談を行い、肌の状態を確認したうえで、施術範囲とエネルギー強度を計画します。同じ600ショットでも、すべての方に同じデザインで施術することはありません。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>オリジオ・デンシティとサーマジは何が違う？</h2>
+		<div class="pz-text"><p>3つとも高周波エネルギーを用いて肌のハリをケアする機器です。エネルギーの伝達方式、チップ、費用が機器ごとに異なるため、どれが優れていると決めつけず、肌の状態や目的に合わせて選ぶことをおすすめします。</p></div>
+		<div class="pz-table" style="margin-top: 24px">
+			<table>
+				<thead><tr><th scope="col"></th><th scope="col">サーマジFLX</th><th scope="col">オリジオ（Oligio）</th><th scope="col">デンシティ（Density）</th></tr></thead>
+				<tbody><tr><th scope="row">高周波方式</th><td>単極性（モノポーラ）</td><td>単極性（モノポーラ）</td><td>クラシックチップは単極性、アルファチップは単極性＋双極性（バイポーラ）</td></tr><tr><th scope="row">機器の特徴</th><td>FDA承認、20年以上使われてきた元祖高周波リフティング</td><td>韓国で開発された高周波リフティング機器</td><td>「韓国版サーマジ」と呼ばれる韓国開発の機器</td></tr><tr><th scope="row">こんな方に</th><td>一度に真皮の深い層までのタイトニングを計画する方</td><td>負担を抑えて真皮のハリをケアしたい方</td><td>高周波リフティングが初めての方、費用や痛みが気になる方</td></tr></tbody>
+			</table>
+		</div>
+		<div class="pz-text" style="margin-top: 24px"><p>サーマジは長い施術データに基づき、エネルギーを精密に調整できる点で、デンシティはサーマジの約1/2の価格と比較的少ない痛みという点で、それぞれ選ばれています。どの機器が合うかは、肌の厚み、ハリ、望む変化を見たうえで、医師との相談で決めることをおすすめします。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジの痛みはどのくらい？</h2>
+		<div class="pz-text"><p>サーマジは高周波の熱を加える方式のため、熱い感じやチクチクする感じ、焼けるような熱感が現れることがあります。痛みの程度は肌の状態、エネルギー設定、個人の敏感さによって異なり、ウルセラより痛みが少ないと感じる方も多くいらっしゃいます。</p><p>ただし600ショットは少なくないショット数のため、痛みに敏感な方は施術中に不快感を覚えることがあります。痛みが心配な場合は、施術前に麻酔方法を十分に相談してください。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジの睡眠麻酔とエアノックスの比較</h2>
+		<ul class="pz-list">
+			<li><h3>超音波による局所麻酔</h3><p>局所麻酔剤が肌に届くのを助ける超音波機器を活用する方法で、患者さまの状態や施術条件に応じて、痛みの負担を減らすために検討できます。</p></li>
+			<li><h3>エアノックス（スマイルガス）</h3><p>亜酸化窒素と酸素を混ぜて吸入する鎮静・鎮痛システムで、意識が保たれた状態で不快感を和らげるのに役立ちます。絶食や禁酒、禁煙が不要で当日の施術が可能であり、10〜20分ほど休んでからお帰りいただけます。肺の疾患や呼吸に不快感がある場合は、施術が難しいことがあります。</p></li>
+			<li><h3>睡眠麻酔</h3><p>睡眠麻酔剤を用いて眠った状態で施術を受ける方法で、痛みに敏感な方や長い施術が負担な方が、医師の評価を経て検討できます。Reyeonk Clinicでは、酸素呼吸器、酸素飽和度測定などの安全装置とモニタリング機器を備えた手術室でのみ行っています。</p><span class="pz-tag">睡眠麻酔は事前相談が必須 · 当日予約不可</span></li>
+		</ul>
+		<div class="pz-text" style="margin-top: 20px"><p>睡眠麻酔を受ける日は、4時間以上の絶食と、1日以上の飲酒・喫煙をお控えいただく必要があります。服用中のお薬、持病、アレルギー、過去の麻酔経験も確認する必要がありますので、ご予約の際に睡眠麻酔をご希望かどうか必ずお知らせください。施術後はめまい、頭痛、吐き気が出ることがあるため、個室で十分に休んでからお帰りいただきます。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジの効果はいつから現れ、どのくらい続く？</h2>
+		<div class="pz-text"><p>施術後、比較的早い時期に肌が引き締まる感覚を覚える方もいますが、コラーゲンの再形成には時間が必要です。一般的に数か月にわたってハリの変化が期待でき、その程度や時期には個人差があります。</p><p>持続期間は肌の状態、老化の程度、生活習慣によって異なり、一般的に約6か月〜1年前後のハリの改善を期待される方が多くいらっしゃいます。1〜2年の効果がすべての方に保証されるわけではなく、施術後も肌の老化は続くため、紫外線対策と継続的なケアも大切です。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>再施術の目安は1年〜1年6か月</h3><p>サーマジは1年から1年6か月の間隔で受けることをおすすめします。</p></li>
+			<li><h3>ハリの低下が早い場合は、6か月後にデンシティクラシック</h3><p>お肌のハリが落ちやすい場合は、サーマジの約6か月後にデンシティクラシックで続けてケアすると、持続期間を延ばすのに役立つことがあります。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジを受けると頬がこけますか？</h2>
+		<div class="pz-text"><p>サーマジは脂肪に影響を与えないため、頬こけのリスクは非常に低い施術です。頬の脂肪が減るのではと心配な方にも検討しやすいリフティングです。</p><p>ただし、顔の骨格や脂肪量は人によって異なりますので、詳しくは医師との相談でご確認ください。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジとスキンブースターを一緒に受ける理由</h2>
+		<div class="pz-text"><p>サーマジ単独の施術も良いですが、ゴウリ、Re2Oなどのスキンブースターと併せて施術すると、お肌に栄養が供給され、肌の層が強化されて、ハリとキメの改善に役立ちます。</p><p>スキンブースターは種類によって成分や特徴が異なりますので、医師と相談のうえ、肌の状態に合った製品を選ぶことをおすすめします。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジFLX 600ショットの料金</h2>
+		<div class="pz-text"><p>サーマジの料金は、機器の世代、ショット数、医師の経験、麻酔方法によって異なります。施術料金だけを比べるのではなく、次の点も併せて確認してください。</p></div>
+		<ul class="pz-list" style="margin-top: 20px">
+			<li>正規のサーマジFLX機器を使用しているか</li>
+			<li>正規チップと1人1チップを使用しているか</li>
+			<li>医師が直接相談・施術を行うか</li>
+			<li>麻酔費用が含まれているか</li>
+			<li>消費税やスキンブースターなどの組み合わせが含まれているか</li>
+		</ul>
+		<div class="pz-event" style="margin-top: 28px">
+			<div class="pz-label">11月サーマジイベント</div>
+			<h3>サーマジFLX 600ショット＋睡眠麻酔</h3>
+			<div class="pz-big"><strong>195万ウォン</strong></div>
+			<p class="pz-note">付加価値税10%別 · 2026年11月30日まで</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>サーマジ正規チップの確認方法</h2>
+		<ul class="pz-list">
+			<li>正規のサーマジFLX機器かどうかを確認</li>
+			<li>チップ開封時にパッケージと認証情報を確認</li>
+			<li>1人1チップで使用しているかを確認</li>
+			<li>正規認証書を確認</li>
+			<li>2時間のタイムロックがかかっており、2時間以内に使用しているかを確認</li>
+		</ul>
+		<p class="pz-text" style="margin-top: 20px">Reyeonk Clinicは、正規の機器と正規チップの使用を原則とし、正規品でない場合は1億ウォンを賠償する制度を設けています。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>副作用と施術前の注意事項</h2>
+		<div class="pz-text"><p>サーマジは非侵襲的な施術ですが、副作用の可能性がまったくないわけではありません。施術後に一時的な赤み、腫れ、痛み、熱感が現れることがあり、まれに水ぶくれややけど、感覚の変化、肌表面の凹凸が生じることがあります。</p><p>安全な施術のためには、チップの接触状態、エネルギー設定、施術部位の特性を十分に考慮する必要があるため、経験豊富な医師による相談と施術が重要です。</p></div>
+	</div>
+
+	<div class="pz-section">
+		<h2>なぜReyeonk Clinicのリフティングなのか</h2>
+		<ul class="pz-list">
+			<li>相談から施術、仕上げまで担当医が直接責任を持つ1対1担当医制</li>
+			<li>16年以上のリフティング経験に基づく数多くの臨床症例</li>
+			<li>肌の厚み、ハリ、脂肪量に合わせたエネルギー・ショット数の設計</li>
+			<li>正規機器・正規チップの使用を原則とし、睡眠麻酔は安全装置を備えた手術室でのみ実施</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>よくあるご質問（FAQ）</h2>
+		<ul class="pz-list">
+			<li><h3>サーマジFLXはなぜ600ショットが多く選ばれますか？</h3><p>顔全体のハリをケアするのに適した構成で、正規チップの単位（300・600・900ショット）とも合っているためです。実際の施術は、肌の厚み、ハリ、脂肪量を考慮して個別に設計します。</p></li>
+			<li><h3>サーマジ、オリジオ、デンシティは何が違いますか？</h3><p>いずれも高周波リフティングですが、エネルギーの伝達方式、チップ、費用が異なります。サーマジとオリジオは単極性で、デンシティはクラシックチップが単極性、アルファチップが単極性と双極性を併用します。</p></li>
+			<li><h3>サーマジはとても痛いですか？</h3><p>熱い感じやチクチクする感じがあり、個人差が大きいです。痛みが心配な場合は、超音波による局所麻酔、エアノックス、睡眠麻酔の中から合う方法を相談できます。</p></li>
+			<li><h3>睡眠麻酔は当日でも可能ですか？</h3><p>睡眠麻酔は事前相談が必要なため、当日のご予約は難しいです。ご予約の際に、あらかじめお知らせください。</p></li>
+			<li><h3>サーマジの再施術はいつ受けるのがよいですか？</h3><p>1年から1年6か月の間隔をおすすめします。ハリが早く落ちる場合は、6か月後あたりにデンシティクラシックで続けてケアすると、持続期間を延ばすのに役立つことがあります。</p></li>
+			<li><h3>サーマジを受けると頬がこけますか？</h3><p>サーマジは脂肪に影響がないため、頬こけのリスクは非常に低いです。</p></li>
+			<li><h3>サーマジとスキンブースターを一緒に受けてもよいですか？</h3><p>ゴウリ、Re2Oなどのスキンブースターを併せて施術すると、お肌の栄養供給と肌の層の強化により、ハリとキメの改善に役立ちます。どの製品が合うかは相談でお決めします。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>Reyeonk Clinic 医療スタッフの経歴</h2>
+		<div class="pz-text"><p>Reyeonk Clinicでは、イ・ドゥチャン代表院長、キム・ヒョンス代表院長、チェ・ヒョノ院長が、直接の相談を行ったうえで施術を進めます。経歴は次のとおりです。</p></div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li><h3>イ・ドゥチャン 代表院長</h3><p>元 メイピュア医院（메이퓨어의원）院長 · 元 ジェイリン医院（제이린의원）院長 · 元 ミミサム医院（미미썸의원）院長</p><p>AestheFill APAC Expert (2026) · SHENB Virtue RF Key-doctor · Restylane Kysse™ MASTER · SOMA (Thermage) Certification of Training Advanced Course 修了 · Atiere Key-doctor</p><p>大韓レーザー皮膚毛髪学会（대한레이저피부모발학회）正会員 · 大韓美容形成レーザー医学会（대한미용성형레이저의학회）正会員 · 大韓肥満美容学会（대한비만미용학회）正会員 · 大韓フィラー学会（대한필러학회）正会員</p></li>
+			<li><h3>キム・ヒョンス 代表院長</h3><p>大韓美容外科学会（KACS）（대한미용외과학회）学術理事 · スンサク注射（순삭주사）の開発および特許</p><p>Cynergy MPX Key Doctor · Harvest Jet 2 (Body Jet EVO) Training Doctor · Smartlipo TPX · Cellulaze Asia Training Doctor</p></li>
+			<li><h3>チェ・ヒョンホ 院長</h3><p>元 メイピュア医院（메이퓨어의원）院長 · 元 トーンズ医院（톤즈의원）院長</p><p>大韓レーザー皮膚毛髪学会（대한레이저피부모발학회）正会員 · 大韓美容形成レーザー医学会（대한미용성형레이저의학회）正会員 · 大韓肥満美容学会（대한비만미용학회）正会員 · 大韓フィラー学会（대한필러학회）準会員</p></li>
+		</ul>
+		<p class="pz-note">詳しいご紹介は<a href="/ja/doctors/">医療スタッフのページ</a>でご覧いただけます。</p>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">一度落ちたお肌のハリを元の状態に戻すのは難しいものです。</p>
+		<p class="pz-invite">サーマジFLX 600ショットが自分に合っているか、どの麻酔が楽かが気になる方は、医師と十分にご相談ください。お肌の状態に合ったリフティング方法をご案内します。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172ギル64 Reyeonkビル<br>B1・3F・4F</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1の相談はこちら</a></dd>
+				<dt>ウェブサイト</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韓国語）</dd>
+				<dt>診療時間</dt>
+				<dd>月・火・木 10:00–20:00<br>金 10:00–19:00<br>土 10:00–15:00<br>水・日・祝日は休診</dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">道案内を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本コラムは一般的な情報提供を目的としたものです。施術の効果や結果には個人差があります。診断と施術の可否は、医療スタッフとの相談を通じてご判断ください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "サーマジFLX 600ショットの効果・受けるべき理由、オリジオとデンシティの違い、痛み、睡眠麻酔について",
+   "description": "サーマジFLX 600ショットをおすすめする理由と効果、オリジオ・デンシティとの違い、痛み、睡眠麻酔・エアノックス、再施術の目安、頬こけの心配まで、狎鷗亭のReyeonk Clinicがまとめました。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-16",
+   "dateModified": "2026-11-16",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/thermage-flx-600-shots/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@id": "https://reyeonk2.com/#clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "サーマジFLXはなぜ600ショットが多く選ばれますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "顔全体のハリをケアするのに適した構成で、正規チップの単位（300・600・900ショット）とも合っているためです。実際の施術は、肌の厚み、ハリ、脂肪量を考慮して個別に設計します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サーマジ、オリジオ、デンシティは何が違いますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "いずれも高周波リフティングですが、エネルギーの伝達方式、チップ、費用が異なります。サーマジとオリジオは単極性で、デンシティはクラシックチップが単極性、アルファチップが単極性と双極性を併用します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サーマジはとても痛いですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "熱い感じやチクチクする感じがあり、個人差が大きいです。痛みが心配な場合は、超音波による局所麻酔、エアノックス、睡眠麻酔の中から合う方法を相談できます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "睡眠麻酔は当日でも可能ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "睡眠麻酔は事前相談が必要なため、当日のご予約は難しいです。ご予約の際に、あらかじめお知らせください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サーマジの再施術はいつ受けるのがよいですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "1年から1年6か月の間隔をおすすめします。ハリが早く落ちる場合は、6か月後あたりにデンシティクラシックで続けてケアすると、持続期間を延ばすのに役立つことがあります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サーマジを受けると頬がこけますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "サーマジは脂肪に影響がないため、頬こけのリスクは非常に低いです。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サーマジとスキンブースターを一緒に受けてもよいですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ゴウリ、Re2Oなどのスキンブースターを併せて施術すると、お肌の栄養供給と肌の層の強化により、ハリとキメの改善に役立ちます。どの製品が合うかは相談でお決めします。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択しました";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
