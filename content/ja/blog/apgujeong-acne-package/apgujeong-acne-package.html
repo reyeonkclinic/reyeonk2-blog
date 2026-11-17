@@ -1,0 +1,346 @@
+---js
+const permalink = "/ja/blog/apgujeong-acne-package/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "狎鴎亭（アックジョン）皮膚科 Reyeonk Clinic のにきび治療・14回パッケージのご案内";
+const description = "ソウル・狎鴎亭のReyeonk Clinicで行う14回のにきびパッケージの構成、各段階の内容、使用する施術、イ・ドゥチャン代表院長の経歴をご案内します。";
+const date = "2026-11-17";
+const alternates = [
+	{ lang: "ko", url: "/blog/apgujeong-acne-package/" },
+	{ lang: "en", url: "/en/blog/apgujeong-acne-package/" },
+	{ lang: "ja", url: "/ja/blog/apgujeong-acne-package/" },
+	{ lang: "zh-Hans", url: "/zh/blog/apgujeong-acne-package/" },
+	{ lang: "x-default", url: "/blog/apgujeong-acne-package/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif KR", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+.pz-cycle { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; padding: 0; list-style: none; max-width: 40rem; }
+.pz-cycle li { padding: 8px 12px; background: var(--pz-accent-soft); font-weight: 600; font-size: 0.9rem; }
+.pz-cycle li.pz-care { background: transparent; border: 1px solid var(--pz-line); color: var(--pz-muted); font-weight: 500; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">にきび治療は、順番をおまかせください。</p>
+	<p class="pz-lead">にきび治療は、どの施術をいつ受けるかによって結果が変わることがあります。狎鴎亭のReyeonk Clinicのにきびパッケージは、まず肌の状態を確認し、そのうえで回ごとの施術の順番を一緒に決める方式です。14回の構成と流れを分かりやすくご案内します。</p>
+	<p class="pz-note">このコラムは、Reyeonk Clinic院長が韓国語で執筆した記事の翻訳です。「韓国語」と記したリンクは、韓国語のページに移動します。</p>
+
+	<div class="pz-summary">
+		<strong>3行まとめ</strong>
+		<ul>
+			<li>にきびパッケージは<b>3か月間、週1回・全14回</b>で行い、施術とケアを交互に進めます。</li>
+			<li>すぐに取り除ける項目から始め、傷跡・毛穴、肌のキメの順に、肌の状態に合わせて進めます。</li>
+			<li>カウンセリングから施術、仕上げまで、代表院長が直接担当します。</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>おまかせで進めるにきび治療</h2>
+		<div class="pz-text">
+			<p>おまかせとは、料理人に料理の選択を任せる日本の食事スタイルです。Reyeonk Clinicのにきびパッケージも同じ考え方です。まず肌の状態を確認し、そのうえで回ごとの施術の順番を一緒に決めます。</p>
+			<p>初めてご来院の際は、肌診断機器マークビューで写真を撮影し、院長と先にカウンセリングを行います。カウンセリングは通常20〜30分ほどで、肌の経歴や最近のお悩みを一緒に確認します。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>にきびパッケージの構成</h2>
+		<div class="pz-text">
+			<p>期間は3か月、週1回で全14回です。施術（レーザー治療）とケアが交互に行われ、施術7回とケア7回で構成されています。</p>
+		</div>
+		<ul class="pz-cycle" aria-label="施術とケアの順番">
+			<li>1回目 施術</li>
+			<li class="pz-care">2回目 ケア</li>
+			<li>3回目 施術</li>
+			<li class="pz-care">4回目 ケア</li>
+			<li>5回目 施術</li>
+			<li class="pz-care">6回目 ケア</li>
+			<li>7回目 施術</li>
+			<li class="pz-care">8回目 ケア</li>
+			<li>9回目 施術</li>
+			<li class="pz-care">10回目 ケア</li>
+			<li>11回目 施術</li>
+			<li class="pz-care">12回目 ケア</li>
+			<li>13回目 施術</li>
+			<li class="pz-care">14回目 ケア</li>
+		</ul>
+		<p class="pz-note">※ 痛みの感じ方は施術によって異なります。麻酔が必要な施術と不要な施術があり、麻酔の時間は十分に確保します。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>回ごとの施術の流れ</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>1回目・3回目 施術：すぐに取り除ける項目から</h3>
+				<p>シミ・くすみ（ピコレーザー）、ほくろ・扁平疣贅（MCL31）、皮脂腺増殖症・汗管腫（アグネス高周波ニードル）などから進めます。にきびが重い場合は、内服薬の服用をおすすめすることがあります。ゴールドPTTは任意の施術で、医療スタッフと相談のうえ決めます。</p>
+			</li>
+			<li>
+				<h3>5回目・7回目 施術：本格的な肌改善（傷跡・毛穴）</h3>
+				<p>傷跡がある場合は、剥削型フラクショナルレーザー（MCL31）をおすすめします。施術後3〜4日は外出の予定が難しいため、事前に調整していただくよう案内しています。毛穴が気になる場合は、ポテンツァ（マイクロニードル高周波）を行います。</p>
+			</li>
+			<li>
+				<h3>9回目・11回目 施術：医療スタッフとの相談後の追加施術</h3>
+				<p>刺激の強い施術の代わりに、非剥削型フラクショナルレーザー（ピコシュア・フラクショナル）やピーリング（ウィコウノ）などで肌のキメを整えます。施術の内容は、医療スタッフの判断により変わることがあります。</p>
+			</li>
+			<li>
+				<h3>13回目 施術：仕上げの精密ケア</h3>
+				<p>傷跡や肌の状態に合わせて処方します。</p>
+				<p>· ローリング傷跡：トリフィルプロ（空気剥離＋ジュベルック）<br>· アイスピック傷跡：TCAドットピール<br>· 肌の弾力・キメ：ダーマアトーム＋スキンボトックス（塗布）<br>· 赤み：シナジーフォーカスレーザー（血管レーザー）</p>
+			</li>
+		</ul>
+		<p class="pz-note">※ 症状が強い場合は、トリフィルプロやTCAピーリングなど回復に時間が必要な施術を、初期に先行して行うこともあります。効果が現れるまで2〜3か月かかる施術もあるためです。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>パッケージで使用する主な施術</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>色素・シミ</h3>
+				<p>ピコレーザー：シミ、そばかす、色素病変の除去</p>
+			</li>
+			<li>
+				<h3>ほくろ・いぼ・皮脂病変</h3>
+				<p>MCL31：ほくろ、扁平疣贅、剥削型フラクショナルレーザー／アグネス高周波ニードル：皮脂腺増殖症、汗管腫</p>
+			</li>
+			<li>
+				<h3>にきび・皮脂腺の管理</h3>
+				<p>ゴールドPTT：皮脂腺の縮小、炎症性にきびの改善（任意）／薬物治療：皮脂分泌の調整、炎症の抑制</p>
+			</li>
+			<li>
+				<h3>傷跡・毛穴</h3>
+				<p>剥削型フラクショナルレーザー（MCL31）：深い傷跡、肌の再生／ポテンツァ（マイクロニードル高周波）：毛穴、肌のキメ、皮脂腺の縮小／トリフィルプロ：ローリング傷跡／TCAドットピール：アイスピック傷跡</p>
+			</li>
+			<li>
+				<h3>肌のキメ・トーン</h3>
+				<p>非剥削型フラクショナルレーザー（ピコシュア・フラクショナル）：キメ、トーンアップ／ウィコウノピーリング：角質、キメの調整／ダーマアトーム＋スキンボトックス：弾力、キメ</p>
+			</li>
+			<li>
+				<h3>赤み・血管</h3>
+				<p>シナジーフォーカスレーザー：血管病変、ほてり、赤み</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>14回の後</h2>
+		<div class="pz-text">
+			<p>施術を進めるなかで、毎週肌の変化を一緒に確認し、改善の方向を話し合いながら治療の流れを作っていきます。14回目の仕上げケアの後も、肌の状態を確認し、必要なケアについて相談いたします。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>よくあるご質問</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>にきびパッケージはどのくらいの期間がかかりますか？</h3>
+				<p>3か月の過程で、週1回・全14回で行います。</p>
+			</li>
+			<li>
+				<h3>施術とケアはどのように進みますか？</h3>
+				<p>施術とケアが交互に行われます。奇数回が施術、偶数回がケアで、それぞれ7回ずつです。</p>
+			</li>
+			<li>
+				<h3>カウンセリングはどのくらいかかりますか？</h3>
+				<p>通常20〜30分ほどです。初めてご来院の際は、マークビューで写真を撮影し、まず院長とカウンセリングを行います。</p>
+			</li>
+			<li>
+				<h3>施術中の痛みは強いですか？</h3>
+				<p>麻酔が必要な施術と不要な施術があります。痛みの感じ方は人によって異なるため、麻酔の時間を十分に確保します。</p>
+			</li>
+			<li>
+				<h3>施術後、普段の生活に支障はありますか？</h3>
+				<p>施術ごとに回復期間は異なります。剥削型フラクショナルレーザーの後は3〜4日ほど外出の予定が難しいことがあるため、事前にご調整ください。詳しい注意事項はカウンセリングの際にご案内します。</p>
+			</li>
+			<li>
+				<h3>効果はいつ頃から現れますか？</h3>
+				<p>施術によっては、効果が現れるまで2〜3か月かかることがあります。効果や経過には個人差があります。</p>
+			</li>
+			<li>
+				<h3>にきびが重い場合、薬も一緒に使いますか？</h3>
+				<p>内服薬の服用をおすすめすることがあります。薬は医師との相談の後に処方します。ゴールドPTTは任意の施術で、カウンセリングの後に医療スタッフと相談して決めます。</p>
+			</li>
+			<li>
+				<h3>施術は院長が直接行いますか？</h3>
+				<p>はい。カウンセリングから施術、仕上げまで、代表院長が直接担当します。</p>
+			</li>
+			<li>
+				<h3>料金はどのように確認できますか？</h3>
+				<p>料金は公開していません。カウンセリングの際に、院長が直接対面でご案内します。</p>
+			</li>
+			<li>
+				<h3>予約やお問い合わせはどのようにすればよいですか？</h3>
+				<p>電話（+82-2-558-5581）またはカカオトークの相談チャンネルからお問い合わせいただけます。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>代表院長 イ・ドゥチャン 紹介</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Reyeonk Clinic 代表院長、16年の経歴</h3>
+			</li>
+			<li>
+				<h3>研修修了</h3>
+				<p>AestheFill APAC Expert（2026）、SHENB ボルテックスRF Key-doctor、レスチレン キスメ MASTER、サーマージ（SOMA）上級課程、アティエ Key-doctor</p>
+			</li>
+			<li>
+				<h3>学会正会員</h3>
+				<p>大韓レーザー皮膚毛髪学会、大韓美容整形レーザー医学会、大韓肥満美容学会、大韓フィラー学会</p>
+			</li>
+			<li>
+				<h3>前職</h3>
+				<p>メイピュア医院、ジェリン医院、ミミサム医院の院長を歴任</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">にきびの治療は、順番をおまかせいただき、お肌に合わせて一歩ずつ進めましょう。</p>
+		<p class="pz-invite">狎鴎亭でにきびパッケージをご検討中でしたら、Reyeonk Clinicで肌の状態を確認し、一人ひとりに合わせた治療計画をご相談ください。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区言州路172キル64<br>地下1階、3階、4階</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>カカオトーク</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">カカオトークで簡単相談</a></dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">アクセスはこちら</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本記事は一般的な情報提供を目的としたものです。施術の効果や経過には個人差があります。施術の適否は、必ず医療スタッフとのカウンセリングを通じてご判断ください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "Article",
+			"headline": "狎鴎亭（アックジョン）皮膚科 Reyeonk Clinic のにきび治療・14回パッケージのご案内",
+			"description": "ソウル・狎鴎亭のReyeonk Clinicで行う14回のにきびパッケージの構成、各段階の内容、使用する施術、イ・ドゥチャン代表院長の経歴をご案内します。",
+			"datePublished": "2026-11-17T00:00:00+09:00",
+			"dateModified": "2026-11-17T00:00:00+09:00",
+			"inLanguage": "ja",
+			"image": "https://reyeonk2.com/img/og/apgujeong-acne-package.jpg",
+			"mainEntityOfPage": "https://reyeonk2.com/ja/blog/apgujeong-acne-package/",
+			"author": { "@type": "Organization", "name": "Reyeonk Clinic", "url": "https://reyeonk.co.kr" },
+			"publisher": { "@type": "Organization", "name": "Reyeonk Clinic", "url": "https://reyeonk.co.kr" }
+		},
+		{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{ "@type": "Question", "name": "にきびパッケージはどのくらいの期間がかかりますか？", "acceptedAnswer": { "@type": "Answer", "text": "3か月の過程で、週1回・全14回で行います。" } },
+				{ "@type": "Question", "name": "施術とケアはどのように進みますか？", "acceptedAnswer": { "@type": "Answer", "text": "奇数回が施術、偶数回がケアで、それぞれ7回ずつです。" } },
+				{ "@type": "Question", "name": "施術中の痛みは強いですか？", "acceptedAnswer": { "@type": "Answer", "text": "麻酔が必要な施術と不要な施術があります。痛みの感じ方は人によって異なるため、麻酔の時間を十分に確保します。" } },
+				{ "@type": "Question", "name": "料金はどのように確認できますか？", "acceptedAnswer": { "@type": "Answer", "text": "料金は公開していません。カウンセリングの際に、院長が直接対面でご案内します。" } },
+				{ "@type": "Question", "name": "予約やお問い合わせはどのようにすればよいですか？", "acceptedAnswer": { "@type": "Answer", "text": "電話（+82-2-558-5581）またはカカオトークの相談チャンネルからお問い合わせいただけます。" } }
+			]
+		}
+	]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択済み";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
