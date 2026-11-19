@@ -1,0 +1,544 @@
+---js
+const permalink = "/ja/blog/gouri-skinbooster-dermashine/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "ゴウリ スキンブースター、痛みが心配で迷っていませんか？";
+const description = "液状PCLのゴウリ スキンブースターの仕組み、期待できる効果、ダーマシャイン方式による痛み・内出血・むくみへの配慮、Reyeonk Clinic狎鴎亭の11月イベント料金をご案内します。";
+const date = "2026-11-19";
+const alternates = [
+	{ lang: "ko", url: "/blog/gouri-skinbooster-dermashine/" },
+	{ lang: "en", url: "/en/blog/gouri-skinbooster-dermashine/" },
+	{ lang: "ja", url: "/ja/blog/gouri-skinbooster-dermashine/" },
+	{ lang: "zh-Hans", url: "/zh/blog/gouri-skinbooster-dermashine/" },
+	{ lang: "x-default", url: "/blog/gouri-skinbooster-dermashine/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif KR", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-toc { margin-top: 28px; max-width: 40rem; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 18px 22px; }
+.pz-toc strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-toc ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.pz-section[id] { scroll-margin-top: 16px; }
+.pz h3.pz-sub { font-size: 1.1rem; margin: 24px 0 10px; }
+.pz-steps { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; max-width: 36rem; }
+</style>
+
+<div class="pz">
+	<figure class="pz-vid" style="margin: 0 0 28px">
+		<video controls playsinline preload="metadata" poster="/video/gouri-video-poster.jpg" width="720" height="1280">
+			<source src="/video/gouri-video.mp4" type="video/mp4">
+		</video>
+		<figcaption>Reyeonk Clinic院長がダーマシャインでゴウリを施術する様子</figcaption>
+	</figure>
+	<p class="pz-hook">ゴウリのスキンブースターを受けてみたいけれど、痛そうで迷っていませんか？</p>
+	<p class="pz-lead">ゴウリは、体自身がコラーゲンを作るよう促す液状PCLのスキンブースターです。痛みへの不安が多い施術のため、狎鴎亭のReyeonk Clinicではダーマシャイン方式で施術し、痛み・内出血・むくみの不安を減らせるようにしています。仕組みや期待できる効果、ダーマシャイン、料金を質問ごとにまとめました。</p>
+	<p class="pz-note">執筆：Reyeonk Clinic 代表院長 イ・ドゥチャン（이두찬）</p>
+
+	<div class="pz-summary">
+		<strong>3行まとめ</strong>
+		<ul>
+			<li>ゴウリの主成分は<b>PCL</b>を粒子のない<b>液状</b>にしたもので、体が自らコラーゲンを作るよう促すバイオスティミュレーターです。</li>
+			<li>痛みが心配な場合は、9ピンのマルチニードルによる<b>ダーマシャイン</b>方式で、痛み・内出血・むくみの不安を減らせます。</li>
+			<li>希釈と注入方法は<b>1シリンジ7cc</b>を基準としており、11月のイベント価格は7ccで39万ウォン（付加価値税別）です。</li>
+		</ul>
+	</div>
+
+	<nav class="pz-section" aria-label="目次">
+		<strong>目次</strong>
+		<ol>
+			<li><a href="#what">ゴウリ スキンブースターとは</a></li>
+			<li><a href="#how">コラーゲンを注入する施術ですか、それとも作らせる施術ですか</a></li>
+			<li><a href="#effect">ゴウリの効果はどのように現れますか</a></li>
+			<li><a href="#pain">痛み・内出血・むくみの不安はどう減らしますか</a></li>
+			<li><a href="#lifting">リフティング施術と一緒に受けるとどうですか</a></li>
+			<li><a href="#custom">Reyeonk Clinicではゴウリをどのように進めますか</a></li>
+			<li><a href="#price">ゴウリの料金はいくらですか</a></li>
+			<li><a href="#faq">よくある質問</a></li>
+		</ol>
+	</nav>
+
+	<div class="pz-section" id="area">
+		<h2>狎鴎亭でゴウリを検討されている方へ</h2>
+		<div class="pz-text">
+			<p>狎鴎亭でゴウリ スキンブースターを検討する際、韓国皮膚科（한국피부과）や江南皮膚科（강남피부과）など江南エリアの病院と比べられる方も多くいらっしゃいます。Reyeonk Clinicはソウル特別市江南区彦州路172キル64（地下1階・3階・4階）にあります。</p>
+		</div>
+	</div>
+
+	<div class="pz-section" id="what">
+		<h2>ゴウリ スキンブースターとは</h2>
+		<div class="pz-text">
+			<p>ゴウリの主成分はPCL（ポリカプロラクトン）です。PCLは溶ける糸や一部のコラーゲンブースターに使われてきた成分ですが、従来の製品は微細な粒子の形状でした。ゴウリはこのPCLを粒子のない液状にした製品です。</p>
+		</div>
+		<table>
+			<thead><tr><th>項目</th><th>粒子型PCL</th><th>ゴウリ（液状PCL）</th></tr></thead>
+			<tbody>
+				<tr><td>形状</td><td>微細な粒子</td><td>粒子のない液状</td></tr>
+				<tr><td>注入後の分布</td><td>粒子が一か所に集まる懸念</td><td>一か所に集まらず均一に広がる</td></tr>
+				<tr><td>しこり・結節</td><td>心配する方が多い</td><td>懸念は比較的少ない</td></tr>
+			</tbody>
+		</table>
+		<p class="pz-note">「比較的少ない」は「ない」という意味ではありません。カウンセリングで可能性を必ずご確認ください。</p>
+	</div>
+
+	<div class="pz-section" id="how">
+		<h2>コラーゲンを注入する施術ですか、それとも作らせる施術ですか</h2>
+		<div class="pz-text">
+			<p>従来のスキンブースターは、コラーゲンを直接肌に注入する方式が多くありました。ゴウリは異なります。このような製品はバイオスティミュレーターと呼ばれ、肌の中に入って体自身がコラーゲンを作り出すよう促します。</p>
+			<p>注入されたコラーゲンは時間とともに吸収されますが、体が自ら作ったコラーゲンは肌の構造の一部になるという点が違いです。スキンブースターの種類ごとの違いは、スキンブースターの種類・料金・痛みのまとめ記事でご確認いただけます。</p>
+		</div>
+	</div>
+
+	<div class="pz-section" id="effect">
+		<h2>ゴウリの効果はどのように現れますか</h2>
+		<div class="pz-text">
+			<p>体が作ったコラーゲンは時間とともに肌の構造の一部になるため、肌の土台から変化が現れることを目指す施術です。</p>
+			<p>実感の時期や程度、持続期間には個人差があります。施術直後の姿より、時間の経過とともに現れる変化を見る施術とお考えください。</p>
+		</div>
+		<ul class="pz-effects">
+			<li>肌の密度</li>
+			<li>弾力</li>
+			<li>小じわ</li>
+		</ul>
+	</div>
+
+	<div class="pz-section" id="pain">
+		<h2>痛み・内出血・むくみの不安はどう減らしますか</h2>
+		<div class="pz-text">
+			<p>ゴウリの施術をためらう最大の理由は痛みです。Reyeonk Clinicではゴウリをダーマシャイン方式で施術し、痛み・内出血・むくみへの不安を減らせるようにしています。</p>
+		</div>
+		<h3 class="pz-sub">ダーマシャイン方式とは</h3>
+		<ul class="pz-list">
+			<li><h3>9ピンのマルチニードル</h3><p>1回のショットで9か所に同時に注入するため、施術がすばやく済みます。</p></li>
+			<li><h3>痛みと内出血の負担を軽減</h3><p>手打ち注射に比べて、痛みや内出血が少ない傾向があります。</p></li>
+			<li><h3>陰圧による密着・吸着</h3><p>肌を陰圧で密着・吸着させた状態で注入するため、薬剤が外に流れ出る量を減らします。</p></li>
+		</ul>
+		<h3 class="pz-sub">手打ち注射のほうが良いのではないですか？</h3>
+		<div class="pz-text">
+			<p>手で直接注入する手打ち注射と比べると、内出血が残る期間に差があると報告されています。Reyeonk Clinicがゴウリをダーマシャインで施術する理由のひとつです。</p>
+		</div>
+		<table>
+			<thead><tr><th>注入方式</th><th>内出血が残る期間</th></tr></thead>
+			<tbody>
+				<tr><td>ダーマシャイン</td><td>長くて2週間</td></tr>
+				<tr><td>手打ち注射</td><td>長い場合は6か月まで</td></tr>
+			</tbody>
+		</table>
+		<p class="pz-note">内出血の程度や持続期間には個人差があります。</p>
+		<h3 class="pz-sub">むくみの不安も減らせますか</h3>
+		<div class="pz-text">
+			<p>ダーマシャインで施術すると、痛み・内出血・むくみへの不安を減らせます。ただし、注射部位の赤みや小さなむくみが出ることはあり、痛みや反応の程度には個人差があります。案内された注意事項をお守りください。</p>
+		</div>
+	</div>
+
+	<div class="pz-section" id="lifting">
+		<h2>リフティング施術と一緒に受けるとどうですか</h2>
+		<div class="pz-text">
+			<p>ウルセラやサーマージのようなリフティング機器は、たるんだ部位を引き上げる役割を担います。ゴウリは肌の土台を整える役割として説明しています。たるみを引き上げても、肌自体が薄く弾力が不足していると結果が長持ちしにくいため、両方を組み合わせて計画すると互いの不足を補えます。</p>
+			<p>併用するかどうか、またその順序は肌の状態によって異なるため、カウンセリングでご相談ください。リフティング機器の違いについては、ウルセラとサーマージの違いや併用効果をまとめた記事をご覧ください。</p>
+		</div>
+	</div>
+
+	<div class="pz-section" id="custom">
+		<h2>Reyeonk Clinicではゴウリをどのように進めますか</h2>
+		<div class="pz-text">
+			<p>現在は1シリンジを基準に7ccで施術しています。</p>
+			<p>通常は5ccに希釈するよう案内されていますが、効果を高めるために成長因子を注入し、7ccで施術しています。</p>
+		</div>
+	</div>
+
+	<div class="pz-section" id="price">
+		<h2>ゴウリの料金はいくらですか</h2>
+		<div class="pz-text">
+			<p>料金は容量や時期ごとのイベントによって異なります。Reyeonk Clinicの2026年11月1か月間のイベント価格は以下のとおりです。</p>
+		</div>
+		<div class="pz-table">
+			<table>
+				<thead><tr><th>内容</th><th>11月イベント価格（付加価値税10%別）</th></tr></thead>
+				<tbody><tr><td>ゴウリ スキンブースター 7cc</td><td class="pz-price">39万ウォン</td></tr></tbody>
+			</table>
+		</div>
+		<p class="pz-note">上記価格は2026年11月のイベント基準です。以降の価格や内容は電話（+82-2-558-5581）でお問い合わせください。</p>
+	</div>
+
+	<div class="pz-section" id="faq">
+		<h2>よくある質問</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Q1. ゴウリは他のスキンブースターと何が違いますか？</h3>
+				<p>コラーゲンを直接入れる方式と違い、ゴウリはバイオスティミュレーターとして、体自身がコラーゲンを作るよう促します。スキンブースターの種類ごとの違いは、種類・料金・痛みのまとめ記事でご覧いただけます。</p>
+			</li>
+			<li>
+				<h3>Q2. ゴウリは痛いですか？</h3>
+				<p>痛みには個人差があります。Reyeonk Clinicではダーマシャイン方式で施術し、痛みの負担を減らせるようにしています。痛みに敏感な方は、カウンセリング時にあらかじめお伝えください。</p>
+			</li>
+			<li>
+				<h3>Q3. 内出血やむくみが心配です。ダーマシャインで減らせますか？</h3>
+				<p>ダーマシャインで施術すると、痛み・内出血・むくみへの不安を減らせます。ただし注射部位の赤みや小さなむくみが出ることがあり、程度は人によって異なります。案内された注意事項をお守りください。</p>
+			</li>
+			<li>
+				<h3>Q4. しこりや結節の心配はありませんか？</h3>
+				<p>ゴウリは粒子のない液状タイプのため一か所に集まらず均一に広がり、粒子型製品で心配されるしこりや結節の懸念は比較的少ない傾向です。ただし「少ない」であって「ない」わけではないので、カウンセリングで十分にご確認ください。</p>
+			</li>
+			<li>
+				<h3>Q5. ウルセラやサーマージのようなリフティングと一緒に受けても大丈夫ですか？</h3>
+				<p>リフティング機器はたるんだ部位を引き上げる役割で、ゴウリは肌の土台を整える役割として説明しています。併用するかどうか、順序は肌の状態によって異なるため、カウンセリングでお決めください。</p>
+			</li>
+			<li>
+				<h3>Q6. 何回受ける必要がありますか？</h3>
+				<p>肌の状態や希望する変化によって異なります。一般的に4〜6週間の間隔で3回の施術をおすすめしています。</p>
+			</li>
+			<li>
+				<h3>Q7. ゴウリは5ccに希釈しないのですか？</h3>
+				<p>メーカーでは5ccに希釈して使用することを推奨しています。さらに薄めると効果が落ちるのではないかとご質問いただくことがあります。例えば、ジュベルックとリジュランを一緒に受けるとシナジー効果が出るように、リ・ヨンケイ医院では成長因子を一緒に注入し、ハリや肌のきめの改善効果を高めています。</p>
+			</li>
+			<li>
+				<h3>Q8. スキンブースターと水分注射の違いは何ですか？</h3>
+				<p>単純な水分注射は、架橋のないヒアルロン酸で真皮内の水分を保つ施術です。最新のスキンブースターは、同種真皮、PDRN、PN、PCL、PDLLA、PLAなどの生体活性成分で肌の再生そのものを促すため、より深いレベルでの肌改善が可能です。</p>
+			</li>
+			<li>
+				<h3>Q9. スキンブースターの効果はどのくらい持続しますか？</h3>
+				<p>製品によって異なります。リジュランは1〜6か月、リツオは3〜6か月、スカルプトラは12か月以上持続します。定期的なシリーズ施術で効果が積み重なります。</p>
+			</li>
+			<li>
+				<h3>Q10. スキンブースターの施術は痛いですか？</h3>
+				<p>麻酔クリームを塗布してから施術し、痛みを最小限に抑えます。水光注射は細かいチクッとした痛みがあり、RFマイクロニードリングと併用すると多少の不快感がある場合があります。機械を使用する場合は、痛みをほとんど感じずに施術できます。</p>
+			</li>
+			<li>
+				<h3>Q11. どのスキンブースターが私に合っていますか？</h3>
+				<p>肌の状態と目標によって異なります。すぐに艶を出したい場合はリジュラン、深い再生を望む場合は幹細胞MCTや同種真皮のリツオ、複合的な改善を望む場合はゴウリなどをおすすめしています。カウンセリング後に最適な成分を選びます。</p>
+			</li>
+			<li>
+				<h3>Q12. スキンブースターの後、すぐに日常生活は送れますか？</h3>
+				<p>ほとんどの場合、当日から通常の生活に戻れます。施術後に軽い赤みや小さな点状の跡が出ることがありますが、2〜3日以内に消えます。当日の洗顔や軽いメイクも可能です。</p>
+			</li>
+			<li>
+				<h3>Q13. スキンブースターでシワも改善されますか？</h3>
+				<p>はい、スキンブースターのコラーゲン再生効果により、小じわや肌の質感が改善されます。ただし、深いシワやたるみには、リフティングやフィラーなど追加の施術が必要になる場合があります。</p>
+			</li>
+			<li>
+				<h3>Q14. スキンブースターの施術後の注意事項はありますか？</h3>
+				<p>施術後24時間は激しい運動、サウナ、飲酒を避けてください。施術部位は清潔に保ち、直射日光を極力避け、必ず日焼け止めを使用してください。施術翌日からメイクが可能です。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">肌の内側から始まる変化。痛みの不安はダーマシャインで和らげてみてください。</p>
+		<p class="pz-invite">自分に合ったゴウリの希釈比率と注入方法が気になる方は、狎鴎亭のReyeonk Clinicで1対1のカウンセリングをご確認ください。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172キル64<br>地下1階・3階・4階</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1のクイックチャットはこちら</a></dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">アクセスを見る</a></dd>
+			</dl>
+		</div>
+		<div class="pz-contact">
+			<dl>
+				<dt>医師</dt>
+				<dd>イ・ドゥチャン 代表院長</dd>
+				<dt>病院</dt>
+				<dd>狎鴎亭（アックジョン）皮膚科 Reyeonk Clinic</dd>
+			</dl>
+		</div>
+		<figure class="pz-fig" style="max-width:40rem">
+			<img src="/img/gouri-contact-qr.png" alt="Reyeonk Clinicのカカオトーク・WhatsApp・WeChat・LINE相談用QRコード" width="860" height="650" loading="lazy">
+		</figure>
+		<p class="pz-disclaimer">※本記事は一般的な情報提供を目的としたものです。施術の効果や結果には個人差があります。正確な診断と施術の可否は、医療従事者とのご相談により決定してください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "Article",
+			"headline": "ゴウリ スキンブースター、痛みが心配で迷っていませんか？",
+			"description": "液状PCLのゴウリ スキンブースターの仕組み、期待できる効果、ダーマシャイン方式による痛み・内出血・むくみへの配慮、Reyeonk Clinic狎鴎亭の11月イベント料金をご案内します。",
+			"datePublished": "2026-11-19T00:00:00+09:00",
+			"dateModified": "2026-11-19T00:00:00+09:00",
+			"inLanguage": "ja",
+			"mainEntityOfPage": "https://reyeonk2.com/ja/blog/gouri-skinbooster-dermashine/",
+			"author": {
+				"@type": "Person",
+				"name": "イ・ドゥチャン",
+				"jobTitle": "代表院長",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Reyeonk Clinic",
+					"url": "https://reyeonk.co.kr"
+				}
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "Reyeonk Clinic",
+				"url": "https://reyeonk.co.kr"
+			}
+		},
+		{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "ゴウリは他のスキンブースターと何が違いますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "コラーゲンを直接入れる方式と違い、ゴウリはバイオスティミュレーターとして、体自身がコラーゲンを作るよう促します。スキンブースターの種類ごとの違いは、種類・料金・痛みのまとめ記事でご覧いただけます。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "ゴウリは痛いですか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "痛みには個人差があります。Reyeonk Clinicではダーマシャイン方式で施術し、痛みの負担を減らせるようにしています。痛みに敏感な方は、カウンセリング時にあらかじめお伝えください。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "内出血やむくみが心配です。ダーマシャインで減らせますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "ダーマシャインで施術すると、痛み・内出血・むくみへの不安を減らせます。ただし注射部位の赤みや小さなむくみが出ることがあり、程度は人によって異なります。案内された注意事項をお守りください。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "しこりや結節の心配はありませんか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "ゴウリは粒子のない液状タイプのため一か所に集まらず均一に広がり、粒子型製品で心配されるしこりや結節の懸念は比較的少ない傾向です。ただし「少ない」であって「ない」わけではないので、カウンセリングで十分にご確認ください。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "ウルセラやサーマージのようなリフティングと一緒に受けても大丈夫ですか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "リフティング機器はたるんだ部位を引き上げる役割で、ゴウリは肌の土台を整える役割として説明しています。併用するかどうか、順序は肌の状態によって異なるため、カウンセリングでお決めください。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "何回受ける必要がありますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "肌の状態や希望する変化によって異なります。一般的に4〜6週間の間隔で3回の施術をおすすめしています。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "ゴウリは5ccに希釈しないのですか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "メーカーでは5ccに希釈して使用することを推奨しています。さらに薄めると効果が落ちるのではないかとご質問いただくことがあります。例えば、ジュベルックとリジュランを一緒に受けるとシナジー効果が出るように、リ・ヨンケイ医院では成長因子を一緒に注入し、ハリや肌のきめの改善効果を高めています。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "スキンブースターと水分注射の違いは何ですか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "単純な水分注射は、架橋のないヒアルロン酸で真皮内の水分を保つ施術です。最新のスキンブースターは、同種真皮、PDRN、PN、PCL、PDLLA、PLAなどの生体活性成分で肌の再生そのものを促すため、より深いレベルでの肌改善が可能です。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "スキンブースターの効果はどのくらい持続しますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "製品によって異なります。リジュランは1〜6か月、リツオは3〜6か月、スカルプトラは12か月以上持続します。定期的なシリーズ施術で効果が積み重なります。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "スキンブースターの施術は痛いですか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "麻酔クリームを塗布してから施術し、痛みを最小限に抑えます。水光注射は細かいチクッとした痛みがあり、RFマイクロニードリングと併用すると多少の不快感がある場合があります。機械を使用する場合は、痛みをほとんど感じずに施術できます。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "どのスキンブースターが私に合っていますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "肌の状態と目標によって異なります。すぐに艶を出したい場合はリジュラン、深い再生を望む場合は幹細胞MCTや同種真皮のリツオ、複合的な改善を望む場合はゴウリなどをおすすめしています。カウンセリング後に最適な成分を選びます。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "スキンブースターの後、すぐに日常生活は送れますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "ほとんどの場合、当日から通常の生活に戻れます。施術後に軽い赤みや小さな点状の跡が出ることがありますが、2〜3日以内に消えます。当日の洗顔や軽いメイクも可能です。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "スキンブースターでシワも改善されますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "はい、スキンブースターのコラーゲン再生効果により、小じわや肌の質感が改善されます。ただし、深いシワやたるみには、リフティングやフィラーなど追加の施術が必要になる場合があります。"
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "スキンブースターの施術後の注意事項はありますか？",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "施術後24時間は激しい運動、サウナ、飲酒を避けてください。施術部位は清潔に保ち、直射日光を極力避け、必ず日焼け止めを使用してください。施術翌日からメイクが可能です。"
+					}
+				}
+			]
+		}
+	]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択しました";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
