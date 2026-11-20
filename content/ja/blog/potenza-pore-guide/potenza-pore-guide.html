@@ -1,0 +1,373 @@
+---js
+const permalink = "/ja/blog/potenza-pore-guide/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "毛穴の広がりとポテンツァ：600と1000ショットの違い、回復、施術の比較ポイント";
+const description = "ポテンツァの毛穴へのアプローチ、600ショットと1000ショットの違い、回復期間、1000텐자の特別価格、Reyeonk Clinicの予約制と多言語カウンセリングをご紹介します。";
+const date = "2026-11-20";
+const alternates = [
+	{ lang: "ko", url: "/blog/potenza-pore-guide/" },
+	{ lang: "en", url: "/en/blog/potenza-pore-guide/" },
+	{ lang: "ja", url: "/ja/blog/potenza-pore-guide/" },
+	{ lang: "zh-Hans", url: "/zh/blog/potenza-pore-guide/" },
+	{ lang: "x-default", url: "/blog/potenza-pore-guide/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">小鼻まわりの毛穴が目立ったり、時間がたつとファンデーションが毛穴に入り込んでしまうことが繰り返し起きていませんか？</p>
+	<p class="pz-lead">保湿クリームをたっぷり塗り、角質ケアをしても、きめの粗さや開いた毛穴がなかなか改善しないなら、肌の内側から再生反応を促すポテンツァを検討する価値があります。</p>
+
+	<div class="pz-section">
+		<h2>毛穴が開いて見えるのはなぜ？</h2>
+		<div class="pz-text">
+			<p>毛穴が広く見える理由は人によって異なります。皮脂の分泌が多く毛穴の通り道が広がる場合もあれば、肌の弾力が低下して毛穴が縦に伸びて見える場合もあります。</p>
+			<p>ニキビ跡や肌バリアの損傷によって、きめが整っていないこともあります。毛穴の大きさだけでなく、皮脂量、弾力、傷跡の深さ、肌バリアの状態を合わせて確認することが大切です。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>毛穴の広がりに検討できる施術は？</h2>
+		<div class="pz-text">
+			<p>施術の方法は原因によって異なります。ポテンツァは細い針で真皮層までラジオ波（RF）エネルギーを届け、コラーゲン生成と肌の再生反応を促す施術です。</p>
+			<p>肌表面への刺激を抑えながら、真皮層に熱エネルギーを届ける方式です。弾力の低下や傷跡が同時にある場合に検討の対象になることがあります。同じ機器でも、チップの選択、針の深さ、RFの強度によって結果は変わるため、経験豊富な医療スタッフによる個別の設計が重要です。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>600ショットと1000ショットの違いは？</h2>
+		<div class="pz-text">
+			<p>ショット数とは、施術中にチップを当ててエネルギーを届ける回数のことです。同じチップで同じ範囲を施術する場合、ショット数が多いほど照射ポイントをより密に配置できます。</p>
+			<p>小鼻の横のように悩みの範囲が狭い場合は、その部分を中心に計画できます。小鼻の横から両頬まで広がっている場合は、範囲を広げてショットを配分することもできます。</p>
+			<p>1000ショットは、顔全体に十分な密度でラジオ波エネルギーを届けられるショット数のことです。ただし、ショット数が多ければ必ず良いとは限りません。カウンセリングでは、皮膚の厚さ、毛穴が目立つ位置、傷跡の有無を確認したうえで、ショット数、針の深さ、RF強度を決めます。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>ポテンツァのポンピングチップとスキンボトックスを一緒に受けるとどんな効果がありますか？</h2>
+		<div class="pz-text">
+			<p>ポテンツァは真皮層の再生反応を狙う施術ですが、スキンボトックスはきめや皮脂コントロールなど、肌表面のコンディション管理に重点を置いた方法として説明されることが多いです。</p>
+			<p>両方を検討する場合は、目的が重ならないか、今の肌状態に合っているかを医師と相談することをおすすめします。一緒に行う項目にどこまで含まれているかも、事前に確認してください。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>1000텐자 特別価格のご案内</h2>
+		<div class="pz-text">
+			<p>11月限定で、Reyeonk Clinicでは1000텐자プログラム（ポテンツァ1000ショット＋ポンピング・スキンボトックス）を特別価格39万ウォン（付加価値税10%別途、11月30日まで）でご提供しています。</p>
+			<p>毛穴の集中ケアを希望される方に適したプログラムです。推奨施術サイクルは4〜6週間間隔で3回以上で、その後は1年ごとのリタッチ管理を行うと、なめらかな肌状態を長く保つのに役立ちます。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>ポテンツァの施術を比較するときに確認したい4つのこと</h2>
+		<div class="pz-text">
+			<p>同じショット数で見積もりを受けた場合でも、以下の項目を揃えて比べると費用の違いが分かりやすくなります。</p>
+		</div>
+		<ul class="pz-list" style="margin-top: 16px">
+			<li>
+				<h3>施術範囲</h3>
+				<p>小鼻の横と両頬のうち、どこまで含まれますか？</p>
+			</li>
+			<li>
+				<h3>ショット数とチップ</h3>
+				<p>合計で何ショットで、毛穴の悩みにはどのチップを使用しますか？</p>
+			</li>
+			<li>
+				<h3>含まれる施術</h3>
+				<p>スキンボトックスや施術後の鎮静ケアは含まれていますか？</p>
+			</li>
+			<li>
+				<h3>お支払い金額</h3>
+				<p>付加価値税や別途費用を含めると、総額はいくらになりますか？</p>
+			</li>
+		</ul>
+		<div class="pz-text" style="margin-top: 24px">
+			<p>Reyeonk Clinicでは、院長が直接1対1でカウンセリングを行い、チップの選択から針の深さ、エネルギー設定まで、皮膚の厚さと毛穴の状態に合わせて設計します。料金だけを比べる前に、ご自身の肌に本当に必要な施術かどうかを先に確認してみてください。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>医師紹介</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>イ・ドゥチャン 代表院長（이두찬 대표원장）</h3>
+				<p>担当分野：フィラー、レーザー、リフティング</p>
+				<p>1対1のカウンセリングから施術設計まで直接担当し、施術前に皮膚の厚さ、毛穴の状態、傷跡の有無を確認したうえで治療計画を立てます。</p>
+			</li>
+			<li>
+				<h3>キム・ヒョンス 代表院長（김현수 대표원장）</h3>
+				<p>担当分野：ボディコンツアリング、サーマジFLX、ウルセラ、高周波リフティング</p>
+			</li>
+			<li>
+				<h3>チェ・ヒョンホ 院長（최현호 원장）</h3>
+				<p>担当分野：レーザー、美容施術</p>
+			</li>
+		</ul>
+		<p class="pz-note">Reyeonk Clinicの医療スタッフは、合わせて16年の経験があります。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>予約制と多言語対応について</h2>
+		<div class="pz-text">
+			<p>完全予約制のため、待ち時間なくカウンセリングと施術を受けていただけます。</p>
+			<p>中国語・日本語・英語に対応するカウンセリングスタッフとコーディネーターがおり、ご不便なくご相談いただけます。</p>
+			<p>Reyeonk Clinicは外国人患者誘致医療機関として登録されています（登録番号 M-2022-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>よくある質問</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>ポテンツァはどの肌の悩みに向いていますか？</h3>
+				<p>毛穴の開き、ニキビ跡、陥没した傷跡、肌の弾力低下、小じわ、きめの改善などを目的に検討される施術です。どの悩みに適しているかは、肌の状態を確認したうえで医師と一緒に判断します。</p>
+			</li>
+			<li>
+				<h3>ポテンツァを受ける前の注意点は？</h3>
+				<p>施術の2週間前からレチノールやピーリング成分（酸系）を含む製品の使用を中止してください。妊娠中・授乳中の方、ケロイド体質の方、施術部位の近くに金属インプラントがある方は、施術が制限される場合があります。当日は濃いメイクを避けてご来院ください。ヘルペスの既往がある場合は、事前に専門医にお伝えください。炎症性のニキビがひどい場合や、肌バリアが大きく損傷している場合は、先に肌を落ち着かせてから施術するほうが安全です。</p>
+			</li>
+			<li>
+				<h3>ポテンツァの施術後、回復にはどのくらいかかりますか？</h3>
+				<p>施術直後は赤み、ほてり、軽いむくみやかさぶたが出ることがあります。かさぶたは3〜5日ほどで自然に取れ、多くの方は施術の翌日から日常生活を送れます。かさぶたは触らないでください。数日間はスクラブや角質ケアを避け、保湿クリームと日焼け止めをていねいに塗ってください。</p>
+			</li>
+			<li>
+				<h3>何回受ければ終わりますか？</h3>
+				<p>決まった回数がある施術ではありません。4〜6週間の間隔で受け、通常3〜4回ほどで方向性が見えてきます。その後は必要に応じてリタッチを続けることもできます。個人差があるため、カウンセリングでご自身の肌に合わせた計画をご確認ください。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">毛穴の悩みは、大きさよりもまず原因を知ることから始まります。</p>
+		<p class="pz-invite">毛穴の悩みがあるなら、Reyeonk Clinicで院長と1対1でご相談ください。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172キル64（Reyeonkビル）<br>地下1階、3階、4階</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1のご相談はこちら</a></dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">来院方法を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本記事は一般的な情報提供を目的としたものです。施術の効果や回復の速さには個人差があります。リスクや副作用、施術が適しているかどうかは、医療スタッフにご相談ください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "毛穴の広がりとポテンツァ：600と1000ショットの違い、回復、施術の比較ポイント",
+   "description": "ポテンツァの毛穴へのアプローチ、600ショットと1000ショットの違い、回復期間、1000텐자の特別価格、Reyeonk Clinicの予約制と多言語カウンセリングをご紹介します。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/potenza-pore-guide/",
+   "image": "https://reyeonk2.com/img/og/potenza-1000-shots-price-effect.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "ja",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "ポテンツァはどの肌の悩みに向いていますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "毛穴の開き、ニキビ跡、陥没した傷跡、肌の弾力低下、小じわ、きめの改善などを目的に検討される施術です。適しているかは、肌の状態を確認したうえで医師と判断します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ポテンツァの施術後、回復にはどのくらいかかりますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "赤み、ほてり、軽いむくみやかさぶたが出ることがあります。かさぶたは3〜5日ほどで自然に取れ、多くの方は翌日から日常生活を送れます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ポテンツァは何回受ければ良いですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "決まった回数はありません。4〜6週間の間隔で、通常3〜4回ほどで方向性が見えてきます。個人差があります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "英語・中国語・日本語でのカウンセリングはできますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。中国語・日本語・英語に対応するスタッフとコーディネーターがいます。完全予約制のため、待ち時間はありません。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+

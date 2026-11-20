@@ -1,0 +1,373 @@
+---js
+const permalink = "/zh/blog/potenza-pore-guide/";
+const layout = "layouts/base.njk";
+const lang = "zh";
+const title = "毛孔粗大与 Potenza：600 与 1000 发的区别、恢复与医院比较";
+const description = "介绍 Potenza 对毛孔粗大的作用、600 与 1000 发的区别、恢复过程、1000텐자 活动，以及丽妍K医院的预约制与多语言咨询。";
+const date = "2026-11-20";
+const alternates = [
+	{ lang: "ko", url: "/blog/potenza-pore-guide/" },
+	{ lang: "en", url: "/en/blog/potenza-pore-guide/" },
+	{ lang: "ja", url: "/ja/blog/potenza-pore-guide/" },
+	{ lang: "zh-Hans", url: "/zh/blog/potenza-pore-guide/" },
+	{ lang: "x-default", url: "/blog/potenza-pore-guide/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">您是否经常发现鼻周毛孔明显变大，或是粉底随着时间推移卡进毛孔里？</p>
+	<p class="pz-lead">即使每天大量涂抹保湿霜、定期去角质，皮肤粗糙、毛孔松弛的状况仍难以改善，可以考虑从皮肤内部促进再生的 Potenza（波坦扎）。</p>
+
+	<div class="pz-section">
+		<h2>毛孔为什么会变大？</h2>
+		<div class="pz-text">
+			<p>毛孔看起来变大的原因因人而异。皮脂分泌旺盛会让毛孔通道变宽，皮肤弹性下降则可能让毛孔纵向拉长。</p>
+			<p>痘疤和皮肤屏障受损也会让肤质变得不平整。因此，不能只看毛孔大小，还要综合评估皮脂量、弹性、疤痕深度和皮肤屏障状态。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>针对毛孔变大，可以考虑哪些治疗？</h2>
+		<div class="pz-text">
+			<p>治疗方法取决于成因。Potenza 通过细微针头将射频（RF）能量输送到真皮层，目的是诱导胶原蛋白生成和皮肤再生反应。</p>
+			<p>它的特点是减少皮肤表面的刺激，同时向真皮层传递热能。如果同时存在弹性下降或疤痕，可以作为考虑方案。即使使用同一台设备，针头选择、针深和射频强度不同，效果也会不同，因此由经验丰富的医疗团队进行个性化设计非常重要。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>600 发和 1000 发有什么区别？</h2>
+		<div class="pz-text">
+			<p>发数是治疗过程中，治疗头接触皮肤并输送能量的次数。在使用相同治疗头、覆盖相同面积的情况下，发数越多，治疗点之间就可以排布得越密集。</p>
+			<p>如果困扰只在鼻子旁边这样的小范围，可以以该区域为中心制定方案；如果从鼻旁延伸到两颊，则可以把发数分配到更大的范围。</p>
+			<p>1000 发指的是能够以足够密度覆盖整张面部、输送射频能量的发数。不过，发数多并不一定更好。在咨询时，医生会综合考虑皮肤厚度、毛孔明显的位置以及是否有疤痕，然后一并确定发数、针深和射频强度。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Potenza 与 펌핑 팁、스킨보톡스 一起做，会有什么效果？</h2>
+		<div class="pz-text">
+			<p>Potenza 针对的是真皮层的再生反应，而스킨보톡스通常被描述为侧重于皮肤表层状态管理的方法，例如改善肤质和控油。</p>
+			<p>如果两者都在考虑范围内，建议与医生沟通，确认两者的目标是否重叠，以及是否都适合您目前的皮肤状态。同时，请提前确认套餐具体包含哪些项目。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>1000텐자 特惠活动</h2>
+		<div class="pz-text">
+			<p>仅限 11 月，丽妍K医院推出 1000텐자 项目（Potenza 1000发 + 펌핑 스킨보톡스），特惠价为 39 万韩元（不含 10% 增值税，活动截至 11 月 30 日）。</p>
+			<p>适合希望集中护理毛孔的人群。建议间隔 4–6 周，至少进行 3 次治疗，之后每年进行一次补充管理，有助于长期保持皮肤光滑状态。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>比较 Potenza 价格时需要确认的 4 件事</h2>
+		<div class="pz-text">
+			<p>即使两家机构报价的发数相同，对照以下项目也更容易理解价格差异。</p>
+		</div>
+		<ul class="pz-list" style="margin-top: 16px">
+			<li>
+				<h3>治疗范围</h3>
+				<p>包含鼻子两侧、双颊，还是其他部位？</p>
+			</li>
+			<li>
+				<h3>发数与治疗头</h3>
+				<p>总共多少发？针对毛孔问题使用哪种治疗头？</p>
+			</li>
+			<li>
+				<h3>包含的项目</h3>
+				<p>是否包含스킨보톡스或治疗后的舒缓护理？</p>
+			</li>
+			<li>
+				<h3>最终金额</h3>
+				<p>包含增值税及其他另计费用后，总额是多少？</p>
+			</li>
+		</ul>
+		<div class="pz-text" style="margin-top: 24px">
+			<p>丽妍K医院由院长亲自进行一对一咨询，从治疗头选择、针深到能量设定，都会根据您的皮肤厚度和毛孔状况量身设计。比起只比较价格，建议先确认这项治疗是否真正符合您的皮肤需求。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>医师介绍</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>李斗灿 代表院长（이두찬 대표원장）</h3>
+				<p>擅长领域：填充剂、激光、提拉</p>
+				<p>从一对一咨询到治疗设计均由院长亲自负责，治疗前会确认皮肤厚度、毛孔状况和疤痕情况，再制定方案。</p>
+			</li>
+			<li>
+				<h3>金炫秀 代表院长（김현수 대표원장）</h3>
+				<p>擅长领域：身体塑形、Thermage FLX、Ulthera、射频提拉</p>
+			</li>
+			<li>
+				<h3>崔炫浩 院长（최현호 원장）</h3>
+				<p>擅长领域：激光、美容治疗</p>
+			</li>
+		</ul>
+		<p class="pz-note">丽妍K医院的医疗团队合计拥有 16 年经验。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>预约制与多语言服务</h2>
+		<div class="pz-text">
+			<p>本院采用预约制，无需等待即可接受咨询和治疗。</p>
+			<p>设有中文、日语、英语咨询专员及协调人员，您可以无障碍地咨询。</p>
+			<p>丽妍K医院是经登记的外国人患者接收医疗机构（登记编号 M-2022-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>常见问题</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Potenza 适合哪些皮肤问题？</h3>
+				<p>Potenza 可用于考虑的问题包括毛孔粗大、痘疤、凹陷性疤痕、皮肤弹性下降、细纹和肤质改善。是否适合，需要由医生评估皮肤状态后决定。</p>
+			</li>
+			<li>
+				<h3>Potenza 治疗前要注意什么？</h3>
+				<p>治疗前两周请停止使用视黄醇和酸类成分的护肤品。孕期或哺乳期、易形成瘢痕体质（瘢痕疙瘩体质），或治疗部位附近有金属植入物的，治疗可能受到限制。治疗当天请勿化浓妆前来。如有疱疹病史，请提前告知专科医生。如果严重炎症性痘痘较多或皮肤屏障受损严重，应先舒缓皮肤再进行治疗，会更安全。</p>
+			</li>
+			<li>
+				<h3>Potenza 治疗后恢复需要多久？</h3>
+				<p>治疗后可能出现泛红、发热，以及轻微肿胀或结痂。结痂通常在 3–5 天后自然脱落，大多数人从治疗后第二天起即可恢复日常活动。请勿抠挠结痂，数日内避免磨砂和去角质，并认真涂抹保湿霜和防晒霜。</p>
+			</li>
+			<li>
+				<h3>需要做几次才算完成？</h3>
+				<p>没有固定次数。通常间隔 4–6 周进行，一般做到 3–4 次左右方向会比较明确。之后可以根据需要继续补充。个体差异较大，请在咨询时确认适合您皮肤的方案。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">毛孔问题，应从了解成因开始，而不只是看大小。</p>
+		<p class="pz-invite">如果毛孔是您的困扰，欢迎到丽妍K医院与院长一对一咨询。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院</dt>
+				<dd>首尔特别市江南区彦州路172街 64（Reyeonk 大楼）<br>地下 1 层、3 层、4 层</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>交通指南</dt>
+				<dd><a href="/zh/location/">查看前往方式</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文仅为一般信息介绍，治疗效果和恢复速度因人而异。风险、副作用及治疗是否适合您，请咨询医疗团队。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "毛孔粗大与 Potenza：600 与 1000 发的区别、恢复与医院比较",
+   "description": "介绍 Potenza 对毛孔粗大的作用、600 与 1000 发的区别、恢复过程、1000텐자 活动，以及丽妍K医院的预约制与多语言咨询。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/potenza-pore-guide/",
+   "image": "https://reyeonk2.com/img/og/potenza-1000-shots-price-effect.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "zh-Hans",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Potenza 适合哪些皮肤问题？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Potenza 可用于考虑的问题包括毛孔粗大、痘疤、凹陷性疤痕、皮肤弹性下降、细纹和肤质改善。是否适合，需由医生评估皮肤状态后决定。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Potenza 治疗后恢复需要多久？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可能出现泛红、发热以及轻微肿胀或结痂。结痂通常 3–5 天后自然脱落，大多数人次日即可恢复日常活动。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Potenza 需要做几次？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "没有固定次数。通常间隔 4–6 周，一般做到 3–4 次左右方向会比较明确。个体差异较大。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "是否提供中文、日语、英语咨询？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "提供。咨询专员和协调人员可使用中文、日语和英语。本院采用预约制，无需等待。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+

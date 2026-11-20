@@ -1,0 +1,373 @@
+---js
+const permalink = "/en/blog/potenza-pore-guide/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "Enlarged Pores and Potenza: 600 vs 1,000 Shots, Recovery and How to Compare Clinics";
+const description = "How Potenza works for enlarged pores, what 600 and 1,000 shots mean, recovery, the 1000 Tenza offer, and reservation-based multilingual consultations at Reyeonk Clinic in Seoul.";
+const date = "2026-11-20";
+const alternates = [
+	{ lang: "ko", url: "/blog/potenza-pore-guide/" },
+	{ lang: "en", url: "/en/blog/potenza-pore-guide/" },
+	{ lang: "ja", url: "/ja/blog/potenza-pore-guide/" },
+	{ lang: "zh-Hans", url: "/zh/blog/potenza-pore-guide/" },
+	{ lang: "x-default", url: "/blog/potenza-pore-guide/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">Do you notice enlarged pores around your nose, or foundation settling into your pores over time?</p>
+	<p class="pz-lead">If rough texture and sagging pores don't improve even with plenty of moisturiser and exfoliation, Potenza, which stimulates regeneration from within the skin, may be worth considering.</p>
+
+	<div class="pz-section">
+		<h2>Why do pores look enlarged?</h2>
+		<div class="pz-text">
+			<p>The reasons pores look wider differ from person to person. Heavy sebum production can widen the pore opening, and reduced skin elasticity can make pores look stretched vertically.</p>
+			<p>Acne scars and a damaged skin barrier can also leave the texture uneven. Rather than judging by pore size alone, it helps to look at sebum levels, elasticity, scar depth and barrier condition together.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Which treatments can be considered for enlarged pores?</h2>
+		<div class="pz-text">
+			<p>The approach depends on the cause. Potenza delivers radiofrequency (RF) energy to the dermis through fine needles, aiming to trigger collagen production and skin regeneration.</p>
+			<p>It is designed to limit stimulation at the skin surface while delivering heat energy to the dermis. It may be considered when elasticity loss or scarring is also present. Even with the same device, results vary with tip selection, needle depth and RF intensity, so a customised plan from an experienced medical team matters.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>What is the difference between 600 and 1,000 shots?</h2>
+		<div class="pz-text">
+			<p>A shot count is the number of times the tip is placed and energy is delivered during treatment. With the same tip over the same area, more shots allow the treatment points to be spaced more densely.</p>
+			<p>If the concern is limited to a small area, such as beside the nose, the plan can focus there. If it runs from beside the nose to both cheeks, shots can be distributed across a wider area.</p>
+			<p>1,000 shots refers to a number that can deliver RF energy at sufficient density across the whole face. More shots are not always better, though. At the consultation, the doctor considers skin thickness, where pores stand out and whether scars are present, then decides the shot count, needle depth and RF intensity together.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>What happens if I combine Potenza pumping tips with skin botox?</h2>
+		<div class="pz-text">
+			<p>While Potenza targets the regeneration response in the dermis, skin botox is often described as a method focused on surface skin condition, such as texture and oil control.</p>
+			<p>When considering both, it is worth discussing with the doctor whether their goals overlap and whether each suits your current skin. Confirm in advance exactly what the combined package includes.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>1000 Tenza special offer</h2>
+		<div class="pz-text">
+			<p>In November only, Reyeonk Clinic offers the 1000 Tenza programme (Potenza 1,000 shots + pumping skin botox) at a special price of 390,000 KRW (VAT of 10% not included, until 30 November).</p>
+			<p>It suits anyone who wants focused pore care. The recommended schedule is at least three sessions at 4–6 week intervals, followed by a retouch once a year to help keep the skin smooth over the long term.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Four things to check when comparing Potenza clinics</h2>
+		<div class="pz-text">
+			<p>Even if two clinics quote the same shot count, comparing the items below makes the price difference easier to understand.</p>
+		</div>
+		<ul class="pz-list" style="margin-top: 16px">
+			<li>
+				<h3>Treatment area</h3>
+				<p>Which areas are included: beside the nose, both cheeks, or others?</p>
+			</li>
+			<li>
+				<h3>Shot count and tip</h3>
+				<p>What is the total number of shots, and which tip is used for pore concerns?</p>
+			</li>
+			<li>
+				<h3>Included treatments</h3>
+				<p>Is skin botox or post-treatment soothing care included?</p>
+			</li>
+			<li>
+				<h3>Total price</h3>
+				<p>What is the final amount including VAT and any separate fees?</p>
+			</li>
+		</ul>
+		<div class="pz-text" style="margin-top: 24px">
+			<p>At Reyeonk Clinic, the doctor conducts one-to-one consultations personally, and the plan, from tip selection through needle depth to energy setting, is tailored to your skin thickness and pore condition. Before comparing prices alone, we recommend confirming whether the treatment is what your skin actually needs.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Our doctors</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Dr. Doochan Lee, Chief Director (이두찬 대표원장)</h3>
+				<p>Specialties: fillers, lasers, lifting</p>
+				<p>Dr. Lee personally handles everything from one-to-one consultation to treatment design, checking skin thickness, pore condition and scar presence before planning treatment.</p>
+			</li>
+			<li>
+				<h3>Dr. Hyunsu Kim, Chief Director (김현수 대표원장)</h3>
+				<p>Specialties: body contouring, Thermage FLX, Ulthera, radiofrequency lifting</p>
+			</li>
+			<li>
+				<h3>Dr. Hyunho Choi, Director (최현호 원장)</h3>
+				<p>Specialties: lasers, aesthetic treatments</p>
+			</li>
+		</ul>
+		<p class="pz-note">Reyeonk Clinic's medical team has 16 years of experience in total.</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>Appointments and multilingual support</h2>
+		<div class="pz-text">
+			<p>We operate by appointment, so you can have your consultation and treatment without waiting.</p>
+			<p>Our Chinese-, Japanese- and English-speaking consultation staff and coordinators are available, so you can consult comfortably.</p>
+			<p>Reyeonk Clinic is a medical institution registered for the attraction of foreign patients (Registration No. M-2022-08-6785).</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Frequently asked questions</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Which skin concerns is Potenza suited to?</h3>
+				<p>Potenza is considered for enlarged pores, acne scars, depressed scars, reduced skin elasticity, fine lines and skin texture. Whether it suits your concern depends on an assessment of your skin, decided with the doctor.</p>
+			</li>
+			<li>
+				<h3>What should I do before a Potenza treatment?</h3>
+				<p>Stop using retinol and acid-based products two weeks before treatment. Treatment may be restricted during pregnancy or breastfeeding, for keloid-prone skin, or if there is a metal implant near the treatment area. On the day, come without heavy makeup. If you have a history of herpes, tell the specialist in advance. If you have severe inflammatory acne or a badly damaged skin barrier, it is safer to calm the skin first.</p>
+			</li>
+			<li>
+				<h3>How long does recovery take after Potenza?</h3>
+				<p>Redness, warmth and minor swelling or crusting may occur right after treatment. Crusts usually fall off naturally after 3–5 days, and most people can resume daily activities from the next day. Do not pick at crusts. For several days avoid scrubs and exfoliation, and apply moisturiser and sunscreen carefully.</p>
+			</li>
+			<li>
+				<h3>How many sessions do I need?</h3>
+				<p>There is no fixed number. Sessions are usually spaced 4–6 weeks apart, and the direction often becomes clear around 3–4 sessions. Retouches can continue as needed. Results vary, so confirm a plan that suits your skin at your consultation.</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">Enlarged pores start with understanding the cause, not just the size.</p>
+		<p class="pz-invite">If pores are your concern, book a one-to-one consultation with our doctors at Reyeonk Clinic.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building)<br>B1, 3F and 4F</dd>
+				<dt>Phone</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">Copy number</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">One-to-one chat</a></dd>
+				<dt>Directions</dt>
+				<dd><a href="/en/location/">See how to get here</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">Note: This article is for general information only. Treatment results and recovery vary between individuals. Please consult our medical team about risks, side effects and whether a treatment suits you.</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Enlarged Pores and Potenza: 600 vs 1,000 Shots, Recovery and How to Compare Clinics",
+   "description": "How Potenza works for enlarged pores, what 600 and 1,000 shots mean, recovery, the 1000 Tenza offer, and reservation-based multilingual consultations at Reyeonk Clinic in Seoul.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "mainEntityOfPage": "https://reyeonk2.com/en/blog/potenza-pore-guide/",
+   "image": "https://reyeonk2.com/img/og/potenza-1000-shots-price-effect.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which skin concerns is Potenza suited to?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Potenza is considered for enlarged pores, acne scars, depressed scars, reduced elasticity, fine lines and skin texture. Suitability is decided with the doctor after assessing your skin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does recovery take after Potenza?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Redness, warmth and minor swelling or crusting may occur. Crusts usually fall off after 3–5 days, and most people can resume daily activities the next day."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many Potenza sessions do I need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no fixed number. Sessions are usually 4–6 weeks apart, and the direction often becomes clear after 3–4 sessions. Results vary between individuals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you offer consultations in English, Chinese and Japanese?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our consultation staff and coordinators speak Chinese, Japanese and English. Appointments are by reservation, so there is no waiting time."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+
