@@ -1,0 +1,400 @@
+---js
+const permalink = "/ja/blog/onda-lifting-guide/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "オンダリフティングの効果・価格・何ジュール受けるべき？顔・二の腕・お腹・太ももまとめ";
+const description = "オンダリフティングの仕組み、効果が出る時期、4万・6万・8万ジュールの違い、顔全体のジュール数、施術回数、痛み、副作用、インモードとの違いを、狎鷗亭のReyeonk Clinicがご案内します。";
+const date = "2026-11-21";
+const alternates = [
+	{ lang: "ko", url: "/blog/onda-lifting-guide/" },
+	{ lang: "en", url: "/en/blog/onda-lifting-guide/" },
+	{ lang: "ja", url: "/ja/blog/onda-lifting-guide/" },
+	{ lang: "zh-Hans", url: "/zh/blog/onda-lifting-guide/" },
+	{ lang: "x-default", url: "/blog/onda-lifting-guide/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">顔、二の腕、お腹、太もも。どこから整えるべきでしょうか？</p>
+	<p class="pz-lead">食事や運動だけでは特定の部位を整えにくく、脂肪を減らしながら肌のハリも気になるというご相談が続いています。そうした方が多く調べている施術がオンダリフティングです。仕組み、ジュール数、効果が出る時期、痛み、インモードとの違いまで、よくある質問の順に整理しました。</p>
+	<div class="pz-summary">
+		<strong>ひと目でわかるポイント</strong>
+		<ul>
+			<li>オンダリフティングは、マイクロウェーブ（極超短波）エネルギーを使う機器施術です。</li>
+			<li>施術部位は、顔（二重あご、頬、深部の頬）とボディ（お腹、太もも、二の腕）です。</li>
+			<li>Reyeonk Clinicの目安は、顔全体で約10万ジュール（100kJ）、ボディで約15万ジュールです。最終的なジュール数は、カウンセリングで院長が決めます。</li>
+			<li>再施術は2〜3か月間隔をおすすめしており、効果の持続は一般に4〜5か月ほどとご案内していますが、個人差があります。</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>オンダリフティングとは？</h2>
+		<div class="pz-text">
+			<p>オンダリフティングは、マイクロウェーブ（極超短波）エネルギーを使う施術です。イタリアDEKA社のCoolwaves™技術をベースにしており、高周波（RF）や超音波（HIFU）とはエネルギーの種類が異なります。</p>
+			<p>ハンドピースは2種類あります。3mmは真皮層のハリ、7mmは脂肪層を対象とし、部位や肌の状態に合わせて選んだり組み合わせたりします。接触冷却（スマートクーリング）で肌表面の温度を下げ、施術中の不快感を和らげるようにしています。</p>
+			<p>脂肪細胞が小さくなり、その一部が体の中で自然に排出される過程を経るため、変化は施術直後よりも時間をかけて少しずつ現れる傾向があります。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>1. 効果と施術の仕組み</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>オンダリフティングの効果はいつから現れますか？</h3>
+				<p>施術直後は肌が引き締まったように感じることがあります。輪郭の変化は、施術後2〜3週間ほどしてから感じる方が多いです。施術直後に効果を判断するのは早く、時期や程度には個人差があります。</p>
+			</li>
+			<li>
+				<h3>オンダリフティングは顔の脂肪の減少と肌のハリの改善の両方に効果がありますか？</h3>
+				<p>3mmは真皮層、7mmは脂肪層を対象とするため、両方を組み合わせて設計できます。どちらに重点を置くかは、肌の厚みと脂肪の分布を見て院長が決め、結果は肌の状態や脂肪量によって異なります。</p>
+			</li>
+			<li>
+				<h3>オンダリフティングで二重あごや深部の頬を改善できますか？</h3>
+				<p>二重あご、頬、深部の頬、マリオネットライン周辺は、ご相談の多い部位です。ウルセラのようにエネルギーを入れにくい脂肪の領域を整えたいときの選択肢になることもあります。ただし、脂肪の厚みやたるみの程度によって適した方法が変わるため、カウンセリングでの確認が必要です。</p>
+			</li>
+			<li>
+				<h3>オンダリフティングの効果はどのくらい続きますか？</h3>
+				<p>一般に4〜5か月ほどとご案内しており、個人差があります。一度減った脂肪細胞は再び増えませんが、体重の変化や加齢によって新たな脂肪がついたり、たるみが出たりすることがあるため、維持のケアが必要な場合があります。</p>
+			</li>
+			<li>
+				<h3>顔の脂肪が少ない人でもオンダリフティングは受けられますか？</h3>
+				<p>脂肪が少ない方は、脂肪層よりも真皮層のハリ（3mm）を中心にエネルギーを設計します。ただ、顔の脂肪が少ない方が脂肪ケアをしすぎると、かえって頬がこけて見えることがあるため、施術の可否や範囲はカウンセリングのうえで決めることをおすすめします。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>2. 価格と施術量（ジュール数）</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>4万・6万・8万ジュールにはどのような違いがありますか？</h3>
+				<p>韓国ではオンダのエネルギー量を「ジュール（줄）」で表します。4万・6万・8万ジュールは、1回の施術で届けるエネルギーの総量が異なるという意味です。数字が大きいほど、より広い範囲や厚い脂肪層にエネルギーを届けられますが、多く入れればよいというものではありません。部位と肌の状態に合った量を設計することが大切です。</p>
+			</li>
+			<li>
+				<h3>顔全体では何万ジュール必要ですか？</h3>
+				<p>Reyeonk Clinicでは、顔全体で約10万ジュール（100kJ）、男性の顔は約12万ジュール、ボディ（お腹・太もも・二の腕）は約15万ジュールを目安にご案内しています。部位と肌の状態に応じて院長が最終的に決めるため、個人差があります。</p>
+			</li>
+			<li>
+				<h3>オンダリフティングの価格はいくらですか？</h3>
+				<p>価格は、施術部位、範囲、ジュール数によって異なります。正確な費用は院長のカウンセリング後にご案内しており、まずKakaoTalkでお問い合わせいただくこともできます。</p>
+			</li>
+			<li>
+				<h3>オンダリフティングは1回だけでも効果がありますか？</h3>
+				<p>1回の施術後にも変化を感じる方はいらっしゃいます。ただし、変化の程度や持続期間は人によって異なり、部位や脂肪量によっては追加の施術が必要になることがあります。</p>
+			</li>
+			<li>
+				<h3>オンダリフティングは何回くらい受けるべきですか？</h3>
+				<p>決まった回数はありません。Reyeonk Clinicでは再施術を2〜3か月間隔でおすすめしており、目標と反応に合わせて回数を調整します。なお、腹部の脂肪を対象に20日間隔で3回施術した臨床試験が報告されていますが、これは研究上の方法であり、当院の推奨回数とは異なります。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>3. 痛み、ダウンタイム、副作用</h2>
+		<div class="pz-text">
+			<p><strong>痛み</strong> 麻酔なしで行うのが基本で、スマートクーリングで不快感を和らげるようにしています。肌の内側で温かい、あるいは熱い感覚があり、エネルギーが高い部分では不快に感じることがあります。院長がエネルギーと冷却をリアルタイムで調整し、痛みにとても敏感な方は、麻酔クリームを塗ってから施術することもできます。痛みの程度には個人差があります。</p>
+			<p><strong>施術時間とダウンタイム</strong> 施術時間は20〜40分ほどで、施術直後から日常生活に戻れます。</p>
+			<p><strong>副作用</strong> 軽いむくみやほてりが出ることがありますが、多くはすぐに落ち着きます。活動性のニキビがひどい場合や肌に炎症がある場合は、施術を延期するほうがよいでしょう。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>4. オンダリフティングとインモードの違いは何ですか？</h2>
+		<div class="pz-text">
+			<p>オンダリフティングはマイクロウェーブ、インモードは一般に高周波（RF）系の機器で、エネルギーの種類が異なります。どちらが優れているというより、目的と部位によって選択が変わります。2つを併用したり、ウルセラやサーマジと組み合わせて維持ケアに使ったりすることもあり、順序や組み合わせはカウンセリングのうえで決めます。</p>
+			<p>参考までに、顔171名を対象にマイクロ波とHIFUを比較した後ろ向き研究（Nam他、Aesthetic Surgery Journal、2026）では、マイクロ波は1か月目の変化が早く不快感が少なく、HIFUは3か月目のリフティングの持続が大きかったと報告されています。著者らは、両者は互いに補完的だと説明しています。また、過体重の成人で腹部の脂肪の厚みとウエスト周囲径が減少したという臨床試験（Pahlavani他、Journal of Cosmetic Dermatology、2022）もありますが、対照群がなく、一般化には限界があります。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>カウンセリングをおすすめする方</h2>
+		<ul class="pz-list">
+			<li><h3>脂肪のケアと肌のハリのケアを一緒に考えている方</h3></li>
+			<li><h3>ダウンタイムの負担が少ない施術をお探しの方</h3></li>
+			<li><h3>顔だけでなく、二の腕・お腹・太ももも知りたい方</h3></li>
+			<li><h3>大切な予定を控えて準備している方</h3></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>院長による直接カウンセリング・予約制・多言語対応</h2>
+		<div class="pz-text">
+			<p>カウンセリングは院長が直接行います。</p>
+			<p>完全予約制のため、待ち時間なくカウンセリングと施術を受けていただけます。</p>
+			<p>中国語・日本語・英語に対応するカウンセリングスタッフとコーディネーターがおりますので、言葉の不安なくご相談いただけます。</p>
+			<p>Reyeonk Clinicは外国人患者誘致医療機関として登録されています（登録番号 M-2022-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">ご自身の部位には何ジュールが合うのか、気になる方へ。</p>
+		<p class="pz-invite">Reyeonk Clinicは2009年の開院以来、狎鷗亭で診療しており、カウンセリングから設計、施術、アフターケアまで院長が直接行うことを原則としています。肌の厚みと脂肪の分布を確認したうえで、3mmと7mmのエネルギー比率を決めますので、まずはカウンセリングで現在の状態をご確認ください。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172キル64（Reyeonkビル）<br>地下1階、3階、4階</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1のご相談はこちら</a></dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">来院方法を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本記事は一般的な情報提供を目的としたものです。施術の効果や回復の速さには個人差があります。リスクや副作用、施術が適しているかどうかは、医療スタッフにご相談ください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "オンダリフティングの効果・価格・何ジュール受けるべき？顔・二の腕・お腹・太ももまとめ",
+   "description": "オンダリフティングの仕組み、効果が出る時期、4万・6万・8万ジュールの違い、顔全体のジュール数、施術回数、痛み、副作用、インモードとの違いを、狎鷗亭のReyeonk Clinicがご案内します。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-21",
+   "dateModified": "2026-11-21",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/onda-lifting-guide/",
+   "image": "https://reyeonk2.com/img/og/onda-lifting-guide.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "ja",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "オンダリフティングの効果はいつから現れますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "輪郭の変化は、施術後2〜3週間ほどしてから感じる方が多く、時期や程度には個人差があります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "オンダリフティングの効果はどのくらい続きますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "一般に4〜5か月ほどとご案内しており、個人差があります。体重の変化や加齢によって、維持のケアが必要な場合があります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "4万・6万・8万ジュールにはどのような違いがありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ジュール（J）はエネルギーの単位で、1回の施術で届けるエネルギーの総量が異なるという意味です。適した量は部位と肌の状態によって変わります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "顔全体では何万ジュール必要ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "顔全体で約10万ジュール（100kJ）、男性の顔は約12万ジュール、ボディは約15万ジュールを目安にご案内しています。最終的には院長が決め、個人差があります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "オンダリフティングの価格はいくらですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "部位、範囲、ジュール数によって異なり、正確な費用は院長のカウンセリング後にご案内します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "オンダリフティングは何回くらい受けるべきですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "決まった回数はありません。2〜3か月間隔での再施術をおすすめしており、目標と反応に合わせて調整します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "オンダリフティングは痛いですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "麻酔なしで行うのが基本で、スマートクーリングで不快感を和らげるようにしています。熱感があることがあり、痛みの程度には個人差があります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "オンダリフティングとインモードの違いは何ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "オンダリフティングはマイクロウェーブ、インモードは一般に高周波（RF）系の機器です。目的と部位によって選択が変わり、併用も可能です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "中国語・日本語・英語でのカウンセリングはできますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。カウンセリングスタッフとコーディネーターが中国語、日本語、英語に対応しています。完全予約制のため、待ち時間はありません。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+

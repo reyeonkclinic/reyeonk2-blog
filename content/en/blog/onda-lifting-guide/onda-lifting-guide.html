@@ -1,0 +1,400 @@
+---js
+const permalink = "/en/blog/onda-lifting-guide/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "Onda Lifting: Effects, Price and How Many Joules You Need (Face, Arms, Abdomen, Thighs)";
+const description = "How Onda lifting works, when results appear, 40,000 vs 60,000 vs 80,000 J, joules for the whole face, number of sessions, discomfort, side effects and the difference from InMode, explained by Reyeonk Clinic in Apgujeong.";
+const date = "2026-11-21";
+const alternates = [
+	{ lang: "ko", url: "/blog/onda-lifting-guide/" },
+	{ lang: "en", url: "/en/blog/onda-lifting-guide/" },
+	{ lang: "ja", url: "/ja/blog/onda-lifting-guide/" },
+	{ lang: "zh-Hans", url: "/zh/blog/onda-lifting-guide/" },
+	{ lang: "x-default", url: "/blog/onda-lifting-guide/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+<div class="pz">
+	<p class="pz-hook">Face, arms, abdomen or thighs: where should you start?</p>
+	<p class="pz-lead">Diet and exercise alone rarely target one specific area, and many people want to reduce fat while also caring for skin firmness. Onda lifting is one of the treatments they ask about most. This article answers the most common questions in order: how it works, how many joules, when results appear, discomfort and how it differs from InMode.</p>
+	<div class="pz-summary">
+		<strong>At a glance</strong>
+		<ul>
+			<li>Onda lifting is a device treatment that uses microwave energy.</li>
+			<li>Treatment areas: the face (double chin, cheeks, deep cheeks) and the body (abdomen, thighs, arms).</li>
+			<li>At Reyeonk Clinic, about 100,000 J (100 kJ) for the whole face and about 150,000 J for the body is a typical guide; the final amount is set by your doctor at consultation.</li>
+			<li>We recommend repeating at 2–3 month intervals, and results are usually said to last about 4–5 months, with individual variation.</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>What is Onda lifting?</h2>
+		<div class="pz-text">
+			<p>Onda lifting uses microwave energy. It is based on Coolwaves™ technology from the Italian company DEKA, and the type of energy differs from radiofrequency (RF) or ultrasound (HIFU).</p>
+			<p>There are two handpieces. The 3 mm handpiece targets skin firmness in the dermis, and the 7 mm handpiece targets the fat layer. They are chosen or combined according to the area and your skin. Contact cooling (smart cooling) lowers the skin surface temperature to help reduce discomfort during treatment.</p>
+			<p>Because fat cells shrink and some are cleared naturally by the body over time, changes tend to appear gradually rather than immediately after treatment.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>1. Effects and how it works</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>When do the effects of Onda lifting appear?</h3>
+				<p>You may feel a tightening sensation right after treatment. Contour changes are usually noticed from about 2–3 weeks later. It is too early to judge results immediately after treatment, and timing and degree vary between individuals.</p>
+			</li>
+			<li>
+				<h3>Does Onda lifting work for both facial fat and skin firmness?</h3>
+				<p>The 3 mm handpiece targets the dermis and the 7 mm handpiece targets the fat layer, so both can be planned together. Your doctor decides the balance based on skin thickness and fat distribution, and results depend on your skin and the amount of fat.</p>
+			</li>
+			<li>
+				<h3>Can Onda lifting improve a double chin and deep cheeks?</h3>
+				<p>The double chin, cheeks, deep cheeks and the area around marionette lines are commonly discussed. It can be an option for fatty areas where it is difficult to apply energy with treatments such as Ulthera. The right approach depends on fat thickness and the degree of sagging, so it needs to be confirmed at consultation.</p>
+			</li>
+			<li>
+				<h3>How long do the effects of Onda lifting last?</h3>
+				<p>We usually say about 4–5 months, with individual variation. Fat cells that have been reduced do not regenerate, but new fat may accumulate or sagging may develop with weight changes and ageing, so maintenance may be needed.</p>
+			</li>
+			<li>
+				<h3>Can I have Onda lifting if I do not have much facial fat?</h3>
+				<p>For people with less fat, energy is planned mainly for dermal firmness (3 mm) rather than the fat layer. Treating fat too much in a slim face can make the cheeks look hollow, so we recommend deciding whether to treat and how much after a consultation.</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>2. Price and treatment amount (joules)</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>What is the difference between 40,000, 60,000 and 80,000 J?</h3>
+				<p>In Korea, Onda is quoted in "jul", meaning joules (J) of energy. 40,000, 60,000 and 80,000 J mean different total amounts of energy delivered in one session. A larger number can cover a wider area or a thicker fat layer, but more is not always better. The key is planning an amount that suits the area and your skin.</p>
+			</li>
+			<li>
+				<h3>How many joules does the whole face need?</h3>
+				<p>At Reyeonk Clinic we guide about 100,000 J (100 kJ) for the whole face, about 120,000 J for a male face and about 150,000 J for the body (abdomen, thighs, arms). Your doctor makes the final decision according to the area and your skin, and this varies between individuals.</p>
+			</li>
+			<li>
+				<h3>How much does Onda lifting cost?</h3>
+				<p>The price depends on the treatment area, the extent and the number of joules. We give exact costs after a doctor consultation, and you can enquire first via KakaoTalk.</p>
+			</li>
+			<li>
+				<h3>Is one session of Onda lifting enough to see an effect?</h3>
+				<p>Some people notice a change after one session. However, the degree and duration of change vary, and additional sessions may be needed depending on the area and amount of fat.</p>
+			</li>
+			<li>
+				<h3>How many sessions of Onda lifting do I need?</h3>
+				<p>There is no fixed number. We recommend repeating at 2–3 month intervals and adjust the number of sessions to your goals and response. For reference, a clinical trial has reported three sessions at 20-day intervals for abdominal fat, but that is a research protocol and differs from our recommendation.</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>3. Discomfort, downtime and side effects</h2>
+		<div class="pz-text">
+			<p><strong>Discomfort</strong> Treatment is basically performed without anaesthesia, and smart cooling helps reduce discomfort. You may feel a warm or hot sensation under the skin, and some areas with higher energy can feel uncomfortable. Your doctor adjusts the energy and cooling in real time, and for people who are very sensitive, treatment can be performed after applying numbing cream. Discomfort varies between individuals.</p>
+			<p><strong>Treatment time and downtime</strong> A session takes about 20–40 minutes, and you can return to daily activities straight afterwards.</p>
+			<p><strong>Side effects</strong> Mild swelling and a feeling of warmth may occur and usually settle quickly. If you have severe active acne or skin inflammation, it is better to postpone treatment.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>4. What is the difference between Onda lifting and InMode?</h2>
+		<div class="pz-text">
+			<p>Onda lifting uses microwave energy, while InMode is generally a radiofrequency (RF) device, so the type of energy differs. Rather than one being better, the choice depends on your goal and the area. They can also be combined, or used with Ulthera or Thermage for maintenance, and the order and combination are decided after consultation.</p>
+			<p>For reference, a retrospective study of 171 faces comparing microwave and HIFU (Nam et al., Aesthetic Surgery Journal, 2026) reported that microwave showed changes sooner and caused less discomfort at one month, while HIFU kept stronger lifting at three months. The authors describe the two as complementary. A clinical trial in overweight adults (Pahlavani et al., Journal of Cosmetic Dermatology, 2022) reported reduced abdominal fat thickness and waist circumference, but it had no control group, so it has limits for generalisation.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Who may want to book a consultation</h2>
+		<ul class="pz-list">
+			<li><h3>People considering fat reduction and skin firmness together</h3></li>
+			<li><h3>People looking for a treatment with little downtime</h3></li>
+			<li><h3>People who also want to explore arms, abdomen and thighs, not only the face</h3></li>
+			<li><h3>People preparing for an important event</h3></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>Doctor-led consultations, appointments and multilingual support</h2>
+		<div class="pz-text">
+			<p>Our doctors personally carry out your consultation.</p>
+			<p>We operate by appointment, so you can have your consultation and treatment without waiting.</p>
+			<p>Our Chinese-, Japanese- and English-speaking consultation staff and coordinators are available, so you can consult comfortably.</p>
+			<p>Reyeonk Clinic is a medical institution registered for the attraction of foreign patients (Registration No. M-2022-08-6785).</p>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">Not sure how many joules suit your area?</p>
+		<p class="pz-invite">Reyeonk Clinic has been in Apgujeong since 2009, and our doctors personally handle consultation, planning, treatment and aftercare. We decide the energy ratio between the 3 mm and 7 mm handpieces after checking your skin thickness and fat distribution, so we suggest starting with a consultation.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building)<br>B1, 3F and 4F</dd>
+				<dt>Phone</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">Copy number</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">One-to-one chat</a></dd>
+				<dt>Directions</dt>
+				<dd><a href="/en/location/">See how to get here</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">Note: This article is for general information only. Treatment results and recovery vary between individuals. Please consult our medical team about risks, side effects and whether a treatment suits you.</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Onda Lifting: Effects, Price and How Many Joules You Need (Face, Arms, Abdomen, Thighs)",
+   "description": "How Onda lifting works, when results appear, 40,000 vs 60,000 vs 80,000 J, joules for the whole face, number of sessions, discomfort, side effects and the difference from InMode, explained by Reyeonk Clinic in Apgujeong.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-21",
+   "dateModified": "2026-11-21",
+   "mainEntityOfPage": "https://reyeonk2.com/en/blog/onda-lifting-guide/",
+   "image": "https://reyeonk2.com/img/og/onda-lifting-guide.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "When do the effects of Onda lifting appear?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Contour changes are usually noticed from about 2–3 weeks after treatment, and timing and degree vary between individuals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long do the effects of Onda lifting last?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We usually say about 4–5 months, with individual variation. Maintenance may be needed with weight changes and ageing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between 40,000, 60,000 and 80,000 J?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Joules (J) measure energy, so the numbers mean different total amounts of energy delivered per session. The right amount depends on the area and your skin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many joules does the whole face need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We guide about 100,000 J (100 kJ) for the whole face, about 120,000 J for a male face and about 150,000 J for the body. Your doctor makes the final decision and it varies between individuals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does Onda lifting cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the area, extent and joules, and we give exact costs after a doctor consultation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many sessions of Onda lifting do I need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no fixed number. We recommend repeating at 2–3 month intervals and adjust to your goals and response."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Onda lifting hurt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is basically performed without anaesthesia and smart cooling helps reduce discomfort. You may feel warmth, and discomfort varies between individuals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between Onda lifting and InMode?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Onda lifting uses microwave energy, while InMode is generally a radiofrequency (RF) device. The choice depends on your goal and area, and they can be combined."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you offer consultations in Chinese, Japanese or English?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our consultation staff and coordinators speak Chinese, Japanese and English. Appointments are by reservation, so there is no waiting time."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+
