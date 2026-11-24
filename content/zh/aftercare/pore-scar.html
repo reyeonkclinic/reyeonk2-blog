@@ -1,0 +1,300 @@
+---js
+const permalink = "/zh/aftercare/pore-scar/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "毛孔·痘坑治疗后的注意事项 | 丽妍K医院";
+const description = "介绍Super Fraxel MCL31、Virtue RF、Potenza、Dermaatom、PicoSure Fraxel、Trifil Pro治疗后的通用注意事项和各项治疗的注意事项。";
+const alternates = [
+	{
+		"lang": "ko",
+		"url": "/aftercare/pore-scar/"
+	},
+	{
+		"lang": "en",
+		"url": "/en/aftercare/pore-scar/"
+	},
+	{
+		"lang": "ja",
+		"url": "/ja/aftercare/pore-scar/"
+	},
+	{
+		"lang": "zh-Hans",
+		"url": "/zh/aftercare/pore-scar/"
+	},
+	{
+		"lang": "x-default",
+		"url": "/aftercare/pore-scar/"
+	}
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+</style>
+
+<h1>毛孔·痘坑治疗后的注意事项</h1>
+<style>
+.pz .ac-grid { display: grid; gap: 12px; margin-top: 16px; }
+.pz .ac-card { background: var(--pz-surface); border: 1px solid var(--pz-line); border-radius: 14px; padding: 18px 20px; }
+.pz .ac-card h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--pz-ink); }
+.pz .ac-card p { margin: 0; line-height: 1.7; color: var(--pz-ink); }
+.pz .ac-tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .02em; padding: 3px 10px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-accent); margin-bottom: 8px; }
+.pz .ac-ban { border-left: 5px solid var(--pz-accent); }
+.pz .ac-ban .ac-tag { background: var(--pz-accent); color: #fff; }
+.pz .ac-ban ul { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.pz .ac-ban li { padding: 6px 14px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-ink); font-weight: 500; }
+.pz .ac-warn { border-left: 5px solid #C0452F; background: #FBEDE9; border-color: #E8B9AE; border-left-color: #C0452F; }
+.pz .ac-warn .ac-tag { background: #C0452F; color: #fff; }
+.pz .ac-warn h3, .pz .ac-warn p { color: #4A1D14; }
+@media (prefers-color-scheme: dark) {
+	.pz .ac-warn { background: #2E1A16; border-color: #5A2E26; border-left-color: #E26B54; }
+	.pz .ac-warn .ac-tag { background: #E26B54; color: #1A0D0A; }
+	.pz .ac-warn h3, .pz .ac-warn p { color: #F6D9D2; }
+}
+.pz .ac-proc { display: grid; gap: 14px; margin-top: 16px; }
+.pz .ac-proc-item { background: var(--pz-surface); border: 1px solid var(--pz-line); border-radius: 14px; overflow: hidden; }
+.pz .ac-proc-head { background: var(--pz-block); color: var(--pz-block-ink); padding: 12px 20px; font-family: var(--pz-display); font-weight: 700; font-size: 1.08rem; }
+.pz .ac-proc-body { padding: 16px 20px 18px; }
+.pz .ac-proc-body p { margin: 0 0 10px; line-height: 1.7; color: var(--pz-ink); }
+.pz .ac-proc-body p:last-child { margin-bottom: 0; }
+.pz .ac-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
+.pz .ac-chips li { font-size: .88rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-accent); }
+</style>
+
+<div class="pz">
+	<div class="ac-card" style="margin: 0 0 24px">
+		<span class="ac-tag">咨询</span>
+		<p>如有任何疑问，欢迎随时联系我们。</p>
+	</div>
+
+	<p class="pz-hook">您接受了毛孔或痘坑治疗吗？</p>
+	<p class="pz-lead">为了让您在治疗后舒适恢复，我们整理了通用注意事项和各项治疗的注意事项。请根据您接受的治疗查看对应内容。</p>
+
+	<div class="pz-section">
+		<h2>通用注意事项</h2>
+		<div class="ac-grid">
+			<div class="ac-card ac-ban">
+				<span class="ac-tag">1周内禁止</span>
+				<h3>1周内请避免</h3>
+				<ul>
+					<li>饮酒</li>
+					<li>吸烟</li>
+					<li>出汗的剧烈运动</li>
+					<li>去汗蒸房（韩式桑拿）</li>
+					<li>按摩</li>
+				</ul>
+			</div>
+			<div class="ac-card">
+				<span class="ac-tag">每天</span>
+				<h3>防晒</h3>
+				<p>外出时请务必涂抹防晒霜。</p>
+			</div>
+			<div class="ac-card ac-warn">
+				<span class="ac-tag">请立即联系</span>
+				<h3>出现以下情况请立即联系医院</h3>
+				<p>如果持续出现剧烈疼痛、水疱、肤色变化、感觉异常等情况，请立即联系医院。</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="pz-section">
+		<h2>各项治疗的注意事项</h2>
+		<p class="pz-text">请查看您所接受治疗的对应项目。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Super Fraxel MCL31（슈퍼프락셀）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>当天禁止洗脸</li><li>防晒霜2～3天后再涂</li><li>结痂自然脱落</li></ul>
+					<p>该治疗会出现结痂、热感和刺痛感。请不要只用乳液或精华，建议大量涂抹高浓度面霜。</p>
+					<p>治疗当天请勿洗脸。建议2～3天后再涂防晒霜。使用泡沫洁面时请轻柔操作。</p>
+					<p>请不要人为抠碰痂皮，让其自然脱落。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Virtue RF &amp; Potenza &amp; Dermaatom（더마아톰）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>泛红持续1～2天</li><li>可能出血、结痂，约3天后自然脱落</li><li>不要触碰痂皮</li><li>使用面霜类产品保湿</li><li>防晒</li></ul>
+					<p>泛红可能持续约1～2天。治疗时可能会出血，也可能结痂。约3天后会自然脱落，请不要触碰，多加注意。</p>
+					<p>请使用面霜类产品做好保湿，并认真做好防晒。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">PicoSure Fraxel</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>泛红持续1～2天</li><li>保湿</li><li>防晒</li></ul>
+					<p>治疗后可能出现约1～2天的泛红。请注意保湿，并认真做好防晒。</p>
+					<p>在受损皮肤改善的过程中，偶尔会出现痘痘或小疙瘩。通常几天内会暂时消退，请不用担心。</p>
+					<p>如果情况较重，请务必联系医院。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Trifil Pro（트리필프로）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>至少6～12小时后再洗脸</li><li>次日起可化妆</li><li>1周内禁止使用刺激性产品和磨砂</li></ul>
+					<p>至少6～12小时后才可洗脸，请避免使用过烫的水。次日起可以化妆。</p>
+					<p>请勿揉搓或抓挠治疗部位。</p>
+					<p>如果出现肿胀和潮红，请每次冷敷5～10分钟，每天2～3次。</p>
+					<p>治疗后约1周内，请避免使用会刺激皮肤的产品或磨砂。补水很重要，请充分涂抹保湿产品。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-invite">术后护理期间如有任何担心，请不要忍耐，及时告知我们。为您治疗的院长会亲自查看。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院</dt>
+				<dd>首尔特别市江南区彦州路172街64号<br>地下1层、3层、4层</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">02-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一快速咨询</a></dd>
+				<dt>交通指南</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本说明为一般性的术后护理信息，可能因皮肤状态和治疗内容而有所不同。如果院长在治疗当天另有说明，请优先遵照院长的说明。</p>
+	</div>
+</div>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选择";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

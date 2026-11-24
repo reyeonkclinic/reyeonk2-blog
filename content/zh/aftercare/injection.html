@@ -1,0 +1,346 @@
+---js
+const permalink = "/zh/aftercare/injection/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "水光针·填充·肉毒素·Sunsak注射治疗后的注意事项 | 丽妍K医院";
+const description = "介绍水光针、填充剂、肉毒素、Sunsak注射（溶脂针）治疗后的通用注意事项和各项治疗的注意事项。";
+const alternates = [
+	{
+		"lang": "ko",
+		"url": "/aftercare/injection/"
+	},
+	{
+		"lang": "en",
+		"url": "/en/aftercare/injection/"
+	},
+	{
+		"lang": "ja",
+		"url": "/ja/aftercare/injection/"
+	},
+	{
+		"lang": "zh-Hans",
+		"url": "/zh/aftercare/injection/"
+	},
+	{
+		"lang": "x-default",
+		"url": "/aftercare/injection/"
+	}
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+</style>
+
+<h1>水光针·填充·肉毒素·Sunsak注射治疗后的注意事项</h1>
+<style>
+.pz .ac-grid { display: grid; gap: 12px; margin-top: 16px; }
+.pz .ac-card { background: var(--pz-surface); border: 1px solid var(--pz-line); border-radius: 14px; padding: 18px 20px; }
+.pz .ac-card h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--pz-ink); }
+.pz .ac-card p { margin: 0; line-height: 1.7; color: var(--pz-ink); }
+.pz .ac-tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .02em; padding: 3px 10px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-accent); margin-bottom: 8px; }
+.pz .ac-ban { border-left: 5px solid var(--pz-accent); }
+.pz .ac-ban .ac-tag { background: var(--pz-accent); color: #fff; }
+.pz .ac-ban ul { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.pz .ac-ban li { padding: 6px 14px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-ink); font-weight: 500; }
+.pz .ac-warn { border-left: 5px solid #C0452F; background: #FBEDE9; border-color: #E8B9AE; border-left-color: #C0452F; }
+.pz .ac-warn .ac-tag { background: #C0452F; color: #fff; }
+.pz .ac-warn h3, .pz .ac-warn p { color: #4A1D14; }
+@media (prefers-color-scheme: dark) {
+	.pz .ac-warn { background: #2E1A16; border-color: #5A2E26; border-left-color: #E26B54; }
+	.pz .ac-warn .ac-tag { background: #E26B54; color: #1A0D0A; }
+	.pz .ac-warn h3, .pz .ac-warn p { color: #F6D9D2; }
+}
+.pz .ac-proc { display: grid; gap: 14px; margin-top: 16px; }
+.pz .ac-proc-item { background: var(--pz-surface); border: 1px solid var(--pz-line); border-radius: 14px; overflow: hidden; }
+.pz .ac-proc-head { background: var(--pz-block); color: var(--pz-block-ink); padding: 12px 20px; font-family: var(--pz-display); font-weight: 700; font-size: 1.08rem; }
+.pz .ac-proc-body { padding: 16px 20px 18px; }
+.pz .ac-proc-body p { margin: 0 0 10px; line-height: 1.7; color: var(--pz-ink); }
+.pz .ac-proc-body p:last-child { margin-bottom: 0; }
+.pz .ac-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
+.pz .ac-chips li { font-size: .88rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-accent); }
+</style>
+
+<div class="pz">
+	<div class="ac-card" style="margin: 0 0 24px">
+		<span class="ac-tag">咨询</span>
+		<p>如有任何疑问，欢迎随时联系我们。</p>
+	</div>
+
+	<p class="pz-hook">您接受了注射类治疗吗？</p>
+	<p class="pz-lead">为了让您在治疗后舒适恢复，我们整理了通用注意事项和各项治疗的注意事项。请根据您接受的治疗查看对应内容。</p>
+
+	<div class="pz-section">
+		<h2>通用注意事项</h2>
+		<div class="ac-grid">
+			<div class="ac-card ac-ban">
+				<span class="ac-tag">1周内禁止</span>
+				<h3>1周内请避免</h3>
+				<ul>
+					<li>饮酒</li>
+					<li>吸烟</li>
+					<li>出汗的剧烈运动</li>
+					<li>去汗蒸房（韩式桑拿）</li>
+					<li>按摩</li>
+				</ul>
+			</div>
+			<div class="ac-card">
+				<span class="ac-tag">每天</span>
+				<h3>防晒</h3>
+				<p>外出时请务必涂抹防晒霜。</p>
+			</div>
+			<div class="ac-card ac-warn">
+				<span class="ac-tag">请立即联系</span>
+				<h3>出现以下情况请立即联系医院</h3>
+				<p>如果持续出现剧烈疼痛、水疱、肤色变化、感觉异常等情况，请立即联系医院。</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="pz-section">
+		<h2>水光针（Skin Booster）</h2>
+		<p class="pz-text">请查看您所接受的水光针项目。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Gouri &amp; Re2O &amp; CELLReDM &amp; Juvelook &amp; Rejuran &amp; Lilide M（릴리이드M）&amp; MCT</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>桑拿、汗蒸房、按摩2周后可进行</li><li>当天可以洗脸</li><li>当天避免化妆</li></ul>
+					<p>桑拿、汗蒸房、按摩需在2周后才可进行。当天可以洗脸，但请避免当天化妆。</p>
+					<p>注射部位可能会发痒。请不要抓挠，可以用冰袋冷敷。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Juvelook Volume &amp; Sculptra</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>热感、肿胀持续3～5天</li><li>可能出现约1周的淤青</li><li>1个月后可再次治疗</li></ul>
+					<p>可能会出现热感和肿胀，通常3～5天后消退。如果感觉过于不适，请进行冷敷。</p>
+					<p>治疗部位可能会出现约1周的淤青。如无特殊异常，1个月后可再次治疗。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>填充剂</h2>
+		<p class="pz-text">请查看您所接受的填充项目。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">填充剂（通用）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>1个月内不要触碰、按压</li></ul>
+					<p>1个月内请注意不要触碰或按压治疗部位。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">鼻部填充 &amp; HIKO（하이코）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>2周内禁止佩戴眼镜</li></ul>
+					<p>请在2周内不要佩戴眼镜。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">眼下填充 &amp; 法令纹填充</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>2周内不要大张嘴</li></ul>
+					<p>2周内请避免大张嘴的动作（大笑、打哈欠、牙科治疗）。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>肉毒素（Botox）</h2>
+		<p class="pz-text">请查看您所接受的肉毒素项目。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">肉毒素（Botox）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>禁止揉搓</li><li>洗脸、化妆需在2～3小时后</li></ul>
+					<p>治疗后可能出现淤青或肿胀。</p>
+					<p>请勿揉搓治疗部位。洗脸或化妆建议在治疗后2～3小时再进行。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">咬肌肉毒素（下颌）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>暂时避免硬的食物</li></ul>
+					<p>请暂时避免吃硬的食物。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Sunsak注射（溶脂针）</h2>
+		<p class="pz-text">接受了Sunsak注射的客人请查看此项。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Sunsak注射（순삭주사）</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>洗脸、化妆需在2～3小时后</li><li>淤青严重时禁止揉搓</li></ul>
+					<p>治疗后可能出现淤青或肿胀。</p>
+					<p>如果淤青较重，请勿揉搓；如果不严重，轻轻按摩会有帮助。</p>
+					<p>洗脸或化妆建议在2～3小时后进行。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-invite">术后护理期间如有任何担心，请不要忍耐，及时告知我们。为您治疗的院长会亲自查看。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院</dt>
+				<dd>首尔特别市江南区彦州路172街64号<br>地下1层、3层、4层</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">02-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一快速咨询</a></dd>
+				<dt>交通指南</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本说明为一般性的术后护理信息，可能因皮肤状态和治疗内容而有所不同。如果院长在治疗当天另有说明，请优先遵照院长的说明。</p>
+	</div>
+</div>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选择";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>

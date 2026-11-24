@@ -1,0 +1,318 @@
+---js
+const permalink = "/ja/aftercare/pigment-redness/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "色素・赤み・ニキビ跡の赤みの施術後の注意事項 | Reyeonk Clinic";
+const description = "レーザートーニング、Spectra Peel、IPL、PicoSure、ほくろ除去、Synergy施術後の共通の注意事項と施術別の注意事項をご案内します。";
+const alternates = [
+	{
+		"lang": "ko",
+		"url": "/aftercare/pigment-redness/"
+	},
+	{
+		"lang": "en",
+		"url": "/en/aftercare/pigment-redness/"
+	},
+	{
+		"lang": "ja",
+		"url": "/ja/aftercare/pigment-redness/"
+	},
+	{
+		"lang": "zh-Hans",
+		"url": "/zh/aftercare/pigment-redness/"
+	},
+	{
+		"lang": "x-default",
+		"url": "/aftercare/pigment-redness/"
+	}
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+</style>
+
+<h1>色素・赤み・ニキビ跡の赤みの施術後の注意事項</h1>
+<style>
+.pz .ac-grid { display: grid; gap: 12px; margin-top: 16px; }
+.pz .ac-card { background: var(--pz-surface); border: 1px solid var(--pz-line); border-radius: 14px; padding: 18px 20px; }
+.pz .ac-card h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--pz-ink); }
+.pz .ac-card p { margin: 0; line-height: 1.7; color: var(--pz-ink); }
+.pz .ac-tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .02em; padding: 3px 10px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-accent); margin-bottom: 8px; }
+.pz .ac-ban { border-left: 5px solid var(--pz-accent); }
+.pz .ac-ban .ac-tag { background: var(--pz-accent); color: #fff; }
+.pz .ac-ban ul { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.pz .ac-ban li { padding: 6px 14px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-ink); font-weight: 500; }
+.pz .ac-warn { border-left: 5px solid #C0452F; background: #FBEDE9; border-color: #E8B9AE; border-left-color: #C0452F; }
+.pz .ac-warn .ac-tag { background: #C0452F; color: #fff; }
+.pz .ac-warn h3, .pz .ac-warn p { color: #4A1D14; }
+@media (prefers-color-scheme: dark) {
+	.pz .ac-warn { background: #2E1A16; border-color: #5A2E26; border-left-color: #E26B54; }
+	.pz .ac-warn .ac-tag { background: #E26B54; color: #1A0D0A; }
+	.pz .ac-warn h3, .pz .ac-warn p { color: #F6D9D2; }
+}
+.pz .ac-proc { display: grid; gap: 14px; margin-top: 16px; }
+.pz .ac-proc-item { background: var(--pz-surface); border: 1px solid var(--pz-line); border-radius: 14px; overflow: hidden; }
+.pz .ac-proc-head { background: var(--pz-block); color: var(--pz-block-ink); padding: 12px 20px; font-family: var(--pz-display); font-weight: 700; font-size: 1.08rem; }
+.pz .ac-proc-body { padding: 16px 20px 18px; }
+.pz .ac-proc-body p { margin: 0 0 10px; line-height: 1.7; color: var(--pz-ink); }
+.pz .ac-proc-body p:last-child { margin-bottom: 0; }
+.pz .ac-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
+.pz .ac-chips li { font-size: .88rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--pz-accent-soft); color: var(--pz-accent); }
+</style>
+
+<div class="pz">
+	<div class="ac-card" style="margin: 0 0 24px">
+		<span class="ac-tag">お問い合わせ</span>
+		<p>ご不明な点がございましたら、お気軽にご連絡ください。</p>
+	</div>
+
+	<p class="pz-hook">色素・赤み・ニキビ跡の赤みの施術を受けられましたか？</p>
+	<p class="pz-lead">施術後に快適に回復していただけるよう、共通の注意事項と施術別の注意事項をまとめました。受けられた施術に合わせてご確認ください。</p>
+
+	<div class="pz-section">
+		<h2>共通の注意事項</h2>
+		<div class="ac-grid">
+			<div class="ac-card">
+				<span class="ac-tag">施術の前後</span>
+				<h3>紫外線対策</h3>
+				<p>日焼け止めの塗り直しや帽子の着用などを心がけてください。施術の前後には、紫外線A波（UVA）までカットできる日焼け止めを使用してください。</p>
+			</div>
+			<div class="ac-card">
+				<span class="ac-tag">施術当日</span>
+				<h3>洗顔</h3>
+				<p>施術当日は、温かいお湯よりもぬるま湯か冷水で、やさしく洗顔してください。</p>
+			</div>
+			<div class="ac-card ac-ban">
+				<span class="ac-tag">1週間は禁止</span>
+				<h3>しっかり保湿してください</h3>
+				<p>保湿ケアが欠かせません。下記の項目は1週間ほど控えてください。</p>
+				<ul>
+					<li>サウナ</li>
+					<li>チムジルバ（韓国式サウナ）</li>
+					<li>激しい運動</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>ホワイトニング（色素）</h2>
+		<p class="pz-text">受けられた施術の項目をご確認ください。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">レーザートーニング &amp; Spectra Peel</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>共通の注意事項を参照</li></ul>
+					<p>共通の注意事項をお守りください。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">IPL</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>赤みが3日以上続く、または水ぶくれができたら病院へ連絡</li><li>強くこすらない</li><li>1週間ほど色が濃くなるのは正常</li></ul>
+					<p>赤みが3日以上続く場合や、施術部位に水ぶくれができた場合は、病院へご連絡ください。</p>
+					<p>洗顔時に強くこするのは避けてください。施術後1週間ほどは色が濃くなることがありますが、正常な反応です。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">PicoSureレーザー</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>かさぶたを剥がさない</li><li>しっかり保湿</li><li>水ぶくれができたら病院へ相談</li></ul>
+					<p>かさぶたができることがあります。剥がさず、自然に落ちるようにしてください。</p>
+					<p>保湿を徹底してください。万一、施術部位に水ぶくれができた場合は、病院へご相談ください。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">PicoSureトーニング</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>共通の注意事項を参照</li></ul>
+					<p>共通の注意事項をお守りください。</p>
+				</div>
+			</div>
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">ほくろ除去</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>デュオダームを1週間貼付</li><li>はがれたら貼り直す</li><li>はがした後は日焼け止め</li></ul>
+					<p>施術部位に再生テープ（デュオダーム）を貼ります。1週間以内にはがれた場合は、新しいものを貼り直してください。</p>
+					<p>簡単な洗顔やメイクは、デュオダームを貼ったままで行ってください。（水が入らないようご注意ください。）</p>
+					<p>1週間後にデュオダームをはがした後は、日焼け止めをしっかり塗ってください。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>顔の赤み・ニキビ跡の赤み</h2>
+		<p class="pz-text">受けられた施術の項目をご確認ください。</p>
+		<div class="ac-proc">
+			<div class="ac-proc-item">
+				<div class="ac-proc-head">Synergy</div>
+				<div class="ac-proc-body">
+					<ul class="ac-chips"><li>熱感が出ることがあります</li><li>冷却後はしっかり保湿</li><li>紫外線対策</li><li>治療期間中はサウナ・チムジルバを避ける</li></ul>
+					<p>施術後に熱感が出ることがあります。</p>
+					<p>ご自宅でのアイシングは問題ありませんが、冷やした後は必ずしっかり保湿してください。</p>
+					<p>施術部位の紫外線対策をしっかり行ってください。</p>
+					<p>治療期間中は、サウナやチムジルバには行かないのが望ましいです。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-invite">施術後のケア中に気になる点があれば、我慢せずにお知らせください。施術を担当した院長が確認いたします。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172ギル64<br>地下1階・3階・4階</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:025585581">02-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1でスピード相談</a></dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">アクセスを見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本案内は一般的な施術後のケア情報であり、お肌の状態や施術内容によって異なる場合があります。施術当日に院長から別途ご案内があった場合は、そちらを優先してください。</p>
+	</div>
+</div>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "番号をコピー"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "選択しました";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "コピーしました"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
