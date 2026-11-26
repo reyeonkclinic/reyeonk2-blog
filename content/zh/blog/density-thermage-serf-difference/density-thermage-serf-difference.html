@@ -1,0 +1,689 @@
+---js
+const permalink = "/zh/blog/density-thermage-serf-difference/";
+const layout = "layouts/base.njk";
+const lang = "zh-Hans";
+const title = "射频紧致 Density Noir vs 热玛吉 vs SERF，区别、效果·价格·疼痛全面解析";
+const description = "Density Noir、热玛吉 FLX、SERF 的射频方式区别、600发对比、效果、价格、疼痛与维持时间，以及面部脂肪较少者的施术设计，由狎鸥亭丽妍K医院为您解析。";
+const date = "2026-11-26";
+const image = "/img/og/density-thermage-serf-difference.jpg";
+const alternates = [
+	{ lang: "ko", url: "/blog/density-thermage-serf-difference/" },
+	{ lang: "en", url: "/en/blog/density-thermage-serf-difference/" },
+	{ lang: "ja", url: "/ja/blog/density-thermage-serf-difference/" },
+	{ lang: "zh-Hans", url: "/zh/blog/density-thermage-serf-difference/" },
+	{ lang: "x-default", url: "/blog/density-thermage-serf-difference/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif SC", "Songti SC", "SimSun", serif;
+	--pz-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+.pz-bullets { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 36rem; }
+.pz-related a { text-decoration: underline; text-underline-offset: 3px; }
+
+.pz-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 28px; max-width: 36rem; align-items: start; }
+.pz-pair img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-quote { margin: 20px 0 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--pz-accent); max-width: 34rem; display: grid; gap: 0.8em; }
+.pz-quote p { font-weight: 500; line-height: 1.7; }
+.pz-quote cite { display: block; color: var(--pz-muted); font-style: normal; font-size: 0.9rem; }
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">随着皮肤弹力下降、细纹增多，您是否正在考虑射频紧致？</p>
+	<p class="pz-lead">除了热玛吉 FLX，第二代 Density Noir、SERF 等多种射频紧致设备相继问世，很多人不知道该如何选择。同样是射频紧致，究竟有什么不同？</p>
+	<figure class="pz-fig"><img loading="eager" src="./img/consult.jpg" alt="丽妍K医院崔贤浩院长为患者进行诊疗咨询" width="1000" height="999"></figure>
+
+	<div class="pz-section">
+		<h2>崔贤浩院长</h2>
+		<p class="pz-tag">亲切、细致、真诚</p>
+		<div class="pz-text" style="margin-top: 16px">
+			<p>亲自负责激光与美容施术，从咨询到施术全程由本人完成。以亲切细致的诊疗态度，真诚对待每一位客人。</p>
+		</div>
+		<div class="pz-summary">
+			<strong>学会活动</strong>
+			<ul>
+				<li>大韩激光皮肤毛发学会 正式会员</li>
+				<li>大韩美容整形激光医学会 正式会员</li>
+				<li>大韩肥胖美容学会 正式会员</li>
+				<li>大韩填充剂学会 准会员</li>
+			</ul>
+		</div>
+		<div class="pz-text" style="margin-top: 24px">
+			<p>丽妍K医院实行一对一专属医生制度。由负责的医疗团队从咨询、施术到收尾全程负责。</p>
+			<p>自2009年开业以来，凭借17年以上的紧致经验，您可以体验到属于自己的那一点不同。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Density Noir、热玛吉 FLX、SERF 有什么区别？</h2>
+		<div class="pz-text">
+			<p>三种施术都是利用射频的射频紧致，向皮肤组织传递热刺激，诱导胶原蛋白再生。</p>
+		</div>
+		<div class="pz-table" style="margin-top: 24px">
+			<table>
+				<thead>
+					<tr><th scope="col"></th><th scope="col">Density Noir</th><th scope="col">热玛吉 FLX</th><th scope="col">SERF</th></tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">射频方式</th><td>单极＋双极组合</td><td>单极</td><td>双频率单极</td></tr>
+					<tr><th scope="row">频率</th><td>单极、双极两种射频</td><td>6.78MHz</td><td>6.78MHz＋2MHz</td></tr>
+					<tr><th scope="row">特点</th><td>在原有 Density 基础上升级的设备，具备 Gentle 模式和 Infinite 模式</td><td>获得 FDA 批准，20 年以上安全性与效果经过验证的元祖射频紧致</td><td>同时使用两种频率</td></tr>
+					<tr><th scope="row">共同原理</th><td colspan="3">以射频能量向皮肤组织传递热刺激，诱导胶原蛋白再生</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="pz-text" style="margin-top: 24px">
+			<p>由于能量传递方式不同，建议结合皮肤厚度、弹力下降程度和施术目的来选择。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Density Noir、热玛吉、SERF 哪个更有效？</h2>
+		<div class="pz-text">
+			<p>并没有一种设备对所有人都最有效。</p>
+			<p>适合的能量设置和施术部位，会因皮肤厚度、面部脂肪量、细纹和松弛程度而不同。除了设备种类之外，医疗团队的皮肤诊断和施术设计同样重要。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Density Noir·热玛吉·SERF 的 600 发效果相同吗？</h2>
+		<div class="pz-text">
+			<p>即使同样是 600 发，各设备的探头面积、能量传递方式和输出设置也不同，并不意味着效果相同。</p>
+			<p>向下颌线、面颊、法令纹周围等哪个部位传递多少能量，也同样重要。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>哪种射频紧致最不疼？</h2>
+		<div class="pz-text">
+			<p>各设备的冷却系统和能量传递方式有所不同。</p>
+			<p>不过疼痛会因个人敏感度、施术部位和能量强度而异。如果担心疼痛，建议咨询时确认麻醉方式以及能否调节能量。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>射频紧致的效果能维持多久？</h2>
+		<div class="pz-text">
+			<p>有些人在施术后立刻就能感受到弹力变化，但胶原蛋白再生带来的变化可能在数周到数月内逐渐显现。</p>
+			<p>维持时间和合适的再次施术时间，会因皮肤状态、生活习惯和衰老进程而不同。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>面部脂肪较少也可以做射频紧致吗？</h2>
+		<div class="pz-text">
+			<p>射频紧致不会影响脂肪，因此对面颊凹陷等副作用的担心较少。</p>
+			<p>不过，面部脂肪较少或面颊凹陷的人，需要更加细致的施术设计。</p>
+			<p>施术前确认皮肤厚度和脂肪分布，并按部位调节能量强度和照射范围十分重要。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>超声刀和射频紧致可以一起做吗？</h2>
+		<div class="pz-text">
+			<p>超声刀利用聚焦超声波，热玛吉、Density Noir、SERF 则利用射频能量。</p>
+			<p>根据皮肤状态，可以考虑并用不同能量的施术。但并不是所有人都需要联合施术。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>比设备更应先确认的事</h2>
+		<ul class="pz-effects">
+			<li>皮肤厚度和弹力下降程度</li>
+			<li>面部脂肪量和是否有面颊凹陷</li>
+			<li>各部位的发数分配和能量设置</li>
+			<li>医疗团队的直接咨询和施术设计</li>
+			<li>疼痛管理和是否使用正品探头</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>Density 到院体验分享</h2>
+		<div class="pz-text">
+			<p>这是在丽妍K医院接受 Density 施术的客人的体验分享（译自韩语）。施术效果和满意度因人而异。</p>
+		</div>
+		<div class="pz-pair"><img src="./img/review1-a.jpg" alt="Density 体验分享附图1" width="1000" height="1001"><img src="./img/review1-b.jpg" alt="Density 体验分享附图2" width="1000" height="992"></div>
+		<blockquote class="pz-quote">
+			<p>Density 怎么这么疼啊 TTT 不过效果很好。大概 2 周后能感觉到。</p>
+			<p>我个人觉得和超声刀有点像？紧致方面超声刀更好一些，但如果同时想改善细纹等综合问题，Density Alpha 应该更合适！</p>
+			<cite>Density Alpha 施术后到院体验分享</cite>
+		</blockquote>
+		<div class="pz-pair"><img src="./img/review2-a.jpg" alt="Density 体验分享附图3" width="1000" height="1432"><img src="./img/review2-b.jpg" alt="Density 体验分享附图4" width="1000" height="1329"></div>
+		<blockquote class="pz-quote">
+			<p>随着时间推移，法令纹淡了，脸部轮廓好像也变得清晰了？真的很惊喜。是我做过的紧致激光中满意度最高的。</p>
+			<p>施术后皮肤也感觉变好了，打算 6 个月后再做一次。</p>
+			<cite>Density Alpha 施术后到院体验分享</cite>
+		</blockquote>
+		<p class="pz-disclaimer">体验分享为个人感受，施术效果和满意度因人而异。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>预约制与多语言服务</h2>
+		<div class="pz-text">
+			<p>本院采用预约制，无需等待即可接受咨询和治疗。</p>
+			<p>设有中文、日语、英语咨询专员及协调人员，您可以无障碍地咨询。</p>
+			<p>丽妍K医院是经登记的外国人患者接收医疗机构（登记编号 M-2022-01-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>常见问题</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Density Noir、热玛吉、SERF 有什么区别？</h3>
+				<p>三种施术都是以射频能量向皮肤组织传递热刺激，诱导胶原蛋白再生。热玛吉 FLX 是 6.78MHz 单极，Density Noir Alpha 是单极与双极组合，SERF 是 6.78MHz 与 2MHz 的双频率单极，能量传递方式各不相同。</p>
+			</li>
+			<li>
+				<h3>Density Noir、热玛吉、SERF 哪个更有效？</h3>
+				<p>并没有一种设备对所有人都最有效。适合的能量设置和施术部位会因皮肤厚度、面部脂肪量、细纹和松弛程度而不同，因此除了设备种类，医疗团队的皮肤诊断和施术设计同样重要。</p>
+			</li>
+			<li>
+				<h3>Density Noir·热玛吉·SERF 的 600 发效果相同吗？</h3>
+				<p>即使同样是 600 发，各设备的探头面积、能量传递方式和输出设置也不同，并不意味着效果相同。向下颌线、面颊、法令纹周围等哪个部位传递多少能量，也同样重要。</p>
+			</li>
+			<li>
+				<h3>哪种射频紧致最不疼？</h3>
+				<p>各设备的冷却系统和能量传递方式有所不同，但疼痛会因个人敏感度、施术部位和能量强度而异。如果担心疼痛，建议咨询时确认麻醉方式以及能否调节能量。</p>
+			</li>
+			<li>
+				<h3>射频紧致的效果能维持多久？</h3>
+				<p>有些人在施术后立刻就能感受到弹力变化，但胶原蛋白再生带来的变化可能在数周到数月内逐渐显现。维持时间和合适的再次施术时间，会因皮肤状态、生活习惯和衰老进程而不同。</p>
+			</li>
+			<li>
+				<h3>面部脂肪较少也可以做射频紧致吗？</h3>
+				<p>射频紧致不会影响脂肪，因此对面颊凹陷等副作用的担心较少。不过，面部脂肪较少或面颊凹陷的人需要更加细致的施术设计，施术前应确认皮肤厚度和脂肪分布，并按部位调节能量强度和照射范围。</p>
+			</li>
+			<li>
+				<h3>超声刀和射频紧致可以一起做吗？</h3>
+				<p>超声刀利用聚焦超声波，热玛吉、Density Noir、SERF 则利用射频能量。根据皮肤状态，可以考虑并用不同能量的施术，但并不是所有人都需要联合施术。</p>
+			</li>
+			<li>
+				<h3>Density Noir、热玛吉、SERF 的区别是什么？</h3>
+				<p>三者都通过射频诱导胶原蛋白再生，但能量传递方式不同。热玛吉 FLX 是 6.78MHz 单极，Density Noir Alpha 是单极与双极组合，SERF 是 6.78MHz 与 2MHz 的双频率单极。</p>
+			</li>
+			<li>
+				<h3>Density Noir 和热玛吉哪个更有效？</h3>
+				<p>很难说哪一个对所有人都更有效。适合的设备和设置会因皮肤厚度、松弛程度、是否有细纹而不同，因此应首先由医疗团队进行诊断。</p>
+			</li>
+			<li>
+				<h3>热玛吉和 SERF 哪个更好？</h3>
+				<p>两种设备的频率构成和能量传递方式不同。建议综合考虑施术目的、皮肤状态和疼痛敏感度，在咨询后再做选择。</p>
+			</li>
+			<li>
+				<h3>Density Noir 和 SERF 的紧致有什么区别？</h3>
+				<p>Density Noir Alpha 是单极与双极组合，SERF 是 6.78MHz 与 2MHz 的双频率单极。由于能量传递方式不同，施术设计也可能不同。</p>
+			</li>
+			<li>
+				<h3>射频紧致中，哪种施术对改善皮肤弹力比较好？</h3>
+				<p>如果以改善皮肤弹力为目的，热玛吉、Density Noir、SERF 都可以考虑。适合的设备和发数分配会因皮肤厚度和弹力下降程度而不同。</p>
+			</li>
+			<li>
+				<h3>可以用 Density Noir 或 SERF 代替热玛吉吗？</h3>
+				<p>由于各设备的能量传递方式不同，很难把它们看作简单的替代关系。建议在确认目前的皮肤状态和施术目的后，再选择合适的设备。</p>
+			</li>
+			<li>
+				<h3>Density Noir、热玛吉、SERF 的 600 发价格有什么差异？</h3>
+				<p>价格会因设备、探头种类、发数和正在进行的活动而不同。具体费用将在咨询时，结合适合您皮肤状态的施术方案一并告知。</p>
+			</li>
+			<li>
+				<h3>性价比高的射频紧致是哪种？</h3>
+				<p>比起只看价格，更重要的是所需能量和发数分配是否适合您的皮肤。与其选择超出需要的发数或施术，不如通过咨询来制定方案。</p>
+			</li>
+			<li>
+				<h3>热玛吉为什么比 Density Noir 贵？</h3>
+				<p>热玛吉 FLX 是 20 年以上安全性与效果经过验证的元祖射频紧致设备，正品探头费用等会反映在施术价格中。实际费用因医院和施术内容而异。</p>
+			</li>
+			<li>
+				<h3>Density Noir、热玛吉、SERF 中哪种施术最不疼？</h3>
+				<p>疼痛不仅取决于设备，还会因个人敏感度、施术部位和能量强度而异，很难只选出一种。请在咨询时确认麻醉方式以及能否调节能量。</p>
+			</li>
+			<li>
+				<h3>有不需要睡眠麻醉也能做的射频紧致吗？</h3>
+				<p>射频紧致多通过表面麻醉膏等局部麻醉和能量调节来进行。是否需要睡眠麻醉以及麻醉方式，会根据疼痛敏感度在咨询时决定。</p>
+			</li>
+			<li>
+				<h3>Density Noir、热玛吉、SERF 的效果能维持多久？</h3>
+				<p>胶原蛋白再生带来的变化会在数周到数月内逐渐显现，维持时间因皮肤状态、生活习惯和衰老进程而有个体差异。</p>
+			</li>
+			<li>
+				<h3>射频紧致的效果什么时候开始显现？</h3>
+				<p>有些人在施术后立刻就能感受到弹力变化，但胶原蛋白再生带来的变化可能在数周到数月内逐渐显现。存在个体差异。</p>
+			</li>
+			<li>
+				<h3>射频紧致一年要做几次？</h3>
+				<p>没有固定次数，合适的再次施术时间会因皮肤状态、生活习惯和衰老进程而不同。建议与医疗团队商量后确定间隔。</p>
+			</li>
+			<li>
+				<h3>面部脂肪较少的人适合哪种射频紧致？</h3>
+				<p>比起特定设备，施术设计更重要。施术前应确认皮肤厚度和脂肪分布，并按部位调节能量强度和照射范围。</p>
+			</li>
+			<li>
+				<h3>皮肤较薄的人应该做哪种紧致？</h3>
+				<p>皮肤越薄，越需要更细致地调节能量设置和施术范围。建议直接确认皮肤厚度后，再决定是否施术及施术方法。</p>
+			</li>
+			<li>
+				<h3>哪种射频紧致对面颊凹陷的担心较少？</h3>
+				<p>射频紧致不会影响脂肪，因此对面颊凹陷等副作用的担心较少。不过，面部脂肪较少或面颊凹陷的人，需要在咨询时确认脂肪分布，并按部位调节发数分配和能量设置的施术设计。</p>
+			</li>
+			<li>
+				<h3>改善法令纹，Density Noir、热玛吉、SERF 哪个好？</h3>
+				<p>法令纹的成因有松弛、脂肪分布、皮肤厚度等多种，无法由某一种设备来决定。重要的是在诊断后，设计法令纹周围所需的能量和发数分配。</p>
+			</li>
+			<li>
+				<h3>改善毛孔和细纹，哪种射频紧致比较好？</h3>
+				<p>毛孔和细纹也会因皮肤状态而采用不同的方法，射频紧致可通过胶原蛋白再生用于皮肤弹力和肤质管理。适合目的的设备和设置，将在咨询后确定。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">懂你的丽妍K。</p>
+		<p class="pz-invite">丽妍K医院由医疗团队直接确认皮肤状态，并针对每位客人的烦恼提出合适的紧致方案。比起一味选择更多的发数或施术，更重要的是确认自己的脸真正需要什么。</p>
+		<p class="pz-disclaimer">※ 施术效果和维持时间因人而异，可能出现发红、肿胀、疼痛、灼伤、脂肪萎缩等副作用。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院（Reyeonk Clinic）</dt>
+				<dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼<br>B1·3F·4F</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>官方网站</dt>
+				<dd><a href="https://reyeonk.co.kr" target="_blank" rel="noopener">reyeonk.co.kr</a> （韩语）</dd>
+				<dt>诊疗时间</dt>
+				<dd>周一、周二、周四 10:00–20:00<br>周五 10:00–19:00<br>周六 10:00–15:00<br>周三、周日及公共假日休诊</dd>
+				<dt>交通</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文以提供一般信息为目的。施术效果和结果因人而异。是否诊断和施术，请通过与医疗团队的咨询来决定。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "射频紧致 Density Noir vs 热玛吉 vs SERF，区别、效果·价格·疼痛全面解析",
+   "description": "Density Noir、热玛吉 FLX、SERF 的射频方式区别、600发对比、效果、价格、疼痛与维持时间，以及面部脂肪较少者的施术设计，由狎鸥亭丽妍K医院为您解析。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-26",
+   "dateModified": "2026-11-26",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/density-thermage-serf-difference/",
+   "image": "https://reyeonk2.com/img/og/density-thermage-serf-difference.jpg",
+   "author": {
+    "@id": "https://reyeonk2.com/#clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Density Noir、热玛吉、SERF 有什么区别？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "三种施术都是以射频能量向皮肤组织传递热刺激，诱导胶原蛋白再生。热玛吉 FLX 是 6.78MHz 单极，Density Noir Alpha 是单极与双极组合，SERF 是 6.78MHz 与 2MHz 的双频率单极，能量传递方式各不相同。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir、热玛吉、SERF 哪个更有效？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "并没有一种设备对所有人都最有效。适合的能量设置和施术部位会因皮肤厚度、面部脂肪量、细纹和松弛程度而不同，因此除了设备种类，医疗团队的皮肤诊断和施术设计同样重要。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir·热玛吉·SERF 的 600 发效果相同吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "即使同样是 600 发，各设备的探头面积、能量传递方式和输出设置也不同，并不意味着效果相同。向下颌线、面颊、法令纹周围等哪个部位传递多少能量，也同样重要。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "哪种射频紧致最不疼？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "各设备的冷却系统和能量传递方式有所不同，但疼痛会因个人敏感度、施术部位和能量强度而异。如果担心疼痛，建议咨询时确认麻醉方式以及能否调节能量。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "射频紧致的效果能维持多久？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有些人在施术后立刻就能感受到弹力变化，但胶原蛋白再生带来的变化可能在数周到数月内逐渐显现。维持时间和合适的再次施术时间，会因皮肤状态、生活习惯和衰老进程而不同。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "面部脂肪较少也可以做射频紧致吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "射频紧致不会影响脂肪，因此对面颊凹陷等副作用的担心较少。不过，面部脂肪较少或面颊凹陷的人需要更加细致的施术设计，施术前应确认皮肤厚度和脂肪分布，并按部位调节能量强度和照射范围。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "超声刀和射频紧致可以一起做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "超声刀利用聚焦超声波，热玛吉、Density Noir、SERF 则利用射频能量。根据皮肤状态，可以考虑并用不同能量的施术，但并不是所有人都需要联合施术。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir、热玛吉、SERF 的区别是什么？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "三者都通过射频诱导胶原蛋白再生，但能量传递方式不同。热玛吉 FLX 是 6.78MHz 单极，Density Noir Alpha 是单极与双极组合，SERF 是 6.78MHz 与 2MHz 的双频率单极。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir 和热玛吉哪个更有效？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "很难说哪一个对所有人都更有效。适合的设备和设置会因皮肤厚度、松弛程度、是否有细纹而不同，因此应首先由医疗团队进行诊断。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉和 SERF 哪个更好？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "两种设备的频率构成和能量传递方式不同。建议综合考虑施术目的、皮肤状态和疼痛敏感度，在咨询后再做选择。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir 和 SERF 的紧致有什么区别？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Density Noir Alpha 是单极与双极组合，SERF 是 6.78MHz 与 2MHz 的双频率单极。由于能量传递方式不同，施术设计也可能不同。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "射频紧致中，哪种施术对改善皮肤弹力比较好？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "如果以改善皮肤弹力为目的，热玛吉、Density Noir、SERF 都可以考虑。适合的设备和发数分配会因皮肤厚度和弹力下降程度而不同。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以用 Density Noir 或 SERF 代替热玛吉吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "由于各设备的能量传递方式不同，很难把它们看作简单的替代关系。建议在确认目前的皮肤状态和施术目的后，再选择合适的设备。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir、热玛吉、SERF 的 600 发价格有什么差异？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "价格会因设备、探头种类、发数和正在进行的活动而不同。具体费用将在咨询时，结合适合您皮肤状态的施术方案一并告知。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "性价比高的射频紧致是哪种？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "比起只看价格，更重要的是所需能量和发数分配是否适合您的皮肤。与其选择超出需要的发数或施术，不如通过咨询来制定方案。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉为什么比 Density Noir 贵？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "热玛吉 FLX 是 20 年以上安全性与效果经过验证的元祖射频紧致设备，正品探头费用等会反映在施术价格中。实际费用因医院和施术内容而异。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir、热玛吉、SERF 中哪种施术最不疼？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "疼痛不仅取决于设备，还会因个人敏感度、施术部位和能量强度而异，很难只选出一种。请在咨询时确认麻醉方式以及能否调节能量。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "有不需要睡眠麻醉也能做的射频紧致吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "射频紧致多通过表面麻醉膏等局部麻醉和能量调节来进行。是否需要睡眠麻醉以及麻醉方式，会根据疼痛敏感度在咨询时决定。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Density Noir、热玛吉、SERF 的效果能维持多久？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "胶原蛋白再生带来的变化会在数周到数月内逐渐显现，维持时间因皮肤状态、生活习惯和衰老进程而有个体差异。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "射频紧致的效果什么时候开始显现？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有些人在施术后立刻就能感受到弹力变化，但胶原蛋白再生带来的变化可能在数周到数月内逐渐显现。存在个体差异。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "射频紧致一年要做几次？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "没有固定次数，合适的再次施术时间会因皮肤状态、生活习惯和衰老进程而不同。建议与医疗团队商量后确定间隔。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "面部脂肪较少的人适合哪种射频紧致？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "比起特定设备，施术设计更重要。施术前应确认皮肤厚度和脂肪分布，并按部位调节能量强度和照射范围。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "皮肤较薄的人应该做哪种紧致？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "皮肤越薄，越需要更细致地调节能量设置和施术范围。建议直接确认皮肤厚度后，再决定是否施术及施术方法。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "哪种射频紧致对面颊凹陷的担心较少？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "射频紧致不会影响脂肪，因此对面颊凹陷等副作用的担心较少。不过，面部脂肪较少或面颊凹陷的人，需要在咨询时确认脂肪分布，并按部位调节发数分配和能量设置的施术设计。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "改善法令纹，Density Noir、热玛吉、SERF 哪个好？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "法令纹的成因有松弛、脂肪分布、皮肤厚度等多种，无法由某一种设备来决定。重要的是在诊断后，设计法令纹周围所需的能量和发数分配。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "改善毛孔和细纹，哪种射频紧致比较好？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "毛孔和细纹也会因皮肤状态而采用不同的方法，射频紧致可通过胶原蛋白再生用于皮肤弹力和肤质管理。适合目的的设备和设置，将在咨询后确定。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选中";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
