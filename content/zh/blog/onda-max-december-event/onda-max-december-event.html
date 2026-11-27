@@ -1,0 +1,495 @@
+---js
+const permalink = "/zh/blog/onda-max-december-event/";
+const layout = "layouts/base.njk";
+const lang = "zh";
+const title = "温达（Onda）提拉＋溶脂针，瘦脸与提拉同时进行：Onda MAX 的效果与价格（12月 58万韩元）";
+const description = "Onda MAX 是在温达（Onda）提拉的基础上结合 Sunsak 注射（溶脂针），同时针对瘦脸与提拉的复合治疗。由狎鸥亭丽妍K医院介绍温达提拉的效果、价格以及12月活动（8万焦耳＋面部 Sunsak 注射 58万韩元，不含增值税）。";
+const image = "/img/og/onda-max-december-event.jpg";
+const date = "2026-11-27";
+const alternates = [
+	{ lang: "ko", url: "/blog/onda-max-december-event/" },
+	{ lang: "en", url: "/en/blog/onda-max-december-event/" },
+	{ lang: "ja", url: "/ja/blog/onda-max-december-event/" },
+	{ lang: "zh-Hans", url: "/zh/blog/onda-max-december-event/" },
+	{ lang: "x-default", url: "/blog/onda-max-december-event/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">想要在没有疼痛负担的情况下，整理面部与身体线条</p>
+	<p class="pz-lead">仅靠运动和饮食，有些部位总会遇到瓶颈。12月，丽妍K医院推出在温达提拉的基础上加入 Sunsak 注射的 Onda MAX 活动。本文整理了温达提拉的效果与价格、Onda MAX 是什么样的治疗、治疗后的注意事项，以及17个常见问题。</p>
+	<div class="pz-summary">
+		<strong>要点速览</strong>
+		<ul>
+			<li>Onda MAX 是同时进行温达提拉和溶脂针（Sunsak 注射）的复合治疗，同时针对瘦脸与提拉。</li>
+			<li>12月活动：温达提拉8万焦耳＋面部 Sunsak 注射 58万韩元（不含增值税）</li>
+			<li>12月活动：Mint Lifting（민트리프팅）＋温达提拉＋面部 Sunsak 注射 148万韩元（不含增值税）</li>
+			<li>通常无需麻醉，治疗后可立即恢复日常生活。反应因人而异。</li>
+		</ul>
+	</div>
+	<figure class="pz-fig"><img src="./img/01-onda-max.jpg" alt="Onda MAX 温达提拉与 Sunsak 注射复合治疗介绍" width="752" height="752"></figure>
+
+	<div class="pz-section">
+		<h2>Onda MAX 价格：12月活动</h2>
+		<div class="pz-event">
+			<div class="pz-label">12月活动</div>
+			<h3>温达提拉8万焦耳＋面部 Sunsak 注射</h3>
+			<div class="pz-big"><strong>58万韩元</strong><span>不含增值税</span></div>
+		</div>
+		<div class="pz-event" style="margin-top: 16px">
+			<div class="pz-label">12月活动</div>
+			<h3>Mint Lifting（민트리프팅）＋温达提拉＋面部 Sunsak 注射</h3>
+			<div class="pz-big"><strong>148万韩元</strong><span>不含增值税</span></div>
+			<p class="pz-note">活动价格和期限可能变动，到院前请通过电话或 KakaoTalk 确认。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Onda MAX：瘦脸与提拉同时进行</h2>
+		<div class="pz-text">
+			<p>Onda MAX 是同时进行<b>温达提拉</b>和 <b>Sunsak 注射（溶脂针）</b>的复合治疗。</p>
+			<p>温达提拉通过微波能量负责减少脂肪并改善皮肤紧致度，Sunsak 注射则再一次整理不需要的脂肪细胞，目标是更纤细、更紧致的面部和身体线条。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>温达提拉的效果，原理是什么？</h2>
+		<div class="pz-text">
+			<p>温达提拉是一种非手术治疗，将微波能量传递到皮肤深层，整理不需要的脂肪并促进胶原蛋白生成，以改善松弛皮肤的紧致度。</p>
+			<p>治疗过程中通常只有轻微的温热感，虽然因人而异，大多数人可以立即恢复日常生活。治疗后偶尔会出现肿胀、紧绷感、瘙痒、肌肉沉重感或表情不适，大多是暂时的。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Sunsak 注射有什么不同</h2>
+		<div class="pz-text">
+			<p>Sunsak 注射是丽妍K医院根据多年经验，将用于溶脂的药物以高浓度混合，并以较少用量进行的溶脂针。由于用量少，淤青和肿胀的负担相对较小，且不使用类固醇和 PPC。</p>
+			<p>关于 Sunsak 注射的详细内容，请参阅<a href="https://reyeonk.co.kr/landing/sunsak-chin" target="_blank" rel="noopener">双下巴 Sunsak 注射介绍页面</a>（韩语）。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>焦耳数越多越好吗？</h2>
+		<div class="pz-text">
+			<p>焦耳数并不是越多越好。脂肪量不多时，我们不建议过度增加能量；能量集中在某一处，也可能出现不对称或表面凹凸不平。</p>
+			<p>因此本次活动以8万焦耳为基本配置，实际的焦耳数和能量会在咨询时确认您的脂肪量、皮肤状态以及面部和身体线条后，由院长决定。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>治疗后注意事项</h2>
+		<ul class="pz-list">
+			<li><h3>2天内请避免冷水洗脸和使用冰袋</h3><p>这是通过热刺激进行的治疗，治疗后约2天内请避免冷刺激。</p></li>
+			<li><h3>外出时请务必涂抹防晒霜</h3><p>治疗后皮肤可能对刺激较为敏感。</p></li>
+			<li><h3>请避免去角质一周左右</h3><p>建议一周左右不要进行磨砂、焕肤等去角质护理。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>同样的治疗，由谁来设计很重要</h2>
+		<div class="pz-text">
+			<p>与其一味地减少脂肪，更重要的是先观察您自己的面部和身体线条，再进行设计。丽妍K医院由拥有16年以上脂肪整形经验的医疗团队亲自咨询，并结合线条仔细进行。</p>
+			<p>医院实行预约制，无需等候；设有中文、日语、英语咨询主管和协调员，可以无语言障碍地进行咨询。丽妍K医院是已注册的外国患者招揽医疗机构（登记号 M-2022-01-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>丽妍K医院医疗团队</h2>
+		<div class="pz-text">
+			<p>丽妍K医院自2009年开业以来，一直在积累扎实的治疗经验和案例。</p>
+			<p>除 Choi Hyunho（최현호）院长外，其他院长也作为一对一专属医生，从咨询、施术到收尾亲自负责。</p>
+			<p><b>来体验属于您的那一点不同。</b></p>
+		</div>
+		<ul class="pz-list" style="margin-top: 24px">
+			<li>
+				<h3>Choi Hyunho（최현호） 院长</h3>
+				<p>原 Mayfure 医院（메이퓨어의원）院长 · 原 Tones 医院（톤즈의원）院长</p>
+				<p>大韩激光皮肤毛发学会（대한레이저피부모발학회）正式会员 · 大韩美容整形激光医学会（대한미용성형레이저의학회）正式会员 · 大韩肥胖美容学会（대한비만미용학회）正式会员 · 大韩填充剂学会（대한필러학회）准会员</p>
+			</li>
+			<li>
+				<h3>李枓瓒（이두찬） 代表院长</h3>
+				<p>原 Mayfure 医院（메이퓨어의원）院长 · 原 Jaylin 医院（제이린의원）院长 · 原 Mimisum 医院（미미썸의원）院长</p>
+				<p>AestheFill APAC Expert (2026) · SHENB Virtue RF Key-doctor · Restylane Kysse™ MASTER · SOMA (Thermage) Certification of Training 高级课程结业 · Atiere Key-doctor</p>
+				<p>大韩激光皮肤毛发学会（대한레이저피부모발학회）正式会员 · 大韩美容整形激光医学会（대한미용성형레이저의학회）正式会员 · 大韩肥胖美容学会（대한비만미용학회）正式会员 · 大韩填充剂学会（대한필러학회）正式会员</p>
+			</li>
+			<li>
+				<h3>金鉉秀（김현수） 代表院长</h3>
+				<p>大韩美容外科学会（KACS）（대한미용외과학회）学术理事 · Sunsak 注射（순삭주사）的开发者及专利持有人</p>
+				<p>Cynergy MPX Key Doctor · Harvest Jet 2 (Body Jet EVO) Training Doctor · Smartlipo TPX · Cellulaze Asia Training Doctor</p>
+			</li>
+		</ul>
+		<p class="pz-note">详细介绍请见<a href="/zh/doctors/">医疗团队页面</a>。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>温达提拉17个常见问题</h2>
+		<ul class="pz-list">
+			<li><h3>Onda 使用什么样的能量？</h3><p>使用微波能量，作用于皮下脂肪层和真皮层。</p></li>
+			<li><h3>与射频（RF）或超声波（HIFU）有什么不同？</h3><p>RF 和 HIFU 分别专注于刺激胶原蛋白和聚焦能量。Onda 的特点是在尽量减少皮肤表面损伤的同时作用于脂肪层。</p></li>
+			<li><h3>面部和身体都可以做吗？</h3><p>面部和身体都可以。根据部位选择3mm或7mm治疗头，或将两者组合使用。</p></li>
+			<li><h3>需要麻醉吗？</h3><p>通过智能冷却减轻不适感，通常无需麻醉即可进行。对疼痛敏感的情况下，可以使用麻醉膏。</p></li>
+			<li><h3>溶脂效果真的有吗？</h3><p>其原理是缩小脂肪细胞的体积，并使一部分脂肪细胞凋亡。变化幅度小于吸脂，但在双下巴等部位可以期待有所帮助，效果因人而异。</p></li>
+			<li><h3>可以和超声刀或热玛吉一起做吗？</h3><p>可以联合进行。组合和顺序会在咨询后，根据皮肤状态来决定。</p></li>
+			<li><h3>Onda 的效果是永久的吗？</h3><p>已凋亡的脂肪细胞不会再生，但线条可能因体重变化或衰老而再次改变。因此建议每2～3个月重复治疗。</p></li>
+			<li><h3>治疗过程中疼痛程度如何？</h3><p>我们介绍为无需麻醉即可进行的程度。能量较高时可能会感到不适，院长会根据您的反应实时调整。</p></li>
+			<li><h3>有痘痘或皮肤敏感也可以做吗？</h3><p>由于对皮肤表面的损伤较小，一般可以进行；但如果有严重的活动性痘痘或炎症，建议推迟治疗。</p></li>
+			<li><h3>做完其他提拉治疗后，可以用 Onda 做维持管理吗？</h3><p>可以。建议每2～3个月进行一次维持管理。</p></li>
+			<li><h3>Onda 治疗价格是多少？</h3><p>因部位和范围而异，具体金额会在院长咨询后告知。作为12月活动，温达提拉8万焦耳＋面部 Sunsak 注射为58万韩元（不含增值税），Mint Lifting（민트리프팅）＋温达提拉＋面部 Sunsak 注射为148万韩元（不含增值税）。</p></li>
+			<li><h3>Onda 和 InMode 有什么区别？</h3><p>Onda 使用微波，InMode 使用射频（RF）。Onda 的特点是尽量减少对皮肤表面的刺激。</p></li>
+			<li><h3>Onda 的效果能持续多久？</h3><p>因人而异，通常介绍为4～5个月左右。持续的管理和重复治疗会有帮助。</p></li>
+			<li><h3>做完 Onda 后可以马上恢复日常生活吗？</h3><p>可以。可能会出现轻微肿胀，但大多很快消退。</p></li>
+			<li><h3>Onda 特别推荐给哪些人？</h3><p>推荐给希望同时改善脂肪和紧致度的人、希望无恢复期治疗的人，以及对皮肤表面刺激敏感的人。</p></li>
+			<li><h3>做完 Onda 已经过了几天，但没有效果。</h3><p>脂肪细胞需要经历逐渐被排出体外的过程，因此几天内就下判断还为时过早。变化会逐渐显现，且因人而异。</p></li>
+			<li><h3>Onda 以多少 kJ 进行治疗？</h3><p>根据部位和皮肤状态决定。通常面部约100kJ，男性面部约120kJ，身体约150kJ左右；本次活动以8万焦耳（80kJ）为配置。最终能量由院长在咨询时决定。</p></li>
+		</ul>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">想知道多少焦耳适合自己吗？</p>
+		<p class="pz-invite">Onda MAX 是否适合您的线条、多少焦耳合适，会在咨询时确认您目前的状态后为您说明。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院（Reyeonk Clinic）</dt>
+				<dd>首尔特别市江南区彦州路172街64号 Reyeonk大楼<br>B1·3F·4F</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>官方网站</dt>
+				<dd><a href="https://reyeonk.co.kr/onda" target="_blank" rel="noopener">reyeonk.co.kr/onda</a> （韩语）</dd>
+				<dt>交通</dt>
+				<dd><a href="/zh/location/">查看交通指南</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文仅为一般信息介绍，治疗效果和恢复速度因人而异。风险、副作用及治疗是否适合您，请咨询医疗团队。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "温达（Onda）提拉＋溶脂针，瘦脸与提拉同时进行：Onda MAX 的效果与价格（12月 58万韩元）",
+   "description": "Onda MAX 是在温达（Onda）提拉的基础上结合 Sunsak 注射（溶脂针），同时针对瘦脸与提拉的复合治疗。由狎鸥亭丽妍K医院介绍温达提拉的效果、价格以及12月活动（8万焦耳＋面部 Sunsak 注射 58万韩元，不含增值税）。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-27",
+   "dateModified": "2026-11-27",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/onda-max-december-event/",
+   "image": "https://reyeonk2.com/img/og/onda-max-december-event.jpg",
+   "keywords": "温达提拉效果, 温达提拉价格, Onda MAX, 温达提拉, 溶脂针, 瘦脸",
+   "about": [
+    "Onda MAX",
+    "温达提拉效果",
+    "温达提拉价格",
+    "溶脂针",
+    "瘦脸",
+    "提拉",
+    "丽妍K医院"
+   ],
+   "author": {
+    "@type": "Organization",
+    "name": "丽妍K医院"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "zh-Hans",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Onda 使用什么样的能量？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "使用微波能量，作用于皮下脂肪层和真皮层。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "与射频（RF）或超声波（HIFU）有什么不同？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "RF 和 HIFU 分别专注于刺激胶原蛋白和聚焦能量。Onda 的特点是在尽量减少皮肤表面损伤的同时作用于脂肪层。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "面部和身体都可以做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "面部和身体都可以。根据部位选择3mm或7mm治疗头，或将两者组合使用。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "需要麻醉吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "通过智能冷却减轻不适感，通常无需麻醉即可进行。对疼痛敏感的情况下，可以使用麻醉膏。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "溶脂效果真的有吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "其原理是缩小脂肪细胞的体积，并使一部分脂肪细胞凋亡。变化幅度小于吸脂，但在双下巴等部位可以期待有所帮助，效果因人而异。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以和超声刀或热玛吉一起做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以联合进行。组合和顺序会在咨询后，根据皮肤状态来决定。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Onda 的效果是永久的吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "已凋亡的脂肪细胞不会再生，但线条可能因体重变化或衰老而再次改变。因此建议每2～3个月重复治疗。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "治疗过程中疼痛程度如何？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "我们介绍为无需麻醉即可进行的程度。能量较高时可能会感到不适，院长会根据您的反应实时调整。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "有痘痘或皮肤敏感也可以做吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "由于对皮肤表面的损伤较小，一般可以进行；但如果有严重的活动性痘痘或炎症，建议推迟治疗。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "做完其他提拉治疗后，可以用 Onda 做维持管理吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。建议每2～3个月进行一次维持管理。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Onda 治疗价格是多少？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "因部位和范围而异，具体金额会在院长咨询后告知。作为12月活动，温达提拉8万焦耳＋面部 Sunsak 注射为58万韩元（不含增值税），Mint Lifting（민트리프팅）＋温达提拉＋面部 Sunsak 注射为148万韩元（不含增值税）。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Onda 和 InMode 有什么区别？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Onda 使用微波，InMode 使用射频（RF）。Onda 的特点是尽量减少对皮肤表面的刺激。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Onda 的效果能持续多久？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "因人而异，通常介绍为4～5个月左右。持续的管理和重复治疗会有帮助。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "做完 Onda 后可以马上恢复日常生活吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。可能会出现轻微肿胀，但大多很快消退。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Onda 特别推荐给哪些人？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "推荐给希望同时改善脂肪和紧致度的人、希望无恢复期治疗的人，以及对皮肤表面刺激敏感的人。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "做完 Onda 已经过了几天，但没有效果。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "脂肪细胞需要经历逐渐被排出体外的过程，因此几天内就下判断还为时过早。变化会逐渐显现，且因人而异。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Onda 以多少 kJ 进行治疗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "根据部位和皮肤状态决定。通常面部约100kJ，男性面部约120kJ，身体约150kJ左右；本次活动以8万焦耳（80kJ）为配置。最终能量由院长在咨询时决定。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "复制号码"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "已选中";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "已复制"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
