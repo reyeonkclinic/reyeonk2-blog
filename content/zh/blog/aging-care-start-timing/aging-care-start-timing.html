@@ -1,0 +1,396 @@
+---js
+const permalink = "/zh/blog/aging-care-start-timing/";
+const layout = "layouts/base.njk";
+const lang = "zh";
+const title = "抗衰老管理应从何时开始？预防性皮肤管理与 8 个常见问题";
+const description = "预防管理的核心不在于尽早开始治疗，而是了解自己皮肤的变化，在需要的时候做需要的程度。狎鸥亭丽妍K医院李枓瓒院长为您讲解，并解答 8 个常见问题。";
+const date = "2026-11-28";
+const alternates = [
+	{ lang: "ko", url: "/blog/aging-care-start-timing/" },
+	{ lang: "en", url: "/en/blog/aging-care-start-timing/" },
+	{ lang: "ja", url: "/ja/blog/aging-care-start-timing/" },
+	{ lang: "zh-Hans", url: "/zh/blog/aging-care-start-timing/" },
+	{ lang: "x-default", url: "/blog/aging-care-start-timing/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">在“健康智能”时代，重新思考预防性皮肤管理</p>
+	<p class="pz-lead">预防管理的核心不在于尽早开始治疗，而在于了解自己皮肤的变化，在需要的时候、做需要的程度，从而减少不必要的治疗。这是狎鸥亭丽妍K医院李枓瓒院长撰写的专栏。</p>
+
+	<div class="pz-summary">
+		<strong>要点速览</strong>
+		<ul>
+			<li>开始抗衰老管理的年龄，<b>并没有对所有人都适用的唯一答案。</b></li>
+			<li>比起年龄，我们先确认<b>皮肤状态</b>（水分与屏障、色素与血管、真皮密度、脂肪分布、面部活动）。</li>
+			<li>预防并不是从年轻时就反复做强力治疗，而是<b>分清现在该做的和可以先等一等的</b>。</li>
+			<li>记录最初的状态和治疗原因，并<b>按同一标准重新评估</b>，才能减少不必要的治疗。</li>
+			<li>治疗是否必要及恢复过程因人而异，需<b>亲自看过皮肤后，在咨询中决定</b>。</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>不凭感觉，而是用信息管理健康的人们</h2>
+		<div class="pz-text">
+			<p>现在很多人会记录自己睡了多久、一天活动了多少、吃了什么。不再只凭模糊的感觉判断健康状态，而是用数值和记录来确认，这种态度已成为日常。医美领域也出现了同样的变化。患者不再只说“帮我变好看一点”。他们想知道自己的皮肤为什么干燥、紧致度是在哪一层下降的、现在需要的管理和可以推迟的管理分别是什么。</p>
+			<p>这种态度可以称为“健康智能”。仅仅了解很多健康信息还不够。读懂自己的状态、分清信息的意义，并把它运用到实际生活和治疗选择中，这种能力才重要。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>长寿时代让预防提前了</h2>
+		<div class="pz-text">
+			<p>在诊疗中最让我惋惜的情况之一，是松弛已经相当明显之后才来的 40 多岁后半的女性。20 岁后半本来就是很美的年纪，那时有不少问题相对容易矫正。但她们不知道有这种可能性，度过了年轻的时期，后来才来说“我以为这是做不了的”。每次听到这句话，我都会想，要是能早一点了解自己的状态就好了。</p>
+			<p>不过，“预防”并不是指从年轻时就反复做强力治疗。皮肤屏障不稳定的人可能需要先恢复，而问题出在表情习惯的人，与脂肪分布或皮肤弹性发生变化的人，所需要的方式各不相同。不区分当前状态的预防管理，反而可能只增加费用和负担。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>按状态而不是按年龄来管理</h2>
+		<div class="pz-text">
+			<p>同样是 30 多岁，烦恼也不一样。有人的问题是反复出现的炎症和色素沉着，有人则是眼角细纹或下颌线的变化先显现出来。所以，不应只凭年龄来决定治疗，而要综合观察皮肤的水分与屏障、色素与血管、真皮密度、脂肪分布和面部活动。</p>
+			<p>丽妍K在咨询时首先确认的，也不是设备的名称。我们先询问现在最在意的变化是什么、希望保持怎样的印象、日常生活能接受多长的恢复期。然后在当前状态下，确定优先级最高的一项，只在必要时才衔接下一步。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>好的预防管理会留下记录</h2>
+		<div class="pz-text">
+			<p>预防管理比起一次治疗的结果，更重要的是确认变化的方向。需要记录最初的状态和治疗原因，并在一段时间后按同一标准重新评估。这样才能判断效果是否足够、是否需要维持管理、下一次治疗是否可以推迟。</p>
+			<p>在这个过程中，照片和皮肤状态记录不是为了推荐更多治疗的资料。它应当是用来确认之前的选择是否恰当、减去不需要的治疗的依据。患者也要能理解自己的变化过程，下一次的决定才能出自判断，而不是焦虑。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>不错过需要的时机，减少不必要的治疗</h2>
+		<div class="pz-text">
+			<p>开始抗衰老管理，并没有对所有人都适用的同一个年龄。需要依次确认：现在有没有困扰的变化、这种变化仅靠生活管理能否调节、如果需要医疗介入，什么程度才合适。</p>
+			<p>我所理解的预防管理，并不是从年轻时起就无条件地治疗。而是为了避免在不知道最佳时机的情况下错过后又后悔，提前了解现在可以做什么、暂时还不必做什么。不错过需要的时机，减少不必要的治疗，这就是预防管理的目的。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>咨询前可以先想一想的问题</h2>
+		<ul class="pz-bullets">
+			<li>现在最先觉得有变化的是哪个部位？</li>
+			<li>比起看起来更年轻的脸，您更想长久保持的是怎样的印象？</li>
+			<li>一次性的大变化和负担较小的循序渐进的变化，哪一种更适合您？</li>
+		</ul>
+		<p class="pz-note">治疗是否必要及恢复过程因人而异。现在做什么、推迟什么，需亲自看过皮肤后在咨询中决定。</p>
+		<p class="pz-note">参考论文：Hughes MC 等，关于健康成年人使用防晒霜与皮肤老化的随机对照试验，<i>Ann Intern Med</i>，2013 年（<a href="https://pubmed.ncbi.nlm.nih.gov/23732711/" target="_blank" rel="noopener">PMID 23732711</a>）。持续使用防晒霜的一组，皮肤老化进展更慢。结果因人而异。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>8 个常见问题</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>热玛吉FLX和超声刀，哪个适合我？</h3>
+				<p>如果目的是提拉松弛，适合超声刀；如果烦恼是皮肤紧致度、肤质和细纹，适合热玛吉FLX。超声刀通过超声波（HIFU）作用于 SMAS 筋膜层，热玛吉FLX通过射频（RF）刺激真皮胶原蛋白。也可以同一天做同时处理两层的“热超联合（울써마지）”。适合哪种组合，由院长在咨询中决定。</p>
+			</li>
+			<li>
+				<h3>热玛吉FLX和超声刀的效果能维持多久？</h3>
+				<p>热玛吉FLX通常维持 10～12 个月，超声刀平均维持 8～9 个月。在胶原蛋白重新生成的 1～2 个月期间效果最明显，并因皮肤状态、年龄和生活习惯而有个体差异。</p>
+			</li>
+			<li>
+				<h3>在首尔做完治疗后可以马上坐飞机吗？</h3>
+				<p>肉毒素、填充、水光（皮肤营养）针、Sunsak 注射（溶脂针）、热玛吉FLX、超声刀大多可以当天出行。Virtue RF、Potenza、Eyethera（아이쎄라）可能会有 1～3 天的泛红；线雕建议留出约 1 周、吸脂建议留出 1 周以内的恢复期。出境日程请务必在咨询时告知我们。</p>
+			</li>
+			<li>
+				<h3>如何确认是正品超声刀、热玛吉？</h3>
+				<p>正品超声刀使用 Merz Aesthetics（默茨）官方认证设备，可通过探头（Tip）上的 NFC 标签确认是否为正品。治疗前请要求亲自查看设备和探头。丽妍K医院是 Merz 官方认证合作机构，只使用正品设备和探头。</p>
+			</li>
+			<li>
+				<h3>咨询当天可以直接做治疗吗？</h3>
+				<p>可以，多数情况下咨询当天即可直接治疗。热玛吉FLX、超声刀、Sunsak 注射（溶脂针）、肉毒素、填充等大部分非手术治疗都可以当天进行。如果行程较短，请在预约时提前告知。</p>
+			</li>
+			<li>
+				<h3>超声刀、热玛吉会很疼吗？</h3>
+				<p>说实话，是有一定疼痛的。不过，延长麻醉膏的敷用时间，或选择气体麻醉、睡眠麻醉，会舒适很多；对疼痛敏感的话，咨询时也会一起调整能量。</p>
+			</li>
+			<li>
+				<h3>外国人也可以在丽妍K医院接受治疗吗？</h3>
+				<p>可以。提供英语、中文咨询，可通过 17 个国家和语言的预约表单（GLOBAL BOOKING），或 WhatsApp、LINE、WeChat 预约。提交申请后，工作人员会与您联系，确定日期和时间。</p>
+			</li>
+			<li>
+				<h3>可以用国外银行卡或微信支付付款吗？</h3>
+				<p>可以。支持 Visa、Mastercard 等海外信用卡，以及微信支付（WeChat Pay）和支付宝（Alipay）。其他付款方式，请在预约时咨询。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>咨询与诊疗说明</h2>
+		<div class="pz-text">
+			<p>丽妍K医院自 2009 年开业以来一直在狎鸥亭坐诊，从咨询、治疗到收尾均由院长亲自负责。我们会从当前状态下优先级更高的管理开始为您说明。</p>
+			<p>医院实行预约制，因此无需等待即可进行咨询和治疗。</p>
+			<p>设有中文、日语、英语咨询主任和协调员，沟通无语言障碍。</p>
+			<p>丽妍K医院是经登记的外国人患者接收医疗机构（登记编号 M-2022-01-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">不错过需要的时机，减少不必要的治疗。</p>
+		<p class="pz-invite">标准不是年龄，而是您现在的皮肤状态。先做什么、什么可以等，需亲自看过皮肤后在咨询中决定。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>丽妍K医院</dt>
+				<dd>首尔特别市江南区彦州路172街 64（Reyeonk 大楼）<br>地下 1 层、3 层、4 层</dd>
+				<dt>电话</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">复制号码</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">一对一咨询</a></dd>
+				<dt>交通指南</dt>
+				<dd><a href="/zh/location/">查看前往方式</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本文仅为关于抗衰老管理和治疗的一般信息介绍。治疗效果、疼痛、恢复时间及副作用因个人皮肤状态和治疗方法而异。诊断及是否治疗，请通过与医疗团队的咨询决定。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "抗衰老管理应从何时开始？预防性皮肤管理与 8 个常见问题",
+   "description": "预防管理的核心不在于尽早开始治疗，而是了解自己皮肤的变化，在需要的时候做需要的程度。狎鸥亭丽妍K医院李枓瓒院长为您讲解，并解答 8 个常见问题。",
+   "inLanguage": "zh-Hans",
+   "datePublished": "2026-11-28",
+   "dateModified": "2026-11-28",
+   "mainEntityOfPage": "https://reyeonk2.com/zh/blog/aging-care-start-timing/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "zh-Hans",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "热玛吉FLX和超声刀，哪个适合我？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "如果目的是提拉松弛，适合超声刀；如果烦恼是皮肤紧致度、肤质和细纹，适合热玛吉FLX。超声刀通过超声波（HIFU）作用于 SMAS 筋膜层，热玛吉FLX通过射频（RF）刺激真皮胶原蛋白。也可以同一天做同时处理两层的“热超联合（울써마지）”。适合哪种组合，由院长在咨询中决定。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "热玛吉FLX和超声刀的效果能维持多久？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "热玛吉FLX通常维持 10～12 个月，超声刀平均维持 8～9 个月。在胶原蛋白重新生成的 1～2 个月期间效果最明显，并因皮肤状态、年龄和生活习惯而有个体差异。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "在首尔做完治疗后可以马上坐飞机吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "肉毒素、填充、水光（皮肤营养）针、Sunsak 注射（溶脂针）、热玛吉FLX、超声刀大多可以当天出行。Virtue RF、Potenza、Eyethera（아이쎄라）可能会有 1～3 天的泛红；线雕建议留出约 1 周、吸脂建议留出 1 周以内的恢复期。出境日程请务必在咨询时告知我们。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "如何确认是正品超声刀、热玛吉？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "正品超声刀使用 Merz Aesthetics（默茨）官方认证设备，可通过探头（Tip）上的 NFC 标签确认是否为正品。治疗前请要求亲自查看设备和探头。丽妍K医院是 Merz 官方认证合作机构，只使用正品设备和探头。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "咨询当天可以直接做治疗吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，多数情况下咨询当天即可直接治疗。热玛吉FLX、超声刀、Sunsak 注射（溶脂针）、肉毒素、填充等大部分非手术治疗都可以当天进行。如果行程较短，请在预约时提前告知。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "超声刀、热玛吉会很疼吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "说实话，是有一定疼痛的。不过，延长麻醉膏的敷用时间，或选择气体麻醉、睡眠麻醉，会舒适很多；对疼痛敏感的话，咨询时也会一起调整能量。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "外国人也可以在丽妍K医院接受治疗吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。提供英语、中文咨询，可通过 17 个国家和语言的预约表单（GLOBAL BOOKING），或 WhatsApp、LINE、WeChat 预约。提交申请后，工作人员会与您联系，确定日期和时间。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以用国外银行卡或微信支付付款吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。支持 Visa、Mastercard 等海外信用卡，以及微信支付（WeChat Pay）和支付宝（Alipay）。其他付款方式，请在预约时咨询。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+

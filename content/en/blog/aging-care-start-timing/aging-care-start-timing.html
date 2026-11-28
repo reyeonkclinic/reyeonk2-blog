@@ -1,0 +1,396 @@
+---js
+const permalink = "/en/blog/aging-care-start-timing/";
+const layout = "layouts/base.njk";
+const lang = "en";
+const title = "When Should Anti-Aging Care Start? Preventive Skin Care and 8 Common Questions";
+const description = "Preventive care is not about starting treatments early. It is about understanding how your skin changes and stepping in only when needed. Dr. Lee Doochan of Reyeonk Clinic in Apgujeong explains, with 8 common questions answered.";
+const date = "2026-11-28";
+const alternates = [
+	{ lang: "ko", url: "/blog/aging-care-start-timing/" },
+	{ lang: "en", url: "/en/blog/aging-care-start-timing/" },
+	{ lang: "ja", url: "/ja/blog/aging-care-start-timing/" },
+	{ lang: "zh-Hans", url: "/zh/blog/aging-care-start-timing/" },
+	{ lang: "x-default", url: "/blog/aging-care-start-timing/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">Preventive skin care, rethought for the era of health intelligence</p>
+	<p class="pz-lead">The core of preventive care is not starting treatments early. It is understanding how your skin is changing and stepping in only at the right time and only as much as needed, so that unnecessary treatment is reduced. This column was written by Dr. Lee Doochan of Reyeonk Clinic in Apgujeong.</p>
+
+	<div class="pz-summary">
+		<strong>At a glance</strong>
+		<ul>
+			<li>There is <b>no single age that is the right answer for everyone</b> to start anti-aging care.</li>
+			<li>We look at <b>skin condition</b> before age: moisture and barrier, pigment and blood vessels, dermal density, fat distribution and facial movement.</li>
+			<li>Prevention does not mean repeating strong treatments from a young age. It means <b>telling apart what to do now from what can wait</b>.</li>
+			<li>Recording your starting condition and the reason for treatment, then <b>re-evaluating by the same criteria</b>, helps reduce unnecessary treatment.</li>
+			<li>Whether treatment is needed and how it goes vary between individuals, so it is decided <b>at a consultation after seeing your skin in person</b>.</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>People who manage health with information, not hunches</h2>
+		<div class="pz-text">
+			<p>These days people track how long they slept, how much they moved and what they ate. Judging your health by numbers and records rather than vague feelings has become an everyday habit. The same shift is happening in aesthetic medicine. Patients no longer stop at “please make me look better.” They want to know why their skin is dry, which layer has lost firmness, and which care is needed now and which can wait.</p>
+			<p>This attitude can be called health intelligence. Knowing a lot about health is not enough. What matters is the ability to read your own condition, tell what information really means, and apply it to daily life and treatment choices.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Longer lives have brought prevention forward</h2>
+		<div class="pz-text">
+			<p>One of the most regrettable situations in practice is meeting women in their late forties after sagging has already advanced considerably. The late twenties is a lovely age, and many things can be corrected relatively easily then. But they spent their younger years without knowing that was possible, and later come in saying, “I thought this couldn't be done.” Each time I hear that, I wish they had understood their own condition a little earlier.</p>
+			<p>That said, “prevention” does not mean repeating strong treatments from a young age. For someone whose skin barrier is unsettled, recovery may come first, and a person whose problem is expression habits needs a different approach from someone whose fat distribution or skin firmness has changed. Prevention that does not distinguish the current condition can simply add cost and burden.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Care that fits your condition, not your age</h2>
+		<div class="pz-text">
+			<p>Even in the same decade, concerns differ. One person's issue is recurring inflammation and pigmentation, while another first notices fine lines around the eyes or a change in the jawline. So rather than choosing treatments by age alone, we look together at skin moisture and barrier, pigment and blood vessels, dermal density, fat distribution and facial movement.</p>
+			<p>What we check first at Reyeonk is not the name of a device. We start by asking what change bothers you most, what impression you want to keep, and how much recovery time your daily life can allow. Then we choose the one highest-priority step for your current condition, and connect to the next step only when necessary.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Good preventive care leaves records</h2>
+		<div class="pz-text">
+			<p>In preventive care, what matters is the direction of change rather than the result of a single treatment. Record the starting condition and the reason for treatment, and after some time evaluate again by the same criteria. Only then can you judge whether the effect is sufficient, whether maintenance is needed, and whether the next treatment can wait.</p>
+			<p>Photos and skin records in this process are not material for recommending more treatments. They should be evidence for checking whether an earlier choice was appropriate and for removing treatments that are not needed. Patients, too, need to understand how they have changed so that the next decision is made on judgment rather than anxiety.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Not missing the right time, and reducing unnecessary treatment</h2>
+		<div class="pz-text">
+			<p>There is no age that is the right answer for everyone to start anti-aging care. We need to check, in order, whether there is a change that bothers you now, whether that change can be managed with lifestyle care alone, and if medical intervention is needed, how much is appropriate.</p>
+			<p>Preventive care, as I see it, does not mean treating without question from a young age. It means knowing in advance what you can do now and what you do not yet need to do, so that you do not pass the best time unknowingly and regret it later. Not missing the time that matters and reducing unnecessary treatment: that is the purpose of preventive care.</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>Questions to consider before a consultation</h2>
+		<ul class="pz-bullets">
+			<li>Which part have you noticed changing first?</li>
+			<li>Rather than a younger-looking face, what impression do you want to keep for longer?</li>
+			<li>Which suits you better: one big change, or gradual changes with less burden?</li>
+		</ul>
+		<p class="pz-note">Whether treatment is needed and how it goes vary between individuals. What to do now and what to postpone is decided at a consultation after seeing your skin in person.</p>
+		<p class="pz-note">Reference study: Hughes MC et al., a randomized trial of sunscreen use and skin aging in healthy adults, <i>Ann Intern Med</i>, 2013 (<a href="https://pubmed.ncbi.nlm.nih.gov/23732711/" target="_blank" rel="noopener">PMID 23732711</a>). Skin aging progressed more slowly in the group that used sunscreen consistently; results vary between individuals.</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>8 common questions</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>Thermage FLX or Ulthera: which is right for me?</h3>
+				<p>If the aim is to lift sagging, Ulthera; if the concern is skin firmness, texture and fine lines, Thermage FLX. Ulthera uses ultrasound (HIFU) to work on the SMAS fascia layer, and Thermage FLX uses radiofrequency (RF) to stimulate dermal collagen. The two can also be done on the same day as “Ulthermage,” which treats both layers. Which combination suits you is decided at a consultation with the doctor.</p>
+			</li>
+			<li>
+				<h3>How long do the effects of Thermage FLX and Ulthera last?</h3>
+				<p>Thermage FLX usually lasts 10 to 12 months and Ulthera 8 to 9 months on average. The effect becomes most noticeable one to two months after treatment, while new collagen builds up, and varies between individuals with skin condition, age and lifestyle.</p>
+			</li>
+			<li>
+				<h3>Can I fly right after treatment in Seoul?</h3>
+				<p>For Botox, fillers, skin boosters, Sunsak injection, Thermage FLX and Ulthera, travel on the same day is generally not a problem. After VirtueRF, Potenza and Eyethera, redness may remain for 1 to 3 days. We suggest allowing about a week of recovery after thread lifting, and within a week after liposuction. Please be sure to tell us your departure schedule at the consultation.</p>
+			</li>
+			<li>
+				<h3>How can I confirm that Ulthera or Thermage is genuine?</h3>
+				<p>Genuine Ulthera uses equipment certified by Merz Aesthetics, and the NFC tag on the tip lets you verify authenticity. Ask to see the device and tip yourself before treatment. Reyeonk Clinic is an official Merz-certified partner and uses only genuine devices and tips.</p>
+			</li>
+			<li>
+				<h3>Can I have treatment on the same day as my consultation?</h3>
+				<p>Yes, in many cases treatment is possible on the day of your consultation. Most non-surgical treatments, including Thermage FLX, Ulthera, Sunsak injection, Botox and fillers, can be done the same day. If your schedule is short, please let us know when you book.</p>
+			</li>
+			<li>
+				<h3>Are Ulthera and Thermage very painful?</h3>
+				<p>Honestly, there is some pain. However, it can be made much more comfortable by lengthening the numbing cream time or choosing gas or sleep anesthesia, and if you are sensitive to pain we will adjust the energy together at the consultation.</p>
+			</li>
+			<li>
+				<h3>Can foreigners be treated at Reyeonk Clinic?</h3>
+				<p>Yes. Consultations are available in English and Chinese, and you can book through the GLOBAL BOOKING forms in 17 countries and languages, or via WhatsApp, LINE and WeChat. After you apply, our staff will contact you to confirm the date and time.</p>
+			</li>
+			<li>
+				<h3>Can I pay with a foreign card or WeChat Pay?</h3>
+				<p>Yes. We accept overseas credit cards such as Visa and Mastercard, as well as WeChat Pay and Alipay. For other payment methods, please ask when you book.</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>Consultation and clinic information</h2>
+		<div class="pz-text">
+			<p>Reyeonk Clinic has been in Apgujeong since opening in 2009, and our doctors personally handle consultation, treatment and follow-up. We guide you to the higher-priority care for your current condition first.</p>
+			<p>We operate by appointment, so you can have your consultation and treatment without waiting.</p>
+			<p>Our Chinese-, Japanese- and English-speaking consultation staff and coordinators are available, so you can consult comfortably.</p>
+			<p>Reyeonk Clinic is a medical institution registered for the attraction of foreign patients (Registration No. M-2022-01-08-6785).</p>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">Don't miss the time that matters, and reduce unnecessary treatment.</p>
+		<p class="pz-invite">Your current skin condition, not your age, is the basis. What to do first and what can wait is decided at a consultation after seeing your skin in person.</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>64 Eonju-ro 172-gil, Gangnam-gu, Seoul (Reyeonk Building)<br>B1, 3F and 4F</dd>
+				<dt>Phone</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">Copy number</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">One-to-one chat</a></dd>
+				<dt>Directions</dt>
+				<dd><a href="/en/location/">See how to get here</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">Note: This article is for general information about anti-aging care and treatments. Treatment results, discomfort, recovery time and side effects vary with individual skin condition and treatment method. Please decide on diagnosis and treatment through a consultation with our medical team.</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "When Should Anti-Aging Care Start? Preventive Skin Care and 8 Common Questions",
+   "description": "Preventive care is not about starting treatments early. It is about understanding how your skin changes and stepping in only when needed. Dr. Lee Doochan of Reyeonk Clinic in Apgujeong explains, with 8 common questions answered.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-28",
+   "dateModified": "2026-11-28",
+   "mainEntityOfPage": "https://reyeonk2.com/en/blog/aging-care-start-timing/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Thermage FLX or Ulthera: which is right for me?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If the aim is to lift sagging, Ulthera; if the concern is skin firmness, texture and fine lines, Thermage FLX. Ulthera uses ultrasound (HIFU) to work on the SMAS fascia layer, and Thermage FLX uses radiofrequency (RF) to stimulate dermal collagen. The two can also be done on the same day as “Ulthermage,” which treats both layers. Which combination suits you is decided at a consultation with the doctor."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long do the effects of Thermage FLX and Ulthera last?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Thermage FLX usually lasts 10 to 12 months and Ulthera 8 to 9 months on average. The effect becomes most noticeable one to two months after treatment, while new collagen builds up, and varies between individuals with skin condition, age and lifestyle."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I fly right after treatment in Seoul?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For Botox, fillers, skin boosters, Sunsak injection, Thermage FLX and Ulthera, travel on the same day is generally not a problem. After VirtueRF, Potenza and Eyethera, redness may remain for 1 to 3 days. We suggest allowing about a week of recovery after thread lifting, and within a week after liposuction. Please be sure to tell us your departure schedule at the consultation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How can I confirm that Ulthera or Thermage is genuine?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Genuine Ulthera uses equipment certified by Merz Aesthetics, and the NFC tag on the tip lets you verify authenticity. Ask to see the device and tip yourself before treatment. Reyeonk Clinic is an official Merz-certified partner and uses only genuine devices and tips."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I have treatment on the same day as my consultation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, in many cases treatment is possible on the day of your consultation. Most non-surgical treatments, including Thermage FLX, Ulthera, Sunsak injection, Botox and fillers, can be done the same day. If your schedule is short, please let us know when you book."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are Ulthera and Thermage very painful?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Honestly, there is some pain. However, it can be made much more comfortable by lengthening the numbing cream time or choosing gas or sleep anesthesia, and if you are sensitive to pain we will adjust the energy together at the consultation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can foreigners be treated at Reyeonk Clinic?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Consultations are available in English and Chinese, and you can book through the GLOBAL BOOKING forms in 17 countries and languages, or via WhatsApp, LINE and WeChat. After you apply, our staff will contact you to confirm the date and time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I pay with a foreign card or WeChat Pay?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We accept overseas credit cards such as Visa and Mastercard, as well as WeChat Pay and Alipay. For other payment methods, please ask when you book."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+

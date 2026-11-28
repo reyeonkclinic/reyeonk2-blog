@@ -1,0 +1,396 @@
+---js
+const permalink = "/ja/blog/aging-care-start-timing/";
+const layout = "layouts/base.njk";
+const lang = "ja";
+const title = "エイジングケアはいつ始めるべき？予防的スキンケアとよくあるご質問8つ";
+const description = "予防ケアの核心は、施術を早く始めることではありません。肌の変化を理解し、必要な時に必要な分だけ介入すること。狎鷗亭のReyeonk Clinic イ・ドゥチャン院長が、よくあるご質問8つとともにご案内します。";
+const date = "2026-11-28";
+const alternates = [
+	{ lang: "ko", url: "/blog/aging-care-start-timing/" },
+	{ lang: "en", url: "/en/blog/aging-care-start-timing/" },
+	{ lang: "ja", url: "/ja/blog/aging-care-start-timing/" },
+	{ lang: "zh-Hans", url: "/zh/blog/aging-care-start-timing/" },
+	{ lang: "x-default", url: "/blog/aging-care-start-timing/" }
+];
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:wght@500;700&display=swap">
+<style>
+.pz {
+	--pz-bg: #F2F5F4;
+	--pz-surface: #FFFFFF;
+	--pz-ink: #14211F;
+	--pz-muted: #5A6B68;
+	--pz-line: #D3DDDA;
+	--pz-accent: #1D6B66;
+	--pz-accent-soft: #DDECE9;
+	--pz-block: #14211F;
+	--pz-block-ink: #EAF3F1;
+	--pz-block-muted: #A6BDB9;
+	--pz-block-accent: #7FD0C7;
+	--pz-display: "Noto Serif", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+	--pz-body: "IBM Plex Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	.pz {
+		--pz-bg: #0E1918;
+		--pz-surface: #152322;
+		--pz-ink: #E4EEEC;
+		--pz-muted: #9AAEAA;
+		--pz-line: #273936;
+		--pz-accent: #6CC3BB;
+		--pz-accent-soft: #1B3431;
+		--pz-block: #1B3431;
+	}
+}
+.pz {
+	color: var(--pz-ink);
+	font-family: var(--pz-body);
+	font-size: 17px;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-top: 24px;
+}
+.pz *, .pz *::before, .pz *::after { box-sizing: border-box; }
+.pz h2, .pz h3 { font-family: var(--pz-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+.pz p { margin: 0; }
+.pz a { color: var(--pz-accent); }
+.pz img { max-width: 100%; }
+
+.pz-hook { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.3rem, 4.4vw, 1.7rem); line-height: 1.45; text-wrap: balance; }
+.pz-lead { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+
+.pz-fig { margin: 28px 0 0; max-width: 36rem; }
+.pz-fig img { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-fig.pz-wide { max-width: none; }
+.pz-fig.pz-wide img { aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 30%; }
+
+.pz-section { padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz h2 { font-size: 1.4rem; margin-bottom: 18px; }
+.pz-text { display: grid; gap: 1em; max-width: 36rem; }
+
+.pz-effects { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pz-effects li { background: var(--pz-accent-soft); padding: 16px; font-weight: 600; line-height: 1.4; }
+.pz-effects li::before { content: "✔"; display: block; color: var(--pz-accent); margin-bottom: 8px; font-weight: 500; }
+
+.pz-shots { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 20px; }
+.pz-shots .pz-num { font-family: var(--pz-display); font-size: clamp(2.6rem, 10vw, 4rem); line-height: 1; font-weight: 700; color: var(--pz-accent); font-variant-numeric: tabular-nums; }
+.pz-shots .pz-unit { color: var(--pz-muted); }
+
+.pz-cycle { display: flex; align-items: center; margin: 4px 0 38px; padding: 4px 0; }
+.pz-node { flex: none; width: 3.1rem; height: 3.1rem; border-radius: 50%; background: var(--pz-accent); color: var(--pz-surface); display: grid; place-items: center; font-weight: 600; font-size: 0.95rem; }
+.pz-gap { flex: 1 1 0; min-width: 0; text-align: center; font-size: 0.85rem; color: var(--pz-muted); border-top: 1px dashed var(--pz-muted); position: relative; }
+.pz-gap span { position: absolute; left: 0; right: 0; top: 8px; }
+
+.pz-list { list-style: none; margin: 0; padding: 0; display: grid; max-width: 40rem; }
+.pz-list li { padding-block: 18px; border-top: 1px solid var(--pz-line); display: grid; gap: 6px; }
+.pz-list li:last-child { border-bottom: 1px solid var(--pz-line); }
+.pz-list h3 { font-size: 1.1rem; }
+.pz-list p { color: var(--pz-muted); }
+.pz-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; background: var(--pz-accent-soft); color: var(--pz-accent); font-size: 0.85rem; font-weight: 600; width: fit-content; }
+
+.pz-table { overflow-x: auto; }
+.pz table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.pz th, .pz td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--pz-line); }
+.pz thead th { font-size: 0.85rem; color: var(--pz-muted); font-weight: 500; letter-spacing: 0.04em; }
+.pz td.pz-price { font-family: var(--pz-display); font-weight: 700; font-size: 1.35rem; white-space: nowrap; }
+
+.pz-event { margin-top: 28px; background: var(--pz-block); color: var(--pz-block-ink); padding: 28px max(20px, 4vw); }
+.pz-event .pz-label { color: var(--pz-block-accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; }
+.pz-event h3 { font-size: 1.2rem; margin-top: 6px; }
+.pz-big { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pz-big strong { font-family: var(--pz-display); font-size: clamp(2.2rem, 9vw, 3rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pz-big span { color: var(--pz-block-muted); font-size: 0.9rem; }
+.pz-event .pz-note { margin-top: 14px; color: var(--pz-block-muted); }
+
+.pz-closing { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--pz-line); }
+.pz-statement { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.4rem, 4.6vw, 1.9rem); line-height: 1.4; text-wrap: balance; }
+.pz-invite { margin-top: 16px; color: var(--pz-muted); max-width: 34rem; }
+.pz-contact { margin-top: 28px; background: var(--pz-surface); border: 1px solid var(--pz-line); padding: 20px; }
+.pz-contact dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 18px; }
+.pz-contact dt { color: var(--pz-muted); font-size: 0.9rem; }
+.pz-contact dd { margin: 0; }
+.pz-phone { font-weight: 600; font-size: 1.15rem; font-variant-numeric: tabular-nums; user-select: all; }
+.pz-copy { font: inherit; font-size: 0.85rem; margin-left: 10px; padding: 3px 12px; border: 1px solid var(--pz-accent); background: transparent; color: var(--pz-accent); cursor: pointer; }
+.pz-copy:hover { background: var(--pz-accent-soft); }
+
+@media (max-width: 480px) {
+	.pz { font-size: 16px; }
+	.pz-effects { grid-template-columns: 1fr; }
+	.pz-effects li { display: flex; gap: 10px; align-items: baseline; }
+	.pz-effects li::before { display: inline; margin: 0; }
+	.pz-contact dl { grid-template-columns: 1fr; gap: 2px; }
+	.pz-contact dd { margin-bottom: 10px; }
+}
+
+.pz-summary { margin-top: 28px; background: var(--pz-accent-soft); padding: 20px 22px; max-width: 40rem; }
+.pz-summary strong { display: block; color: var(--pz-accent); font-size: 0.85rem; letter-spacing: 0.06em; margin-bottom: 10px; }
+.pz-summary ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; }
+.pz-note { margin-top: 14px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-vid { margin: 28px 0 0; max-width: 22rem; }
+.pz-vid video { display: block; width: 100%; height: auto; background: var(--pz-accent-soft); }
+.pz-vid figcaption { margin-top: 8px; color: var(--pz-muted); font-size: 0.9rem; }
+.pz-disclaimer { margin-top: 24px; color: var(--pz-muted); font-size: 0.85rem; line-height: 1.6; }
+
+.pz-bullets { margin: 16px 0 0; padding-left: 1.2em; display: grid; gap: 8px; max-width: 36rem; }
+.pz-subhead { font-size: 1.1rem; margin: 28px 0 14px; }
+.pz-short { max-width: 22rem; margin: 28px 0 0; }
+.pz-short-box { position: relative; aspect-ratio: 9 / 16; background: var(--pz-accent-soft); }
+.pz-short-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pz-title { font-family: var(--pz-display); font-weight: 700; font-size: clamp(1.5rem, 5.4vw, 2.1rem); line-height: 1.35; text-wrap: balance; margin: 0 0 8px; }
+.pz-byline { color: var(--pz-muted, #5A6B68); font-size: 0.92rem; margin: 0 0 20px; }
+</style>
+
+<div class="pz">
+	<p class="pz-hook">ヘルスインテリジェンスの時代に考え直す、予防的スキンケア</p>
+	<p class="pz-lead">予防ケアの核心は、施術を早く始めることではありません。ご自身の肌の変化を理解し、必要な時に必要な分だけ介入して、不要な治療を減らすことにあります。狎鷗亭のReyeonk Clinic、イ・ドゥチャン院長のコラムです。</p>
+
+	<div class="pz-summary">
+		<strong>ひと目でわかる要点</strong>
+		<ul>
+			<li>エイジングケアを始める年齢に、<b>誰にでも共通する正解はありません。</b></li>
+			<li>年齢より先に<b>肌の状態</b>（水分とバリア、色素と血管、真皮の密度、脂肪の分布、顔の動き）を確認します。</li>
+			<li>予防とは、若いうちから強い施術を繰り返すことではなく、<b>今すべきことと待てることを見分けること</b>です。</li>
+			<li>最初の状態と治療の理由を記録し、<b>同じ基準で再評価する</b>ことで、不要な治療を減らせます。</li>
+			<li>施術の必要性や経過には個人差があるため、<b>実際に肌を拝見したうえでご相談</b>の中で決めます。</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>健康を、感覚ではなく情報で管理する人たち</h2>
+		<div class="pz-text">
+			<p>最近は、どれくらい眠ったか、どれくらい動いたか、何を食べたかを記録する人が増えました。健康状態を漠然とした感覚だけで判断せず、数値や記録で確かめる姿勢が日常になっています。美容医療でも同じ変化が起きています。患者さんは「きれいに見えるようにしてください」と言うだけにとどまりません。なぜ自分の肌は乾燥するのか、どの層でハリが落ちたのか、今必要なケアと後回しにできるケアは何なのかを知りたいと考えています。</p>
+			<p>こうした姿勢をヘルスインテリジェンスと捉えることができます。健康に関する情報をたくさん知っているだけでは十分ではありません。ご自身の状態を読み取り、情報の意味を見分け、実際の生活や治療の選択に生かす力が大切です。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>長生きの時代が、予防を前倒ししました</h2>
+		<div class="pz-text">
+			<p>診療の中で最も残念に思うことの一つは、すでにたるみがかなり進んでから来院される40代後半の女性です。20代後半は十分にきれいな年齢で、その頃なら比較的簡単に整えられる部分も多くあります。ところが、その可能性を知らずに若い時期を過ごし、あとから来られて「これはできないものだと思っていました」とおっしゃいます。その言葉を聞くたびに、もう少し早くご自身の状態を知っていればと思います。</p>
+			<p>ただし、「予防」とは若い年齢から強い施術を繰り返すという意味ではありません。肌のバリアが揺らいでいる方にはまず回復が必要なことがありますし、表情のくせが問題の方と、脂肪の分布や肌のハリが変わった方とでは、必要なアプローチが異なります。現在の状態を見分けずに行う予防ケアは、かえって費用と負担を増やすだけになりかねません。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>年齢に合わせたケアより、状態に合わせたケア</h2>
+		<div class="pz-text">
+			<p>同じ30代でも悩みは違います。繰り返す炎症と色素沈着が問題の方もいれば、目元の小じわやフェイスラインの変化が先に目立つ方もいます。そのため、年齢だけで施術を決めるのではなく、肌の水分とバリア、色素と血管、真皮の密度、脂肪の分布、顔の動きを合わせて見る必要があります。</p>
+			<p>Reyeonkがカウンセリングで最初に確認するのも、機器の名前ではありません。今いちばん気になる変化は何か、どんな印象を保ちたいか、日常で許容できる回復期間はどれくらいかをまず伺います。そのうえで、現在の状態で優先度の高いものを一つ決め、必要な場合にだけ次の段階につなげます。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>よい予防ケアは記録を残します</h2>
+		<div class="pz-text">
+			<p>予防ケアでは、一度の施術結果よりも変化の方向を確認することが大切です。最初の状態と治療の理由を記録し、一定の時間が経ったあとに同じ基準でもう一度評価する必要があります。そうして初めて、効果が十分か、維持ケアが必要か、次の治療を先送りしてよいかを判断できます。</p>
+			<p>この過程での写真や肌状態の記録は、より多くの施術をおすすめするための資料ではありません。以前の選択が適切だったかを確かめ、必要のない治療を減らすための根拠であるべきです。患者さんご自身も変化の過程を理解できてこそ、次の決定を不安ではなく判断として下せます。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>必要な時期を逃さず、不要な施術は減らすこと</h2>
+		<div class="pz-text">
+			<p>エイジングケアを始めるのに、誰にとっても同じ正解となる年齢はありません。今、気になる変化があるか、その変化が生活習慣のケアだけで調整できるか、医療的な介入が必要ならどの程度が適切かを、順に確認する必要があります。</p>
+			<p>私が考える予防ケアは、若いうちから無条件に施術しようという話ではありません。いちばんよい時期を知らずに過ぎて後悔しないように、今できることと、まだしなくてよいことをあらかじめ知っておくことです。必要な時期は逃さず、不要な施術は減らす。それが予防ケアの目的です。</p>
+		</div>
+	</div>
+
+	<div class="pz-section">
+		<h2>ご相談の前に考えてみたい質問</h2>
+		<ul class="pz-bullets">
+			<li>今いちばん変わったと感じるのはどの部分ですか</li>
+			<li>若く見える顔よりも、長く保ちたい印象は何ですか</li>
+			<li>一度の大きな変化と、負担の少ない段階的な変化のどちらがご自身に合いますか</li>
+		</ul>
+		<p class="pz-note">施術の必要性や経過には個人差があります。今何をして何を先送りするかは、実際に肌を拝見したうえで、ご相談の中で決めます。</p>
+		<p class="pz-note">参考論文：Hughes MC ほか、健康な成人における日焼け止めの使用と皮膚老化に関するランダム化比較試験、<i>Ann Intern Med</i>、2013年（<a href="https://pubmed.ncbi.nlm.nih.gov/23732711/" target="_blank" rel="noopener">PMID 23732711</a>）。日焼け止めを継続して使用した群で、肌の老化がより緩やかに進んだと報告されています。結果には個人差があります。</p>
+	</div>
+
+	<div class="pz-section">
+		<h2>よくあるご質問8つ</h2>
+		<ul class="pz-list">
+			<li>
+				<h3>サーマジFLXとウルセラ、私にはどちらが合いますか？</h3>
+				<p>たるみを引き上げることが目的ならウルセラ、肌のハリ・キメ・小じわが悩みならサーマジFLXが合います。ウルセラは超音波（HIFU）でSMAS筋膜層に、サーマジFLXは高周波（RF）で真皮のコラーゲンに働きかけます。この2つの層を一緒に扱う「ウルサーマジ」として、同じ日に受けることもできます。どの組み合わせが合うかは、院長とのご相談で決めます。</p>
+			</li>
+			<li>
+				<h3>サーマジFLXとウルセラの効果はどれくらい続きますか？</h3>
+				<p>サーマジFLXは通常10〜12か月、ウルセラは平均8〜9か月持続します。コラーゲンが新しく増える1〜2か月の間に効果が最もはっきりし、肌の状態・年齢・生活習慣によって個人差があります。</p>
+			</li>
+			<li>
+				<h3>ソウルで施術を受けて、すぐ飛行機に乗っても大丈夫ですか？</h3>
+				<p>ボトックス・フィラー・スキンブースター・スンサク注射・サーマジFLX・ウルセラは、ほとんどの場合、当日の移動に問題ありません。バーチューRF・ポテンツァ・アイセラは1〜3日ほど赤みが残ることがあり、糸リフトは約1週間、脂肪吸引は1週間以内の回復期間を設けることをおすすめします。ご出国の日程は、ご相談の際に必ずお知らせください。</p>
+			</li>
+			<li>
+				<h3>正規品のウルセラ・サーマジかどうか、どう確認できますか？</h3>
+				<p>正規品のウルセラはMerz Aesthetics（メルツ）の公式認証機器を使用し、チップのNFCタグで正規品かどうかを確認できます。施術前に、機器とチップを直接見せてほしいとお申し出ください。Reyeonk ClinicはMerz公式認証パートナーで、正規の機器とチップのみを使用しています。</p>
+			</li>
+			<li>
+				<h3>カウンセリングを受けた日に、そのまま施術を受けられますか？</h3>
+				<p>はい、多くの場合、カウンセリング当日にそのまま施術が可能です。サーマジFLX・ウルセラ・スンサク注射・ボトックス・フィラーなど、ほとんどの非手術施術は当日に行えます。日程が短い場合は、ご予約の際に前もってお知らせください。</p>
+			</li>
+			<li>
+				<h3>ウルセラ・サーマジはとても痛いですか？</h3>
+				<p>正直に申し上げて、痛みはある方です。ただし、麻酔クリームの時間を長くしたり、ガス麻酔や睡眠麻酔を選んだりすることで、ずっと楽に受けられます。痛みに敏感な方は、ご相談の際にエネルギーの調整も一緒に決めます。</p>
+			</li>
+			<li>
+				<h3>外国人でもReyeonk Clinicで施術を受けられますか？</h3>
+				<p>はい。英語・中国語でのご相談が可能で、17か国・言語別の予約フォーム（GLOBAL BOOKING）や、WhatsApp・LINE・WeChatからご予約いただけます。お申し込み後、スタッフがご連絡して日時を確定します。</p>
+			</li>
+			<li>
+				<h3>海外のカードやWeChat Payでお支払いできますか？</h3>
+				<p>はい。VisaやMastercardなどの海外クレジットカードと、WeChat Pay・Alipayでお支払いいただけます。その他のお支払い方法は、ご予約の際にお問い合わせください。</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pz-section">
+		<h2>ご相談・診療のご案内</h2>
+		<div class="pz-text">
+			<p>Reyeonk Clinicは2009年の開院以来、狎鷗亭で診療を続けており、カウンセリングから施術、仕上げまで院長が直接担当します。現在の状態で優先度の高いケアからご案内します。</p>
+			<p>予約制で運営しているため、お待ちいただくことなくカウンセリングと施術をお受けいただけます。</p>
+			<p>中国語・日本語・英語のカウンセラーとコーディネーターが在籍しており、言語の不安なくご相談いただけます。</p>
+			<p>Reyeonk Clinicは外国人患者誘致医療機関として登録されています（登録番号 M-2022-01-08-6785）。</p>
+		</div>
+	</div>
+
+	<div class="pz-closing">
+		<p class="pz-statement">必要な時期は逃さず、不要な施術は減らしましょう。</p>
+		<p class="pz-invite">基準は年齢ではなく、今の肌の状態です。何を先に行い、何を待ってよいかは、実際に肌を拝見したうえでご相談の中で決めます。</p>
+		<div class="pz-contact">
+			<dl>
+				<dt>Reyeonk Clinic</dt>
+				<dd>ソウル特別市江南区彦州路172キル64（Reyeonkビル）<br>地下1階、3階、4階</dd>
+				<dt>電話</dt>
+				<dd><a class="pz-phone" id="pz-phone" href="tel:+82-2-558-5581">+82-2-558-5581</a><button class="pz-copy" id="pz-copy" type="button">番号をコピー</button></dd>
+				<dt>KakaoTalk</dt>
+				<dd><a href="https://pf.kakao.com/_MTfIxd" target="_blank" rel="noopener">1対1のご相談はこちら</a></dd>
+				<dt>アクセス</dt>
+				<dd><a href="/ja/location/">来院方法を見る</a></dd>
+			</dl>
+		</div>
+		<p class="pz-disclaimer">※ 本記事はエイジングケアと施術についての一般的な情報提供を目的としたものです。施術の効果、痛み、回復期間、副作用は、個人の肌の状態や施術方法によって異なる場合があります。診断と施術の可否は、医療スタッフとのご相談で決めてください。</p>
+	</div>
+</div>
+
+<script type="application/ld+json" eleventy:ignore>
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "エイジングケアはいつ始めるべき？予防的スキンケアとよくあるご質問8つ",
+   "description": "予防ケアの核心は、施術を早く始めることではありません。肌の変化を理解し、必要な時に必要な分だけ介入すること。狎鷗亭のReyeonk Clinic イ・ドゥチャン院長が、よくあるご質問8つとともにご案内します。",
+   "inLanguage": "ja",
+   "datePublished": "2026-11-28",
+   "dateModified": "2026-11-28",
+   "mainEntityOfPage": "https://reyeonk2.com/ja/blog/aging-care-start-timing/",
+   "image": "https://reyeonk2.com/img/og/default.jpg",
+   "author": {
+    "@type": "Organization",
+    "name": "Reyeonk Clinic"
+   },
+   "publisher": {
+    "@id": "https://reyeonk2.com/#clinic"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "ja",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "サーマジFLXとウルセラ、私にはどちらが合いますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "たるみを引き上げることが目的ならウルセラ、肌のハリ・キメ・小じわが悩みならサーマジFLXが合います。ウルセラは超音波（HIFU）でSMAS筋膜層に、サーマジFLXは高周波（RF）で真皮のコラーゲンに働きかけます。この2つの層を一緒に扱う「ウルサーマジ」として、同じ日に受けることもできます。どの組み合わせが合うかは、院長とのご相談で決めます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サーマジFLXとウルセラの効果はどれくらい続きますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "サーマジFLXは通常10〜12か月、ウルセラは平均8〜9か月持続します。コラーゲンが新しく増える1〜2か月の間に効果が最もはっきりし、肌の状態・年齢・生活習慣によって個人差があります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ソウルで施術を受けて、すぐ飛行機に乗っても大丈夫ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ボトックス・フィラー・スキンブースター・スンサク注射・サーマジFLX・ウルセラは、ほとんどの場合、当日の移動に問題ありません。バーチューRF・ポテンツァ・アイセラは1〜3日ほど赤みが残ることがあり、糸リフトは約1週間、脂肪吸引は1週間以内の回復期間を設けることをおすすめします。ご出国の日程は、ご相談の際に必ずお知らせください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "正規品のウルセラ・サーマジかどうか、どう確認できますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "正規品のウルセラはMerz Aesthetics（メルツ）の公式認証機器を使用し、チップのNFCタグで正規品かどうかを確認できます。施術前に、機器とチップを直接見せてほしいとお申し出ください。Reyeonk ClinicはMerz公式認証パートナーで、正規の機器とチップのみを使用しています。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "カウンセリングを受けた日に、そのまま施術を受けられますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい、多くの場合、カウンセリング当日にそのまま施術が可能です。サーマジFLX・ウルセラ・スンサク注射・ボトックス・フィラーなど、ほとんどの非手術施術は当日に行えます。日程が短い場合は、ご予約の際に前もってお知らせください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ウルセラ・サーマジはとても痛いですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "正直に申し上げて、痛みはある方です。ただし、麻酔クリームの時間を長くしたり、ガス麻酔や睡眠麻酔を選んだりすることで、ずっと楽に受けられます。痛みに敏感な方は、ご相談の際にエネルギーの調整も一緒に決めます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "外国人でもReyeonk Clinicで施術を受けられますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。英語・中国語でのご相談が可能で、17か国・言語別の予約フォーム（GLOBAL BOOKING）や、WhatsApp・LINE・WeChatからご予約いただけます。お申し込み後、スタッフがご連絡して日時を確定します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "海外のカードやWeChat Payでお支払いできますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。VisaやMastercardなどの海外クレジットカードと、WeChat Pay・Alipayでお支払いいただけます。その他のお支払い方法は、ご予約の際にお問い合わせください。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<script>
+(function () {
+	var btn = document.getElementById("pz-copy");
+	var phone = document.getElementById("pz-phone");
+	if (!btn || !phone) return;
+	btn.addEventListener("click", function () {
+		var reset = function () { setTimeout(function () { btn.textContent = "Copy number"; }, 1600); };
+		var fallback = function () {
+			var range = document.createRange();
+			range.selectNodeContents(phone);
+			var sel = window.getSelection();
+			sel.removeAllRanges();
+			sel.addRange(range);
+			btn.textContent = "선택됨";
+			reset();
+		};
+		try {
+			navigator.clipboard.writeText(phone.textContent.trim()).then(function () { btn.textContent = "복사됨"; reset(); }, fallback);
+		} catch (e) { fallback(); }
+	});
+})();
+</script>
+
